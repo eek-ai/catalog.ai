@@ -1,0 +1,7 @@
+node_modules
+dist
+data.local
+.tmp_translations
+launch.json
+scripts/
+local
