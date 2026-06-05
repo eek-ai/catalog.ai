@@ -99,6 +99,10 @@ export default function App() {
         <Route path="/" element={<ListPage filters={filters} />} />
         <Route path="/tool/:id" element={<DetailPage />} />
       </Routes>
+
+      <footer className="footer">
+        <p>Контакти: <a href="mailto:info@ai.ua">info@ai.ua</a></p>
+      </footer>
     </div>
   );
 }
