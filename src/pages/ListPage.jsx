@@ -1,12 +1,14 @@
 import { useMemo } from "react";
-import { tools, sectors, statuses, origins, toolCount } from "../data.js";
+import { tools, sectors, statuses, origins } from "../data.js";
+import { useLang, countLabel } from "../i18n.jsx";
 import Tabs from "../components/Tabs.jsx";
 import FilterRail from "../components/FilterRail.jsx";
 import FilterChips from "../components/FilterChips.jsx";
 import ToolCard from "../components/ToolCard.jsx";
 
 export default function ListPage({ filters }) {
-  const { type, q, sector, status, origin, setType, setQuery, toggle, clearAll } = filters;
+  const { type, q, sector, status, origin, setType, setQuery, toggle, remove, clearAll } = filters;
+  const { t, lang } = useLang();
 
   const { visible, counts } = useMemo(() => {
     const needle = q.trim().toLowerCase();
@@ -36,9 +38,9 @@ export default function ListPage({ filters }) {
   }, [type, q, sector, status, origin]);
 
   const groups = [
-    { key: "sector", title: "Сектор", options: sectors, selected: sector, counts: counts.sector },
-    { key: "status", title: "Статус", options: statuses, selected: status, counts: counts.status },
-    { key: "origin", title: "Походження", options: origins, selected: origin, counts: counts.origin },
+    { key: "sector", title: t("facet_sector"), options: sectors, selected: sector, counts: counts.sector },
+    { key: "status", title: t("facet_status"), options: statuses, selected: status, counts: counts.status },
+    { key: "origin", title: t("facet_origin"), options: origins, selected: origin, counts: counts.origin },
   ];
 
   return (
@@ -49,34 +51,39 @@ export default function ListPage({ filters }) {
         <FilterRail groups={groups} toggle={toggle} />
 
         <div className="results">
-          <input
-            className="search"
-            type="search"
-            placeholder="Пошук за назвою, описом, користувачами…"
-            value={q}
-            onChange={(e) => setQuery(e.target.value)}
-          />
+          <div className="search-row">
+            <input
+              className="search"
+              type="search"
+              placeholder={t("search_placeholder")}
+              value={q}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            {q && (
+              <button className="search-clear" onClick={() => setQuery("")} aria-label={t("clear_search")}>
+                ×
+              </button>
+            )}
+          </div>
 
           <FilterChips
             q={q}
             sector={sector}
             status={status}
             origin={origin}
-            onRemove={toggle}
+            onRemove={remove}
             onClearAll={clearAll}
           />
 
-          <div className="result-count">{toolCount(visible.length)}</div>
+          <div className="result-count">{countLabel(visible.length, lang)}</div>
 
           <div className="grid">
-            {visible.map((t) => (
-              <ToolCard key={t.id} tool={t} />
+            {visible.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} />
             ))}
           </div>
 
-          {visible.length === 0 && (
-            <p className="empty">Немає інструментів за вашими фільтрами.</p>
-          )}
+          {visible.length === 0 && <p className="empty">{t("empty")}</p>}
         </div>
       </div>
     </>

@@ -4,19 +4,33 @@ import { originShort } from "../data.js";
 function FacetGroup({ title, options, selected, counts, onToggle, labelFn = (x) => x }) {
   // Open by default on desktop, collapsed on mobile so results aren't pushed
   // far down. Local state keeps the user's toggle through count re-renders.
-  const [open, setOpen] = useState(() => window.innerWidth > 760);
+  const [open, setOpen] = useState(() =>
+    typeof window === "undefined" ? true : window.innerWidth > 760
+  );
   return (
     <details className="facet" open={open} onToggle={(e) => setOpen(e.currentTarget.open)}>
-      <summary>{title}</summary>
+      <summary>
+        <span className="facet-title">{title}</span>
+        {selected.length > 0 && <span className="facet-selected">{selected.length}</span>}
+      </summary>
       <ul className="facet-list">
         {options.map((opt) => {
           const n = counts[opt] || 0;
+          const isSelected = selected.includes(opt);
           return (
             <li key={opt}>
-              <label className={`facet-row${n === 0 && !selected.includes(opt) ? " is-empty" : ""}`}>
+              <label
+                className={[
+                  "facet-row",
+                  isSelected ? "is-selected" : "",
+                  n === 0 && !isSelected ? "is-empty" : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+              >
                 <input
                   type="checkbox"
-                  checked={selected.includes(opt)}
+                  checked={isSelected}
                   onChange={() => onToggle(opt)}
                 />
                 <span className="facet-label">{labelFn(opt)}</span>
@@ -35,7 +49,7 @@ function FacetGroup({ title, options, selected, counts, onToggle, labelFn = (x) 
 // selection (standard faceted-search behaviour).
 export default function FilterRail({ groups, toggle }) {
   return (
-    <aside className="rail">
+    <aside className="rail" aria-label="Filters">
       {groups.map((g) => (
         <FacetGroup
           key={g.key}

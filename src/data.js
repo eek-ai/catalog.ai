@@ -14,12 +14,9 @@ export const tools = raw.tools.map((t) => ({ ...t, id: slug(t.name) }));
 
 export const getTool = (id) => tools.find((t) => t.id === id);
 
-// Type tabs (the primary axis). `tool` is the default tab.
-export const types = [
-  { id: "tool", label: "Інструменти" },
-  { id: "company", label: "Компанії" },
-  { id: "platform", label: "Платформи" },
-];
+// Type tabs (the primary axis), in order. `tool` is the default tab.
+// Labels are translated in the UI (see i18n.jsx).
+export const types = ["tool", "company", "platform"];
 
 // Facet value lists. Sectors are ordered by overall frequency (stable);
 // statuses/origins follow schema.json order.
@@ -46,13 +43,3 @@ const STATUS_CLASS = {
   "Невідомо": "other",
 };
 export const statusClass = (s) => STATUS_CLASS[s] || "other";
-
-// Ukrainian count + noun, e.g. 1 інструмент, 3 інструменти, 5 інструментів.
-export function toolCount(n) {
-  const mod10 = n % 10;
-  const mod100 = n % 100;
-  let noun = "інструментів";
-  if (mod10 === 1 && mod100 !== 11) noun = "інструмент";
-  else if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) noun = "інструменти";
-  return `${n} ${noun}`;
-}

@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import { statusClass, originShort } from "../data.js";
+import { useLang } from "../i18n.jsx";
 
 export default function ToolCard({ tool }) {
+  const { t } = useLang();
   // Carry the active filters into the detail URL so "back" restores the list.
   const { search } = useLocation();
   const to = { pathname: `/tool/${tool.id}`, search };
@@ -22,15 +24,15 @@ export default function ToolCard({ tool }) {
         <span className="tag sector-tag">{tool.sector}</span>
         <span className="tag origin-tag">{originShort(tool.origin)}</span>
         {tool.needs_review && (
-          <span className="flag-review" title="Докази слабкі — потребує перевірки">
-            ⚠ неперевірено
+          <span className="flag-review" title={t("unverified_title")}>
+            {t("unverified")}
           </span>
         )}
         {tool.sources?.length > 0 && (
-          <span className="src-count" title="Кількість джерел">🔗 {tool.sources.length}</span>
+          <span className="src-count" title={t("sources_title")}>🔗 {tool.sources.length}</span>
         )}
         <Link to={to} className="tool-link">
-          Детальніше →
+          {t("details")}
         </Link>
       </div>
     </article>

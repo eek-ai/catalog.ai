@@ -1,8 +1,10 @@
 import { originShort } from "../data.js";
+import { useLang } from "../i18n.jsx";
 
 // Shows every active filter as a removable pill. `type` is intentionally not
 // shown here — it's the tab, always set.
 export default function FilterChips({ q, sector, status, origin, onRemove, onClearAll }) {
+  const { t } = useLang();
   const chips = [];
   if (q.trim()) chips.push(["q", q.trim(), `“${q.trim()}”`]);
   sector.forEach((v) => chips.push(["sector", v, v]));
@@ -14,13 +16,21 @@ export default function FilterChips({ q, sector, status, origin, onRemove, onCle
   return (
     <div className="chips">
       {chips.map(([key, value, label]) => (
-        <button key={key + value} className="chip" onClick={() => onRemove(key, value)}>
-          {label} <span className="chip-x">×</span>
+        <button
+          key={key + value}
+          className="chip"
+          onClick={() => onRemove(key, value)}
+          aria-label={`${t("remove_filter")}: ${label}`}
+        >
+          <span>{label}</span>
+          <span className="chip-x" aria-hidden="true">
+            ×
+          </span>
         </button>
       ))}
       {chips.length > 1 && (
         <button className="chip chip-clear" onClick={onClearAll}>
-          Очистити все
+          {t("clear_all")}
         </button>
       )}
     </div>
