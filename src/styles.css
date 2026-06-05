@@ -38,13 +38,11 @@ body {
   margin-bottom: 4px;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 28px;
-  background: linear-gradient(90deg, var(--blue), var(--gold));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.header-logo {
+  width: 110px;
+  height: auto;
+  flex: 0 0 auto;
+  display: block;
 }
 
 .subtitle {
@@ -53,6 +51,9 @@ body {
 }
 
 .header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
 }
 
@@ -293,9 +294,18 @@ body {
   border: 1px solid var(--border);
   color: var(--text);
   border-radius: 10px;
-  padding: 11px 42px 11px 12px;
+  padding: 11px 42px 11px 38px;
   font-size: 14px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
 }
 
 .search:focus {
@@ -394,6 +404,12 @@ body {
   padding: 16px;
   display: flex;
   flex-direction: column;
+  transition: border-color 140ms ease, transform 140ms ease;
+}
+
+.tool-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
 }
 
 .tool-head {
@@ -533,9 +549,9 @@ body {
 }
 
 .sector-infrastructure {
-  color: #8fd3ff;
-  border-color: #2f5d78;
-  background: #102331;
+  color: #4ec3e8;
+  border-color: #2a5570;
+  background: #0c2330;
 }
 
 .sector-legal {
@@ -782,8 +798,9 @@ body {
   .header {
     align-items: center;
   }
-  .header h1 {
-    font-size: 24px;
+  .header-logo {
+    width: 88px;
+    height: auto;
   }
   .subtitle {
     font-size: 14px;

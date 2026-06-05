@@ -1,7 +1,7 @@
-import { Routes, Route, Link, useSearchParams } from "react-router-dom";
-import ListPage from "./pages/ListPage.jsx";
-import DetailPage from "./pages/DetailPage.jsx";
+import { Link, Route, Routes, useSearchParams } from "react-router-dom";
 import { useLang } from "./i18n.jsx";
+import DetailPage from "./pages/DetailPage.jsx";
+import ListPage from "./pages/ListPage.jsx";
 
 function LangToggle() {
   const { lang, setLang } = useLang();
@@ -87,8 +87,8 @@ export default function App() {
     <div className="app">
       <header className="header">
         <div>
-          <Link to="/" className="header-link">
-            <h1>{t("title")}</h1>
+          <Link to="/" className="header-link" aria-label={t("title")}>
+            <img className="header-logo" src="/logo3.png" alt="" aria-hidden="true" />
           </Link>
           <p className="subtitle">{t("subtitle")}</p>
         </div>
