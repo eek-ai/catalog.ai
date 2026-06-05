@@ -1,6 +1,8 @@
 import { useParams, Link, useLocation } from "react-router-dom";
 import { getTool, statusClass } from "../data.js";
 
+const TYPE_LABEL = { tool: "Інструмент", company: "Компанія", platform: "Платформа" };
+
 export default function DetailPage() {
   const { id } = useParams();
   const { search } = useLocation();
@@ -27,10 +29,19 @@ export default function DetailPage() {
         </span>
       </div>
 
+      <p className="detail-tagline">{tool.descr_short}</p>
+
       <div className="tool-tags">
         <span className="tag sector-tag">{tool.sector}</span>
-        <span className="tag">{tool.category}</span>
+        <span className="tag">{TYPE_LABEL[tool.type] || tool.type}</span>
+        <span className="tag origin-tag">{tool.origin}</span>
       </div>
+
+      {tool.needs_review && (
+        <p className="review-banner">
+          ⚠ Публічні докази слабкі — запис потребує перевірки.
+        </p>
+      )}
 
       <p className="detail-desc">{tool.description}</p>
 
@@ -39,7 +50,7 @@ export default function DetailPage() {
         <dd>{tool.target_users}</dd>
         <dt>Доступ</dt>
         <dd>{tool.access}</dd>
-        <dt>Стадія</dt>
+        <dt>Стадія (як вказано)</dt>
         <dd>{tool.maturity}</dd>
         {tool.why_included && (
           <>

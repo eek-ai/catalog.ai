@@ -1,67 +1,84 @@
 import { useMemo } from "react";
-import { tools, toolCount } from "../data.js";
-import StatTiles from "../components/StatTiles.jsx";
-import SectorChart from "../components/SectorChart.jsx";
+import { tools, sectors, statuses, origins, toolCount } from "../data.js";
+import Tabs from "../components/Tabs.jsx";
+import FilterRail from "../components/FilterRail.jsx";
 import FilterChips from "../components/FilterChips.jsx";
 import ToolCard from "../components/ToolCard.jsx";
 
 export default function ListPage({ filters }) {
-  const { query, sector, status, setFilter, resetFilters } = filters;
+  const { type, q, sector, status, origin, setType, setQuery, toggle, clearAll } = filters;
 
-  const visible = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return tools.filter((t) => {
-      if (sector && t.sector !== sector) return false;
-      if (status && t.status !== status) return false;
-      if (!q) return true;
-      return `${t.name} ${t.category} ${t.description} ${t.target_users}`
+  const { visible, counts } = useMemo(() => {
+    const needle = q.trim().toLowerCase();
+    const inType = tools.filter((t) => t.type === type);
+    const matchQ = (t) =>
+      !needle ||
+      `${t.name} ${t.descr_short} ${t.description} ${t.target_users}`
         .toLowerCase()
-        .includes(q);
-    });
-  }, [query, sector, status]);
+        .includes(needle);
 
-  // Clicking an already-active tile clears it (toggle behaviour).
-  const toggleSector = (s) => setFilter("sector", sector === s ? null : s);
-  const toggleStatus = (s) => setFilter("status", status === s ? null : s);
+    // A tool passes the facets, optionally ignoring one group (for its counts).
+    const passes = (t, except) =>
+      (except === "sector" || sector.length === 0 || sector.includes(t.sector)) &&
+      (except === "status" || status.length === 0 || status.includes(t.status)) &&
+      (except === "origin" || origin.length === 0 || origin.includes(t.origin));
+
+    const countsFor = (key) => {
+      const m = {};
+      for (const t of inType) if (matchQ(t) && passes(t, key)) m[t[key]] = (m[t[key]] || 0) + 1;
+      return m;
+    };
+
+    return {
+      visible: inType.filter((t) => matchQ(t) && passes(t, null)),
+      counts: { sector: countsFor("sector"), status: countsFor("status"), origin: countsFor("origin") },
+    };
+  }, [type, q, sector, status, origin]);
+
+  const groups = [
+    { key: "sector", title: "Сектор", options: sectors, selected: sector, counts: counts.sector },
+    { key: "status", title: "Статус", options: statuses, selected: status, counts: counts.status },
+    { key: "origin", title: "Походження", options: origins, selected: origin, counts: counts.origin },
+  ];
 
   return (
     <>
-      <StatTiles
-        tools={tools}
-        status={status}
-        onStatus={toggleStatus}
-      />
+      <Tabs active={type} onSelect={setType} />
 
-      <SectorChart tools={tools} active={sector} onSelect={toggleSector} />
+      <div className="catalog">
+        <FilterRail groups={groups} toggle={toggle} />
 
-      <input
-        className="search"
-        type="search"
-        placeholder="Пошук за назвою, описом, користувачами…"
-        value={query}
-        onChange={(e) => setFilter("q", e.target.value)}
-      />
+        <div className="results">
+          <input
+            className="search"
+            type="search"
+            placeholder="Пошук за назвою, описом, користувачами…"
+            value={q}
+            onChange={(e) => setQuery(e.target.value)}
+          />
 
-      <FilterChips
-        query={query}
-        sector={sector}
-        status={status}
-        onClear={(key) =>
-          key === "all" ? resetFilters() : setFilter(key === "query" ? "q" : key, null)
-        }
-      />
+          <FilterChips
+            q={q}
+            sector={sector}
+            status={status}
+            origin={origin}
+            onRemove={toggle}
+            onClearAll={clearAll}
+          />
 
-      <div className="result-count">{toolCount(visible.length)}</div>
+          <div className="result-count">{toolCount(visible.length)}</div>
 
-      <div className="grid">
-        {visible.map((t) => (
-          <ToolCard key={t.id} tool={t} />
-        ))}
+          <div className="grid">
+            {visible.map((t) => (
+              <ToolCard key={t.id} tool={t} />
+            ))}
+          </div>
+
+          {visible.length === 0 && (
+            <p className="empty">Немає інструментів за вашими фільтрами.</p>
+          )}
+        </div>
       </div>
-
-      {visible.length === 0 && (
-        <p className="empty">Немає інструментів за вашими фільтрами.</p>
-      )}
     </>
   );
 }

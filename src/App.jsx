@@ -3,27 +3,41 @@ import ListPage from "./pages/ListPage.jsx";
 import DetailPage from "./pages/DetailPage.jsx";
 
 export default function App() {
-  // Filter state lives in the URL query string, so a filtered view is
-  // shareable, survives a refresh, and is restored when navigating back from
-  // a tool's detail page. `replace` keeps each keystroke out of history.
-  const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get("q") || "";
-  const sector = searchParams.get("sector");
-  const status = searchParams.get("status");
+  // All filter state lives in the URL: `type` (single, default "tool"),
+  // `q` (search), and multi-value `sector`/`status`/`origin`. Shareable,
+  // survives refresh, restored when navigating back from a detail page.
+  const [sp, setSp] = useSearchParams();
 
-  const setFilter = (key, value) =>
-    setSearchParams(
+  const filters = {
+    type: sp.get("type") || "tool",
+    q: sp.get("q") || "",
+    sector: sp.getAll("sector"),
+    status: sp.getAll("status"),
+    origin: sp.getAll("origin"),
+  };
+
+  const update = (mut) =>
+    setSp(
       (prev) => {
-        const next = new URLSearchParams(prev);
-        if (value) next.set(key, value);
-        else next.delete(key);
-        return next;
+        const n = new URLSearchParams(prev);
+        mut(n);
+        return n;
       },
       { replace: true }
     );
-  const resetFilters = () => setSearchParams({}, { replace: true });
 
-  const filters = { query, sector, status, setFilter, resetFilters };
+  filters.setType = (t) => update((n) => (t === "tool" ? n.delete("type") : n.set("type", t)));
+  filters.setQuery = (v) => update((n) => (v ? n.set("q", v) : n.delete("q")));
+  filters.toggle = (key, val) =>
+    update((n) => {
+      const cur = n.getAll(key);
+      n.delete(key);
+      (cur.includes(val) ? cur.filter((x) => x !== val) : [...cur, val]).forEach((v) =>
+        n.append(key, v)
+      );
+    });
+  filters.clearAll = () =>
+    setSp(filters.type === "tool" ? {} : { type: filters.type }, { replace: true });
 
   return (
     <div className="app">
