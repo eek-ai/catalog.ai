@@ -2,6 +2,57 @@ import { useParams, Link, useLocation } from "react-router-dom";
 import { getTool, statusClass } from "../data.js";
 import { useLang } from "../i18n.jsx";
 
+const DETAIL_FIELDS = [
+  "name",
+  "url",
+  "type",
+  "descr_short",
+  "sector",
+  "origin",
+  "description",
+  "target_users",
+  "access",
+  "maturity",
+  "status",
+  "why_included",
+  "notes",
+  "needs_review",
+  "sources",
+];
+
+function isEmptyValue(value) {
+  return value == null || value === "" || (Array.isArray(value) && value.length === 0);
+}
+
+function FieldValue({ name, value, t }) {
+  if (name === "url") {
+    return (
+      <a href={value} target="_blank" rel="noreferrer">
+        {value}
+      </a>
+    );
+  }
+
+  if (name === "type") return t(`type_${value}`);
+  if (name === "needs_review") return value ? t("yes") : t("no");
+
+  if (name === "sources") {
+    return (
+      <ul className="detail-source-list">
+        {value.map((src) => (
+          <li key={src}>
+            <a href={src} target="_blank" rel="noreferrer">
+              {src}
+            </a>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  return value;
+}
+
 export default function DetailPage() {
   const { id } = useParams();
   const { search } = useLocation();
@@ -39,47 +90,16 @@ export default function DetailPage() {
 
       {tool.needs_review && <p className="review-banner">{t("review_banner")}</p>}
 
-      <p className="detail-desc">{tool.description}</p>
-
-      <dl className="detail-meta">
-        <dt>{t("meta_users")}</dt>
-        <dd>{tool.target_users}</dd>
-        <dt>{t("meta_access")}</dt>
-        <dd>{tool.access}</dd>
-        <dt>{t("meta_stage")}</dt>
-        <dd>{tool.maturity}</dd>
-        {tool.why_included && (
-          <>
-            <dt>{t("meta_why")}</dt>
-            <dd>{tool.why_included}</dd>
-          </>
-        )}
-        {tool.notes && (
-          <>
-            <dt>{t("meta_notes")}</dt>
-            <dd>{tool.notes}</dd>
-          </>
-        )}
+      <dl className="detail-meta detail-meta-all">
+        {DETAIL_FIELDS.filter((field) => !isEmptyValue(tool[field])).map((field) => (
+          <div className="detail-field" key={field}>
+            <dt>{t(`field_${field}`)}</dt>
+            <dd>
+              <FieldValue name={field} value={tool[field]} t={t} />
+            </dd>
+          </div>
+        ))}
       </dl>
-
-      {tool.url && (
-        <a className="detail-visit" href={tool.url} target="_blank" rel="noreferrer">
-          {t("visit")}
-        </a>
-      )}
-
-      {tool.sources?.length > 0 && (
-        <div className="sources">
-          <h3>{t("sources")}</h3>
-          <ul>
-            {tool.sources.map((src) => (
-              <li key={src}>
-                <a href={src} target="_blank" rel="noreferrer">{src}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }

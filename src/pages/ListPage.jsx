@@ -7,7 +7,8 @@ import FilterChips from "../components/FilterChips.jsx";
 import ToolCard from "../components/ToolCard.jsx";
 
 export default function ListPage({ filters }) {
-  const { type, q, sector, status, origin, setType, setQuery, toggle, remove, clearAll } = filters;
+  const { type, q, sector, status, origin, showAll, setType, setQuery, toggle, remove, clearAll } =
+    filters;
   const { t, lang } = useLang();
 
   const { visible, counts } = useMemo(() => {
@@ -79,7 +80,7 @@ export default function ListPage({ filters }) {
 
           <div className="grid">
             {visible.map((tool) => (
-              <ToolCard key={tool.id} tool={tool} />
+              <ToolCard key={tool.id} tool={tool} showAll={showAll} />
             ))}
           </div>
 

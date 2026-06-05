@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { statusClass, originShort } from "../data.js";
+import { statusClass, sectorClass } from "../data.js";
 import { useLang } from "../i18n.jsx";
 
-export default function ToolCard({ tool }) {
+export default function ToolCard({ tool, showAll = false }) {
   const { t } = useLang();
   // Carry the active filters into the detail URL so "back" restores the list.
   const { search } = useLocation();
@@ -14,15 +14,35 @@ export default function ToolCard({ tool }) {
         <Link to={to} className="tool-title">
           <h3>{tool.name}</h3>
         </Link>
-        <span className={`status status-${statusClass(tool.status)}`}>{tool.status}</span>
+        {showAll ? (
+          <span className={`status status-${statusClass(tool.status)}`}>{tool.status}</span>
+        ) : null}
       </div>
 
       <p className="tool-tagline">{tool.descr_short}</p>
       <p className="tool-desc">{tool.description}</p>
+      <div className="card-sector-row">
+        <span className={`tag sector-tag sector-${sectorClass(tool.sector)}`}>{tool.sector}</span>
+      </div>
+
+      {showAll && (
+        <dl className="card-extra">
+          {tool.maturity && (
+            <>
+              <dt>{t("field_maturity")}</dt>
+              <dd>{tool.maturity}</dd>
+            </>
+          )}
+          {tool.access && (
+            <>
+              <dt>{t("field_access")}</dt>
+              <dd>{tool.access}</dd>
+            </>
+          )}
+        </dl>
+      )}
 
       <div className="tool-foot">
-        <span className="tag sector-tag">{tool.sector}</span>
-        <span className="tag origin-tag">{originShort(tool.origin)}</span>
         {tool.needs_review && (
           <span className="flag-review" title={t("unverified_title")}>
             {t("unverified")}

@@ -43,3 +43,19 @@ const STATUS_CLASS = {
   "Невідомо": "other",
 };
 export const statusClass = (s) => STATUS_CLASS[s] || "other";
+
+const SECTOR_CLASS = {
+  "Оборона та безпека": "defense",
+  "Бізнес та продажі": "business",
+  "Державний сектор": "government",
+  "Інфраструктура та платформи": "infrastructure",
+  "Право": "legal",
+  "Медицина та здоров'я": "health",
+  "Медіа та інформаційна безпека": "media",
+  "Освіта": "education",
+  "Голос і мовлення": "voice",
+  "Інше": "other",
+  "Маркетинг та реклама": "marketing",
+  "Генеративний контент": "creative",
+};
+export const sectorClass = (s) => SECTOR_CLASS[s] || "other";

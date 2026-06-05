@@ -40,6 +40,7 @@ export default function App() {
     sector: sp.getAll("sector"),
     status: sp.getAll("status"),
     origin: sp.getAll("origin"),
+    showAll: sp.get("showAll") === "true",
   };
 
   const update = (mut) =>
@@ -74,7 +75,13 @@ export default function App() {
       );
     });
   filters.clearAll = () =>
-    setSp(filters.type === "tool" ? {} : { type: filters.type }, { replace: true });
+    setSp(
+      {
+        ...(filters.type === "tool" ? {} : { type: filters.type }),
+        ...(filters.showAll ? { showAll: "true" } : {}),
+      },
+      { replace: true }
+    );
 
   return (
     <div className="app">
