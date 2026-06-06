@@ -5,3 +5,5 @@ data.local
 launch.json
 scripts/
 local
+
+.idea
