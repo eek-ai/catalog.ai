@@ -1,9 +1,12 @@
 import raw from "../data/data.json";
 
+// Keep Unicode letters/digits so all-Cyrillic names still get a usable slug
+// (a Latin-only filter left names like "Помічник ветерана (Львів)" empty,
+// breaking their detail-page link).
 const slug = (name) =>
   name
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/[^\p{L}\p{N}]+/gu, "-")
     .replace(/^-|-$/g, "");
 
 // `sector`, `type`, `status`, `origin`, `needs_review` are authoritative fields
