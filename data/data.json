@@ -529,25 +529,6 @@
       "needs_review": false
     },
     {
-      "name": "Tur.ai",
-      "url": "https://tur.ai/",
-      "type": "tool",
-      "descr_short": "платформа автоматизації процесів з AI",
-      "sector": "Бізнес та продажі",
-      "origin": "Ukraine-linked",
-      "description": "Платформа автоматизації бізнес-процесів/RPA з AI, що дає компаніям змогу автоматизувати складні робочі процеси без значного залучення IT.",
-      "target_users": "Підприємства та великі компанії, зокрема українські операції",
-      "access": "SaaS/демо",
-      "maturity": "Профінансований стартап",
-      "status": "Працює",
-      "why_included": "Українсько-нідерландський стартап з офісом в Україні та платформою AI-автоматизації робочих процесів.",
-      "sources": [
-        "https://ain.ua/2024/10/23/turai-raises-1-45-million/"
-      ],
-      "notes": "Потенційно більш міжнародний, ніж специфічно український; залишено через український офіс і висвітлення в локальній екосистемі.",
-      "needs_review": false
-    },
-    {
       "name": "Innora AI Agents",
       "url": "https://innora.com.ua/ai-agenti",
       "type": "tool",
@@ -1114,25 +1095,6 @@
       "needs_review": true
     },
     {
-      "name": "Elomia",
-      "url": "https://elomia.com/",
-      "type": "tool",
-      "descr_short": "AI-чатбот для ментального здоров'я",
-      "sector": "Медицина та здоров'я",
-      "origin": "Ukraine-linked",
-      "description": "Розмовний AI-інструмент підтримки ментального здоров'я, заснований українською командою; історично висвітлювався як стартап віртуального психолога.",
-      "target_users": "Користувачі підтримки ментального здоров'я, зокрема в контексті українського походження продукту та глобальні користувачі",
-      "access": "Доступ до застосунку/сервісу відрізняється",
-      "maturity": "Стартап / продукт",
-      "status": "Працює",
-      "why_included": "AI-продукт для ментального здоров'я, заснований українцями, з публічними свідченнями та висвітленням у контексті українського фонду підтримки.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Elomia_Health"
-      ],
-      "notes": "Можливо, орієнтований на глобальний ринок; перевірити поточну специфічну орієнтацію на Україну перед тим, як вважати його сильним збігом.",
-      "needs_review": true
-    },
-    {
       "name": "Sugarrr",
       "url": "https://sugarrr.com/",
       "type": "tool",
@@ -1230,26 +1192,6 @@
       "needs_review": false
     },
     {
-      "name": "AcademyOcean AI algorithms",
-      "url": "https://academyocean.com/",
-      "type": "tool",
-      "descr_short": "AI для корпоративного навчання",
-      "sector": "Освіта",
-      "origin": "Ukraine-linked",
-      "description": "Навчальна платформа, заснована українцями, яка згадується як така, що використовує AI-алгоритми для автоматизованих освітніх процесів.",
-      "target_users": "Українські та міжнародні бізнеси, що проводять навчання співробітників або клієнтів",
-      "access": "SaaS",
-      "maturity": "Працює",
-      "status": "Працює",
-      "why_included": "Освітня платформа українського походження з AI-функціями, згадана в українських освітніх матеріалах.",
-      "sources": [
-        "https://istu.edu.ua/wp-content/uploads/2026/04/Materialy_III_Mizhnarodnoi_naukovo_praktychnoi_konferentsii_2025_compressed.pdf",
-        "https://academyocean.com/"
-      ],
-      "notes": "Орієнтована на міжнародний ринок, але має українське походження та використовується в українських обговореннях освіти й AI.",
-      "needs_review": false
-    },
-    {
       "name": "Prosvita Fox Assistant",
       "url": "https://prosvita.net/",
       "type": "tool",
@@ -1305,63 +1247,6 @@
       ],
       "notes": "",
       "needs_review": false
-    },
-    {
-      "name": "Respeecher voice cloning",
-      "url": "https://www.respeecher.com/",
-      "type": "tool",
-      "descr_short": "мовленнєвий AI / перетворення голосу",
-      "sector": "Голос і мовлення",
-      "origin": "Ukraine-linked",
-      "description": "Платформа перетворення та клонування голосу, яку використовують у медіавиробництві, з українським бекграундом компанії та новою роботою над українськомовним мовленням.",
-      "target_users": "Медіапродюсери, студії, креатори та українськомовні AI-голосові проєкти",
-      "access": "Комерційний сервіс",
-      "maturity": "Працює",
-      "status": "Працює",
-      "why_included": "AI-платформа для голосу від українського стартапу з релевантним для України розширенням у сфері українського TTS.",
-      "sources": [
-        "https://dev.ua/news/ukrainomovnyi-text-to-speech-servis-1763630243"
-      ],
-      "notes": "Орієнтована на глобальний ринок, але включена через явний запуск українськомовного продукту.",
-      "needs_review": false
-    },
-    {
-      "name": "HOLYWATER My Muse",
-      "url": "https://mymuse.ai/",
-      "type": "tool",
-      "descr_short": "генеративний медіа ШІ",
-      "sector": "Генеративний контент",
-      "origin": "Ukraine-linked",
-      "description": "ШІ-платформа від української media-tech компанії HOLYWATER для генерації серіалів та аудіокниг.",
-      "target_users": "Творці, медійні команди та користувачі контентної екосистеми HOLYWATER, включно з українською аудиторією",
-      "access": "Публічний/обмежений доступ до платформи",
-      "maturity": "Запущено",
-      "status": "Працює",
-      "why_included": "Іменована платформа для генерації контенту на основі ШІ, публічно запущена українською media-tech компанією.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Holywater_Tech"
-      ],
-      "notes": "Може орієнтуватися як на глобальних користувачів, так і на Україну; залишити для подальшої перевірки.",
-      "needs_review": true
-    },
-    {
-      "name": "Wantent",
-      "url": "https://wantent.ai/",
-      "type": "tool",
-      "descr_short": "ШІ-аналітика відео та контенту",
-      "sector": "Медіа та інформаційна безпека",
-      "origin": "Ukraine-linked",
-      "description": "Платформа для тестування контенту та відеоаналітики на основі ШІ, пов'язана з висвітленням української стартап-екосистеми.",
-      "target_users": "Українські та міжнародні медійні, маркетингові й контентні команди",
-      "access": "SaaS/демо",
-      "maturity": "Працює",
-      "status": "Працює",
-      "why_included": "Український продукт для ШІ-аналітики контенту з прямою застосовністю для українських медійних і маркетингових користувачів.",
-      "sources": [
-        "https://wantent.ai/"
-      ],
-      "notes": "Орієнтований на міжнародний ринок; перевірити акцент на українському ринку під час наступного проходу.",
-      "needs_review": true
     },
     {
       "name": "YouScan",
@@ -1916,25 +1801,6 @@
         "https://hdp.com.ua/"
       ],
       "notes": "",
-      "needs_review": false
-    },
-    {
-      "name": "PawChamp Pawchie AI",
-      "url": "https://pawchamp.com/",
-      "type": "tool",
-      "descr_short": "ШІ-асистент для догляду за домашніми тваринами",
-      "sector": "Інше",
-      "origin": "Ukraine-linked",
-      "description": "ШІ-асистент у застосунку для догляду за домашніми тваринами, навчений на матеріалах про поведінку собак, підготовлених і перевірених експертами з собак.",
-      "target_users": "Власники собак, зокрема користувачі українського продукту",
-      "access": "Мобільний застосунок",
-      "maturity": "Запущено на Product Hunt",
-      "status": "Працює",
-      "why_included": "Український pet-tech застосунок із ШІ та іменованим ШІ-асистентом.",
-      "sources": [
-        "https://dev.ua/news/pawchamp-1761296934"
-      ],
-      "notes": "Ймовірно орієнтований на глобальний ринок; включено, бо український продукт публічно позиціонується як ШІ-рішення.",
       "needs_review": false
     },
     {
@@ -3278,27 +3144,6 @@
       "needs_review": false
     },
     {
-      "name": "Creatio AI",
-      "url": "https://www.creatio.com/ua/",
-      "type": "tool",
-      "descr_short": "CRM / workflow automation / no-code / enterprise AI",
-      "sector": "Бізнес та продажі",
-      "origin": "Ukraine-linked",
-      "description": "AI CRM and Workflow Platform з AI-агентами, no-code автоматизацією процесів, AI-assisted workflows, продажами, маркетингом і сервісом.",
-      "target_users": "Середній і великий бізнес, enterprise-команди, sales, marketing, service та operations-команди.",
-      "access": "Публічний SaaS / enterprise platform; доступ через demo, trial або sales-запит.",
-      "maturity": "Зрілий enterprise-продукт.",
-      "status": "Працює",
-      "why_included": "Creatio має чітке AI-позиціонування як CRM/workflow платформа з AI-агентами та українську локалізацію / українську присутність.",
-      "sources": [
-        "https://www.creatio.com/ua/",
-        "https://www.creatio.com/",
-        "https://www.creatio.com/glossary/ai-agents"
-      ],
-      "notes": "Глобальний продукт з українським корінням і українською версією. Варто позначити як global/Ukrainian-founded, якщо каталог суворо фокусується саме на Ukraine-targeted інструментах.",
-      "needs_review": false
-    },
-    {
       "name": "ScroogeFrog AI Antifraud",
       "url": "https://scroogefrog.com/",
       "type": "tool",
@@ -3437,6 +3282,1197 @@
       ],
       "notes": "Окрему публічну продуктову сторінку не знайдено; у Reuters наведено дані про понад 15 тисяч проданих одиниць такого ПЗ.",
       "needs_review": false
+    },
+    {
+      "name": "MaXon Systems",
+      "url": "https://www.drone-directory.com.ua/profile/maxon/",
+      "type": "company",
+      "descr_short": "Автономна система ППО проти дронів-камікадзе",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Київський оборонний стартап (резидент Brave1), що розробляє автономну систему протиповітряної оборони: швидкісні дрони-перехоплювачі з ШІ-наведенням на кінцевій ділянці, які самостійно розпізнають і вражають Shahed-подібні цілі. Оператор лише обирає ціль і дає команду — далі понад 95% перехоплення відбувається без пілотування.",
+      "target_users": "Сили ППО, підрозділи ЗСУ, оборона критичної інфраструктури та міст",
+      "access": "За запитом",
+      "maturity": "Пройшла бойові випробування на Харківщині та Чернігівщині; перший підтверджений автономний перехоплення дрон-проти-дрона (червень 2026)",
+      "status": "Пілот",
+      "why_included": "ШІ є ядром продукту — автономне розпізнавання та наведення на ціль; українська компанія, є сайт-профіль і широке висвітлення в пресі.",
+      "sources": [
+        "https://thedefender.media/en/2026/06/maxon-systems-first-autonomous-shahed-interception/",
+        "https://tech.eu/2026/02/20/maxon-systems-secures-funding-to-build-autonomous-air-defence-for-the-drone-swarm-era/",
+        "https://www.kyivpost.com/post/70613"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "SkyFall P1-SUN Long",
+      "url": "https://www.drone-directory.com.ua/profile/skyfall/",
+      "type": "tool",
+      "descr_short": "Дрон-перехоплювач Shahed з ШІ-модулем наведення",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Версія дрона-перехоплювача від української компанії SkyFall з інтегрованим ШІ-модулем для автономного виявлення, супроводу та ураження повітряних цілей. Система термінального наведення на основі ШІ захоплює ціль на відстані до кілометра швидше за людське око.",
+      "target_users": "Сили оборони України, підрозділи протиповітряної оборони",
+      "access": "За запитом",
+      "maturity": "Пройшов бойові випробування, на озброєнні; десятки підтверджених перехоплень Shahed; представлений на Eurosatory 2026",
+      "status": "Працює",
+      "why_included": "ШІ-наведення є ключовою новою функцією перехоплювача; українська компанія, кілька незалежних джерел.",
+      "sources": [
+        "https://thedefender.media/en/2026/06/skyfall-unveils-p1-sun-long/",
+        "https://www.unmannedairspace.info/counter-uas-systems-and-policies/eurosatory-2026-ukraines-skyfall-introduces-new-ai-enabled-p1-sun-interceptor/",
+        "https://en.defence-ua.com/weapon_and_tech/ukraines_new_p1_sun_long_can_hunt_shahed_drones_at_twice_distance_and_already_has_combat_kills-18847.html"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Buntar Copilot",
+      "url": "https://buntar.com/en/",
+      "type": "platform",
+      "descr_short": "ШІ-помічник для планування та аналітики розвідувальних місій БпЛА",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Програмна система Copilot від Buntar Aerospace — «бойовий асистент», що прогнозує сценарії місій, розраховує послідовність польотів, забезпечує безперервне покриття та централізує мультикамерні потоки. Поєднує планування, запуск і аналітику розвідки в єдиному циклі для платформи Buntar-3 (ISR-дрон, стійкий до РЕБ).",
+      "target_users": "Розвідувальні підрозділи ЗСУ, оператори БпЛА",
+      "access": "За запитом",
+      "maturity": "Тестувалася в бойових умовах на кількох ділянках фронту; залучено $10.4 млн інвестицій (Axon Enterprise)",
+      "status": "Пілот",
+      "why_included": "ШІ-аналітика та підтримка прийняття рішень є ядром програмного продукту Copilot; українська компанія, офіційний сайт і інвестиційне висвітлення.",
+      "sources": [
+        "https://militarnyi.com/en/news/buntar-aerospace-investment-buntar-3-system/",
+        "https://www.therecursive.com/buntar-aerospace-raises-10-4m-ai-drone-intelligence/",
+        "https://en.ain.ua/2025/06/02/ukrainian-startup-buntar-aerospace-launches-the-buntar-3/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Avengers",
+      "url": "https://www.mil.gov.ua/",
+      "type": "platform",
+      "descr_short": "ШІ-платформа розпізнавання цілей у відеопотоках",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Платформа на основі штучного інтелекту, створена Інноваційним центром Міноборони України, яка автоматично виявляє та розпізнає об'єкти в тисячах одночасних відеопотоків з дронів і стаціонарних камер, навіть замаскованих. Інтегрована в систему Delta та відеомодуль Vezha; виявляє до 12 000 одиниць техніки противника щотижня.",
+      "target_users": "Сили оборони України, аналітики розвідки, операторні центри",
+      "access": "За запитом",
+      "maturity": "В активному використанні на фронті; пройшла незалежну оцінку кібербезпеки у складі Delta",
+      "status": "Працює",
+      "why_included": "Комп'ютерний зір і ШІ-розпізнавання цілей — ядро платформи; державна українська розробка з широким висвітленням.",
+      "sources": [
+        "https://united24media.com/latest-news/ukrainian-forces-use-ai-to-identify-12000-russian-targets-weekly-2549",
+        "https://militarnyi.com/en/news/ai-helps-ukrainian-defense-forces-track-thousands-of-enemy-targets/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Delta",
+      "url": "https://delta.mil.gov.ua/",
+      "type": "platform",
+      "descr_short": "Хмарна система ситуаційної обізнаності та управління боєм",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Українська хмарна система управління (C2) та ситуаційної обізнаності, що агрегує дані з дронів, супутників, радарів, сенсорів і розвідпідрозділів у єдину оперативну картину. Інтегрує ШІ-компоненти (Avengers, відеомодуль Vezha) для автоматичного виявлення цілей; сумісна зі стандартами NATO (Link 16).",
+      "target_users": "Сили оборони України, командування всіх рівнів, союзники по NATO",
+      "access": "За запитом",
+      "maturity": "Розгорнута в усіх підрозділах сектору безпеки й оборони; пройшла випробування на сумісність з NATO",
+      "status": "Працює",
+      "why_included": "Платформа використовує ШІ для злиття даних і розпізнавання цілей; ключова українська C2-система.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Delta_(situational_awareness_system)",
+        "https://militarnyi.com/en/news/ukraine-deploys-delta-situational-awareness-system-across-all-defense-units/",
+        "https://www.act.nato.int/article/delta-system-cwix/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "SMART-ЦНАП Lviv AI chatbot",
+      "url": "https://cnap.city-adm.lviv.ua/",
+      "type": "tool",
+      "descr_short": "ШІ-чат-бот ЦНАП Львова для адміністративних послуг",
+      "sector": "Державний сектор",
+      "origin": "Українська",
+      "description": "Чат-бот зі штучним інтелектом на сайті ЦНАП Львова в межах проєкту SMART-ЦНАП. Відповідає на поширені запитання про адміністративні послуги, допомагає підготувати документи та зорієнтуватися в процедурах. Один із перших ЦНАПів України, що інтегрував ШІ в онлайн-консультації громадян.",
+      "target_users": "Мешканці Львова та користувачі адміністративних послуг ЦНАП",
+      "access": "Безкоштовний веб-чат на сайті ЦНАП Львова",
+      "maturity": "Працює в тестовому режимі, система постійно навчається",
+      "status": "Пілот",
+      "why_included": "Локальний муніципальний govtech-продукт із ШІ як ядром, окремий від національного Дія.AI; розроблений Управлінням адміністрування послуг Львівської міської ради.",
+      "sources": [
+        "https://dailylviv.com/news/sytuatsiyi-i-pryhody/upershe-v-ukrayini-tsnap-lvova-zapustyv-chat-bot-zi-shtuchnym-intelektom-144602",
+        "https://cnap.city-adm.lviv.ua/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "DOZORRO AI risk indicators",
+      "url": "https://dozorro.org/tools/risk-dozorro",
+      "type": "platform",
+      "descr_short": "ШІ-система ризик-індикаторів публічних закупівель",
+      "sector": "Державний сектор",
+      "origin": "Українська",
+      "description": "Система штучного інтелекту DOZORRO самостійно визначає ймовірність корупційних ризиків у публічних закупівлях Prozorro та передає підозрілі тендери на опрацювання спільноті громадських організацій. Навчання моделі почалося 2018 року; нині система реагує на близько 35 ризик-індикаторів. Розроблена Transparency International Ukraine.",
+      "target_users": "Громадські моніторингові організації, замовники, журналісти, аналітики закупівель",
+      "access": "Безкоштовний публічний веб-портал",
+      "maturity": "Працює, постійно розширюється перелік ризик-індикаторів",
+      "status": "Працює",
+      "why_included": "Український антикорупційний govtech-інструмент, де ШІ є ядром аналітики ризиків у державних закупівлях; не дублює відомі тулзи.",
+      "sources": [
+        "https://dozorro.org/tools/risk-dozorro",
+        "https://dozorro.org/blog/yak-shtuchnij-intelekt-dozorro-monitorit-zakupivli"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "VeteranPro.AI",
+      "url": "https://veteranpro.gov.ua/",
+      "type": "tool",
+      "descr_short": "ШІ-асистент платформи Ветеран PRO для ветеранів",
+      "sector": "Державний сектор",
+      "origin": "Українська",
+      "description": "AI-асистент VeteranPro.AI на єдиній державній платформі Ветеран PRO дає швидкий доступ до інформації про пільги, послуги та необхідні кроки для ветеранів і їхніх родин. Користувач ставить запитання в режимі AI, і асистент дає відповідь із поясненнями та посиланнями на джерела й нормативні акти. Створений Міністерством у справах ветеранів спільно з Мінцифри.",
+      "target_users": "Ветерани, ветеранки та їхні родини",
+      "access": "Безкоштовно через портал veteranpro.gov.ua та застосунок Дія",
+      "maturity": "Працює, платформа постійно розвивається",
+      "status": "Працює",
+      "why_included": "Окремий державний AI-асистент для ветеранської сфери з ШІ як ядром пошуку та консультування; не входить до відомих записів.",
+      "sources": [
+        "https://veteranpro.gov.ua/",
+        "https://mva.gov.ua/prescenter/category/86-novini/veteran-pro-novi-tsifrovi-servisi-dlya-veteraniv-y-veteranok"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "SmartCheck AI",
+      "url": "https://www.smarttender-ai.biz/",
+      "type": "tool",
+      "descr_short": "ШІ-аналіз тендерної документації Prozorro для учасників",
+      "sector": "Бізнес та продажі",
+      "origin": "Українська",
+      "description": "SmartCheck AI від української компанії SmartTender автоматично аналізує тендерну документацію в Prozorro, виявляє вимоги й приховані умови та формує чек-листи для підготовки заявки. Знижує ризик дискваліфікації через помилки в документах і скорочує час підготовки участі в закупівлях.",
+      "target_users": "Постачальники, тендерні фахівці, малий і середній бізнес — учасники держзакупівель",
+      "access": "Платна підписка / pay-per-analysis (від 89 грн за аналіз)",
+      "maturity": "Працює комерційно",
+      "status": "Працює",
+      "why_included": "Український ШІ-інструмент для публічних закупівель Prozorro; класифіковано як Бізнес та продажі, бо орієнтований на постачальників, а не на держустанову.",
+      "sources": [
+        "https://mind.ua/news/20286948-yak-shtuchnij-intelekt-zrobiv-uchast-u-tenderah-prozorro-shvidshoyu-ta-efektivnishoyu",
+        "https://www.smarttender-ai.biz/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Codicta",
+      "url": "https://codicta.com/",
+      "type": "platform",
+      "descr_short": "Українська інформаційно-правова система з AI-асистентом",
+      "sector": "Право",
+      "origin": "Українська",
+      "description": "Codicta — українська інформаційно-правова система (ТОВ «КОДІКТА», Дніпро), що поєднує 20+ модулів і реєстрів в одному інтерфейсі з AI-асистентом. AI працює виключно на власній базі з 133+ млн документів (чинне законодавство, ЄДРСР, правові позиції Верховного Суду, рішення ЄСПЛ) і дає відповіді з прямими посиланнями на першоджерела, враховуючи чинну на потрібну дату редакцію норми.",
+      "target_users": "Юристи, адвокати, юридичні департаменти",
+      "access": "Платна підписка (єдиний тариф на всі модулі та AI), 7-денний безкоштовний доступ, корпоративні рішення з API",
+      "maturity": "Працює, активно розвивається",
+      "status": "Працює",
+      "why_included": "Українська legaltech-платформа, де генеративний AI з пошуком по власній правовій базі (законодавство, судова практика) є ключовою функцією.",
+      "sources": [
+        "https://codicta.com/",
+        "https://juristcrm.com/blog/new-ai-assistant-feature-in-juristcrm-a-revolution-for-legal-business"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Lexcovery",
+      "url": "https://lexcovery.com/",
+      "type": "platform",
+      "descr_short": "AI-аналітика законодавства та судової практики",
+      "sector": "Право",
+      "origin": "Українська",
+      "description": "Lexcovery — українська legaltech-платформа сучасної юридичної аналітики на базі GPT-4, що моніторить і аналізує законодавство, законопроєкти та судову практику України, ЄС (включно з рішеннями ЄСПЛ) і США. Має AI-асистента для юридичних запитів та тематичні напрями: AML/комплаєнс, інтелектуальна власність, захист даних, військове право.",
+      "target_users": "Юристи, комплаєнс-фахівці, журналісти",
+      "access": "Freemium: безкоштовна реєстрація та платні тарифи",
+      "maturity": "Прототип / ранній продукт",
+      "status": "Пілот",
+      "why_included": "Український продукт, де AI-аналіз судових рішень та законодавства для пошуку оптимальних правових аргументів є основною цінністю.",
+      "sources": [
+        "https://lexcovery.com/",
+        "https://legaltech.org.ua/projects/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "JuristCRM AI Assistant",
+      "url": "https://juristcrm.com/",
+      "type": "tool",
+      "descr_short": "AI-асистент для юристів у CRM-системі",
+      "sector": "Право",
+      "origin": "Українська",
+      "description": "JuristCRM — українська CRM для юридичних компаній, адвокатських бюро та приватних юристів (Черкаси), що має вбудований AI-асистент. Асистент автоматично генерує шаблони договорів, позовів і заяв, аналізує звернення клієнтів і пропонує кроки, складає відповіді на листи, перекладає та спрощує юридичні тексти.",
+      "target_users": "Юристи, адвокати, юридичні фірми, приватні практики",
+      "access": "Безкоштовний пробний період, далі платна підписка",
+      "maturity": "Працює (версія 1.8.x)",
+      "status": "Працює",
+      "why_included": "Українська legaltech-система з AI-функціями для генерації та аналізу юридичних документів; AI винесено як ключову нову можливість.",
+      "sources": [
+        "https://juristcrm.com/blog/new-ai-assistant-feature-in-juristcrm-a-revolution-for-legal-business",
+        "https://juristcrm.com/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Aspichi",
+      "url": "https://aspichi.com/",
+      "type": "company",
+      "descr_short": "VR-терапія психічного здоров'я з AI",
+      "sector": "Медицина та здоров'я",
+      "origin": "Українська",
+      "description": "Aspichi — health-tech стартап (засновники Віктор Самойленко та Максим Гончарук) з R&D у Києві, що розробляє платформу VR-терапії Luminify. Система переводить доказові підходи (КПТ, майндфулнес, травматерапію) у керовані mixed-reality сесії як інструмент-розширювач для клініцистів. У воєнному дослідженні проведено 8 884 сесії на 47 майданчиках.",
+      "target_users": "Психологи, психотерапевти, реабілітаційні та медзаклади, ветерани й цивільні з травмою",
+      "access": "B2B для клінік/закладів; вихід на ринок США (Rocky Mountain Care)",
+      "maturity": "Пілотні впровадження та масштабне дослідження; інвестиції від SMRK",
+      "status": "Працює",
+      "why_included": "Українські засновники та R&D; AI/комп'ютерний зір у складі VR-терапевтичної платформи; реальні джерела й дослідження.",
+      "sources": [
+        "https://en.ain.ua/2024/07/16/ukrainian-aspichi-launches-in-usa/",
+        "https://tech.eu/2026/02/11/ukraines-wartime-vr-therapy-is-scaling-beyond-trauma-care/",
+        "https://startups.org.ua/portfolio/aspichi-2/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Anima",
+      "url": "https://ua.anima.help/",
+      "type": "platform",
+      "descr_short": "AI-платформа ментального добробуту з айтрекінгом",
+      "sector": "Медицина та здоров'я",
+      "origin": "Українська",
+      "description": "Anima — український нейротехнологічний стартап, що поєднує нейронауковий тест ментального здоров'я на основі руху очей із AI-асистентом. Людині показують емоційно забарвлені стимули, а система комп'ютерного зору та машинного навчання аналізує рухи очей, виявляючи ознаки тривоги, депресії, вигорання та стресу, і допомагає інтерпретувати результати та обирати стратегії подолання стресу.",
+      "target_users": "Користувачі, що дбають про ментальне здоров'я, психологи, роботодавці",
+      "access": "Онлайн-платформа/застосунок",
+      "maturity": "Запущено AI-асистента; раннє зростання",
+      "status": "Працює",
+      "why_included": "Український стартап; AI (комп'ютерний зір + ML по айтрекінгу) є ядром діагностики ментального стану; кілька джерел.",
+      "sources": [
+        "https://ua.anima.help/",
+        "https://www.village.com.ua/village/city/promo/350245-anima-ai"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Healthy Mind",
+      "url": "https://healthymind.com.ua/",
+      "type": "platform",
+      "descr_short": "AI-платформа діагностики та підтримки психічного здоров'я",
+      "sector": "Медицина та здоров'я",
+      "origin": "Українська",
+      "description": "Healthy Mind — київський стартап (засновники з Roosh Investment Group та EDENLAB), що за 15-18 хвилин проводить комплексну оцінку психічного стану за понад 75 показниками й діагностує до 80% кластерів психічних розладів за DSM-5 без клінічної оцінки. Платформа має автоматизовані інтервенції, сесії терапії та дашборди прогресу. Залучено $1 млн інвестицій, запущено бета-версію.",
+      "target_users": "Українці, що потребують підтримки ментального здоров'я; психологи й психотерапевти",
+      "access": "Платформа (бета), B2C/B2B",
+      "maturity": "Бета-версія, $1 млн інвестицій",
+      "status": "Пілот",
+      "why_included": "Український стартап; AI-діагностика та персоналізована терапія психічного здоров'я є ядром; кілька незалежних джерел.",
+      "sources": [
+        "https://www.vestbee.com/blog/articles/healthy-mind-raises-1-m",
+        "https://en.ain.ua/2024/12/07/healthy-mind-raises-1-million/",
+        "https://mezha.media/en/2024/12/06/startup-healthy-mind-raises-1-million-to-launch-ai-platform-for-improving-mental-health/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "AR Book AI Assistant",
+      "url": "https://arbook.info/",
+      "type": "platform",
+      "descr_short": "Інтерактивна освітня платформа з AI-асистентом для вчителів",
+      "sector": "Освіта",
+      "origin": "Українська",
+      "description": "AR Book — українська освітня платформа (розробник FlexReality), що поєднує AR/VR/3D-контент із AI-асистентом для вчителів. ШІ генерує тести, зображення, формули та сценарії уроків відповідно до програми НУШ і МОН, економлячи вчителю до 30% часу.",
+      "target_users": "Вчителі та школи 1–12 класів",
+      "access": "Платна річна ліцензія (за кількістю вчителів/панелей), є демо",
+      "maturity": "Працює, понад 45 000 готових матеріалів, використовується у школах України, Польщі та США",
+      "status": "Працює",
+      "why_included": "Українська EdTech-компанія, де AI-асистент є ключовою функцією для автоматизації підготовки уроків і генерації навчального контенту.",
+      "sources": [
+        "https://18000.com.ua/strichka-novin/ai-asistent-ar-book-yak-shi-dlya-vchitelya-zminyuye-shhodennu-pidgotovku-do-urokiv",
+        "https://flexreality.pro/ua/ar_book-yak-odna-z-ukrayinskih-tehnologij-yaka-vplivaye-na-metodi-navchannya/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Vexta",
+      "url": "https://vexta.pp.ua/",
+      "type": "tool",
+      "descr_short": "AI-генератор тестів і завдань для вчителів",
+      "sector": "Освіта",
+      "origin": "Українська",
+      "description": "Vexta — український онлайн-сервіс, що за допомогою ШІ створює тести, вікторини, контрольні та домашні завдання для 1–11 класів за лічені секунди. Враховує тему уроку, навчальні матеріали й програму МОН, експортує у PDF, Word, Google Forms, Kahoot та Moodle.",
+      "target_users": "Вчителі шкіл, які готують перевірочні роботи та завдання",
+      "access": "Freemium (реєстрація, є тарифи)",
+      "maturity": "Працює, доступний для реєстрації та використання",
+      "status": "Працює",
+      "why_included": "Українська платформа з ШІ як ядром: автоматична генерація навчальних і оцінювальних матеріалів під українську шкільну програму.",
+      "sources": [
+        "https://vexta.pp.ua/",
+        "https://nus.org.ua/2026/01/30/u-mriyi-z-yavyvsya-funktsional-dlya-vchyteliv-na-bazi-shi-generator-testiv/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "OpenMinds",
+      "url": "https://www.openminds.ltd/",
+      "type": "company",
+      "descr_short": "AI-платформа когнітивної оборони та аналізу впливу",
+      "sector": "Медіа та інформаційна безпека",
+      "origin": "Українська",
+      "description": "OpenMinds — українська tech-компанія у сфері когнітивної оборони, заснована Святославом Гніздовським. Її власна AI-платформа аналізує онлайн-активність, настрої та наративи, щоб виявляти й вимірювати ворожі інформаційні впливи та пропаганду. Працює з урядом України, Великою Британією, NATO StratCom та понад 30 урядами й організаціями.",
+      "target_users": "Уряди, агенції стратегічних комунікацій, дослідники інформаційної безпеки",
+      "access": "B2G / B2B, корпоративний доступ за запитом",
+      "maturity": "Діюча компанія, з 2022 року понад 240 контрпропагандистських операцій",
+      "status": "Працює",
+      "why_included": "Українська компанія, де AI є ядром продукту для виявлення та аналізу дезінформації й інформаційних операцій; публічно ідентифікована, з численними згадками у провідних медіа.",
+      "sources": [
+        "https://www.openminds.ltd/",
+        "https://www.atlanticcouncil.org/in-depth-research-reports/report/report-russian-bot-networks-occupied-ukraine/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Singularex",
+      "url": "https://singularex.com/",
+      "type": "company",
+      "descr_short": "Харківська компанія соцмедіа-аналітики на основі ML/NLP",
+      "sector": "Медіа та інформаційна безпека",
+      "origin": "Українська",
+      "description": "Singularex — компанія з Харкова (заснована 2013), що спеціалізується на соціальній медіа-розвідці та аналітиці, розробляючи рішення на машинному навчанні та NLP. Серед клієнтів — державний, оборонний і безпековий сектори; фігурує у звіті NATO StratCom COE щодо протидії зловмисному використанню соцмереж.",
+      "target_users": "Державні органи, оборонні та безпекові структури, комерційні замовники",
+      "access": "B2B / B2G, послуги та аналітика за запитом",
+      "maturity": "Діюча компанія з командою науковців (PhD/DSc)",
+      "status": "Працює",
+      "why_included": "Українська компанія з ML/NLP-ядром для аналізу соцмереж та інформаційного простору; визнана у звіті NATO StratCom, публічно ідентифікована.",
+      "sources": [
+        "https://singularex.com/",
+        "https://www.cbinsights.com/company/singularex"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Texty.org.ua Propaganda Monitoring",
+      "url": "https://texty.org.ua/",
+      "type": "platform",
+      "descr_short": "AI-моніторинг російської пропаганди та маніпулятивних новин",
+      "sector": "Медіа та інформаційна безпека",
+      "origin": "Українська",
+      "description": "Дата-журналістська команда Texty.org.ua веде AI-моніторинг близько тисячі російських сайтів і Telegram-каналів, щотижня кластеризуючи тексти (NMF-моделі) для виявлення актуальних пропагандистських наративів. Результати публікуються як регулярні моніторинги дезінформаційних тем.",
+      "target_users": "Журналісти, фактчекери, дослідники дезінформації, медіа",
+      "access": "Публічні звіти / відкритий доступ",
+      "maturity": "Працює як редакційний AI-інструмент",
+      "status": "Працює",
+      "why_included": "Український інструмент, де машинне навчання (NLP, NMF-кластеризація) є ядром виявлення пропаганди й маніпулятивних наративів у медіапросторі.",
+      "sources": [
+        "https://medium.com/@texty.org.ua/how-texty-detects-and-makes-sense-of-manipulative-news-1f43d33936eb",
+        "https://gijn.org/stories/data-journalism-ukraine-texty/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "HAPP AI",
+      "url": "https://happ.tools",
+      "type": "company",
+      "descr_short": "AI-голосовий агент для обробки дзвінків бізнесу",
+      "sector": "Бізнес та продажі",
+      "origin": "Українська",
+      "description": "HAPP — український стартап, що розробляє автономного голосового AI-агента, який приймає вхідні дзвінки за секунду, бронює, консультує та інтегрується з CRM і PMS. За заявами компанії, асистент автоматизує до 87% рутинних звернень і працює цілодобово.",
+      "target_users": "Ресторани, готелі, салони краси, онлайн-школи, служби доставки",
+      "access": "Комерційний продукт (SaaS), за запитом",
+      "maturity": "Стабільна версія MVP, тестування у реальних умовах; залучення pre-seed раунду $350–500K",
+      "status": "Працює",
+      "why_included": "Профільний український AI-стартап, де голосовий AI-агент є ядром продукту; має підтверджені джерела та інвестиції.",
+      "sources": [
+        "https://dev.ua/en/news/happ-ai-1747720375",
+        "https://vctr.media/en/reshaping-communication-in-the-service-industry-how-the-ukrainian-startup-happ-works-277229/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Cabina.AI",
+      "url": "https://cabina.ai",
+      "type": "platform",
+      "descr_short": "Український all-in-one AI-робочий простір",
+      "sector": "Інфраструктура та платформи",
+      "origin": "Українська",
+      "description": "Cabina.AI — універсальний AI-воркспейс української команди, що дає доступ до 55+ мовних моделей і 35+ AI-інструментів через єдиний інтерфейс із порівнянням відповідей і кастомними ролями. Орієнтований на бізнес-користувачів, маркетологів та аналітиків.",
+      "target_users": "Контент-креатори, маркетологи, бізнес-консультанти, аналітики",
+      "access": "Комерційний SaaS, є тарифи",
+      "maturity": "Працює, активний розвиток, плани розширення на 2026",
+      "status": "Працює",
+      "why_included": "Підтверджено українську команду; агрегований AI-воркспейс є ядром продукту.",
+      "sources": [
+        "https://cabina.ai",
+        "https://www.quoleady.com/top-ukrainian-ai-saas/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Keycall",
+      "url": "https://k-call.com/ua",
+      "type": "company",
+      "descr_short": "Київська платформа ШІ-голосових ботів для автоматизації дзвінків",
+      "sector": "Голос і мовлення",
+      "origin": "Українська",
+      "description": "Keycall — український сервіс голосового маркетингу, що пропонує ШІ-голосових ботів, які розуміють людську мову й автоматизують вихідні дзвінки: холодні обдзвони, нагадування, опитування NPS/CSAT, кваліфікацію лідів. Доступний як SaaS-платформа, через API та як керований сервіс.",
+      "target_users": "Бізнеси, кол-центри, відділи продажів і маркетингу",
+      "access": "SaaS, API, керований сервіс",
+      "maturity": "1500+ проєктів, 17 млн+ дзвінків, працює щонайменше з 2018",
+      "status": "Працює",
+      "why_included": "ШІ-голосовий бот із розпізнаванням і синтезом мовлення — суть продукту; компанія базується в Києві.",
+      "sources": [
+        "https://k-call.com/ua",
+        "https://dou.ua/forums/topic/40194/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Ukrainian TTS (robinhad)",
+      "url": "https://github.com/robinhad/ukrainian-tts",
+      "type": "tool",
+      "descr_short": "Відкритий рушій синтезу українського мовлення",
+      "sector": "Голос і мовлення",
+      "origin": "Українська",
+      "description": "Ukrainian TTS — відкритий рушій синтезу українського мовлення на базі ESPnet із кількома голосами, автоматичним наголошуванням, офлайн-роботою та інференсом через ONNX. Створений Юрієм Панівим (robinhad) із внеском спільноти.",
+      "target_users": "Розробники, дослідники, контент-креатори, що потребують української озвучки",
+      "access": "Відкритий код (MIT), pip-пакет, демо на Hugging Face, Telegram-бот",
+      "maturity": "Активний open-source проєкт, кілька релізів, публічне демо",
+      "status": "Працює",
+      "why_included": "Синтез українського мовлення — суть проєкту; створений українськими розробниками для української мови.",
+      "sources": [
+        "https://github.com/robinhad/ukrainian-tts",
+        "https://huggingface.co/spaces/robinhad/ukrainian-tts"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "ooltima",
+      "url": "https://ooltima.ai/",
+      "type": "platform",
+      "descr_short": "Платформа генерації контенту для соцмереж з цифровою персоною",
+      "sector": "Генеративний контент",
+      "origin": "Українська",
+      "description": "ooltima — українська платформа (засновниця Юлія Троцюк) для автоматичної генерації контенту для соцмереж. Створює цифрову персону користувача, генерує ідеї, тексти, зображення та короткі відео, планує публікації, а також формує talking-avatar відео, перетворюючи текст на аудіо власним голосом користувача.",
+      "target_users": "Контент-креатори, блогери, SMM-спеціалісти, малий бізнес",
+      "access": "SaaS, веб-платформа; є безкоштовний тестовий період",
+      "maturity": "Запущена платформа (раніше — Telegram-бот)",
+      "status": "Працює",
+      "why_included": "Українська платформа, де генерація медіа (тексти, зображення, відео, talking-аватари) є ядром продукту.",
+      "sources": [
+        "https://dev.ua/en/news/v-ukraini-zapustyly-platformu-dlia-avtomatychnoi-heneratsii-kontentu-dlia-sotsmerezh-tam-vy-navit-mozhete-stvoryty-svii-talking-avatar-1780635238",
+        "https://ooltima.ai/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "LLM API",
+      "url": "https://llmapi.ai/",
+      "type": "platform",
+      "descr_short": "Українська платформа єдиного доступу до сотень LLM",
+      "sector": "Інфраструктура та платформи",
+      "origin": "Українська",
+      "description": "Український стартап запустив платформу LLM API — єдину точку доступу до понад 400 моделей ШІ від різних провайдерів (GPT, Claude, Gemini, open-source) через один API. Має модуль EvalLab для бенчмаркінгу моделей на власних сценаріях за швидкістю, вартістю та якістю, а також централізоване керування ключами, доступами й витратами.",
+      "target_users": "Стартапи, середні та великі компанії з високим навантаженням на ШІ",
+      "access": "Платний доступ за API, без націнки на тарифи провайдерів; реєстрація відкрита",
+      "maturity": "Запущена 1 червня 2026 року, реєстрація відкрита для всіх",
+      "status": "Працює",
+      "why_included": "Українська інфраструктурна платформа-оркестратор LLM, де ШІ є ядром продукту, з публічними джерелами.",
+      "sources": [
+        "https://llmapi.ai/",
+        "https://dev.ua/news/llm-api-1780303952",
+        "https://vctr.media/ua/ukrayinskyj-llm-api-daye-biznesu-yedynyj-dostup-do-gpt-claude-gemini-ta-inshyh-modelej-332774/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Lapa LLM",
+      "url": "https://huggingface.co/spaces/lapa-llm/lapa",
+      "type": "tool",
+      "descr_short": "Відкрита українська велика мовна модель",
+      "sector": "Інфраструктура та платформи",
+      "origin": "Українська",
+      "description": "Lapa LLM — відкрита велика мовна модель, оптимізована для української мови, з повністю переписаним токенайзером (обробка у 1,5 раза ефективніша за базову Gemma-3-12B). Розроблена дослідниками УКУ, КПІ, Львівської політехніки та AGH (Краків) під керівництвом Юрія Паніва; ваги вільно доступні на HuggingFace.",
+      "target_users": "Розробники, компанії та дослідники, що будують україномовні чатботи, RAG-системи й переклад",
+      "access": "Відкриті ваги на HuggingFace, безкоштовно; демо у HuggingFace Spaces",
+      "maturity": "Версія 0.1.2 (жовтень 2025), у планах версія 1.0",
+      "status": "У розробці",
+      "why_included": "Українська національна відкрита LLM як базова інфраструктура для побудови ШІ-сервісів; AI — ядро.",
+      "sources": [
+        "https://dou.ua/lenta/news/lapa-llm-release/",
+        "https://huggingface.co/spaces/lapa-llm/lapa"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "MamayLM",
+      "url": "https://huggingface.co/blog/INSAIT-Institute/mamaylm",
+      "type": "tool",
+      "descr_short": "Відкрита мультимодальна українська LLM",
+      "sector": "Інфраструктура та платформи",
+      "origin": "Іноземна, орієнтована на Україну",
+      "description": "MamayLM v1.0 — перша відкрита й ефективна мультимодальна українська LLM (обробляє текст і зображення), розроблена INSAIT (Софійський університет, Болгарія) спільно з ETH Zurich. Випуск скоординовано з Мінцифри України в межах національної LLM-ініціативи; моделі на 4B і 12B параметрів працюють на одному GPU.",
+      "target_users": "Розробники й компанії, що потребують ефективної україномовної моделі",
+      "access": "Відкриті ваги на HuggingFace, безкоштовно (Gemma Terms of Use)",
+      "maturity": "Версія 1.0, доступна на HuggingFace",
+      "status": "Працює",
+      "why_included": "Ключова відкрита україномовна модель-інфраструктура, скоординована з Мінцифри; орієнтована на Україну.",
+      "sources": [
+        "https://huggingface.co/blog/INSAIT-Institute/mamaylm",
+        "https://insait.ai/insait-releases-the-first-open-and-efficient-multimodal-ukrainian-llm/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Kyivstar Cloud AI",
+      "url": "https://kyivstar.ua/business/products/ks-cloud",
+      "type": "platform",
+      "descr_short": "Українська хмара для розгортання ШІ та LLM",
+      "sector": "Інфраструктура та платформи",
+      "origin": "Українська",
+      "description": "Kyivstar Cloud інтегрував ШІ-можливості у власну українську хмару: розгортання та запуск LLM у закритому середовищі без доступу до інтернету, аналітика великих даних на ML, готові інструменти (чатботи, генератори контенту, рекомендаційні системи) та підтримка RAG. GPU підключаються за потреби; обладнання розміщене в українському дата-центрі.",
+      "target_users": "Український бізнес та державні установи",
+      "access": "Платний хмарний сервіс, консультації хмарних архітекторів",
+      "maturity": "ШІ-інструменти доступні клієнтам Kyivstar Cloud (анонс вересень 2025)",
+      "status": "Працює",
+      "why_included": "Українська суверенна хмарна інфраструктура для хостингу й розгортання LLM/ML — базовий сервіс для розробників.",
+      "sources": [
+        "https://hub.kyivstar.ua/articles/yak-rozgornuti-llm-model-u-kyivstar-cloud-dosvid-shho-nadihaye",
+        "https://markets.financialcontent.com/clarkebroadcasting.mymotherlode/article/gnwcq-2025-9-29-kyivstar-launches-locally-hosted-ai-platform-in-its-cloud"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "ZIR Pro (Compass Engineering)",
+      "url": "https://c-e.world/",
+      "type": "company",
+      "descr_short": "Українська система машинного зору",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Compass Engineering серійно виробляє системи машинного зору під назвою «ЗІР» на замовлення Сил оборони. Автономний комплекс «ЗІР Pro» поєднує камери та ШІ для виявлення й супроводу об'єктів (зокрема дронів), моніторингу прикордонних ділянок і прогнозування загроз; тестується Держприкордонслужбою.",
+      "target_users": "Сили оборони, Держприкордонслужба, безпекові структури",
+      "access": "Постачання за держзамовленням",
+      "maturity": "Серійне виробництво; ЗІР Pro у тестуванні Держприкордонслужбою",
+      "status": "Пілот",
+      "why_included": "Українська технологія машинного/комп'ютерного зору, де ШІ є ядром; машинний зір як технологія.",
+      "sources": [
+        "https://c-e.world/",
+        "https://www.epravda.com.ua/cdn/cd1/2024/mashynnyi_zir/",
+        "https://mil.in.ua/uk/news/prykordonnyky-testuyut-tehnologiyi-z-mashynnym-zorom/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "PetRadar",
+      "url": "https://petradar.com.ua",
+      "type": "platform",
+      "descr_short": "ШІ-сервіс пошуку загублених тварин за фото",
+      "sector": "Інше",
+      "origin": "Українська",
+      "description": "Безкоштовний український сервіс, створений розробником Денисом Ліщуком, що знаходить загублених котів і собак за фотографією. Нейромережа (YOLOv8 для пошуку морди, DINOv2 для ембеддингів, pgvector у Postgres) формує унікальний візуальний відбиток тварини й автоматично зіставляє бази загублених і знайдених.",
+      "target_users": "Власники домашніх тварин, волонтери та притулки",
+      "access": "Безкоштовний вебсервіс, підтримка 23 мов",
+      "maturity": "Запущено у 2025 році, працює",
+      "status": "Працює",
+      "why_included": "Український споживчий ШІ-продукт із комп'ютерним зором як ядром, реальні джерела й публічний запуск.",
+      "sources": [
+        "https://suspilne.media/1299317-v-ukraini-zapustili-servis-dla-posuku-zagublenih-tvarin-petradar-ak-vin-pracue/",
+        "https://dev.ua/news/pet-radar-1777266239"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "FoodsPlans",
+      "url": "https://foodsplans.com",
+      "type": "tool",
+      "descr_short": "ШІ-застосунок планування харчування та списків покупок",
+      "sector": "Інше",
+      "origin": "Українська",
+      "description": "Застосунок українського розробника Антона Шептицького для планування меню на тиждень, збереження улюблених страв і автоматичної генерації списків покупок за допомогою ШІ. Автоматично рахує калорії, білки, жири й вуглеводи та має публічний каталог рецептів.",
+      "target_users": "Люди, що планують харчування, сім'ї та пари",
+      "access": "iOS, безкоштовна базова версія, преміум $4.99/міс",
+      "maturity": "Запущено 2025, у топ-2 українського App Store",
+      "status": "Працює",
+      "why_included": "Український споживчий застосунок з ШІ-генерацією списків і нутриціологічних розрахунків як ключовою функцією.",
+      "sources": [
+        "https://dev.ua/en/news/foodplans-1776746690",
+        "https://dev.ua/news/foodplans-1776746690"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "FlyAgData",
+      "url": "https://flyagdata.com",
+      "type": "company",
+      "descr_short": "ШІ-аналітика агроданих із сільгосптехніки",
+      "sector": "Інше",
+      "origin": "Українська",
+      "description": "Український агротех-стартап, що збирає агрономічні та машинні дані з польової техніки (сівалки, обприскувачі, комбайни) і перетворює їх на аналітичні інсайти за допомогою хмарних алгоритмів. Збирає понад 100 метрик у реальному часі та інтегрується з системами управління фермою.",
+      "target_users": "Агровиробники та фермери будь-якого масштабу",
+      "access": "Апаратні пристрої + хмарна платформа, комерційна підписка",
+      "maturity": "ARR ~$150k, 10 клієнтів із топ-50 агрокомпаній України, акселератор UK-Ukraine TechBridge",
+      "status": "Працює",
+      "why_included": "Український агритех з ML/алгоритмічною обробкою даних як ядром продукту; реальні клієнти й інвестори.",
+      "sources": [
+        "https://igrownews.com/flyagdata-among-ukrainian-startups-to-access-british-capital-through-investment-accelerator/",
+        "https://pitchbook.com/profiles/company/548701-48"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Oh My Perfect Form",
+      "url": "https://www.ohmyperfectform.com",
+      "type": "tool",
+      "descr_short": "ШІ-застосунок аналізу техніки тренувань за відео",
+      "sector": "Інше",
+      "origin": "Українська",
+      "description": "Мобільний застосунок українського deep-tech стартапу Bezryma Group, що аналізує техніку виконання вправ за відео в реальному часі, виявляє помилки, дає персоналізований фідбек і формує індивідуальні плани тренувань. Спеціалізація компанії — біомеханічний аналіз рухів у реальному часі.",
+      "target_users": "Люди, що тренуються самостійно та прагнуть уникнути травм",
+      "access": "Мобільний застосунок (MVP, тестування на ринку)",
+      "maturity": "MVP, валідація на українському ринку; $100k Azure-кредитів від Українського фонду стартапів",
+      "status": "Пілот",
+      "why_included": "Український споживчий фітнес-продукт з ШІ-аналізом біомеханіки руху як ядром.",
+      "sources": [
+        "https://dev.ua/en/news/oh-my-perfect-form-1740997342",
+        "https://www.bezrymagroup.com/products"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "MealMate AI",
+      "url": "https://mealmate.one/",
+      "type": "tool",
+      "descr_short": "ШІ-застосунок підрахунку калорій за фото їжі",
+      "sector": "Інше",
+      "origin": "Українська",
+      "description": "Застосунок для iPhone, створений Flutter-розробником Денисом Дубовим і командою, що миттєво розпізнає продукти за фото та розраховує їхню калорійність за допомогою штучного інтелекту. Допомагає контролювати схуднення й досягати цілей у харчуванні.",
+      "target_users": "Люди, що стежать за калоріями та вагою",
+      "access": "iOS (App Store)",
+      "maturity": "Запущено 2025, працює",
+      "status": "Працює",
+      "why_included": "Український споживчий застосунок з ШІ-розпізнаванням їжі та підрахунком калорій як ядром.",
+      "sources": [
+        "https://mealmate.one/",
+        "https://dev.ua/news/cal-1741762764",
+        "https://mc.today/uk/prostij-sposib-pidrahunku-kalorij-yak-pratsyuye-ukrayinskij-shi-zastosunok-mealmate-ai/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "VARTA Dozor AI",
+      "url": "https://varta-tech.com/",
+      "type": "company",
+      "descr_short": "Автономний дрон-перехоплювач БПЛА зі штучним інтелектом",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Dozor AI — автономний дрон-перехоплювач української компанії VARTA з вбудованим ШІ та машинним зором, який самостійно виявляє, ідентифікує та переслідує ворожі FPV і розвідувальні дрони навіть в умовах РЕБ. У перспективі один пілот керуватиме 5–7 перехоплювачами з інтеграцією в систему ситуаційної обізнаності DELTA.",
+      "target_users": "Сили оборони України, підрозділи ППО",
+      "access": "Військова закупівля, фінальні випробування",
+      "maturity": "Проходить фінальні випробування, готується до бойового застосування",
+      "status": "Пілот",
+      "why_included": "Українська оборонна компанія; автономне виявлення та перехоплення на базі ШІ є ядром системи.",
+      "sources": [
+        "https://dev.ua/news/ukrainska-varta-testuie-avtonomni-drony-perekhopliuvachi-z-systemoiu-shtuchnoho-intelektu-1757319030",
+        "https://mezha.media/oboronka/varta-rozroblyaye-avtonomni-droni-perehoplyuvachi-z-shi-304646"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Ailand Systems",
+      "url": "https://ailandsystems.com/",
+      "type": "company",
+      "descr_short": "Автономні дрони для виявлення мін із ШІ-розпізнаванням",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Ailand Systems — київська компанія (засн. 2023), що розробляє автономні дрони для виявлення мін і вибухонебезпечних предметів. Дрон Spinner EOD оснащений камерою, металодетектором і ШІ-моделлю, навченою на понад 400 000 зображень мін. Spinner EOD став першим українським дроном-розмінувачем, кодифікованим за стандартами НАТО.",
+      "target_users": "Сапери, підрозділи розмінування, гуманітарні організації",
+      "access": "Закупівля дронів та аксесуарів",
+      "maturity": "Працює; кодифікація НАТО (NSN), залучено $200k на масштабування",
+      "status": "Працює",
+      "why_included": "Українська команда; ШІ-розпізнавання мін на зображеннях є ядром продукту.",
+      "sources": [
+        "https://ailandsystems.com/en/",
+        "https://www.undp.org/ukraine/press-releases/ai-demining-ukrainian-innovators-train-algorithms-detect-explosives-drone-images"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Tayra.ai",
+      "url": "https://tayra.ai",
+      "type": "tool",
+      "descr_short": "Голосовий ШІ-асистент для лікарів",
+      "sector": "Медицина та здоров'я",
+      "origin": "Українська",
+      "description": "Український стартап із Вінниці, що розробляє голосового ШІ-асистента для лікарів: система слухає розмову лікаря з пацієнтом, узагальнює медичну інформацію та автоматично заповнює медичні документи. Команда заявляє про зниження емоційного вигорання лікарів та зростання продуктивності.",
+      "target_users": "Лікарі, медичні установи, клініки",
+      "access": "Підписка (SaaS), безкоштовний тестовий період",
+      "maturity": "Протестовано 150 лікарями протягом 6 місяців; грант USF $25 000; готується інвестиційний раунд",
+      "status": "Працює",
+      "why_included": "Український стартап, у якому генеративний ШІ є ядром продукту (розпізнавання мовлення та автоматичне заповнення медичної документації); висвітлений у медіа.",
+      "sources": [
+        "https://en.ain.ua/2025/01/17/ukrainian-startups-in-2024/",
+        "https://vctr.media/en/using-ai-assistants-to-enhance-nursing-practices-the-origin-story-of-the-ukrainian-startup-tayra-ai-253397/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Tencore",
+      "url": "https://tencore.tech",
+      "type": "company",
+      "descr_short": "Виробник наземних роботів з ШІ-керуванням",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Київський оборонний стартап-виробник наземних роботизованих комплексів (UGV). Флагман TerMIT — модульна багатоцільова NATO-стандартизована платформа з елементами автономності, що пройшла бойове застосування на фронті (логістика, евакуація, мінування, вогнева підтримка).",
+      "target_users": "Збройні Сили України, оборонні структури",
+      "access": "B2G / оборонні контракти",
+      "maturity": "Seed $3.74 млн від MITS Capital; понад 800 одиниць вироблено, ціль 2000",
+      "status": "Працює",
+      "why_included": "Український оборонний стартап із автономними/ШІ-функціями керування наземними роботами як ядром продукту; підтверджено інвестицією та численними медіа.",
+      "sources": [
+        "https://dev.ua/en/news/top-10-ukrainskykh-miltech-startapiv-shcho-zaluchyly-naibilshe-investytsii-u-2025-rotsi-1767084704",
+        "https://www.prnewswire.com/news-releases/mits-capital-invests-3-74m-in-ukrainian-robotics-company-tencore-302503262.html"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "SeekLab",
+      "url": "https://seeklab.ai",
+      "type": "tool",
+      "descr_short": "ШІ-пошук товарів для онлайн-магазинів",
+      "sector": "Бізнес та продажі",
+      "origin": "Українська",
+      "description": "SeekLab — це інтелектуальний пошуковий модуль для e-commerce, що розуміє наміри покупця навіть за неточних запитів і підтримує текстовий, голосовий та візуальний пошук за зображенням. Сервіс інтегрується через API із Shopify, WooCommerce і Magento та персоналізує рекомендації, підвищуючи конверсію.",
+      "target_users": "Онлайн-магазини та маркетплейси у сферах fashion, beauty, ювелірних виробів і lifestyle",
+      "access": "SaaS, інтеграція через API; платні тарифи",
+      "maturity": "Рання стадія, запуск у липні 2025; пілоти з Intimo та Svitozar, готується pre-seed",
+      "status": "Пілот",
+      "why_included": "Український AI-стартап (засновники Вадим Ошкало та Євгеній Гончаренко), де семантичний/мультимодальний ШІ-пошук є ядром продукту.",
+      "sources": [
+        "https://vctr.media/ua/stvoriti-novij-standart-ai-poshuku-dlya-onlajn-magaziniv-yak-praczyuye-ukrayinskij-startap-seeklab-324892/",
+        "https://seeklab.ai/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "MyChatBot (CommerceOS)",
+      "url": "https://mychatbot.app",
+      "type": "platform",
+      "descr_short": "Омніканальна платформа ШІ-агентів для продажів",
+      "sector": "Бізнес та продажі",
+      "origin": "Українська",
+      "description": "MyChatBot розробляє CommerceOS — омніканальну no-code платформу, де ШІ-агенти автоматизують продажі та спілкування з клієнтами в різних каналах. Агенти уточнюють запит клієнта, добирають товари, допомагають з оплатою й доставкою та роблять up-sell; на платформі вже понад 1000 бізнесів.",
+      "target_users": "Рітейлери, e-commerce, малий і середній бізнес без власної IT-команди",
+      "access": "SaaS, платний доступ",
+      "maturity": "Seed, $500 тис. від SMRK у листопаді 2025; працює, 1000+ клієнтів",
+      "status": "Працює",
+      "why_included": "Український AI-стартап (засновники Денис Купраш, Ярослав Браташчук, Київ), де ШІ-агенти для продажів є ядром продукту; підтриманий фондом SMRK.",
+      "sources": [
+        "https://en.ain.ua/2025/11/19/venture-fund-smrk-has-invested-in-mychatbot/",
+        "https://dev.ua/en/news/vlasnyk-macpaw-investuie-500-000-u-ukrainskyi-shi-startap-mychatbot-dlia-onlain-prodazhiv-1763560161"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "SYLA",
+      "url": "https://syla.pro/",
+      "type": "company",
+      "descr_short": "ШІ-керований біонічний протез коліна",
+      "sector": "Медицина та здоров'я",
+      "origin": "Українська",
+      "description": "SYLA розробляє біонічний протез коліна SYLA X1 з сенсорами (IMU, тензодатчики) та алгоритмами машинного навчання, що адаптуються до ходи користувача в реальному часі. Команда має осередок у Києві й орієнтується насамперед на український ринок, зокрема на поранених військових.",
+      "target_users": "Люди з ампутацією нижніх кінцівок, поранені військові, реабілітаційні клініки",
+      "access": "Апаратний продукт, пілотні поставки; через компанію",
+      "maturity": "Пілотні випробування, представлено на CES 2025",
+      "status": "Пілот",
+      "why_included": "Українська за командою (Київ) deeptech-компанія, де ШІ (машинне навчання для адаптації протеза) є ядром продукту; покриває потребу поранених в Україні.",
+      "sources": [
+        "https://itarena.ua/ukraines-most-talked-about-startups-of-2025/",
+        "https://tech.eu/2024/11/12/from-lab-to-lifesyla-aims-to-transform-the-prosthetic-knee/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "JobAtlas",
+      "url": "https://jobatlas.tech/",
+      "type": "platform",
+      "descr_short": "AI-агент для профорієнтації молоді",
+      "sector": "Освіта",
+      "origin": "Українська",
+      "description": "JobAtlas — українська EdTech-платформа з AI-агентом Profitrol, який у форматі діалогу складає психологічний портрет користувача та допомагає молоді обрати майбутню професію. Має гейміфікацію з власною валютою.",
+      "target_users": "Школярі, студенти, молодь, що обирає професію",
+      "access": "Веб-платформа, freemium з гейміфікацією",
+      "maturity": "Рання стадія, грант USF $25k, працює",
+      "status": "Працює",
+      "why_included": "AI-агент є ядром продукту профорієнтації; заснований у Києві, грант Українського фонду стартапів.",
+      "sources": [
+        "https://dev.ua/en/news/jobatlas-1740686141",
+        "https://www.uatechjournal.com/ukrainian-startup-fund-awards-475-000-to-13-early-stage-startups/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Mindly",
+      "url": "https://mindlyspace.com/",
+      "type": "platform",
+      "descr_short": "Платформа онлайн-терапії з AI-функціями",
+      "sector": "Медицина та здоров'я",
+      "origin": "Українська",
+      "description": "Mindly — українська платформа онлайн-психотерапії, що поєднує клієнтів із ліцензованими терапевтами та розвиває AI-функції для автоматизації клінічного адміністрування й розширення доступу до допомоги. Заснована в Києві, підтримана Google for Startups.",
+      "target_users": "Люди, що шукають психотерапію; терапевти; українці в умовах війни",
+      "access": "B2C-платформа, оплата за сесії",
+      "maturity": "Працює, підтримка Google for Startups ($100k)",
+      "status": "Працює",
+      "why_included": "Розвиває AI як ключовий важіль доступності терапії; українська компанія (Київ, 2021). needs_review, бо AI — допоміжна, а не центральна частина.",
+      "sources": [
+        "https://startup.google.com/stories/mindly",
+        "https://mindlyspace.com/?lang=en"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Surwise",
+      "url": "https://surwise.pro/",
+      "type": "tool",
+      "descr_short": "Платформа визнання та залученості працівників з AI-аналітикою",
+      "sector": "Бізнес та продажі",
+      "origin": "Українська",
+      "description": "Surwise — платформа залученості працівників, що поєднує peer-to-peer визнання, корпоративну валюту, винагороди та гейміфікацію. Інтегрує опитування (eNPS, Gallup, Pulse) і використовує аналітику для практичних інсайтів про корпоративну культуру. Заснована у 2024 році українською командою (CEO Тарас Олійник).",
+      "target_users": "HR-фахівці, керівники компаній, малий і середній бізнес",
+      "access": "Комерційний доступ (SaaS)",
+      "maturity": "Запущений у 2024 році стартап",
+      "status": "Працює",
+      "why_included": "Українська команда; AI-складова (аналітика інсайтів) присутня, але не центральна — тому needs_review.",
+      "sources": [
+        "https://surwise.pro/",
+        "https://www.quoleady.com/top-ukrainian-ai-saas/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Помічник ветерана (Львів)",
+      "url": "https://veterany.city-adm.lviv.ua/",
+      "type": "tool",
+      "descr_short": "ШІ-чатбот про пільги та послуги для ветеранів",
+      "sector": "Державний сектор",
+      "origin": "Українська",
+      "description": "ШІ-асистент Львівської міської ради та Центру обслуговування учасників бойових дій, який надає ветеранам і їхнім родинам інформацію про пільги, послуги та можливості громади — від юридичної підтримки й медицини до освіти й реабілітації. Розроблений компанією !FESTCloud.ai, презентований у листопаді 2025 року.",
+      "target_users": "Ветерани, військовослужбовці та їхні родини у Львівській громаді",
+      "access": "Безкоштовно через вебсайт та Telegram",
+      "maturity": "Запущено у листопаді 2025 року, початкова версія з планами розширення",
+      "status": "Працює",
+      "why_included": "Муніципальний ШІ-асистент у публічному секторі, розроблений українською компанією для Львівської громади; AI є ядром продукту.",
+      "sources": [
+        "https://zaxid.net/u_lvovi_zapustili_chat_bot_pomichnik_veterana_z_programami_ta_servisami_dlya_viyskovih_n1624660",
+        "https://omega.lviv.ua/u-lvovi-stvoryly-chat-bot-iz-povnoyu-informacziyeyu-pro-pilgy-poslugy-ta-mozhlyvosti-dlya-vijskovosluzhbovcziv/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Itera AI construction documentation system",
+      "url": "https://itera.com/",
+      "type": "tool",
+      "descr_short": "ШІ-система перевірки будівельної документації",
+      "sector": "Державний сектор",
+      "origin": "Іноземна, орієнтована на Україну",
+      "description": "ШІ-рішення для автоматизованого вилучення, структурування та перевірки складної будівельної документації на відповідність нормативним вимогам. Пілотується разом із Державною інспекцією архітектури та містобудування України (ДІАМ) у межах програми GovTech Lab Ukraine.",
+      "target_users": "Державна інспекція архітектури та містобудування, забудовники",
+      "access": "Пілот у партнерстві з державою (GovTech Lab Ukraine)",
+      "maturity": "12-тижневий пілот, обраний у листопаді 2025 року",
+      "status": "Пілот",
+      "why_included": "Орієнтоване на Україну ШІ-рішення для публічного сектору (будівельні дозволи), переможець GovTech Lab Ukraine. Вендор іноземний, AI — один з компонентів, тому needs_review.",
+      "sources": [
+        "https://eufordigital.eu/govtech-lab-ukraine-selects-three-pilot-public-sector-digital-solutions/",
+        "https://thedigital.gov.ua/news/progress/rezultaty-govtech-lab-startapy-intehruiut-shi-v-robotu-miniustu-diam-ta-ahentstva-turyzmu"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "citytax",
+      "url": "https://citytax.io/",
+      "type": "platform",
+      "descr_short": "Платформа адміністрування туристичного збору з ШІ-скринінгом",
+      "sector": "Державний сектор",
+      "origin": "Іноземна, орієнтована на Україну",
+      "description": "Цифрова платформа для реєстрації засобів розміщення та адміністрування туристичного збору з ШІ-скринінгом оголошень про оренду житла. У межах GovTech Lab Ukraine пілотується з Державним агентством розвитку туризму України для виявлення незареєстрованих об'єктів.",
+      "target_users": "Державне агентство розвитку туризму, місцева влада, готелі",
+      "access": "Пілот у партнерстві з державою (GovTech Lab Ukraine)",
+      "maturity": "12-тижневий пілот, обраний у листопаді 2025 року",
+      "status": "Пілот",
+      "why_included": "Орієнтоване на Україну рішення для публічного сектору з ШІ-скринінгом, переможець GovTech Lab Ukraine. Вендор литовський, AI — лише частина функціоналу, тому needs_review.",
+      "sources": [
+        "https://eufordigital.eu/govtech-lab-ukraine-selects-three-pilot-public-sector-digital-solutions/",
+        "https://govinsider.asia/intl-en/article/govtech-lab-ukraine-selects-three-startups-to-pilot-digital-solutions-in-the-public-sector"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Odd Systems",
+      "url": "https://oddsystems.io/",
+      "type": "company",
+      "descr_short": "Тепловізійні камери та FPV-дрони з модулем автонаведення",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Київська R&D- і виробнича компанія, що випускає тепловізійні камери серії Kurbas та FPV-платформи. Разом із The Fourth Law розробила камеру з модулем автонаведення TFL-1, який за допомогою машинного зору та розпізнавання образів автоматично наводить дрон на ціль у фінальній фазі. Уклала стратегічне партнерство з данською Terma для AI-перехоплювача дронів.",
+      "target_users": "Підрозділи ЗСУ, виробники дронів",
+      "access": "B2B / держконтракти",
+      "maturity": "Серійне виробництво, бойове застосування",
+      "status": "Працює",
+      "why_included": "Українська компанія; машинний зір та AI-автонаведення є ключовою частиною продукту (TFL-1). Окрема юрособа, ще не в каталозі.",
+      "sources": [
+        "https://oddsystems.io/",
+        "https://militarnyi.com/en/news/ukraine-odd-systems-thermal-imaging-factory/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "DoD Solution",
+      "url": "https://dodsolution.com/",
+      "type": "company",
+      "descr_short": "Модуль автономності AURA для дронів із власним AI-стеком",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Львівська компанія розробляє модуль автономності AURA для FPV, перехоплювачів, «чекаючих» дронів та БпЛА літакового типу. Рішення поєднує одноплатний комп'ютер і власний стек штучного інтелекту для навігації, розпізнавання й супроводу об'єктів та наведення в умовах РЕБ і відсутності GPS.",
+      "target_users": "Виробники дронів, підрозділи ЗСУ",
+      "access": "B2B / держконтракти",
+      "maturity": "Pre-seed, модуль для FPV готовий, інші у розробці",
+      "status": "У розробці",
+      "why_included": "Українська компанія; AI/комп'ютерний зір (розпізнавання, супровід, наведення) є ядром продукту. Залучила інвестиції від Network.VC Defense та Angel One Fund.",
+      "sources": [
+        "https://dodsolution.com/",
+        "https://thedefender.media/en/2026/03/dod-solution-aura/",
+        "https://united24media.com/latest-news/new-ai-guided-drone-system-helps-ukraine-bypass-russian-jamming-14057"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Deftak",
+      "url": "https://deftak.com",
+      "type": "company",
+      "descr_short": "Високоточні керовані боєприпаси для дронів з оптичним наведенням",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Українсько-естонський стартап розробляє керовані боєприпаси нового покоління для БпЛА, що дозволяють звичайним дронам виконувати високоточні удари навіть у складному радіоелектронному середовищі та без GPS. Боєприпас має обчислювальну електроніку, оптичну камеру наведення й бойову частину з активним коригуванням траєкторії.",
+      "target_users": "Підрозділи ЗСУ, оператори дронів",
+      "access": "B2B / держконтракти",
+      "maturity": "Проведено бойові випробування, готується серія",
+      "status": "Пілот",
+      "why_included": "Українсько-естонський стартап з українським корінням; оптичне наведення/обробка зображень на борту є основою продукту.",
+      "sources": [
+        "https://militarnyi.com/en/news/ukrainian-deftak-presents-guided-munitions-for-drones/",
+        "https://thedefender.media/en/2025/05/darkstar-invests-e600-deftak/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "I-SEE",
+      "url": "https://i-see.com.ua/",
+      "type": "tool",
+      "descr_short": "Пасивне виявлення дронів на основі комп'ютерного зору й Edge AI",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Українська компанія розробила програмне забезпечення для оптичного виявлення дронів, що працює офлайн на звичайному GPU-обладнанні та не випромінює радіосигналів. Система поєднує комп'ютерний зір з Edge AI, виявляє цілі розміром у кілька пікселів на відстані до 2,5 км, супроводжує до 100 цілей одночасно й надсилає координати за мілісекунди.",
+      "target_users": "Підрозділи ППО та сухопутні підрозділи ЗСУ",
+      "access": "Держконтракти / фронтове використання",
+      "maturity": "Польові випробування, перехід до активного захисту",
+      "status": "Пілот",
+      "why_included": "Українська розробка; комп'ютерний зір та Edge AI є ядром продукту. Відмінне від акустичних систем.",
+      "sources": [
+        "https://i-see.com.ua/",
+        "https://united24media.com/latest-news/ukraines-i-see-system-turns-invisible-tracking-russian-drones-in-real-time-without-emetting-radio-signals-16392",
+        "https://militarnyi.com/en/news/ukrainian-company-i-see-working-on-anti-drone-active-protection-system/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "UADamage",
+      "url": "https://uadamage.com/",
+      "type": "company",
+      "descr_short": "AI-розмінування та оцінка пошкоджень за знімками з дронів",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Київський стартап (резидент Brave1) використовує комп'ютерний зір та ШІ для виявлення мін і вибухонебезпечних предметів на знімках з дронів, обстежуючи до 10 000 м² на день із точністю до 5 см. Дрон несе RGB- та інфрачервону камери, магнітометр і георадар. Також робить AI-звіти про пошкодження інфраструктури.",
+      "target_users": "ДСНС, гуманітарні розмінувальники, державні органи",
+      "access": "Держконтракти / гуманітарні програми",
+      "maturity": "Комерційне використання, обстежено понад 61 000 м²",
+      "status": "Працює",
+      "why_included": "Українська компанія; комп'ютерний зір та ШІ для виявлення мін є ядром продукту. Резидент Brave1.",
+      "sources": [
+        "https://uadamage.com/",
+        "https://thedefender.media/en/2025/06/uadamage-raises-investment-on-demining/",
+        "https://www.undp.org/ukraine/press-releases/ai-demining-ukrainian-innovators-train-algorithms-detect-explosives-drone-images"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "MinesEye",
+      "url": "https://postup.com.pl/en/demining",
+      "type": "tool",
+      "descr_short": "Дистанційна платформа гуманітарного розмінування з ШІ та сенсорами",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Розробка фонду «Поступ»: агродрони оснащують сенсором, що поєднує магнітометрію та аерознімки (видимий і інфрачервоний діапазон) для пошуку мін і боєприпасів на поверхні та під ґрунтом. Система виявляє до 90% мін і ВНП. Передана ДСНС за підтримки ПРООН.",
+      "target_users": "ДСНС, гуманітарні розмінувальники",
+      "access": "Державні / гуманітарні програми",
+      "maturity": "Передано в експлуатацію ДСНС",
+      "status": "Працює",
+      "why_included": "Українська розробка для гуманітарного розмінування; ШІ-обробка зображень для виявлення мін є ключовою. Окреме від UADamage.",
+      "sources": [
+        "https://postup.com.pl/en/demining",
+        "https://thedefender.media/en/2025/07/mineseye-demining-with-ai/",
+        "https://www.undp.org/ukraine/press-releases/undp-equips-sesu-cutting-edge-ukrainian-aerial-detection-technology-accelerate-humanitarian-demining-operations"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Beyond.pl",
+      "url": "https://beyond.pl/",
+      "type": "company",
+      "descr_short": "Оператор державної AI Factory для України",
+      "sector": "Інфраструктура та платформи",
+      "origin": "Іноземна, орієнтована на Україну",
+      "description": "Польський оператор AI Factory та партнер NVIDIA, залучений Мінцифрою у березні 2026 як стратегічний партнер для побудови державної AI-інфраструктури України. Надає GPU-потужності для тренування мовних моделей, що живитимуть Дія.AI та ШІ для українських судів, і навчатиме українських фахівців.",
+      "target_users": "Держсектор України, розробники державних ШІ-сервісів",
+      "access": "Державне партнерство / контракт",
+      "maturity": "Партнерство анонсовано в березні 2026",
+      "status": "У розробці",
+      "why_included": "Ключовий зовнішній партнер національної AI-ініціативи (AI Factory, Diia AI LLM, ШІ для судів); орієнтований на Україну. needs_review, бо це інфраструктурний оператор, а не український продукт.",
+      "sources": [
+        "https://dev.ua/news/mintsyfry-zaluchylo-polsku-beyondpl-do-rozrobky-shi-dlia-sudiv-i-servisiv-u-dii-1773148327",
+        "https://tech.liga.net/ua/technology/novosti/ukraina-ta-partner-nvidia-stvoriuvatymut-movni-modeli-shi-dlia-sudiv-ta-zastosunku-diia"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Sensorama Lab",
+      "url": "https://sensoramalab.com/",
+      "type": "company",
+      "descr_short": "XR-платформа професійного навчання з ШІ-сценаріями",
+      "sector": "Освіта",
+      "origin": "Українська",
+      "description": "Український стартап, що створює VR/AR-симулятори та цифрові двійники промислових середовищ для навчання технічним і soft-навичкам (віртуальні пацієнти для фарми, тренажери для DTEK, Ferrexpo). Має напрям автономного ПЗ для місій БпЛА. Презентований у стартап-алеї WINWIN Summit 2025.",
+      "target_users": "Промислові підприємства, енергетика, фарма, оборона",
+      "access": "Комерційна (B2B-проєкти, платформа Sensorama XR Training)",
+      "maturity": "Понад 100 проєктів, клієнти в Україні та ЄС",
+      "status": "Працює",
+      "why_included": "Український тех-стартап, відібраний Мінцифрою для WINWIN Summit 2025. needs_review: ядро — XR/3D, ШІ присутній у сценаріях і UAV-напрямі, але не однозначно центральний.",
+      "sources": [
+        "https://vctr.media/en/transforming-professional-training-the-power-of-immersive-scenarios-how-ukrainian-startup-sensorama-lab-works-285152/",
+        "https://sensoramalab.com/"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Sky Spy",
+      "url": "https://www.skyspy.ai/",
+      "type": "company",
+      "descr_short": "Автономна AI-система радіотехнічної розвідки для дронів",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Заснований українською командою (CEO Арсеній Гуртовцов) оборонний стартап, що розробляє Agent 001 — автономний модуль вагою ~500 г, який перетворює малі дрони на засоби радіорозвідки. AI на борту в реальному часі виявляє, класифікує й локалізує радіовипромінювачі (станції керування БПЛА, засоби РЕБ) у GPS-denied та умовах глушіння.",
+      "target_users": "Збройні сили та підрозділи радіоелектронної розвідки",
+      "access": "B2G / оборонні контракти",
+      "maturity": "Pre-seed $1,6 млн (грудень 2025), пройшов фронтову валідацію",
+      "status": "Працює",
+      "why_included": "Нещодавно профінансований український defense-tech стартап з AI як ядром (автономна обробка сигналів on-edge).",
+      "sources": [
+        "https://dev.ua/en/news/investytsiia-sky-spy-1764919601",
+        "https://techukraine.org/2025/12/08/sky-spy-secures-1-6m-to-rewrite-the-rules-of-electronic-warfare-with-agent-001/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "eXtra Vision",
+      "url": "https://www.extra-vision.com/",
+      "type": "company",
+      "descr_short": "AI- та AR-система для хірургічної навігації",
+      "sector": "Медицина та здоров'я",
+      "origin": "Українська",
+      "description": "Харківський медтех-стартап, заснований нейрохірургом Владиславом Калюжкою, що перетворює знімки КТ і МРТ на 3D-моделі органів, де AI автоматично виділяє кістки, судини, пухлини й гематоми. Модель синхронізується з AR-окулярами та накладається на тіло пацієнта під час операції. Понад 200 операцій уже проведено.",
+      "target_users": "Хірурги та клініки (нейрохірургія, ортопедія, онкологія, травматологія)",
+      "access": "Партнерства з лікарнями, пілотні впровадження",
+      "maturity": "Відібраний серед 41 deeptech-стартапу для фінансування Єврокомісії (квітень 2026)",
+      "status": "Пілот",
+      "why_included": "Свіжо профінансований український медичний AI-стартап; AI-сегментація зображень є ядром рішення.",
+      "sources": [
+        "https://digitalstate.gov.ua/news/tech/ukrainian-startup-extra-vision-200-arguided-surgeries-achieved",
+        "https://www.extra-vision.com/"
+      ],
+      "needs_review": false
+    },
+    {
+      "name": "Anotherland",
+      "url": "https://anotherland.ai/",
+      "type": "platform",
+      "descr_short": "AI-платформа цифрових двійників із архітектурних планів",
+      "sector": "Інфраструктура та платформи",
+      "origin": "Українська",
+      "description": "Український deeptech-стартап, що перетворює архітектурні та інженерні плани на інтерактивні цифрові двійники для нерухомості та масштабних проєктів відбудови. Дозволяє девелоперам і муніципалітетам презентувати проєкти за дні, а покупцям та інвесторам — досліджувати майбутні простори.",
+      "target_users": "Девелопери, муніципалітети, агенції відбудови, інвестори у нерухомість",
+      "access": "Невідомо",
+      "maturity": "Відібраний серед 41 deeptech-стартапу для фінансування Єврокомісії EIC (квітень 2026)",
+      "status": "Невідомо",
+      "why_included": "Нещодавно профінансований український AI-стартап (EIC, 2026); AI-генерація цифрових двійників — ядро продукту.",
+      "sources": [
+        "https://eic.ec.europa.eu/news/commission-boosts-support-ukrainian-deep-tech-innovators-2026-04-01_en",
+        "https://www.vestbee.com/insights/articles/european-commission-awards-20-m-to-ukrainian-startups"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Molfar Defence Technologies",
+      "url": "https://nordic9.com/news/molfar-defence-technologies-in-a-2-million-se/",
+      "type": "company",
+      "descr_short": "AI-радари тактичного виявлення малих БПЛА",
+      "sector": "Оборона та безпека",
+      "origin": "Іноземна, орієнтована на Україну",
+      "description": "Польсько-український оборонний стартап, що розробляє модульні тактичні радари для виявлення та супроводу малих дронів. Поєднує спеціальний дизайн хвиль із алгоритмами обробки сигналів та класифікації цілей, щоб відрізняти дрони від фону навіть в умовах РЕБ. Відкриває офіс в Україні.",
+      "target_users": "Збройні сили, оборонні підрядники, системи ППО",
+      "access": "B2G / оборонні контракти",
+      "maturity": "Залучив €1,5 млн (перший транш €2 млн раунду) від Front Ventures, червень 2026",
+      "status": "У розробці",
+      "why_included": "Свіжо профінансований (2026) оборонний стартап з українським корінням; AI-класифікація сигналів/цілей — ядро. Відмінний від наявного у каталозі Molfar (OSINT).",
+      "sources": [
+        "https://tech.eu/2026/06/03/molfar-raises-eur15m-to-bring-tactical-anti-drone-radar-systems-closer-to-the-frontline/",
+        "https://dev.ua/en/news/molfar-1780480399"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "Innovinnprom AI",
+      "url": "https://innovinnprom.com/en",
+      "type": "tool",
+      "descr_short": "AI-прогнозування псування зерна у силосах",
+      "sector": "Інше",
+      "origin": "Українська",
+      "description": "Український продукт, що використовує штучний інтелект для прогнозування псування зерна у силосах: аналізує температуру, вологість і рівень газів, щоб передбачити біологічну активність за 1-3 дні наперед і дати фермерам час на запобіжні дії.",
+      "target_users": "Аграрії, оператори зерносховищ та елеваторів",
+      "access": "Невідомо",
+      "maturity": "Відібраний серед 41 deeptech-стартапу для фінансування Єврокомісії EIC (квітень 2026)",
+      "status": "У розробці",
+      "why_included": "Нещодавно профінансований EIC AI-продукт; прогностичний AI — ядро. needs_review, бо материнська компанія — виробник промислового обладнання.",
+      "sources": [
+        "https://eic.ec.europa.eu/news/commission-boosts-support-ukrainian-deep-tech-innovators-2026-04-01_en",
+        "https://www.chateic.com/articles/eu-channels-20-million-to-41-ukrainian-deep-tech-firms-with-a-faster-route-to-eic-accelerator"
+      ],
+      "needs_review": true
+    },
+    {
+      "name": "M-FLY",
+      "url": "https://m-fly.org/",
+      "type": "company",
+      "descr_short": "AI-наведення та лазерна підсвітка для дронових боєприпасів",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Український оборонний стартап, що розробляє системи лазерного наведення та AI-асистованого таргетингу для дронових боєприпасів. Системи лазерної підсвітки забезпечують понад 95% прямих влучань і стійкі до засобів РЕБ, дозволяючи точні удари зі стандартних дронових платформ.",
+      "target_users": "Збройні сили, виробники дронів та боєприпасів",
+      "access": "B2G / оборонні контракти",
+      "maturity": "Гранти Brave1 на $1,3 млн + $1,4 млн (2025)",
+      "status": "Працює",
+      "why_included": "Профінансований у 2025 український defense-tech стартап з AI-таргетингом. needs_review через значну апаратну складову та джерело-агрегатор.",
+      "sources": [
+        "https://m-fly.org/",
+        "https://dev.ua/news/top-10-ukrainskykh-miltech-startapiv-shcho-zaluchyly-naibilshe-investytsii-u-2025-rotsi-1767084704"
+      ],
+      "needs_review": true
     }
   ],
   "borderline": [
@@ -3819,6 +4855,484 @@
       "reason": "Освітній курс, а не AI tool/service/product/platform.",
       "sources": [
         "https://prometheus.org.ua/prometheus-free/artificial-intelligence-business/"
+      ]
+    },
+    {
+      "name": "Tur.ai",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://ain.ua/2024/10/23/turai-raises-1-45-million/"
+      ]
+    },
+    {
+      "name": "Elomia",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Elomia_Health"
+      ]
+    },
+    {
+      "name": "AcademyOcean AI algorithms",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://istu.edu.ua/wp-content/uploads/2026/04/Materialy_III_Mizhnarodnoi_naukovo_praktychnoi_konferentsii_2025_compressed.pdf",
+        "https://academyocean.com/"
+      ]
+    },
+    {
+      "name": "Respeecher voice cloning",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://dev.ua/news/ukrainomovnyi-text-to-speech-servis-1763630243"
+      ]
+    },
+    {
+      "name": "HOLYWATER My Muse",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Holywater_Tech"
+      ]
+    },
+    {
+      "name": "Wantent",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://wantent.ai/"
+      ]
+    },
+    {
+      "name": "PawChamp Pawchie AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://dev.ua/news/pawchamp-1761296934"
+      ]
+    },
+    {
+      "name": "Creatio AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.creatio.com/ua/",
+        "https://www.creatio.com/",
+        "https://www.creatio.com/glossary/ai-agents"
+      ]
+    },
+    {
+      "name": "AXDRAFT",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.onit.com/news/onit-acquires-axdraft/",
+        "https://theygotacquired.com/saas/axdraft-acquired-by-onit/"
+      ]
+    },
+    {
+      "name": "Cardiolyse",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://cardiolyse.com/",
+        "https://healthincubatorhelsinki.com/news-and-events/cardiolyse-enables-real-time-remote-heart-health-monitoring/",
+        "https://www.crunchbase.com/organization/cardiolyse"
+      ]
+    },
+    {
+      "name": "Cardiomo",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.uadn.net/2018/01/17/us-ukrainian-medtech-startup-cardiomo-wins-techstars-pitch-competition/",
+        "https://infosoft.ua/cardiomo-startup/"
+      ]
+    },
+    {
+      "name": "Esper Bionics",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://kyivindependent.com/ukrainian-startup-esper-bionics-makes-cyborgs-a-reality/",
+        "https://techukraine.org/2025/05/23/esper-bionics-unveils-esper-hand-2-a-waterproof-ai-powered-prosthetic-ready-for-anything/"
+      ]
+    },
+    {
+      "name": "AllRight",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://emerging-europe.com/business/the-ukrainian-ai-start-up-teaching-kids-english/",
+        "https://uhl-edu.kiev.ua/content/10-nayperspektivnishih-ukrayinskih-startapiv-prosto-sogodni/"
+      ]
+    },
+    {
+      "name": "Promova AI Tutor",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Promova",
+        "https://promova.com/page/ai-language-learning-app"
+      ]
+    },
+    {
+      "name": "Intelswift",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://techukraine.org/2025/06/03/kyivs-intelswift-ignites-global-stage-scooping-double-victory-at-contact-center-world-awards/",
+        "https://www.feedough.com/intelswift-startup-review/"
+      ]
+    },
+    {
+      "name": "Effy AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.producthunt.com/products/effyai",
+        "https://www.quoleady.com/top-ukrainian-ai-saas/"
+      ]
+    },
+    {
+      "name": "Competera",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2024/01/30/ukrainian-founded-competera-secures-3m-in-a-seed-round/",
+        "https://tracxn.com/d/companies/competera/__BwHl0Gf9yVOgCEPnySCge3Y0DFuo4oC8FRvOC63sBKg"
+      ]
+    },
+    {
+      "name": "GetProspect",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.quoleady.com/top-ukrainian-ai-saas/",
+        "https://getprospect.com/blog/snov-alternatives"
+      ]
+    },
+    {
+      "name": "Snov.io",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://snov.io/about-us",
+        "https://www.quoleady.com/top-ukrainian-ai-saas/"
+      ]
+    },
+    {
+      "name": "Contera",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2025/08/20/conteraai-raised-120k/",
+        "https://dev.ua/news/zabudte-pro-ruchnyi-zapusk-reklamy-chy-rutynu-z-seo-yak-pratsiuie-shi-startap-contera-shcho-zaluchyv-25-000-investytsii-i-stvoriuie-efektyvni-oholoshennia-v-odyn-klik"
+      ]
+    },
+    {
+      "name": "Zeely",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://techcrunch.com/2023/04/12/ukrainian-startup-zeely-raises-1m-for-smb-growth-app-aimed-at-us-uk-brazil-mexico/",
+        "https://inventure.com.ua/en/news/ukraine/ukrainian-ai-startup-zeely-raises-dollar1-million-after-winning-deel-competition"
+      ]
+    },
+    {
+      "name": "Adwisely",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://techukraine.org/2022/07/11/ukrainian-adwisely-raised-1-5-million-seed-round/",
+        "https://itkey.media/ukrainian-born-adtech-adwisely-on-a-mission-to-continue-cutting-the-ever-growing-ad-costs/"
+      ]
+    },
+    {
+      "name": "PromoRepublic",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://techcrunch.com/2017/06/26/promorepublic-raises-1-2m-for-ai-which-creates-social-media-for-small-businesses/",
+        "https://promorepublic.com/en/agencies-freelancers/"
+      ]
+    },
+    {
+      "name": "Gravitec",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://gravitec.net/blog/gravitec-ai-push-notifications/",
+        "https://gravitec.net/company"
+      ]
+    },
+    {
+      "name": "Plerdy",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.plerdy.com/",
+        "https://ai-cmo.net/tools/plerdy"
+      ]
+    },
+    {
+      "name": "Serpstat",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://serpstat.com/page/about-us/",
+        "https://prnews.io/blog/the-ultimate-list-of-seo-tools-made-in-ukraine.html"
+      ]
+    },
+    {
+      "name": "Rask AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.rask.ai/",
+        "https://www.edtechdigest.com/2023/12/06/rask-ai/",
+        "https://www.rask.ai/voicecloning/ukrainian-voice-cloning"
+      ]
+    },
+    {
+      "name": "vidby",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vidby",
+        "https://tech.eu/2023/05/03/vidby-is-bridging-vidby-bridging-language-barriers-with-ai-powered-video-translation-and-dubbing-across-70-languages/",
+        "https://ain.ua/2023/05/18/ukrayinczi-rozrobyly-shi-instrument-dublyazhu-70-movamy-jogo-rekomenduye-youtube/"
+      ]
+    },
+    {
+      "name": "Let's Enhance / Claid.ai",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2021/10/28/lets-enhance-raises-3m-seed-round/",
+        "https://claid.ai/photoshoot"
+      ]
+    },
+    {
+      "name": "Skylum (Luminar Neo)",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://skylum.com/newsroom/luminar-neo-releases-generative-ai-technology-in-its-awardwinning-photo-editing-software",
+        "https://en.wikipedia.org/wiki/Skylum"
+      ]
+    },
+    {
+      "name": "Pitch Avatar",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://pitchavatar.com/about-us/",
+        "https://en.ain.ua/2025/04/16/16-ukrainian-startups-are-going-to-vivatech-2025/"
+      ]
+    },
+    {
+      "name": "Personal AI Nutritionist",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://dev.ua/news/ukraintsi-stvoryly-1742827535",
+        "https://apps.apple.com/pl/app/personal-ai-nutritionist/id6737691784"
+      ]
+    },
+    {
+      "name": "BetterMe",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BetterMe",
+        "https://techukraine.org/portfolio/betterme/"
+      ]
+    },
+    {
+      "name": "Knowledgator",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://techukraine.org/2025/08/11/beyond-the-hype-meet-knowledgator-the-ukrainian-ai-that-actually-reads-data/",
+        "https://www.knowledgator.com/"
+      ]
+    },
+    {
+      "name": "Ovul",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://vctr.media/en/from-fertility-to-hormonal-gps-behind-ovul-a-ukrainian-startup-that-decodes-saliva-hormones-to-give-women-greater-health-control-303859/",
+        "https://ovul.ai/"
+      ]
+    },
+    {
+      "name": "Datrics",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.datrics.ai/",
+        "https://www.crunchbase.com/organization/datrics"
+      ]
+    },
+    {
+      "name": "Beholder",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://dev.ua/en/news/behold-100k-ievro-1747904063",
+        "https://techukraine.org/2025/05/23/beholder-secures-e100000-injection-to-supercharge-ai-powered-mineral-exploration/"
+      ]
+    },
+    {
+      "name": "Portal AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://dev.ua/en/news/portalai-1748413563",
+        "https://mind.ua/news/20274676-ukrayinskij-shi-startap-portal-ai-zaluchiv-5-mln-investicij"
+      ]
+    },
+    {
+      "name": "Pleso Therapy",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2025/05/14/pleso-therapy-raises-12m-vchasno-group-and-ta-ventures/",
+        "https://www.vestbee.com/insights/articles/pleso-therapy-raises-1-2-m"
+      ]
+    },
+    {
+      "name": "Funely AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://ain.ua/2025/12/26/iak-u-2025-roci-viris-stucnii-intelekt/",
+        "https://vctr.media/en/helping-smes-streamline-lead-generation-automation-the-story-behind-funely-ai-a-ukrainian-startup-265369/"
+      ]
+    },
+    {
+      "name": "Wordsmith AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2025/06/04/ukrainian-founded-wordsmith-ai-raises-25-million/",
+        "https://techcrunch.com/?p=2794787"
+      ]
+    },
+    {
+      "name": "Principle",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://forbes.ua/news/ukrainskiy-startap-principle-shcho-rozroblyae-shi-platformu-dlya-prognozuvannya-zaluchiv-2-mln-investitsiy-04022026-36048",
+        "https://scroll.media/en/2026/02/04/ukrainian-founded-principle-raises-2m-for-ai-forecasting-platform-for-businesses/"
+      ]
+    },
+    {
+      "name": "Altris AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.eu-startups.com/2022/12/ukrainian-founded-altris-ai-picks-up-fresh-funding-to-develop-new-eye-care-solutions/",
+        "https://www.altris.ai/"
+      ]
+    },
+    {
+      "name": "memoryOS",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2025/01/22/sid-venture-partners-invests-in-5-ai-startups/",
+        "https://itkey.media/angel-one-joins-memoryos-mission-to-transform-mnemonics-with-gamification-and-ai/"
+      ]
+    },
+    {
+      "name": "Paintit.ai",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://speka.media/ukrayinskii-startap-paintitai-zaluciv-500-tis-investicii-9dng15",
+        "https://paintit.ai"
+      ]
+    },
+    {
+      "name": "Offset Labs",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://mezha.media/en/oboronka/offset-labs-otrimav-ponad-1-mln-investiciy-304641/",
+        "https://en.ain.ua/2025/09/09/offset-labs-raises-eur600k/"
+      ]
+    },
+    {
+      "name": "Dynamiq",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://dev.ua/news/dynamiq-pre-seed-raund",
+        "https://github.com/dynamiq-ai/dynamiq"
+      ]
+    },
+    {
+      "name": "Ability AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://ain.ua/2025/12/11/top-100-rising-ukrainian-startups-2026/",
+        "https://www.martechcube.com/ability-ai-raised-1-1-mn-in-pre-seed-funding-led-by-smrk-vc/"
+      ]
+    },
+    {
+      "name": "Mirai",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://mind.ua/news/20301294-startap-mirai-tech-z-ukrayinskim-spivzasnovnikom-zaluchiv-10-mln-shchob-perenesti-shi-z-hmari-na-smartf",
+        "https://www.techbuzz.ai/articles/reface-prisma-founders-raise-10m-for-on-device-ai-startup-mirai"
+      ]
+    },
+    {
+      "name": "Pickpad",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://itarena.ua/ukraines-most-talked-about-startups-of-2025/",
+        "https://tech.eu/2025/12/17/startup-pickpad-is-fixing-the-most-manual-part-of-modern-food-delivery/"
+      ]
+    },
+    {
+      "name": "Haiqu",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://tech.eu/2026/01/13/quantum-startup-haiqu-raises-11m/",
+        "https://inventure.com.ua/en/news/ukraine/ukrainian-american-startup-haiqu-raises-dollar11-million-to-develop-software-for-quantum-computers"
+      ]
+    },
+    {
+      "name": "Harmix",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2023/03/16/startup-of-the-day-harmix/",
+        "https://musically.com/2024/01/18/discover-the-future-of-music-search-introducing-harmixs-groundbreaking-ai-service/"
+      ]
+    },
+    {
+      "name": "Deus Robotics",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://en.ain.ua/2024/12/27/deus-robotics-raises-3m/",
+        "https://techukraine.org/2025/06/03/ukrainian-robotics-trailblazer-deus-robotics-automates-dpds-uk-logistics-hubs/"
+      ]
+    },
+    {
+      "name": "Cerco.ai",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.uatechjournal.com/ukrainian-startup-fund-awards-475-000-to-13-early-stage-startups/",
+        "https://www.cerco.ai/company"
+      ]
+    },
+    {
+      "name": "Simplefin",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://bouncewatch.com/company/simplefin",
+        "https://www.failory.com/startups/ukraine"
+      ]
+    },
+    {
+      "name": "Tetrix (Deskree)",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.deskree.com/",
+        "https://en.ain.ua/2023/09/20/ukrainian-founded-startup-deskree-secures-1-4m/"
+      ]
+    },
+    {
+      "name": "Watermarked.io",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://www.quoleady.com/top-ukrainian-ai-saas/",
+        "https://www.linkedin.com/in/mar-alex/"
+      ]
+    },
+    {
+      "name": "Nomius",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://nomius.io/",
+        "https://www.quoleady.com/top-ukrainian-ai-saas/"
+      ]
+    },
+    {
+      "name": "Profeed",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://techukraine.org/2025/01/22/profeed-ukrainian-agritech-startup-revolutionizing-livestock-feeding-with-ai-and-smart-sensors/",
+        "https://profeed.systems/"
+      ]
+    },
+    {
+      "name": "Greenvi AI",
+      "reason": "За оновленим критерієм входження (market test) продукт орієнтований переважно на глобальний ринок, а не первинно на український.",
+      "sources": [
+        "https://tech.eu/2025/08/27/small-team-global-ambitions-greenvi-ai-bets-on-ai-to-unlock-europes-energy-transition/",
+        "https://en.ain.ua/2025/05/14/greenvi-ai-eur25000/"
       ]
     }
   ]
