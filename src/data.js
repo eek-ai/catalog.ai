@@ -10,7 +10,7 @@ const slug = (name) =>
     .replace(/^-|-$/g, "");
 
 // `sector`, `type`, `status`, `origin`, `needs_review` are authoritative fields
-// in the data file (see data.local/schema.json). The dashboard reads them
+// in the data file (see ai-workflows/data/schema.json). The dashboard reads them
 // directly — no keyword heuristics. `borderline`/`excluded` stay in the file
 // but are intentionally not surfaced in the UI.
 export const tools = raw.tools.map((t) => ({ ...t, id: slug(t.name) }));
