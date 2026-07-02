@@ -5745,26 +5745,6 @@
       "needs_review": true
     },
     {
-      "name": "єДозвіл AI",
-      "url": "https://e-license.gov.ua",
-      "type": "platform",
-      "descr_short": "ШІ-перевірка ліцензійних документів у держпослугах",
-      "sector": "Державний сектор",
-      "origin": "Українська",
-      "description": "Модуль штучного інтелекту у державній платформі єДозвіл автоматично перевіряє подані підприємцями документи на відповідність вимогам і пропонує рекомендацію чиновнику: видати ліцензію, відмовити чи направити на розгляд. Використовує LLM Gemma 3 27B для валідації заявки та Qwen 2.5 7B VL для витягнення тексту зі сканів. Запущено у серпні 2025 для ветеринарних ліцензій.",
-      "target_users": "Підприємці, що оформлюють держліцензії; державні інспектори Мінекономіки",
-      "access": "Через Дія / diia.gov.ua / e-license.gov.ua",
-      "maturity": "production",
-      "status": "Працює",
-      "why_included": "Перша держпослуга України, де ШІ на основі LLM (Gemma 3 + Qwen 2.5) виконує змістовну ML-інференцію над документами та генерує чернетку рішення — справжнє ML у виконавчому держпроцесі, не правила.",
-      "sources": [
-        "https://www.kmu.gov.ua/en/news/ministerstva-ekonomiky-ta-tsyfrovoi-transformatsii-zapustyly-pershu-derzhavnu-posluhu-z-pidtrymkoiu-shi-v-iedozvil",
-        "https://deepmind.google/models/gemma/gemmaverse/epermit/"
-      ],
-      "notes": "Розроблено за підтримки Google DeepMind та ЄС (EU4DigitalUA). Моделі on-premise на NVIDIA H100. Поки покриває лише ветеринарні ліцензії.",
-      "needs_review": false
-    },
-    {
       "name": "Помічник ветерана (Львів)",
       "url": "https://veterany.city-adm.lviv.ua/",
       "type": "tool",
@@ -5801,6 +5781,26 @@
         "https://www.reuters.com/world/europe/ukraine-rolls-out-dozens-ai-systems-help-its-drones-hit-targets-2024-10-31/"
       ],
       "notes": "Окрему публічну продуктову сторінку не знайдено; у Reuters наведено дані про понад 15 тисяч проданих одиниць такого ПЗ.",
+      "needs_review": false
+    },
+    {
+      "name": "єДозвіл AI",
+      "url": "https://e-license.gov.ua",
+      "type": "platform",
+      "descr_short": "ШІ-перевірка ліцензійних документів у держпослугах",
+      "sector": "Державний сектор",
+      "origin": "Українська",
+      "description": "Модуль штучного інтелекту у державній платформі єДозвіл автоматично перевіряє подані підприємцями документи на відповідність вимогам і пропонує рекомендацію чиновнику: видати ліцензію, відмовити чи направити на розгляд. Використовує LLM Gemma 3 27B для валідації заявки та Qwen 2.5 7B VL для витягнення тексту зі сканів. Запущено у серпні 2025 для ветеринарних ліцензій.",
+      "target_users": "Підприємці, що оформлюють держліцензії; державні інспектори Мінекономіки",
+      "access": "Через Дія / diia.gov.ua / e-license.gov.ua",
+      "maturity": "production",
+      "status": "Працює",
+      "why_included": "Перша держпослуга України, де ШІ на основі LLM (Gemma 3 + Qwen 2.5) виконує змістовну ML-інференцію над документами та генерує чернетку рішення — справжнє ML у виконавчому держпроцесі, не правила.",
+      "sources": [
+        "https://www.kmu.gov.ua/en/news/ministerstva-ekonomiky-ta-tsyfrovoi-transformatsii-zapustyly-pershu-derzhavnu-posluhu-z-pidtrymkoiu-shi-v-iedozvil",
+        "https://deepmind.google/models/gemma/gemmaverse/epermit/"
+      ],
+      "notes": "Розроблено за підтримки Google DeepMind та ЄС (EU4DigitalUA). Моделі on-premise на NVIDIA H100. Поки покриває лише ветеринарні ліцензії.",
       "needs_review": false
     }
   ]
