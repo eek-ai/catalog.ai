@@ -31,8 +31,46 @@ export const sectors = [...new Set(tools.map((t) => t.sector))].sort(
 
 export const origins = ["Українська", "Ukraine-linked", "Іноземна, орієнтована на Україну"];
 
+// English labels for the controlled vocabularies (sector/status/origin),
+// keyed by the canonical Ukrainian value. UK renders the value as-is; EN maps
+// through here. Values are language-neutral concepts, so this is a plain lookup
+// — entry content (names, descriptions, taglines) stays Ukrainian.
+const VOCAB_EN = {
+  // sectors
+  "Оборона та безпека": "Defense & security",
+  "Бізнес та продажі": "Business & sales",
+  "Державний сектор": "Government",
+  "Інфраструктура та платформи": "Infrastructure & platforms",
+  "Право": "Legal",
+  "Медицина та здоров'я": "Healthcare",
+  "Медіа та інформаційна безпека": "Media & information security",
+  "Освіта": "Education",
+  "Голос і мовлення": "Voice & speech",
+  "Інше": "Other",
+  "Маркетинг та реклама": "Marketing & advertising",
+  "Генеративний контент": "Generative content",
+  // statuses
+  "Працює": "Live",
+  "Пілот": "Pilot",
+  "У розробці": "In development",
+  "Анонсовано": "Announced",
+  "Невідомо": "Unknown",
+  // origins
+  "Українська": "Ukrainian",
+  "Ukraine-linked": "Ukraine-linked",
+  "Іноземна, орієнтована на Україну": "Foreign, Ukraine-focused",
+};
+
+// Display label for a vocabulary value. Unknown values fall back to the raw
+// Ukrainian text, so new data never renders blank.
+export const vocabLabel = (value, lang) =>
+  lang === "en" ? VOCAB_EN[value] ?? value : value;
+
 // Origin is long; show a compact label in chips/cards/rail.
-export const originShort = (o) => (o && o.startsWith("Іноземна") ? "Іноземна" : o);
+export const originShort = (o, lang) => {
+  if (o && o.startsWith("Іноземна")) return lang === "en" ? "Foreign" : "Іноземна";
+  return vocabLabel(o, lang);
+};
 
 // Canonical status order (matches schema.json) + a stable CSS class per status,
 // so the coloured badges don't depend on the Ukrainian text.

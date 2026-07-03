@@ -1,9 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import { statusClass, sectorClass } from "../data.js";
+import { statusClass, sectorClass, vocabLabel } from "../data.js";
 import { useLang } from "../i18n.jsx";
 
 export default function ToolCard({ tool, showAll = false }) {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   // Carry the active filters into the detail URL so "back" restores the list.
   const { search } = useLocation();
   const to = { pathname: `/tool/${tool.id}`, search };
@@ -15,14 +15,14 @@ export default function ToolCard({ tool, showAll = false }) {
           <h3>{tool.name}</h3>
         </Link>
         {showAll ? (
-          <span className={`status status-${statusClass(tool.status)}`}>{tool.status}</span>
+          <span className={`status status-${statusClass(tool.status)}`}>{vocabLabel(tool.status, lang)}</span>
         ) : null}
       </div>
 
       <p className="tool-tagline">{tool.descr_short}</p>
       <p className="tool-desc">{tool.description}</p>
       <div className="card-sector-row">
-        <span className={`tag sector-tag sector-${sectorClass(tool.sector)}`}>{tool.sector}</span>
+        <span className={`tag sector-tag sector-${sectorClass(tool.sector)}`}>{vocabLabel(tool.sector, lang)}</span>
       </div>
 
       {showAll && (

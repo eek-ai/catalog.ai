@@ -1,7 +1,8 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-// UI chrome only. Catalog content (sector/status/origin values, descriptions,
-// taglines) stays Ukrainian by design.
+// UI chrome only. The controlled vocabularies (sector/status/origin) are
+// translated separately via vocabLabel in data.js. Per-entry content
+// (names, descriptions, taglines) stays Ukrainian by design.
 const STRINGS = {
   uk: {
     title: "Українські AI-інструменти",

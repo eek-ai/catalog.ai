@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { tools, sectors, statuses, origins } from "../data.js";
+import { tools, sectors, statuses, origins, vocabLabel, originShort } from "../data.js";
 import { useLang, countLabel } from "../i18n.jsx";
 import Tabs from "../components/Tabs.jsx";
 import FilterRail from "../components/FilterRail.jsx";
@@ -38,10 +38,11 @@ export default function ListPage({ filters }) {
     };
   }, [type, q, sector, status, origin]);
 
+  const label = (v) => vocabLabel(v, lang);
   const groups = [
-    { key: "sector", title: t("facet_sector"), options: sectors, selected: sector, counts: counts.sector },
-    { key: "status", title: t("facet_status"), options: statuses, selected: status, counts: counts.status },
-    { key: "origin", title: t("facet_origin"), options: origins, selected: origin, counts: counts.origin },
+    { key: "sector", title: t("facet_sector"), options: sectors, selected: sector, counts: counts.sector, labelFn: label },
+    { key: "status", title: t("facet_status"), options: statuses, selected: status, counts: counts.status, labelFn: label },
+    { key: "origin", title: t("facet_origin"), options: origins, selected: origin, counts: counts.origin, labelFn: (v) => originShort(v, lang) },
   ];
 
   return (

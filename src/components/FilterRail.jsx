@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { originShort } from "../data.js";
 
 // Keeps the sticky rail's height equal to the space between its current top
 // and the bottom of the viewport, so its own scrollbar always reaches the end
@@ -89,7 +88,7 @@ export default function FilterRail({ groups, toggle }) {
           selected={g.selected}
           counts={g.counts}
           onToggle={(val) => toggle(g.key, val)}
-          labelFn={g.key === "origin" ? originShort : undefined}
+          labelFn={g.labelFn}
         />
       ))}
     </aside>

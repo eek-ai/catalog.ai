@@ -1,5 +1,5 @@
 import { useParams, Link, useLocation } from "react-router-dom";
-import { getTool, statusClass } from "../data.js";
+import { getTool, statusClass, vocabLabel, originShort } from "../data.js";
 import { useLang } from "../i18n.jsx";
 
 const DETAIL_FIELDS = [
@@ -24,7 +24,7 @@ function isEmptyValue(value) {
   return value == null || value === "" || (Array.isArray(value) && value.length === 0);
 }
 
-function FieldValue({ name, value, t }) {
+function FieldValue({ name, value, t, lang }) {
   if (name === "url") {
     return (
       <a href={value} target="_blank" rel="noreferrer">
@@ -35,6 +35,7 @@ function FieldValue({ name, value, t }) {
 
   if (name === "type") return t(`type_${value}`);
   if (name === "needs_review") return value ? t("yes") : t("no");
+  if (name === "sector" || name === "status" || name === "origin") return vocabLabel(value, lang);
 
   if (name === "sources") {
     return (
@@ -56,7 +57,7 @@ function FieldValue({ name, value, t }) {
 export default function DetailPage() {
   const { id } = useParams();
   const { search } = useLocation();
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const tool = getTool(id);
   const backTo = { pathname: "/", search };
 
@@ -76,16 +77,16 @@ export default function DetailPage() {
       <div className="detail-head">
         <h2>{tool.name}</h2>
         <span className={`status status-${statusClass(tool.status)}`}>
-          {tool.status}
+          {vocabLabel(tool.status, lang)}
         </span>
       </div>
 
       <p className="detail-tagline">{tool.descr_short}</p>
 
       <div className="tool-tags">
-        <span className="tag sector-tag">{tool.sector}</span>
+        <span className="tag sector-tag">{vocabLabel(tool.sector, lang)}</span>
         <span className="tag">{t(`type_${tool.type}`)}</span>
-        <span className="tag origin-tag">{tool.origin}</span>
+        <span className="tag origin-tag">{originShort(tool.origin, lang)}</span>
       </div>
 
       {tool.needs_review && <p className="review-banner">{t("review_banner")}</p>}
@@ -95,7 +96,7 @@ export default function DetailPage() {
           <div className="detail-field" key={field}>
             <dt>{t(`field_${field}`)}</dt>
             <dd>
-              <FieldValue name={field} value={tool[field]} t={t} />
+              <FieldValue name={field} value={tool[field]} t={t} lang={lang} />
             </dd>
           </div>
         ))}
