@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect } from "react";
 
 // UI chrome only. The controlled vocabularies (sector/status/origin) are
 // translated separately via vocabLabel in data.js. Per-entry content
@@ -106,14 +106,27 @@ const STRINGS = {
 
 const LangContext = createContext(null);
 
+// Language lives in the URL as an optional `/en` path prefix (see main.jsx),
+// making it the single source of truth — shareable and bookmark-able.
+const EN_PREFIX = /^\/en(?=\/|$)/;
+
 export function LangProvider({ children }) {
-  const [lang, setLang] = useState(() => localStorage.getItem("lang") || "uk");
+  const lang = EN_PREFIX.test(window.location.pathname) ? "en" : "uk";
 
   useEffect(() => {
-    localStorage.setItem("lang", lang);
     document.documentElement.lang = lang;
     document.title = STRINGS[lang].title;
   }, [lang]);
+
+  // Switching navigates (full load) so the router picks up the new basename
+  // and every link re-prefixes. Path + query are preserved across the switch.
+  const setLang = (next) => {
+    if (next === lang) return;
+    const { pathname, search, hash } = window.location;
+    const bare = pathname.replace(EN_PREFIX, "") || "/";
+    const target = (next === "en" ? "/en" + (bare === "/" ? "" : bare) : bare) + search + hash;
+    window.location.assign(target);
+  };
 
   const t = (key) => STRINGS[lang]?.[key] ?? key;
   return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>;
