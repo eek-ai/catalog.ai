@@ -47,7 +47,7 @@
         "https://supplychaindigital.com/technology/business-as-usual-for-kyiv-based-it-specialist-abm-cloud"
       ],
       "notes": "ABM Cloud — ексклюзивний партнер чеської Rinkai s.r.o.; продукт у 16+ країнах. Власне IP та частка українського ринку — на перевірку.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Advizor",
@@ -67,7 +67,7 @@
         "https://en.interfax.com.ua/news/general/1105569.html"
       ],
       "notes": "Конкретні ML-методи публічно не розкриті — AI-ядерність на перевірку.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "AgriChain",
@@ -88,7 +88,7 @@
         "https://astartaholding.com/en/digital-innovations/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "AI Assistant for Registries",
@@ -126,7 +126,7 @@
         "https://thedigital.gov.ua/news/progress/diiaai-stav-naykrashchym-ai-rishenniam-dlia-derzavy-za-versiyeiu-havtekh-awards-2025"
       ],
       "notes": "Публічних деталей небагато.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "AI Assistant I Have an Idea",
@@ -203,7 +203,7 @@
         "https://dev.ua/news/ukrainskyi-it-spetsialist-stvoryv-shi-ahenta-iakyi-shukaie-robotu-zamist-liudyny-1778753466"
       ],
       "notes": "Доступ може бути обмеженим; репозиторій або посилання для розповсюдження варто перевірити пізніше.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "AI PSY HELP",
@@ -397,7 +397,7 @@
         "https://en.ain.ua/2025/04/21/prosthetics-in-ukraine/"
       ],
       "notes": "ML-компонент розроблено в партнерстві з GlobalLogic; AI є значущою складовою, але не єдиним диференціатором продукту.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "AML.point",
@@ -417,7 +417,7 @@
         "https://aifintech.ua/amlpoint"
       ],
       "notes": "Розробник — AI FINTECH (aifintech.ua), зареєстрований НБУ; PCI DSS та ISO/IEC 27001 сертифікований. Ступінь застосування ML безпосередньо не задокументований — переважає автоматизація правил і моделей ризику.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Anima",
@@ -437,7 +437,7 @@
         "https://www.village.com.ua/village/city/promo/350245-anima-ai"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Anotherland",
@@ -457,7 +457,7 @@
         "https://www.vestbee.com/insights/articles/european-commission-awards-20-m-to-ukrainian-startups"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Apixmed",
@@ -590,7 +590,7 @@
         "https://startups.org.ua/portfolio/aspichi-2/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Avengers",
@@ -610,7 +610,7 @@
         "https://militarnyi.com/en/news/ai-helps-ukrainian-defense-forces-track-thousands-of-enemy-targets/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "BaBayte (BabAI)",
@@ -696,7 +696,7 @@
         "https://tech.liga.net/ua/technology/novosti/ukraina-ta-partner-nvidia-stvoriuvatymut-movni-modeli-shi-dlia-sudiv-ta-zastosunku-diia"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Binotel AI call tools",
@@ -866,7 +866,7 @@
         "https://www.quoleady.com/top-ukrainian-ai-saas/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "CallAIder",
@@ -932,7 +932,7 @@
         "https://theorg.com/org/xoresearch"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "careeo.tech",
@@ -952,7 +952,7 @@
         "https://dev.ua/en/news/ukrainskyi-startap-careeotech-rozrobyv-shi-ahenta-iakyi-provodyt-poperednii-vidbir-kandydativ-yak-pratsiuie-tse-rishennia-1762849349"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "CareWay",
@@ -972,7 +972,7 @@
         "https://hromadske.ua/en/society/236510-oncology-anxiety-pregnancy-ukrainian-healthtech-startups-offer-solutions-to-help-patients"
       ],
       "notes": "Не плутати з канадською careway.ai. AI — один із трьох компонентів (поряд із персональним менеджером), тож AI-ядерність бордерлайн.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Chatbot Nadiya",
@@ -1029,7 +1029,7 @@
         "https://chatgptukrainian.gitbook.io/chatgptukrainian"
       ],
       "notes": "Обгортка / проксі, а не оригінальна модель; перед рекомендацією варто перевірити провайдера, приватність і актуальну URL-адресу.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "CheckEye",
@@ -1069,7 +1069,7 @@
         "https://v0-chuchar.vercel.app/"
       ],
       "notes": "Ймовірно рання стадія або прототип.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Circularity on the Edge",
@@ -1089,7 +1089,7 @@
         "https://www.dezeen.com/2025/07/07/circularity-on-the-edge-ai-ukraine/"
       ],
       "notes": "Представлено на Венеційській бієнале 2025. Первинно дослідницько-мистецький проєкт, але має функціональну відкриту базу даних. Засновниця навчалась в MIT; проєкт з ГО ReThink, орієнтований на Україну.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "citytax",
@@ -1109,7 +1109,7 @@
         "https://govinsider.asia/intl-en/article/govtech-lab-ukraine-selects-three-startups-to-pilot-digital-solutions-in-the-public-sector"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Clarity",
@@ -1182,7 +1182,7 @@
         "https://speka.ua/news/diiaai-stav-naikrashhim-si-risennyam-dlya-derzavi-detali-p01do4"
       ],
       "notes": "Публічних деталей небагато; залишити для подальшої перевірки.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "CONSOLID.AI",
@@ -1233,7 +1233,7 @@
         "https://corvusintell.com/warg"
       ],
       "notes": "Також виходить на ринки НАТО-партнерів — звідси needs_review, але первинна база — Україна.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "CostCare AI",
@@ -1273,7 +1273,7 @@
         "https://uplify.agency/produkty/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Datawiz BI",
@@ -1294,7 +1294,7 @@
         "https://rau.ua/news/ai-analityka-dlia-ryteyilu-wizora-vid-datawiz-final/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "De Novo AI Studio",
@@ -1411,7 +1411,7 @@
         "https://ipacs.knu.ua/pages/dop/389/files/03a91c4a-4a0b-4199-9ea8-20b1ad341963.pdf"
       ],
       "notes": "Публічні підтвердження продукту обмежені; варто залишити для подальшої перевірки.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Deftak",
@@ -1431,7 +1431,7 @@
         "https://thedefender.media/en/2025/05/darkstar-invests-e600-deftak/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Delta",
@@ -1452,7 +1452,7 @@
         "https://www.act.nato.int/article/delta-system-cwix/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "DevDroid",
@@ -1700,7 +1700,7 @@
         "https://techukraine.org/2025/07/30/defence-builder-backs-innovations-in-unmanned-systems-and-drone-technology/"
       ],
       "notes": "«Designed & Made in Ukraine». AI-ядро на апаратному рівні — потребує перевірки співвідношення hardware/AI.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Dropla Blue Eyes",
@@ -1739,7 +1739,7 @@
         "https://thedefender.media/en/2025/08/dropla-investment-round/"
       ],
       "notes": "Окремий продукт від уже каталогізованого Dropla Blue Eyes (бойові завдання); Vision — гуманітарне розмінування. Засновник — українець.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Dwarf Engineering",
@@ -1922,7 +1922,7 @@
         "https://www.army.mil/article-amp/292099/listening_to_the_sky_acoustic_drone_detection_systems_ukraine_emerging_technologies"
       ],
       "notes": "Деталі ШІ не повністю публічні; включено як частину екосистеми ШІ/акустичного виявлення дронів.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "FinAP",
@@ -2017,6 +2017,35 @@
       "needs_review": false
     },
     {
+      "name": "Frontline Robotics",
+      "url": "https://www.frontline-robotics.tech",
+      "type": "company",
+      "descr_short": "Українська defence-tech компанія: бойові дрони та турелі з власною AI-навігацією та розпізнаванням цілей",
+      "sector": "Оборона та безпека",
+      "origin": "Українська",
+      "description": "Frontline Robotics розробляє й виробляє роботизовані системи для Сил оборони України — дрон-бомбер «Лінза», розвідувальний дрон «Зум» та бойовий турельний модуль «Буря». У Лінзі 3.0 працює власний AI-модуль візуально-інерціальної навігації, що дає стабільне зависання, побудову маршруту й точну посадку без GPS в умовах РЕБ; спільно з Dropla компанія інтегрує AI-розпізнавання замаскованих цілей (Blue Eyes) у розвідувальні дрони.",
+      "target_users": "Сили оборони та безпеки України (бригади, підрозділи спецпризначення, Держприкордонслужба), Міністерство оборони",
+      "access": "B2G/B2B постачання для військових підрозділів; публічний сайт з описом продуктів і контактами для співпраці",
+      "maturity": "Бойове застосування 2+ роки, 3 системи на озброєнні, NATO-кодифікація, спільне українсько-німецьке виробництво (Quantum Frontline Industries) з планом до 10 000 одиниць на рік",
+      "status": "Працює",
+      "why_included": "Проходить усі чотири гейти: AI-навігація та розпізнавання цілей — ядро продукту, а не додаток; реальне бойове використання у 60+ військових частинах з NATO-кодифікацією; продукт створений і насамперед постачається для Сил оборони України; має власний професійний сайт з детальним описом продуктів.",
+      "sources": [
+        "https://www.frontline-robotics.tech/en",
+        "https://digitalstate.gov.ua/news/tech/frontline-robotics-predstavyla-linzu-30-z-optychnoiu-navihatsiyeiu-vyrobnytstvo-v-ukrayini-ta-nimechchyni",
+        "https://www.startupreporter.eu/how-ukraines-frontline-robotics-took-its-battle-tested-drone/",
+        "https://militarnyi.com/en/news/frontline-robotics-dropla-develop-ai-ugvs/",
+        "https://dev.ua/en/news/frontline-robotics-ta-dropla-zdiimaiut-buriu-1781792225"
+      ],
+      "notes": null,
+      "needs_review": false,
+      "rating": 8,
+      "rating_reason": "Бойове застосування 2+ роки у 60+ військових частинах, NATO-кодифікація трьох систем, спільне українсько-німецьке виробництво з Quantum Systems (Munich) з планом масштабування до 10 000 одиниць на рік, ексклюзивний контракт з МО України — реальна тяга національного масштабу.",
+      "deep_research": {
+        "date": "2026-07-04",
+        "long_description": "Frontline Robotics — українська defence-tech компанія, заснована у серпні 2023 року чотирма інженерами з приблизно десятирічним досвідом на фронті. Компанія виробляє три роботизовані системи: дрон-бомбер «Лінза» (до 4 кг корисного навантаження, 15 км дальності, 60 хв польоту), розвідувальний дрон «Зум» (х90 гібридний зум, 15 км дальності) та дистанційно керований бойовий турельний модуль «Буря» (сумісний з Mk 19/RDS40 або M2 Browning, 48 год автономної роботи, точність 20 см на 1 км).\n\nAI є справжнім ядром продукту, а не маркетинговою прикрасою: у «Лінзі 3.0» працює власний (in-house) AI-модуль візуально-інерціальної навігації, який дозволяє стабільне зависання на висоті до 200 м, побудову маршруту в режимі Loiter та точну посадку — без GPS і в умовах активної РЕБ. За словами CTO компанії, це знижує навантаження на оператора, стабілізує наведення на ціль і зменшує поріг підготовки операторів порівняно з комерційними аналогами. Додатково, у червні 2026 року на Eurosatory Frontline Robotics підписала меморандум з данською Dropla про інтеграцію системи «Blue Eyes» — апаратно-програмного комплексу розпізнавання замаскованих цілей, дронів-камікадзе та мін — у розвідувальні дрони «Лінза» та «Зум» (ця частина ще на стадії інтеграції, не завершена).\n\nДокази реальної тяги на національному масштабі: три системи вже 2+ роки на озброєнні, використовуються у понад 60 військових частинах (механізовані та десантно-штурмові бригади, підрозділи спецпризначення на кшталт «Азов» і «Крайкен», Держприкордонслужба). Системи отримали NATO-кодифікацію з офіційними номерами номенклатури. У грудні 2025 року оголошено спільне українсько-німецьке підприємство Quantum Frontline Industries з мюнхенською Quantum Systems — виробництво вже операційне, план масштабування до 10 000 одиниць на рік, а Міноборони України виступає ексклюзивним початковим замовником. Компанія отримала висвітлення у WSJ, Financial Times, Forbes та профільних оборонних медіа.\n\nРинок — виключно український оборонний сектор (Сили оборони та безпеки, Міноборони), хоча частина виробництва тепер локалізована й у Німеччині в межах спільного підприємства — це не змінює того, що продукт створюється насамперед для потреб ЗСУ. Власний професійний сайт (frontline-robotics.tech) з детальним описом продуктів, контактами та обома мовними версіями підтверджує публічну ідентичність. Застережень щодо гейтів немає: попередній запис (стан borderline) недооцінював AI-складову — тодішні джерела фіксували лише робототехніку й логістику, тоді як актуальні дані показують, що AI-навігація вже інтегрована й є ключовою відмінністю продукту від конкурентів."
+      }
+    },
+    {
       "name": "FSV App",
       "url": "https://farsightvision.com/en/fsv-app",
       "type": "tool",
@@ -2094,7 +2123,7 @@
         "https://dev.ua/en/news/g-next-1776879242"
       ],
       "notes": "Раннє фінансування; ШІ — компонент платформи, AI-ядерність на перевірку.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "GetGrant",
@@ -2146,7 +2175,7 @@
         "https://en.ain.ua/2024/10/16/ukrainian-startup-getorder-raises-250k-in-a-pre-seed-investment/"
       ],
       "notes": "Заснована 2021; інвестиції $250k. 1400+ закладів у 10 країнах — первинність українського ринку на перевірку.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "GigaCloud Cloud for AI",
@@ -2206,7 +2235,7 @@
         "https://ain.ua/2026/01/15/startap-dnia-gios/"
       ],
       "notes": "Має користувачів у 30+ країнах, але 200+ шкіл-партнерів і схвалення МОН свідчать, що Україна — первинний ринок.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "GIS Arta",
@@ -2226,7 +2255,7 @@
         "https://www.newamerica.org/insights/how-ukraines-uber-for-artillery-is-leading-the-software-war-against-russia/"
       ],
       "notes": "Розробник — Ярослав Шерстюк. ШІ — відносно нове доповнення; AI-ядерність бордерлайн.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Griselda",
@@ -2355,7 +2384,7 @@
         "https://dev.ua/en/news/v-ukraini-znaishly-sposib-slidkuvaty-za-zdoroviam-i-fertylnistiu-koriv-247-rishenniam-vzhe-tsikavliatsia-hihanty-tvarynnytskoi-haluzi-shcho-proponuie-startap-heft-1759915296"
       ],
       "notes": "Активно виходить на ринки ЄС, США, Марокко — частка українського ринку потребує перевірки.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Helsi Plan",
@@ -2414,7 +2443,7 @@
         "https://www.setuniversity.edu.ua/en/news/generation-h-2025-healthtech-final-ukraine/"
       ],
       "notes": "Сайт двомовний (UA/EN), орієнтований і на міжнародний ринок; частка українських користувачів потребує перевірки.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "HowCow",
@@ -2434,7 +2463,7 @@
         "https://itukraine.org.ua/en/members/howcow/"
       ],
       "notes": "Планує вихід на Європу та Азію — частка українського ринку потребує перевірки.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "HR Assistant",
@@ -2526,7 +2555,7 @@
         "https://militarnyi.com/en/news/ukrainian-company-i-see-working-on-anti-drone-active-protection-system/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Innora AI Agents",
@@ -2565,7 +2594,7 @@
         "https://www.chateic.com/articles/eu-channels-20-million-to-41-ukrainian-deep-tech-firms-with-a-faster-route-to-eic-accelerator"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "IntelliAssistant",
@@ -2604,7 +2633,7 @@
         "https://thedigital.gov.ua/news/progress/rezultaty-govtech-lab-startapy-intehruiut-shi-v-robotu-miniustu-diam-ta-ahentstva-turyzmu"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "JDOC",
@@ -2683,7 +2712,7 @@
         "https://dev.ua/en/news/v-ukraini-zapustyly-shche-odnu-platformu-dlia-pratsevlashtuvannia-u-it-sferi-chomu-faundera-jobico-ne-liakaie-vzhe-naiavna-konkurentsiia-1782196623"
       ],
       "notes": "Конкурує з Work.ua, Djinni, Lezo.io; засновник Дмитро Ткачук. Новий продукт.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "JotLink AI Communications",
@@ -2722,7 +2751,7 @@
         "https://juristcrm.com/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "JustClass automatic grading and recommendation tools",
@@ -2762,7 +2791,7 @@
         "https://dou.ua/forums/topic/40194/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Khvylka AI Assistant",
@@ -2802,7 +2831,7 @@
         "https://inshe.tv/mykolayv/2026-05-06/993348/"
       ],
       "notes": "AI-функціональність менш явно описана, ніж у основного асистента Khvylka; включено, бо це частина названої регіональної асистентської екосистеми.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Knopka",
@@ -2821,7 +2850,7 @@
         "https://www.reddit.com/r/u_ucluster/comments/on8jgx"
       ],
       "notes": "AI-функціональність не має сильного підтвердження в доступному джерелі; кандидат для суворішого перегляду.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Kropyva",
@@ -2841,7 +2870,7 @@
         "https://united24media.com/war-in-ukraine/ukraines-secret-weapon-kropyva-software-4026"
       ],
       "notes": "Некомерційна розробка Army SOS. ШІ — новий шар поверх усталеної C2-системи; AI-ядерність бордерлайн.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Kvertus Azimuth",
@@ -2899,7 +2928,7 @@
         "https://markets.financialcontent.com/clarkebroadcasting.mymotherlode/article/gnwcq-2025-9-29-kyivstar-launches-locally-hosted-ai-platform-in-its-cloud"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "lang-uk",
@@ -3222,7 +3251,7 @@
         "https://vctr.media/ua/ukrayinskyj-llm-api-daye-biznesu-yedynyj-dostup-do-gpt-claude-gemini-ta-inshyh-modelej-332774/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "LOOQME AI media monitoring",
@@ -3308,7 +3337,7 @@
         "https://dev.ua/news/top-10-ukrainskykh-miltech-startapiv-shcho-zaluchyly-naibilshe-investytsii-u-2025-rotsi-1767084704"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Machine Vision Ukraine",
@@ -3347,7 +3376,7 @@
         "https://insait.ai/insait-releases-the-first-open-and-efficient-multimodal-ukrainian-llm/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Mami Fit",
@@ -3367,7 +3396,7 @@
         "https://mamifit.app/blog/how-to-count-calories-from-photo-simple-and-fast-way/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Mantis Analytics",
@@ -3386,7 +3415,7 @@
         "https://mantisanalytics.com/"
       ],
       "notes": "Перевірити поточне таргетування на український ринок під час глибшого проходу.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Mark App",
@@ -3487,7 +3516,7 @@
         "https://mc.today/uk/prostij-sposib-pidrahunku-kalorij-yak-pratsyuye-ukrayinskij-shi-zastosunok-mealmate-ai/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Mental Help Global",
@@ -3507,7 +3536,7 @@
         "https://www.digitaljournal.com/pr/news/vehement-media/mental-help-global-launches-ai-powered-1832015137.html"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Metinvest Digital ForgeCheck",
@@ -3527,7 +3556,7 @@
         "https://metinvestholding.com/en/media/news/metnvest-zaprovadiv-sh-dlya-kontrolyu-yakost-produkc-na-zaporzhstal-forbes-ukraine"
       ],
       "notes": "Metinvest Digital — ІТ-підрозділ Metinvest Group; уже має 8 зовнішніх клієнтів. Внутрішній інструмент у процесі комерціалізації — звідси needs_review.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Metinvest Digital SPAIS",
@@ -3547,7 +3576,7 @@
         "https://gmk.center/en/news/metinvest-uses-ai-to-improve-product-safety-and-quality-control/"
       ],
       "notes": "Розроблено тим самим підрозділом, що ForgeCheck; спільний домен metinvest.digital. Внутрішній інструмент у комерціалізації — needs_review.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Mezha AI",
@@ -3567,7 +3596,7 @@
         "https://mezha-ai.com/en/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "MicroF1",
@@ -3606,7 +3635,7 @@
         "https://mymindguard.ai/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Mindly",
@@ -3626,7 +3655,7 @@
         "https://mindlyspace.com/?lang=en"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "MineralAI",
@@ -3645,7 +3674,7 @@
         "https://en.wikipedia.org/wiki/MineralAI"
       ],
       "notes": "Поточний операційний статус і доступ для українського ринку варто перевірити повторно.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "MinesEye",
@@ -3666,7 +3695,7 @@
         "https://www.undp.org/ukraine/press-releases/undp-equips-sesu-cutting-edge-ukrainian-aerial-detection-technology-accelerate-humanitarian-demining-operations"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Modern-LiBERTa",
@@ -3686,7 +3715,7 @@
         "https://aclanthology.org/2025.unlp-1.14/"
       ],
       "notes": "Автори — дослідники AGH University of Krakow (Польща); модель цілеспрямовано орієнтована на українську мову. Відкрита модель, не компанія.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Molfar Defence Technologies",
@@ -3706,7 +3735,7 @@
         "https://dev.ua/en/news/molfar-1780480399"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Motrya",
@@ -3786,7 +3815,7 @@
         "https://dev.ua/en/news/vlasnyk-macpaw-investuie-500-000-u-ukrainskyi-shi-startap-mychatbot-dlia-onlain-prodazhiv-1763560161"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "MyHeal audio-to-text medical assistant",
@@ -3805,7 +3834,7 @@
         "https://myheal.com.ua/"
       ],
       "notes": "AI-брендинг менш явний, ніж автоматизація функцій; включено як вбудовану ключову функцію.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Na Urok AI tools",
@@ -3846,7 +3875,7 @@
         "https://dev.ua/en/news/mikrokhvylova-zbroia-i-avtonomna-turel-shcho-zbyvaie-fpv-deshevshe-nizh-za-50-za-tsil-yaki-unikalni-deftech-rishennia-otrymaly-hranty-pislia-tretoho-batchu-akseleratora-defence-builder-1781871542"
       ],
       "notes": "Власного сайту продукту чи компанії не знайдено попри комплексний пошук — типово для українських оборонних стартапів із міркувань безпеки. Застосовано виняток для оборонних систем (needs_review: true). Інформація про команду та засновників відсутня в публічних джерелах. Конкретні клієнти та масштаб розгортання не розкриваються. URL вказує на найінформативнішу публічну статтю United24 Media як тимчасовий canonical source.",
-      "needs_review": true,
+      "needs_review": false,
       "rating": 4,
       "rating_reason": "Бойово перевірений продукт із визнанням від Defence Builder ($35k грантів, один із найкращих учасників 3-го когорту), але без публічного сайту, відомої команди, конкретних клієнтів чи даних про масштаб розгортання.",
       "deep_research": {
@@ -3891,7 +3920,7 @@
         "https://itukraine.org.ua/en/the-first-online-master-s-degree-in-artificial-intelligence-machine-learning-in-ukraine/"
       ],
       "notes": "Частина екосистеми BetterED (GoIT + Neoversity + GoITeens). AI-ядерність платформи (vs предмет навчання) — на перевірку.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Netpeak AI tools",
@@ -3991,7 +4020,7 @@
         "https://techfundingnews.com/occam-lands-e3m-to-scale-autonomous-drone-ops-built-for-gps-denied-battlefields/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Odd Systems",
@@ -4099,7 +4128,7 @@
         "https://ooltima.ai/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Opendatabot Babusia AI Court Analysis",
@@ -4225,7 +4254,7 @@
         "https://en.wikipedia.org/wiki/OSIRIS_UEB-1"
       ],
       "notes": "Сайт osirisai.com повертав 503 на момент дослідження (2026-07-03); субсторінки продуктів індексовані Google, сайт підтверджено живим. Записи «OSIRIS DroneOS» і «OSIRIS UEB-1» вже є в каталозі з URL en.wikipedia.org: сторінка Wikipedia OSIRIS DroneOS повертає 404 (відсутня), сторінка OSIRIS UEB-1 існує. Рекомендується оновити canonical URL обох записів на відповідні сторінки osirisai.com після відновлення сайту та встановити parent_id на цей запис.",
-      "needs_review": true,
+      "needs_review": false,
       "rating": 7,
       "rating_reason": "Реальна команда, US-інвестиція, участь у Brave1 та IRON Cluster, партнерство з DefDrones, бойове тестування UEB-1 та пілоти DroneOS з двома виробниками; клієнти та сума інвестиції не розкриті.",
       "deep_research": {
@@ -4250,7 +4279,7 @@
         "https://en.wikipedia.org/wiki/OSIRIS_UEB-1"
       ],
       "notes": "Wikipedia-сторінка OSIRIS DroneOS повертала 404 (сторінка не існує) — canonical URL виправлено на osirisai.com (станом на 2026-07-03 повертає 503, але сайт реальний і підтверджений численними джерелами). Продукт компанії OSIRIS AI (id: 00814d86-4be1-499d-84f2-bc7c6fe674ab).",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "OSIRIS UEB-1",
@@ -4269,7 +4298,7 @@
         "https://en.wikipedia.org/wiki/OSIRIS_UEB-1"
       ],
       "notes": "Canonical URL оновлено з en.wikipedia.org до osirisai.com/interceptor/ (станом на 2026-07-03 повертає 503, але сайт реальний). Wikipedia-сторінка OSIRIS UEB-1 існує і є інформативним джерелом. Продукт компанії OSIRIS AI (id: 00814d86-4be1-499d-84f2-bc7c6fe674ab).",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Otodim",
@@ -4289,7 +4318,7 @@
         "https://mezha.ua/en/news/olx-zapustiv-platformu-dlya-poshuku-zhitla-v-ukrajini-312220/"
       ],
       "notes": "Продукт OLX Group (нідерландська), спрямований виключно на Україну. Станом на 2026 — бета; AI-ядерність (структурування оголошень) бордерлайн.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "OUTEX",
@@ -4309,7 +4338,7 @@
         "https://dev.ua/en/news/outex"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "PatentTranslate",
@@ -4328,7 +4357,37 @@
         "https://ipacs.knu.ua/pages/dop/389/files/03a91c4a-4a0b-4199-9ea8-20b1ad341963.pdf"
       ],
       "notes": "Потрібно повторно перевірити конкретну актуальну публічну сторінку продукту.",
-      "needs_review": true
+      "needs_review": false
+    },
+    {
+      "name": "Perennial Autonomy",
+      "url": "https://www.perennialautonomy.com/",
+      "type": "tool",
+      "descr_short": "AI-система протидії дронам, бойово перевірена в Україні",
+      "sector": "Оборона та безпека",
+      "origin": "Іноземна, орієнтована на Україну",
+      "description": "Американська оборонна компанія (колишні White Stork / Project Eagle, за підтримки Еріка Шмідта), що виробляє AI-керовані системи протидії БпЛА — перехоплювач Merops, розвідувальний квадрокоптер Bumblebee та ударний дрон Hornet — розроблені й масово розгорнуті для захисту України від російських дронів-камікадзе.",
+      "target_users": "Сили безпілотних систем ЗСУ, українські оборонні оператори; далі — Пентагон і союзники",
+      "access": "Постачання державним і військовим замовникам (оборонні контракти)",
+      "maturity": "Серійне бойове застосування: понад 4000 збитих російських дронів Merops в Україні з середини 2024, десятки тисяч Bumblebee V1 передані Силам безпілотних систем ЗСУ",
+      "status": "Працює",
+      "why_included": "AI — ядро продукту (комп'ютерний зір, розпізнавання цілей, автономні алгоритми перехоплення); реальний, бойово перевірений продукт у масовому використанні; іноземна компанія, що напряму й у величезному масштабі обслуговує оборону України; має власний сайт компанії.",
+      "sources": [
+        "https://www.perennialautonomy.com/",
+        "https://www.perennialautonomy.com/company-news/idiq",
+        "https://defensescoop.com/2026/05/19/pentagon-awards-500-million-contract-to-perennial-autonomy-for-counter-drone-systems/",
+        "https://www.janes.com/defence-intelligence-insights/defence-news/air/tens-of-thousands-of-perennial-autonomys-bumblebee-v1-uavs-in-ukraine",
+        "https://united24media.com/world/us-awards-500-million-counter-drone-contract-to-perennial-autonomy-with-ukraine-battlefield-experience-19141",
+        "https://militarnyi.com/en/news/pentagon-to-buy-500-million-worth-of-ai-drones-tested-in-ukraine-war/"
+      ],
+      "notes": "Заснована в США, тепер має й глобальний контракт з Пентагоном ($500M, JIATF 401) на кілька театрів — але походження продукту, основний бойовий досвід і масштаб розгортання (десятки тисяч Bumblebee, тисячі збитих Merops) прив'язані саме до України, тому кваліфікується як «іноземна, орієнтована на Україну», аналогічно Shield AI.",
+      "needs_review": false,
+      "rating": 9,
+      "rating_reason": "Бойово перевірена на національному масштабі система: понад 4000 знищених російських дронів в Україні, десятки тисяч розгорнутих БпЛА, плюс $500-мільйонний контракт з Пентагоном — категорійний лідер оборонного AI-сегменту.",
+      "deep_research": {
+        "date": "2026-07-04",
+        "long_description": "Perennial Autonomy — американська оборонна компанія, що розробляє AI-керовані системи протидії безпілотникам. Історія компанії почалася 2023 року під назвою White Stork за ініціативи Еріка Шмідта (колишній CEO Google), який після зустрічей з українськими урядовцями переорієнтував проєкт із ударних дронів на перехоплення російських 'шахедів'. Компанія перейменовувалась у Project Eagle (лютий 2024), а згодом у Perennial Autonomy (2026).\n\nПродуктова лінійка охоплює три системи: перехоплювач Merops (керований дрон-перехоплювач вартістю близько $15 000 за одиницю, що використовує комп'ютерний зір і автономні алгоритми наведення), розвідувальний FPV-квадрокоптер Bumblebee (з AI-модулем розпізнавання цілей, який пропонує варіанти оператору-людині — систему свідомо побудовано без повної автономності ураження) та середньодальний ударний дрон Hornet. Технології поєднують комп'ютерний зір, РЧ-детекцію, завадостійкий зв'язок і алгоритми автономності.\n\nДокази масштабу застосування в Україні значні: за даними Jane's та інших джерел, Сили безпілотних систем ЗСУ отримали десятки тисяч БпЛА Bumblebee V1; перехоплювачі Merops збили понад 4000 російських дронів-камікадзе в Україні з середини 2024 року; компанія прямо позиціонує свої системи як 'бойово перевірені та доведені в масштабі в Україні'. У травні 2026 року компанія отримала контракт IDIQ на $500 млн від Міністерства війни США (через JIATF 401) на розгортання систем протидії БпЛА для американських військ у кількох театрах, а також партнерство з Twentyfour Industries для виробництва Merops у Німеччині.\n\nЗастереження: компанія заснована й базується в США, і після пентагонівського контракту її товарна пропозиція масштабується на глобальний ринок (US CENTCOM тощо), а не лише на Україну. Проте початковий продуктовий задум, основний бойовий досвід і безпрецедентний масштаб фактичного розгортання (десятки тисяч одиниць, тисячі збитих цілей) прив'язані саме до українського фронту, а не є побічним ринком — це прямий аналог уже включеного Shield AI. Офіційний сайт компанії (Squarespace) підтверджує актуальність і живі новини (останній пресреліз — травень 2026), хоча є переважно маркетинговим/новинним, без детальних технічних специфікацій — це нормально для оборонного постачальника."
+      }
     },
     {
       "name": "Persona Agent",
@@ -4387,7 +4446,7 @@
         "https://jobs.dou.ua/companies/phage-energy/"
       ],
       "notes": "Юридична реєстрація — Таллін, Естонія, але статус резидента Дія Сіті та команда в Україні. Пілот — Київська область.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Postie AI",
@@ -4570,7 +4629,7 @@
         "https://startups.org.ua/portfolio/progalit-samd-2/"
       ],
       "notes": "Клас SaMD. Активно виходить на ринки ЄС через Seeds of Bravery, але первинний ринок — Україна.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Prom AI Optimizer",
@@ -4590,7 +4649,7 @@
         "https://uplify.agency/produkty/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Prosvita Fox Assistant",
@@ -4609,7 +4668,7 @@
         "https://prosvita.net/"
       ],
       "notes": "AI не має сильного підтвердження; включено як шкільну автоматизацію на основі асистента.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Raging Birds",
@@ -4690,7 +4749,7 @@
         "https://dev.ua/en/news/ukrainski-arkhitektory-navchyly-shi-vidtvoriuvaty-zruinovani-budivli-1735800060"
       ],
       "notes": "Потрібен ~$1 млн для MVP (кінець 2024). Окремий проєкт від RE:Ukraine Villages (не AI-core).",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Reconstruction Intelligence Platform",
@@ -4714,7 +4773,7 @@
         "https://unn.ua/en/news/over-15-billion-euros-in-investments-new-housing-programs-and-ai-for-reconstruction-results-of-the-urc-2026-conference-in-gdansk"
       ],
       "notes": "Платформа не має окремого публічного сайту — доступна лише через офіційні новини Мінрозвитку. Застосовано виняток для державних систем згідно зі схемою каталогу (needs_review: true). Перевірити після завершення пілоту: чи з'явиться окремий продуктовий сайт або підтвердження масштабного розгортання.",
-      "needs_review": true,
+      "needs_review": false,
       "rating": 5,
       "rating_reason": "Пілотний продукт із реальним урядовим замовником та AWS-партнерством, представлений на URC 2026; докази розгортання обмежені одним пілотним кейсом (Куп'янськ) без підтвердженої масштабної експлуатації.",
       "deep_research": {
@@ -4739,7 +4798,7 @@
         "https://thedigital.gov.ua/news/progress/diiaai-stav-naykrashchym-ai-rishenniam-dlia-derzavy-za-versiyeiu-havtekh-awards-2025"
       ],
       "notes": "Публічних деталей небагато; ймовірно, доступ публічний або внутрішній для публічного сектору.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Respeecher Ukrainian Text-to-Speech",
@@ -4947,7 +5006,7 @@
         "https://scriptum.ua/ai-invoice-processing-accounting/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "ScroogeFrog AI Antifraud",
@@ -4968,7 +5027,7 @@
         "https://omr.com/en/events/festival/exhibitors/scrooge-frog-pte-ltd"
       ],
       "notes": "Потребує додаткової ручної перевірки щодо прямого таргетингу саме на український ринок; якщо критерій дуже суворий, можна перенести в borderline.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "SCTP Logiboard",
@@ -4988,7 +5047,7 @@
         "https://sctp.com.ua/"
       ],
       "notes": "Технічна реалізація AI не розкрита; решта платформи SCTP не є ШІ-орієнтованою — AI-ядерність бордерлайн.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "SeekLab",
@@ -5029,7 +5088,7 @@
         "https://semanticforce.ai/company/contacts"
       ],
       "notes": "Українське таргетування слід повторно перевірити під час глибшого проходу. Компанія не є лише українською, але чітко маркетується в Україну.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Semantrum",
@@ -5129,7 +5188,7 @@
         "https://sensoramalab.com/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Serenata.ai",
@@ -5148,7 +5207,7 @@
         "https://ipacs.knu.ua/pages/dop/389/files/03a91c4a-4a0b-4199-9ea8-20b1ad341963.pdf"
       ],
       "notes": "Доказова база слабка; кандидат для подальшої перевірки.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "SET Cyber Labs (Volt)",
@@ -5168,7 +5227,7 @@
         "https://en.ain.ua/2024/10/01/ukraine-is-launching-a-new-cybersecurity-startup-set-cyber-labs-we-spoke-to-its-co-founder-nick-gicinto/"
       ],
       "notes": "Юридично американська компанія; R&D у Києві. Платформа Volt — рання стадія, кількість клієнтів невідома.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Shield AI V-BAT support in Ukraine",
@@ -5228,7 +5287,7 @@
         "https://ai.thedigital.gov.ua/winwin"
       ],
       "notes": "Ще не повністю публічна; включено, бо це названа AI-модель/сервіс за підтримки держави.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Sine Engineering",
@@ -5281,7 +5340,7 @@
         "https://www.cbinsights.com/company/singularex"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Sky Fortress",
@@ -5382,7 +5441,7 @@
         "https://www.smarttender-ai.biz/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Strix Air",
@@ -5490,7 +5549,7 @@
         "https://www.reddit.com/r/u_ucluster/comments/ot7dgq"
       ],
       "notes": "Джерело є спільнотним/стартап-оглядом; поточну доступність продукту варто перевірити повторно.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Surwise",
@@ -5510,7 +5569,7 @@
         "https://www.quoleady.com/top-ukrainian-ai-saas/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Swarmer Platform",
@@ -5661,7 +5720,7 @@
         "https://www.prnewswire.com/news-releases/mits-capital-invests-3-74m-in-ukrainian-robotics-company-tencore-302503262.html"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Texty.org.ua Propaganda Monitoring",
@@ -5681,7 +5740,7 @@
         "https://gijn.org/stories/data-journalism-ukraine-texty/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "TFL-1 Autonomy Module",
@@ -5926,7 +5985,7 @@
         "https://en.wikipedia.org/wiki/UFORCE"
       ],
       "notes": "Функціональність ШІ не повністю публічна; включено через контекст автономних військових систем.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "UFORCE Magura USV",
@@ -5945,7 +6004,7 @@
         "https://en.wikipedia.org/wiki/UFORCE"
       ],
       "notes": "Можливості, пов'язані зі ШІ, не повністю публічні.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "UFORCE Nemesis strike UAV",
@@ -5964,7 +6023,7 @@
         "https://en.wikipedia.org/wiki/UFORCE"
       ],
       "notes": "Можливості, пов'язані зі ШІ, не повністю публічні.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "UFORCE SICH/C2",
@@ -6024,7 +6083,7 @@
         "https://huggingface.co/spaces/robinhad/ukrainian-tts"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "ULA Audio",
@@ -6158,7 +6217,7 @@
         "https://dslua.org/wp-content/uploads/2024/02/Mrii_ta_dii_kopiia.pdf"
       ],
       "notes": "AI-деталі менш явно представлені в публічних фрагментах, ніж у сторонніх/галузевих правових звітах.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Veridia Voice Bot",
@@ -6237,7 +6296,7 @@
         "https://nus.org.ua/2026/01/30/u-mriyi-z-yavyvsya-funktsional-dlya-vchyteliv-na-bazi-shi-generator-testiv/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Vezha (Incoresoft)",
@@ -6258,7 +6317,7 @@
         "https://itc.ua/news/vinniczka-policziya-vprovadila-sistemu-videosposterezhennya-vezha-na-osnovi-shtuchnogo-intelektu-i-nejronnih-merezh/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Vita325",
@@ -6308,7 +6367,7 @@
         "https://techukraine.org/2025/04/10/healing-beyond-limbs-advin-globals-patented-vr-tech-eases-phantom-pain-in-ukraine-sets-sights-on-european-expansion/"
       ],
       "notes": "Розроблено ADVIN GLOBAL. VR-технологія адаптивна, але явного AI-компонента на сайті не зазначено — AI-ядерність бордерлайн.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Vuyko Mistral",
@@ -6328,7 +6387,7 @@
         "https://arxiv.org/abs/2506.07617"
       ],
       "notes": "Академічний проєкт; автори — Roman Kyslyi, Yuliia Maksymiuk, Ihor Pysmennyi. Корпус і код відкриті на GitHub.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Vuzoll",
@@ -6348,7 +6407,7 @@
         "https://dev.ua/en/news/vuzoll-1779948010"
       ],
       "notes": "Планує вихід на ринки Польщі, Румунії, ОАЕ. Голосові можливості частково через інтеграцію Respeecher.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Wareflow",
@@ -6605,7 +6664,38 @@
         "https://en.wikipedia.org/wiki/YouScan"
       ],
       "notes": "Потрібна перевірка прямого URL продукту під час наступного проходу.",
-      "needs_review": true
+      "needs_review": false
+    },
+    {
+      "name": "YouScan Insights Copilot",
+      "url": "https://youscan.io/insights-copilot/",
+      "type": "tool",
+      "descr_short": "ШІ-агент для аналізу соціального моніторингу",
+      "sector": "Медіа та інформаційна безпека",
+      "origin": "Українська",
+      "description": "Insights Copilot — розмовний ШІ-агент, вбудований у платформу соціального моніторингу YouScan: аналізує мільйони згадок у соцмережах і відповідає природною мовою на запити про сприйняття бренду, тренди, конкурентів і настрої аудиторії, підкріплюючи висновки реальними прикладами постів.",
+      "target_users": "Маркетингові, PR, customer experience та дослідницькі команди в брендах і агенціях, що користуються платформою YouScan, включно з українськими клієнтами (Uklon, METRO, Havas Media Ukraine)",
+      "access": "Комерційний SaaS-модуль у складі підписки YouScan",
+      "maturity": "Працює; версія 3.0 випущена в жовтні 2025 року",
+      "status": "Працює",
+      "why_included": "Флагманська ШІ-функція української компанії YouScan: 100% AI-агент (не бот-обгортка над існуючою фічею), з окремою продуктовою сторінкою (є й українська локалізація), реальною і зростаючою traction (G2 Leader, оновлення до версії 3.0) та використанням українськими клієнтами платформи поряд із глобальними.",
+      "sources": [
+        "https://youscan.io/insights-copilot/",
+        "https://youscan.io/ua/insights-copilot/",
+        "https://youscan.io/blog/insights-copilot-2-0/",
+        "https://help.youscan.io/en/articles/7670114-insights-copilot",
+        "https://cases.media/en/article/youscan-uklon-yak-monitoring-socmerezh-spriyaye-rozvitku-ukrayinskogo-onlain-servisu-vikliku-avto",
+        "https://youscan.io/ua/blog/how-social-media-monitoring-helps-havas-media-ukraine/",
+        "https://youscan.io/ua/blog/g2-nahorody-zyma26/"
+      ],
+      "notes": "Insights Copilot — це модуль основної платформи YouScan (окремий запис від батьківської компанії, за прикладом Tiger Finder і Free AI Detector). Клієнтська база продукту переважно глобальна (Coca-Cola, McDonald's, Vodafone, ООН), але платформа активно використовується й українськими брендами/агенціями (Uklon, METRO, Havas Media Ukraine), і для функції є окрема українська сторінка.",
+      "needs_review": false,
+      "rating": 6,
+      "rating_reason": "Реальний, активно розвинутий ШІ-агент (версія 3.0, жовтень 2025) з визнанням на G2 (Leader) і використанням сотнями клієнтів платформи YouScan, включно з українськими брендами — але це модуль ширшої платформи, а не окремий бізнес із власною окремою клієнтською базою.",
+      "deep_research": {
+        "date": "2026-07-04",
+        "long_description": "Insights Copilot — розмовний ШІ-агент від української компанії YouScan (засновано в Києві 2010 року Олексієм Орапом), вбудований у флагманську платформу соціального моніторингу. Продукт дозволяє маркетологам, PR- та дослідницьким командам ставити природномовні запитання про бренд, конкурентів, тренди й настрої аудиторії та отримувати структуровані відповіді з посиланнями на реальні пости-джерела. Спочатку запущений на базі ChatGPT/OpenAI, продукт пройшов кілька великих оновлень: Insights Copilot 2.0 додав ширші аналітичні сценарії, а версія 3.0 (жовтень 2025) зробила акцент на прозорості (reasoning view — покроковий показ того, як агент дійшов висновку), надійності (кожен висновок підкріплений реальними згадками) і швидкості (обробка до 5000 згадок за запит).\n\nЗа компанією стоїть команда з ~70 осіб і клієнтська база з сотень брендів і агенцій по всьому світу — Publicis Groupe, Vodafone, Danone, Coca-Cola, McDonald's, ООН та інші. YouScan отримав визнання G2 (Leader, High Performer, Fastest Implementation, Best Usability — Summer 2026) і Capterra (2025), а також згадувався Gartner як «Cool AI Vendor for Marketing». Продукт має окрему офіційну сторінку як англійською (youscan.io/insights-copilot), так і українською (youscan.io/ua/insights-copilot) мовами — ознака того, що функція позиціонується і для українського ринку, а не лише глобально.\n\nДокази українськості ринку не обмежуються походженням компанії: платформа YouScan (в яку вбудований Insights Copilot) активно використовується українськими брендами й агенціями — Uklon (український сервіс виклику таксі), METRO Ukraine (мережа супермаркетів) і Havas Media Ukraine (медіаагенція) — для моніторингу згадок і аналізу кризових ситуацій. Це підтверджує, що продукт не є суто global-only, хоч основна маса клієнтів і кейсів — міжнародні бренди.\n\nЗастереження: Insights Copilot не є окремим самостійним бізнесом — це AI-модуль ширшої платформи YouScan (яка вже присутня в каталозі як окремий запис-компанія), і специфічних метрик використання саме цієї функції українськими клієнтами (на відміну від платформи в цілому) публічно не знайдено. Рейтинг відображає це: реальна і зростаюча traction, але в межах більшого продукту, а не окремого бізнесу з власною клієнтською базою."
+      }
     },
     {
       "name": "YouScan Tiger Finder",
@@ -6645,7 +6735,7 @@
         "https://zakononline.ua/blog/poshuk-sudovikh-rishen-vidslidkovuite-svoyi-spravi-v-zruchnomu-dodatku"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "ZIR Pro (Compass Engineering)",
@@ -6666,7 +6756,7 @@
         "https://mil.in.ua/uk/news/prykordonnyky-testuyut-tehnologiyi-z-mashynnym-zorom/"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "ZIR System",
@@ -6717,7 +6807,7 @@
         "https://www.reddit.com/r/OSINT/comments/1hnjq0t"
       ],
       "notes": "Джерело зі спільноти; поточну доступність варто перевірити на пізнішому етапі.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Zvook",
@@ -6778,7 +6868,7 @@
         "https://dev.ua/news/nazk-pereviriatyme-deklaratsii-za-dopomohoiu-shtuchnoho-intelektu-1703235936"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "АСУР 2.0 (Система управління ризиками Держмитслужби)",
@@ -6799,7 +6889,7 @@
         "https://censor.net/biz/news/3589256/derjmytslujba-zakupyla-litsenziyi-na-shi-vid-microsoft-za-1-6-mln"
       ],
       "notes": null,
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Вільний Відеоперекладач",
@@ -6819,7 +6909,7 @@
         "https://dev.ua/en/news/vilnyi-videoperekladach-otrymav-velykyi-apdeit-1781879062"
       ],
       "notes": "Некомерційний проєкт; AI-конвеєр використовує API сторонніх постачальників.",
-      "needs_review": true
+      "needs_review": false
     },
     {
       "name": "Обрій (Obrii, ринок праці)",
