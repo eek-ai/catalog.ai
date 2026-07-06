@@ -67,11 +67,13 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         run: |
-          curl -sS -X POST https://slack.com/api/chat.postMessage \
-            -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -d "{\"channel\": \"#dark-factory\", \"text\": \"🔴 site deploy FAILED (Pages) · $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\"}" \
-            || true
+          for channel in "#dark-factory" "#logs"; do
+            curl -sS -X POST https://slack.com/api/chat.postMessage \
+              -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+              -H "Content-Type: application/json; charset=utf-8" \
+              -d "{\"channel\": \"$channel\", \"text\": \"🔴 site deploy FAILED (Pages) · $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\"}" \
+              || true
+          done
 
   # Success ping: confirms the site is actually live (distinct from the
   # factory's publish-web message, which only confirms the data was published).
