@@ -13,7 +13,12 @@ const slug = (name) =>
 // in the data file (see ai-workflows/data/schema.json). The dashboard reads them
 // directly — no keyword heuristics. The file holds published entries only;
 // borderline/excluded live in the pipeline's DB and never reach the site.
-export const tools = raw.tools.map((t) => ({ ...t, id: slug(t.name) }));
+// Default order: highest significance rating first, unrated entries last,
+// ties broken by name. `rating` (1–10) is the enrichment field from the DB;
+// freshly discovered entries have none yet, so they sort to the bottom.
+export const tools = raw.tools
+  .map((t) => ({ ...t, id: slug(t.name) }))
+  .sort((a, b) => (b.rating ?? -1) - (a.rating ?? -1) || a.name.localeCompare(b.name, "uk"));
 
 export const getTool = (id) => tools.find((t) => t.id === id);
 
