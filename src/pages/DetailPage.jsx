@@ -1,5 +1,6 @@
-import { useParams, Link, useLocation } from "react-router-dom";
-import { getTool, statusClass, vocabLabel, originShort } from "../data.js";
+import { Link, useLocation } from "react-router";
+import { statusClass, vocabLabel, originShort } from "../data.js";
+import { useHydrated } from "../hydration.js";
 import { useLang } from "../i18n.jsx";
 
 const DETAIL_FIELDS = [
@@ -54,12 +55,13 @@ function FieldValue({ name, value, t, lang }) {
   return value;
 }
 
-export default function DetailPage() {
-  const { id } = useParams();
-  const { search } = useLocation();
+export default function DetailPage({ tool }) {
+  const location = useLocation();
+  const search = useHydrated() ? location.search : "";
   const { t, lang } = useLang();
-  const tool = getTool(id);
-  const backTo = { pathname: "/", search };
+  const prefix = lang === "en" ? "/en" : "";
+  const browsePath = tool?.type === "company" ? "/company" : tool?.type === "platform" ? "/platform" : "";
+  const backTo = { pathname: `${prefix}${browsePath}` || "/", search };
 
   if (!tool) {
     return (

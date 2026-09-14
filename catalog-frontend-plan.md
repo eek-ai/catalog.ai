@@ -20,23 +20,34 @@ Reuse the current design and React components. React familiarity and shared rout
 layouts, and data-loading conventions make this the preferred option for growth.
 No runtime server or database migration is needed for this release.
 
+Canonical entry URLs use Latin transliteration of Ukrainian names. Keep existing
+Latin slugs unchanged and retain old Cyrillic paths as compatibility aliases;
+catalog links and sitemap entries use the canonical Latin paths.
+
 ## Stages
 
 ### 1. Establish the baseline — complete
 
 Reviewed 2026-09-13: [baseline and verification cases](docs/frontend-baseline.md).
-267 entries, all researched; no slug collisions. Use React Router 7.18.3 with
-existing React 18/Vite 5 and npm. Generate 540 browse/detail paths across both languages.
+267 entries, all researched; no slug collisions. The baseline records existing
+behavior and representative URLs. Final dependency and URL choices are recorded below.
 
 - Inspect the current checkout and deployment; preserve unrelated local changes.
 - Inventory entry URLs, slugs, language switching, filters, and back navigation.
 - Check empty/duplicate slugs and record representative routes for verification.
 
-### 2. Adopt framework mode and prerender — 8–12 h
+### 2. Adopt framework mode and prerender — complete
+
+Reviewed 2026-09-14: React Router 7.18.3, React 19.3.0, Vite 8.3.0; npm only.
+564 routes: six browse pages, 534 canonical detail pages, 24 legacy aliases.
+Build and six slug tests pass. Strict static-host browser checks pass for direct
+URLs, filters, history, language, alias replacement, and mobile facet controls.
+Shared JavaScript is 365,900 bytes versus 2,593,639 before migration.
 
 - Select compatible dependencies; migrate to route modules, shared layouts, and loaders.
 - Enumerate entry and browse routes from JSON and prerender them during the build.
-- Preserve existing entry URLs, including Cyrillic slugs, and `/` / `/en` routing.
+- Use transliterated Latin slugs, preserve old Cyrillic URLs as aliases, and retain
+  `/` / `/en` routing. Fail the build on empty or conflicting slugs.
 - Provide linked browse pages covering all entry types; discovery must not require
   operating JavaScript tabs or filters.
 
@@ -55,6 +66,9 @@ existing React 18/Vite 5 and npm. Generate 540 browse/detail paths across both l
 - Include real anchor links in HTML; keep arbitrary filter combinations out of
   the sitemap and define their canonical handling.
 - Preserve English UI support without treating Ukrainian entry text as translated.
+  Canonicalize English UI copies and legacy aliases to the Ukrainian canonical
+  page; list only canonical, unfiltered URLs in the sitemap. Add translation
+  annotations when the main content is actually translated.
 
 ### 5. Verify and release — 6–10 h
 

@@ -1,0 +1,41 @@
+import { Links, Scripts, ScrollRestoration, useLocation } from "react-router";
+import App from "./App.jsx";
+import { getLangFromPath, LangProvider, titleForLang } from "./i18n.jsx";
+import stylesheet from "./styles.css?url";
+
+export function links() {
+  return [
+    { rel: "stylesheet", href: stylesheet },
+    { rel: "icon", type: "image/png", href: "/favicon.ico" },
+  ];
+}
+
+export default function Root() {
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname);
+
+  return (
+    <html lang={lang}>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{titleForLang(lang)}</title>
+        <Links />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1XRSX7FKQ" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-M1XRSX7FKQ');",
+          }}
+        />
+      </head>
+      <body>
+        <LangProvider lang={lang} location={location}>
+          <App />
+        </LangProvider>
+        <ScrollRestoration />
+        <Scripts />
+      </body>
+    </html>
+  );
+}

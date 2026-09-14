@@ -1,12 +1,12 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router";
 import { statusClass, sectorClass, vocabLabel } from "../data.js";
 import { useLang } from "../i18n.jsx";
 
-export default function ToolCard({ tool, showAll = false }) {
+export default function ToolCard({ tool, showAll = false, search = "" }) {
   const { t, lang } = useLang();
   // Carry the active filters into the detail URL so "back" restores the list.
-  const { search } = useLocation();
-  const to = { pathname: `/tool/${tool.id}`, search };
+  const prefix = lang === "en" ? "/en" : "";
+  const to = { pathname: `${prefix}/tool/${tool.id}`, search };
 
   return (
     <article className="tool-card">

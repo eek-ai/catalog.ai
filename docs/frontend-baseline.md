@@ -57,3 +57,17 @@ Check `/tool/acrontis`, `/tool/a-gnostics`, `/tool/abm-rinkai-tms`, mixed Unicod
 - Pages must publish nested HTML and `.data` output and stop using the copied SPA fallback. Explicit `/en` route branches replace runtime basename detection.
 
 No product question blocks Stage 2.
+
+## Implementation decisions after the baseline
+
+- The approved package upgrades use React/React DOM 19.3.0 and Vite 8.3.0 with
+  React Router 7.18.3. RR 8's newer prerender pipeline hit `ENAMETOOLONG` when
+  writing percent-encoded legacy Cyrillic paths; RR 7's stable pipeline writes
+  those paths successfully, without patches.
+- Canonical slugs now use Ukrainian national transliteration. Existing ASCII
+  slugs are unchanged; 12 Cyrillic slugs remain compatibility aliases in both
+  language branches. That produces 564 prerendered routes, including six browse
+  pages. Empty slugs and collisions must fail the build.
+- Type tabs now link to `/`, `/company`, and `/platform` (and `/en` mirrors).
+  Explicit detail-back links return to the matching type page with the query;
+  old query-based type selection remains supported.

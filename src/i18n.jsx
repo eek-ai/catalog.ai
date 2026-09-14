@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext } from "react";
 
 // UI chrome only. The controlled vocabularies (sector/status/origin) are
 // translated separately via vocabLabel in data.js. Per-entry content
@@ -106,25 +106,19 @@ const STRINGS = {
 
 const LangContext = createContext(null);
 
-// Language lives in the URL as an optional `/en` path prefix (see main.jsx),
-// making it the single source of truth — shareable and bookmark-able.
 const EN_PREFIX = /^\/en(?=\/|$)/;
 
-export function LangProvider({ children }) {
-  const lang = EN_PREFIX.test(window.location.pathname) ? "en" : "uk";
+export const getLangFromPath = (pathname) => (EN_PREFIX.test(pathname) ? "en" : "uk");
+export const titleForLang = (lang) => STRINGS[lang].title;
 
-  useEffect(() => {
-    document.documentElement.lang = lang;
-    document.title = STRINGS[lang].title;
-  }, [lang]);
-
-  // Switching navigates (full load) so the router picks up the new basename
-  // and every link re-prefixes. Path + query are preserved across the switch.
+export function LangProvider({ children, lang, location }) {
   const setLang = (next) => {
     if (next === lang) return;
-    const { pathname, search, hash } = window.location;
-    const bare = pathname.replace(EN_PREFIX, "") || "/";
-    const target = (next === "en" ? "/en" + (bare === "/" ? "" : bare) : bare) + search + hash;
+    const bare = location.pathname.replace(EN_PREFIX, "") || "/";
+    const target =
+      (next === "en" ? "/en" + (bare === "/" ? "" : bare) : bare) +
+      location.search +
+      location.hash;
     window.location.assign(target);
   };
 

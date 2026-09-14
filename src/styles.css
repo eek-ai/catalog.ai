@@ -114,6 +114,7 @@ body {
 .tab {
   background: none;
   border: none;
+  text-decoration: none;
   color: var(--muted);
   font: inherit;
   font-size: 15px;
