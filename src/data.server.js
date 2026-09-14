@@ -18,7 +18,6 @@ const listingEntries = entries.map(
     status,
     needs_review,
     sources,
-    rating,
     maturity,
     access,
   }) => ({
@@ -32,8 +31,7 @@ const listingEntries = entries.map(
     target_users,
     status,
     needs_review,
-    sources,
-    rating,
+    sourceCount: sources?.length ?? 0,
     maturity,
     access,
   })

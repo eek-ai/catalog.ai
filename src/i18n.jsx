@@ -51,6 +51,8 @@ const STRINGS = {
     review_banner: "⚠ Публічні докази слабкі — запис потребує перевірки.",
     visit: "Перейти на сайт ↗",
     sources: "Джерела",
+    research: "Дослідження",
+    research_updated: "Дослідження оновлено",
     not_found: "Інструмент не знайдено.",
   },
   en: {
@@ -100,6 +102,8 @@ const STRINGS = {
     review_banner: "⚠ Public evidence is weak — this entry needs review.",
     visit: "Visit site ↗",
     sources: "Sources",
+    research: "Research",
+    research_updated: "Research updated",
     not_found: "Tool not found.",
   },
 };

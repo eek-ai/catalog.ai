@@ -48,8 +48,8 @@ export default function ToolCard({ tool, showAll = false, search = "" }) {
             {t("unverified")}
           </span>
         )}
-        {tool.sources?.length > 0 && (
-          <span className="src-count" title={t("sources_title")}>🔗 {tool.sources.length}</span>
+        {tool.sourceCount > 0 && (
+          <span className="src-count" title={t("sources_title")}>🔗 {tool.sourceCount}</span>
         )}
         <Link to={to} className="tool-link">
           {t("details")}

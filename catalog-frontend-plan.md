@@ -51,7 +51,12 @@ Shared JavaScript is 365,900 bytes versus 2,593,639 before migration.
 - Provide linked browse pages covering all entry types; discovery must not require
   operating JavaScript tabs or filters.
 
-### 3. Adapt components and data — 5–8 h
+### 3. Adapt components and data — complete
+
+Reviewed 2026-09-14: all research paragraphs and dates render in detail HTML.
+Listings keep source counts and omit full sources/research; server-side rating
+order is preserved. Desktop/mobile browser checks pass for research, English UI,
+wrapped tabs, and filtered detail/back navigation; no console warnings or errors.
 
 - Preserve search, facets, counts, tabs, query parameters, and back navigation.
 - Remove render-time dependence on browser globals, especially in `i18n.jsx`;
