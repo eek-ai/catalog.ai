@@ -7,6 +7,9 @@ const STRINGS = {
   uk: {
     title: "Українські AI-інструменти",
     subtitle: "Каталог AI-продуктів і платформ, створених в Україні або для України.",
+    browse_heading_tool: "Українські AI-інструменти",
+    browse_heading_company: "Українські AI-компанії",
+    browse_heading_platform: "Українські AI-платформи",
     tab_tool: "Інструменти",
     tab_company: "Компанії",
     tab_platform: "Платформи",
@@ -58,6 +61,9 @@ const STRINGS = {
   en: {
     title: "Ukrainian AI Tools",
     subtitle: "A catalog of AI products and platforms built in or for Ukraine.",
+    browse_heading_tool: "Ukrainian AI Tools",
+    browse_heading_company: "Ukrainian AI Companies",
+    browse_heading_platform: "Ukrainian AI Platforms",
     tab_tool: "Tools",
     tab_company: "Companies",
     tab_platform: "Platforms",
@@ -114,20 +120,11 @@ const EN_PREFIX = /^\/en(?=\/|$)/;
 
 export const getLangFromPath = (pathname) => (EN_PREFIX.test(pathname) ? "en" : "uk");
 export const titleForLang = (lang) => STRINGS[lang].title;
+export const textForLang = (lang, key) => STRINGS[lang]?.[key] ?? key;
 
-export function LangProvider({ children, lang, location }) {
-  const setLang = (next) => {
-    if (next === lang) return;
-    const bare = location.pathname.replace(EN_PREFIX, "") || "/";
-    const target =
-      (next === "en" ? "/en" + (bare === "/" ? "" : bare) : bare) +
-      location.search +
-      location.hash;
-    window.location.assign(target);
-  };
-
-  const t = (key) => STRINGS[lang]?.[key] ?? key;
-  return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>;
+export function LangProvider({ children, lang }) {
+  const t = (key) => textForLang(lang, key);
+  return <LangContext.Provider value={{ lang, t }}>{children}</LangContext.Provider>;
 }
 
 export const useLang = () => useContext(LangContext);

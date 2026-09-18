@@ -1,8 +1,16 @@
-import { Link, Outlet } from "react-router";
+import { Link, Outlet, useLocation, useMatches } from "react-router";
+import { useHydrated } from "./hydration.js";
 import { useLang } from "./i18n.jsx";
+import { canonicalDetailPath, pathForLang } from "./seo.js";
 
 function LangToggle() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
+  const location = useLocation();
+  const tool = useMatches().find((match) => match.loaderData?.tool)?.loaderData.tool;
+  const hydrated = useHydrated();
+  const contentPath = tool
+    ? `${lang === "en" ? "/en" : ""}${canonicalDetailPath(tool.id)}`
+    : location.pathname;
   const options = [
     { id: "uk", label: "UA", title: "Українська" },
     { id: "en", label: "EN", title: "English" },
@@ -11,15 +19,19 @@ function LangToggle() {
   return (
     <div className="lang-toggle" role="group" aria-label="Language">
       {options.map((option) => (
-        <button
+        <Link
           key={option.id}
+          to={
+            pathForLang(contentPath, option.id) +
+            (hydrated ? location.search + location.hash : "")
+          }
+          reloadDocument
           className={lang === option.id ? "active" : ""}
-          onClick={() => setLang(option.id)}
-          aria-pressed={lang === option.id}
+          aria-current={lang === option.id ? "page" : undefined}
           title={option.title}
         >
           {option.label}
-        </button>
+        </Link>
       ))}
     </div>
   );
@@ -27,7 +39,7 @@ function LangToggle() {
 
 export default function App() {
   const { t, lang } = useLang();
-  const home = lang === "en" ? "/en" : "/";
+  const home = lang === "en" ? "/en/" : "/";
 
   return (
     <div className="app">

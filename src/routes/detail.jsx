@@ -1,12 +1,32 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router";
 import { getEntry } from "../data.server.js";
+import { getLangFromPath, textForLang, titleForLang } from "../i18n.jsx";
 import DetailPage from "../pages/DetailPage.jsx";
+import { canonicalDetailPath, pageMetadata } from "../seo.js";
 
 export function loader({ params }) {
   const tool = getEntry(params.id);
   if (!tool) throw new Response("Not Found", { status: 404 });
   return { tool };
+}
+
+export function meta({ loaderData, location }) {
+  const lang = getLangFromPath(location.pathname);
+  const tool = loaderData?.tool;
+
+  if (!tool) {
+    return pageMetadata({
+      title: textForLang(lang, "not_found"),
+      description: textForLang(lang, "subtitle"),
+    });
+  }
+
+  return pageMetadata({
+    title: `${tool.name} — ${titleForLang(lang)}`,
+    description: tool.descr_short,
+    canonicalPath: canonicalDetailPath(tool.id),
+  });
 }
 
 export default function DetailRoute({ loaderData }) {
@@ -20,7 +40,7 @@ export default function DetailRoute({ loaderData }) {
     const prefix = pathname.startsWith("/en/") ? "/en" : "";
     navigate(
       {
-        pathname: `${prefix}/tool/${loaderData.tool.id}`,
+        pathname: `${prefix}${canonicalDetailPath(loaderData.tool.id)}`,
         search,
         hash,
       },

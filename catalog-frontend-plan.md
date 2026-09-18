@@ -65,7 +65,12 @@ wrapped tabs, and filtered detail/back navigation; no console warnings or errors
   shared browser imports; render `deep_research.long_description` and sources on
   the relevant detail pages.
 
-### 4. Add search essentials — 6–9 h
+### 4. Add search essentials — complete
+
+Reviewed 2026-09-18: all 564 pages have unique-per-page metadata and the expected
+canonical URL; sitemap contains 270 canonical URLs. Public links use final
+trailing-slash URLs. Nine tests and browser checks pass, including metadata
+updates, alias navigation, and language links with and without JavaScript.
 
 - Generate individual titles, descriptions, canonical URLs, and a sitemap.
 - Include real anchor links in HTML; keep arbitrary filter combinations out of

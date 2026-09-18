@@ -1,12 +1,13 @@
 import { Link } from "react-router";
 import { statusClass, sectorClass, vocabLabel } from "../data.js";
 import { useLang } from "../i18n.jsx";
+import { canonicalDetailPath } from "../seo.js";
 
 export default function ToolCard({ tool, showAll = false, search = "" }) {
   const { t, lang } = useLang();
   // Carry the active filters into the detail URL so "back" restores the list.
   const prefix = lang === "en" ? "/en" : "";
-  const to = { pathname: `${prefix}/tool/${tool.id}`, search };
+  const to = { pathname: `${prefix}${canonicalDetailPath(tool.id)}`, search };
 
   return (
     <article className="tool-card">

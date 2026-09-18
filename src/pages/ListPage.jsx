@@ -47,6 +47,7 @@ export default function ListPage({ filters, entries, sectors, typeCounts }) {
 
   return (
     <>
+      <h1 className="browse-title">{t(`browse_heading_${type}`)}</h1>
       <Tabs active={type} counts={typeCounts} search={search} />
 
       <div className="catalog">

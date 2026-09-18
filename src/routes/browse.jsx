@@ -1,7 +1,9 @@
 import { useLocation, useSearchParams } from "react-router";
 import { getListingData } from "../data.server.js";
 import { useHydrated } from "../hydration.js";
+import { getLangFromPath, textForLang, titleForLang } from "../i18n.jsx";
 import ListPage from "../pages/ListPage.jsx";
+import { canonicalBrowsePath, pageMetadata } from "../seo.js";
 
 export function loader() {
   return getListingData();
@@ -12,6 +14,18 @@ function typeFromPath(pathname) {
   if (normalized.endsWith("/company")) return "company";
   if (normalized.endsWith("/platform")) return "platform";
   return "tool";
+}
+
+export function meta({ location }) {
+  const lang = getLangFromPath(location.pathname);
+  const type = typeFromPath(location.pathname);
+  const heading = textForLang(lang, `browse_heading_${type}`);
+
+  return pageMetadata({
+    title: type === "tool" ? heading : `${heading} — ${titleForLang(lang)}`,
+    description: textForLang(lang, "subtitle"),
+    canonicalPath: canonicalBrowsePath(type),
+  });
 }
 
 export default function BrowseRoute({ loaderData }) {

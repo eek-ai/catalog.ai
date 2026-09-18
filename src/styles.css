@@ -68,7 +68,8 @@ body {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
 }
 
-.lang-toggle button {
+.lang-toggle a {
+  display: block;
   min-width: 38px;
   background: transparent;
   border: none;
@@ -79,21 +80,23 @@ body {
   border-radius: 6px;
   padding: 5px 10px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
   transition: background 140ms ease, color 140ms ease;
 }
 
-.lang-toggle button.active {
+.lang-toggle a.active {
   background: var(--accent-soft);
   color: var(--text);
   box-shadow: 0 0 0 1px #2b3a5a inset;
 }
 
-.lang-toggle button:not(.active):hover {
+.lang-toggle a:not(.active):hover {
   color: var(--text);
   background: var(--panel-2);
 }
 
-.lang-toggle button:focus-visible,
+.lang-toggle a:focus-visible,
 .tab:focus-visible,
 .facet-row:focus-within,
 .search:focus-visible,
@@ -104,6 +107,15 @@ body {
 }
 
 /* Type tabs */
+.browse-title {
+  font-size: 24px;
+  margin: 22px 0 0;
+}
+
+.browse-title + .tabs {
+  margin-top: 12px;
+}
+
 .tabs {
   display: flex;
   gap: 4px;

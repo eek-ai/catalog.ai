@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router";
 import { statusClass, vocabLabel, originShort } from "../data.js";
 import { useHydrated } from "../hydration.js";
 import { useLang } from "../i18n.jsx";
+import { canonicalBrowsePath } from "../seo.js";
 
 const DETAIL_FIELDS = [
   "name",
@@ -60,8 +61,7 @@ export default function DetailPage({ tool }) {
   const search = useHydrated() ? location.search : "";
   const { t, lang } = useLang();
   const prefix = lang === "en" ? "/en" : "";
-  const browsePath = tool?.type === "company" ? "/company" : tool?.type === "platform" ? "/platform" : "";
-  const backTo = { pathname: `${prefix}${browsePath}` || "/", search };
+  const backTo = { pathname: `${prefix}${canonicalBrowsePath(tool?.type)}`, search };
   const research = tool?.deep_research;
 
   if (!tool) {

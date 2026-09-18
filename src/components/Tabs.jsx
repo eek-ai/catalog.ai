@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { types } from "../data.js";
 import { useLang } from "../i18n.jsx";
+import { canonicalBrowsePath } from "../seo.js";
 
 // Primary axis: filter by record `type`. Counts are the totals per type
 // (independent of the other filters).
@@ -10,7 +11,9 @@ export default function Tabs({ active, counts, search }) {
   searchParams.delete("type");
   const cleanSearch = searchParams.toString();
   const prefix = lang === "en" ? "/en" : "";
-  const paths = { tool: prefix || "/", company: `${prefix}/company`, platform: `${prefix}/platform` };
+  const paths = Object.fromEntries(
+    types.map((type) => [type, `${prefix}${canonicalBrowsePath(type)}`])
+  );
 
   return (
     <div className="tabs" role="tablist">
