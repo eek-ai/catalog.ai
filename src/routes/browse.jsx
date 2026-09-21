@@ -1,9 +1,9 @@
-import { useLocation, useSearchParams } from "react-router";
+import { isRouteErrorResponse, useLocation, useSearchParams } from "react-router";
 import { getListingData } from "../data.server.js";
 import { useHydrated } from "../hydration.js";
 import { getLangFromPath, textForLang, titleForLang } from "../i18n.jsx";
 import ListPage from "../pages/ListPage.jsx";
-import { canonicalBrowsePath, pageMetadata } from "../seo.js";
+import { canonicalBrowsePath, errorMetadata, pageMetadata } from "../seo.js";
 
 export function loader() {
   return getListingData();
@@ -16,10 +16,18 @@ function typeFromPath(pathname) {
   return "tool";
 }
 
-export function meta({ location }) {
+export function meta({ error, location }) {
   const lang = getLangFromPath(location.pathname);
   const type = typeFromPath(location.pathname);
   const heading = textForLang(lang, `browse_heading_${type}`);
+
+  if (error) {
+    const notFound = isRouteErrorResponse(error) && error.status === 404;
+    return errorMetadata({
+      title: textForLang(lang, notFound ? "page_not_found" : "error_title"),
+      description: textForLang(lang, notFound ? "page_not_found_message" : "error_message"),
+    });
+  }
 
   return pageMetadata({
     title: type === "tool" ? heading : `${heading} — ${titleForLang(lang)}`,

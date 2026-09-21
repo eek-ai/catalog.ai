@@ -37,7 +37,7 @@ function LangToggle() {
   );
 }
 
-export default function App() {
+export default function App({ children }) {
   const { t, lang } = useLang();
   const home = lang === "en" ? "/en/" : "/";
 
@@ -53,7 +53,7 @@ export default function App() {
         <LangToggle />
       </header>
 
-      <Outlet />
+      {children ?? <Outlet />}
 
       <footer className="footer">
         <p>

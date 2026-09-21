@@ -15,6 +15,10 @@ export function pageMetadata({ title, description, canonicalPath }) {
   ];
 }
 
+export function errorMetadata({ title, description }) {
+  return [...pageMetadata({ title, description }), { name: "robots", content: "noindex" }];
+}
+
 export function canonicalBrowsePath(type) {
   if (type === "company") return "/company/";
   if (type === "platform") return "/platform/";

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { useLocation, useNavigate, useParams } from "react-router";
+import { isRouteErrorResponse, useLocation, useNavigate, useParams } from "react-router";
 import { getEntry } from "../data.server.js";
 import { getLangFromPath, textForLang, titleForLang } from "../i18n.jsx";
 import DetailPage from "../pages/DetailPage.jsx";
-import { canonicalDetailPath, pageMetadata } from "../seo.js";
+import { canonicalDetailPath, errorMetadata, pageMetadata } from "../seo.js";
 
 export function loader({ params }) {
   const tool = getEntry(params.id);
@@ -11,14 +11,15 @@ export function loader({ params }) {
   return { tool };
 }
 
-export function meta({ loaderData, location }) {
+export function meta({ error, loaderData, location }) {
   const lang = getLangFromPath(location.pathname);
   const tool = loaderData?.tool;
 
-  if (!tool) {
-    return pageMetadata({
-      title: textForLang(lang, "not_found"),
-      description: textForLang(lang, "subtitle"),
+  if (error || !tool) {
+    const notFound = !error || (isRouteErrorResponse(error) && error.status === 404);
+    return errorMetadata({
+      title: textForLang(lang, notFound ? "page_not_found" : "error_title"),
+      description: textForLang(lang, notFound ? "page_not_found_message" : "error_message"),
     });
   }
 

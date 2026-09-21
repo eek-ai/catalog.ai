@@ -57,6 +57,11 @@ const STRINGS = {
     research: "Дослідження",
     research_updated: "Дослідження оновлено",
     not_found: "Інструмент не знайдено.",
+    page_not_found: "Сторінку не знайдено",
+    page_not_found_message: "Перевірте адресу або поверніться до каталогу.",
+    error_title: "Щось пішло не так",
+    error_message: "Не вдалося відкрити цю сторінку. Спробуйте ще раз пізніше.",
+    home: "Перейти до каталогу",
   },
   en: {
     title: "Ukrainian AI Tools",
@@ -111,6 +116,11 @@ const STRINGS = {
     research: "Research",
     research_updated: "Research updated",
     not_found: "Tool not found.",
+    page_not_found: "Page not found",
+    page_not_found_message: "Check the address or return to the catalog.",
+    error_title: "Something went wrong",
+    error_message: "This page could not be opened. Please try again later.",
+    home: "Go to the catalog",
   },
 };
 

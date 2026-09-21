@@ -10,7 +10,8 @@
     "dev": "react-router dev",
     "build": "react-router build",
     "postbuild": "node tooling/generate-static-files.js",
-    "preview": "vite preview --outDir build/client",
+    "preview": "node tooling/static-server.js",
+    "verify": "node tooling/verify-build.js",
     "test": "node --test"
   },
   "dependencies": {

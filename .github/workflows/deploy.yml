@@ -3,15 +3,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -30,21 +29,26 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test
+        run: npm test
+
       - name: Build site
         run: npm run build
 
-      - name: Create 404.html for SPA routing
-        run: cp dist/index.html dist/404.html
-
-      - name: Add CNAME for custom domain
-        run: echo "catalog.ai.ua" > dist/CNAME
+      - name: Verify generated site
+        run: npm run verify
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
-          path: dist
+          path: build/client
 
   deploy:
+    if: github.event_name != 'pull_request'
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -60,7 +64,7 @@ jobs:
   # (the site stays stale and the next cron sees "unchanged" and skips).
   notify-failure:
     needs: [build, deploy]
-    if: failure()
+    if: always() && github.event_name != 'pull_request' && (needs.build.result == 'failure' || needs.deploy.result == 'failure')
     runs-on: ubuntu-latest
     steps:
       - name: Slack alert (best-effort)
@@ -79,7 +83,7 @@ jobs:
   # factory's publish-web message, which only confirms the data was published).
   notify-success:
     needs: [build, deploy]
-    if: success()
+    if: always() && github.event_name != 'pull_request' && needs.build.result == 'success' && needs.deploy.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Slack alert (best-effort)

@@ -4,6 +4,7 @@ import {
   canonicalBrowsePath,
   canonicalDetailPath,
   canonicalUrl,
+  errorMetadata,
   pathForLang,
   pageMetadata,
 } from "../src/seo.js";
@@ -24,4 +25,11 @@ test("omits canonical metadata when no canonical path is provided", () => {
   const metadata = pageMetadata({ title: "Missing", description: "Missing page" });
   assert.equal(metadata.length, 2);
   assert.equal(metadata.some(({ rel }) => rel === "canonical"), false);
+});
+
+test("marks error metadata noindex without adding a canonical", () => {
+  const metadata = errorMetadata({ title: "Missing", description: "Missing page" });
+  assert.equal(metadata.filter(({ title }) => title).length, 1);
+  assert.equal(metadata.some(({ rel }) => rel === "canonical"), false);
+  assert.deepEqual(metadata.at(-1), { name: "robots", content: "noindex" });
 });

@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { rm, writeFile } from "node:fs/promises";
 import raw from "../data/data.json" with { type: "json" };
 import { addEntrySlugs } from "../src/slug.js";
 import {
@@ -33,4 +33,5 @@ const robots = [
 await Promise.all([
   writeFile("build/client/sitemap.xml", sitemap),
   writeFile("build/client/robots.txt", robots),
+  rm("build/client/__spa-fallback.html", { force: true }),
 ]);
