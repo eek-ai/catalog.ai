@@ -50,7 +50,7 @@ export default function BrowseRoute({ loaderData }) {
         mutate(next);
         return next;
       },
-      { replace: true }
+      { replace: true, preventScrollReset: true }
     );
 
   const filters = {
@@ -88,7 +88,7 @@ export default function BrowseRoute({ loaderData }) {
           ...(type === routeType ? {} : { type }),
           ...(current.get("showAll") === "true" ? { showAll: "true" } : {}),
         },
-        { replace: true }
+        { replace: true, preventScrollReset: true }
       ),
   };
 
