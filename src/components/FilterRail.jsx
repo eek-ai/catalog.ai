@@ -31,12 +31,19 @@ function useRailHeight(ref) {
 function FacetGroup({ title, options, selected, counts, onToggle, labelFn = (x) => x }) {
   // Open by default on desktop, collapsed on mobile so results aren't pushed
   // far down. Local state keeps the user's toggle through count re-renders.
-  const [open, setOpen] = useState(() =>
-    typeof window === "undefined" ? true : window.innerWidth > 760
-  );
+  const [open, setOpen] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth <= 760) setOpen(false);
+  }, []);
   return (
-    <details className="facet" open={open} onToggle={(e) => setOpen(e.currentTarget.open)}>
-      <summary>
+    <details className="facet" open={open}>
+      <summary
+        onClick={(event) => {
+          event.preventDefault();
+          setOpen((current) => !current);
+        }}
+      >
         <span className="facet-title">{title}</span>
         {selected.length > 0 && <span className="facet-selected">{selected.length}</span>}
       </summary>

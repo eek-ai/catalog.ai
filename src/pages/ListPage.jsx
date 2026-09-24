@@ -1,19 +1,19 @@
 import { useMemo } from "react";
-import { tools, sectors, statuses, origins, vocabLabel, originShort } from "../data.js";
+import { statuses, origins, vocabLabel, originShort } from "../data.js";
 import { useLang, countLabel } from "../i18n.jsx";
 import Tabs from "../components/Tabs.jsx";
 import FilterRail from "../components/FilterRail.jsx";
 import FilterChips from "../components/FilterChips.jsx";
 import ToolCard from "../components/ToolCard.jsx";
 
-export default function ListPage({ filters }) {
-  const { type, q, sector, status, origin, showAll, setType, setQuery, toggle, remove, clearAll } =
+export default function ListPage({ filters, entries, sectors, typeCounts }) {
+  const { type, q, sector, status, origin, showAll, search, setQuery, toggle, remove, clearAll } =
     filters;
   const { t, lang } = useLang();
 
   const { visible, counts } = useMemo(() => {
     const needle = q.trim().toLowerCase();
-    const inType = tools.filter((t) => t.type === type);
+    const inType = entries.filter((t) => t.type === type);
     const matchQ = (t) =>
       !needle ||
       `${t.name} ${t.descr_short} ${t.description} ${t.target_users}`
@@ -36,7 +36,7 @@ export default function ListPage({ filters }) {
       visible: inType.filter((t) => matchQ(t) && passes(t, null)),
       counts: { sector: countsFor("sector"), status: countsFor("status"), origin: countsFor("origin") },
     };
-  }, [type, q, sector, status, origin]);
+  }, [entries, type, q, sector, status, origin]);
 
   const label = (v) => vocabLabel(v, lang);
   const groups = [
@@ -47,7 +47,8 @@ export default function ListPage({ filters }) {
 
   return (
     <>
-      <Tabs active={type} onSelect={setType} />
+      <h1 className="browse-title">{t(`browse_heading_${type}`)}</h1>
+      <Tabs active={type} counts={typeCounts} search={search} />
 
       <div className="catalog">
         <FilterRail groups={groups} toggle={toggle} />
@@ -95,7 +96,7 @@ export default function ListPage({ filters }) {
 
           <div className="grid">
             {visible.map((tool) => (
-              <ToolCard key={tool.id} tool={tool} showAll={showAll} />
+              <ToolCard key={tool.id} tool={tool} showAll={showAll} search={search} />
             ))}
           </div>
 

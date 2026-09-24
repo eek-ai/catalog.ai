@@ -1,33 +1,6 @@
-import raw from "../data/data.json";
-
-// Keep Unicode letters/digits so all-Cyrillic names still get a usable slug
-// (a Latin-only filter left names like "Помічник ветерана (Львів)" empty,
-// breaking their detail-page link).
-const slug = (name) =>
-  name
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}]+/gu, "-")
-    .replace(/^-|-$/g, "");
-
-// `sector`, `type`, `status`, `origin`, `needs_review` are authoritative fields
-// in the data file (see ai-workflows/data/schema.json). The dashboard reads them
-// directly — no keyword heuristics. The file holds published entries only;
-// borderline/excluded live in the pipeline's DB and never reach the site.
-export const tools = raw.tools.map((t) => ({ ...t, id: slug(t.name) }));
-
-export const getTool = (id) => tools.find((t) => t.id === id);
-
 // Type tabs (the primary axis), in order. `tool` is the default tab.
 // Labels are translated in the UI (see i18n.jsx).
 export const types = ["tool", "company", "platform"];
-
-// Facet value lists. Sectors are ordered by overall frequency (stable);
-// statuses/origins follow schema.json order.
-const sectorTotals = {};
-for (const t of tools) sectorTotals[t.sector] = (sectorTotals[t.sector] || 0) + 1;
-export const sectors = [...new Set(tools.map((t) => t.sector))].sort(
-  (a, b) => sectorTotals[b] - sectorTotals[a]
-);
 
 export const origins = ["Українська", "Ukraine-linked", "Іноземна, орієнтована на Україну"];
 

@@ -1,5 +1,7 @@
 node_modules
 dist
+build
+.react-router
 data.local
 .tmp_translations
 launch.json

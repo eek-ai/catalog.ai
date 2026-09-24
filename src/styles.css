@@ -68,7 +68,8 @@ body {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
 }
 
-.lang-toggle button {
+.lang-toggle a {
+  display: block;
   min-width: 38px;
   background: transparent;
   border: none;
@@ -79,21 +80,23 @@ body {
   border-radius: 6px;
   padding: 5px 10px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
   transition: background 140ms ease, color 140ms ease;
 }
 
-.lang-toggle button.active {
+.lang-toggle a.active {
   background: var(--accent-soft);
   color: var(--text);
   box-shadow: 0 0 0 1px #2b3a5a inset;
 }
 
-.lang-toggle button:not(.active):hover {
+.lang-toggle a:not(.active):hover {
   color: var(--text);
   background: var(--panel-2);
 }
 
-.lang-toggle button:focus-visible,
+.lang-toggle a:focus-visible,
 .tab:focus-visible,
 .facet-row:focus-within,
 .search:focus-visible,
@@ -104,6 +107,15 @@ body {
 }
 
 /* Type tabs */
+.browse-title {
+  font-size: 24px;
+  margin: 22px 0 0;
+}
+
+.browse-title + .tabs {
+  margin-top: 12px;
+}
+
 .tabs {
   display: flex;
   gap: 4px;
@@ -114,6 +126,7 @@ body {
 .tab {
   background: none;
   border: none;
+  text-decoration: none;
   color: var(--muted);
   font: inherit;
   font-size: 15px;
@@ -648,6 +661,27 @@ body {
   padding: 40px;
 }
 
+.error-page {
+  max-width: 560px;
+  padding: 56px 0;
+}
+
+.error-page h1 {
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+.error-page p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.error-page a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* Detail page */
 .detail {
   max-width: 760px;
@@ -671,7 +705,7 @@ body {
   gap: 12px;
 }
 
-.detail-head h2 {
+.detail-head h1 {
   margin: 0;
   font-size: 24px;
 }
@@ -697,6 +731,28 @@ body {
   line-height: 1.6;
   color: #c7cdd9;
   margin: 14px 0 20px;
+}
+
+.detail-research {
+  margin: 24px 0;
+}
+
+.detail-research h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.detail-research p {
+  color: #c7cdd9;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+
+.detail-research .research-date {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 .detail-meta {
@@ -810,7 +866,7 @@ body {
     font-size: 14px;
   }
   .tabs {
-    overflow-x: auto;
+    flex-wrap: wrap;
     padding-bottom: 1px;
   }
   .tab {

@@ -1,6 +1,8 @@
-import { useParams, Link, useLocation } from "react-router-dom";
-import { getTool, statusClass, vocabLabel, originShort } from "../data.js";
+import { Link, useLocation } from "react-router";
+import { statusClass, vocabLabel, originShort } from "../data.js";
+import { useHydrated } from "../hydration.js";
 import { useLang } from "../i18n.jsx";
+import { canonicalBrowsePath } from "../seo.js";
 
 const DETAIL_FIELDS = [
   "name",
@@ -51,15 +53,16 @@ function FieldValue({ name, value, t, lang }) {
     );
   }
 
-  return value;
+  return <span lang={lang === "en" ? "uk" : undefined}>{value}</span>;
 }
 
-export default function DetailPage() {
-  const { id } = useParams();
-  const { search } = useLocation();
+export default function DetailPage({ tool }) {
+  const location = useLocation();
+  const search = useHydrated() ? location.search : "";
   const { t, lang } = useLang();
-  const tool = getTool(id);
-  const backTo = { pathname: "/", search };
+  const prefix = lang === "en" ? "/en" : "";
+  const backTo = { pathname: `${prefix}${canonicalBrowsePath(tool?.type)}`, search };
+  const research = tool?.deep_research;
 
   if (!tool) {
     return (
@@ -75,13 +78,15 @@ export default function DetailPage() {
       <Link to={backTo} className="back-link">{t("back")}</Link>
 
       <div className="detail-head">
-        <h2>{tool.name}</h2>
+        <h1 lang={lang === "en" ? "uk" : undefined}>{tool.name}</h1>
         <span className={`status status-${statusClass(tool.status)}`}>
           {vocabLabel(tool.status, lang)}
         </span>
       </div>
 
-      <p className="detail-tagline">{tool.descr_short}</p>
+      <p className="detail-tagline" lang={lang === "en" ? "uk" : undefined}>
+        {tool.descr_short}
+      </p>
 
       <div className="tool-tags">
         <span className="tag sector-tag">{vocabLabel(tool.sector, lang)}</span>
@@ -90,6 +95,22 @@ export default function DetailPage() {
       </div>
 
       {tool.needs_review && <p className="review-banner">{t("review_banner")}</p>}
+
+      {research?.long_description && (
+        <section className="detail-research">
+          <h2>{t("research")}</h2>
+          <div lang={lang === "en" ? "uk" : undefined}>
+            {research.long_description.split(/\n\s*\n/).map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+          {research.date && (
+            <p className="research-date">
+              {t("research_updated")}: <time dateTime={research.date}>{research.date}</time>
+            </p>
+          )}
+        </section>
+      )}
 
       <dl className="detail-meta detail-meta-all">
         {DETAIL_FIELDS.filter((field) => !isEmptyValue(tool[field])).map((field) => (

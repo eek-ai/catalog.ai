@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext } from "react";
 
 // UI chrome only. The controlled vocabularies (sector/status/origin) are
 // translated separately via vocabLabel in data.js. Per-entry content
@@ -7,6 +7,9 @@ const STRINGS = {
   uk: {
     title: "Українські AI-інструменти",
     subtitle: "Каталог AI-продуктів і платформ, створених в Україні або для України.",
+    browse_heading_tool: "Українські AI-інструменти",
+    browse_heading_company: "Українські AI-компанії",
+    browse_heading_platform: "Українські AI-платформи",
     tab_tool: "Інструменти",
     tab_company: "Компанії",
     tab_platform: "Платформи",
@@ -51,11 +54,21 @@ const STRINGS = {
     review_banner: "⚠ Публічні докази слабкі — запис потребує перевірки.",
     visit: "Перейти на сайт ↗",
     sources: "Джерела",
+    research: "Дослідження",
+    research_updated: "Дослідження оновлено",
     not_found: "Інструмент не знайдено.",
+    page_not_found: "Сторінку не знайдено",
+    page_not_found_message: "Перевірте адресу або поверніться до каталогу.",
+    error_title: "Щось пішло не так",
+    error_message: "Не вдалося відкрити цю сторінку. Спробуйте ще раз пізніше.",
+    home: "Перейти до каталогу",
   },
   en: {
     title: "Ukrainian AI Tools",
     subtitle: "A catalog of AI products and platforms built in or for Ukraine.",
+    browse_heading_tool: "Ukrainian AI Tools",
+    browse_heading_company: "Ukrainian AI Companies",
+    browse_heading_platform: "Ukrainian AI Platforms",
     tab_tool: "Tools",
     tab_company: "Companies",
     tab_platform: "Platforms",
@@ -100,36 +113,28 @@ const STRINGS = {
     review_banner: "⚠ Public evidence is weak — this entry needs review.",
     visit: "Visit site ↗",
     sources: "Sources",
+    research: "Research",
+    research_updated: "Research updated",
     not_found: "Tool not found.",
+    page_not_found: "Page not found",
+    page_not_found_message: "Check the address or return to the catalog.",
+    error_title: "Something went wrong",
+    error_message: "This page could not be opened. Please try again later.",
+    home: "Go to the catalog",
   },
 };
 
 const LangContext = createContext(null);
 
-// Language lives in the URL as an optional `/en` path prefix (see main.jsx),
-// making it the single source of truth — shareable and bookmark-able.
 const EN_PREFIX = /^\/en(?=\/|$)/;
 
-export function LangProvider({ children }) {
-  const lang = EN_PREFIX.test(window.location.pathname) ? "en" : "uk";
+export const getLangFromPath = (pathname) => (EN_PREFIX.test(pathname) ? "en" : "uk");
+export const titleForLang = (lang) => STRINGS[lang].title;
+export const textForLang = (lang, key) => STRINGS[lang]?.[key] ?? key;
 
-  useEffect(() => {
-    document.documentElement.lang = lang;
-    document.title = STRINGS[lang].title;
-  }, [lang]);
-
-  // Switching navigates (full load) so the router picks up the new basename
-  // and every link re-prefixes. Path + query are preserved across the switch.
-  const setLang = (next) => {
-    if (next === lang) return;
-    const { pathname, search, hash } = window.location;
-    const bare = pathname.replace(EN_PREFIX, "") || "/";
-    const target = (next === "en" ? "/en" + (bare === "/" ? "" : bare) : bare) + search + hash;
-    window.location.assign(target);
-  };
-
-  const t = (key) => STRINGS[lang]?.[key] ?? key;
-  return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>;
+export function LangProvider({ children, lang }) {
+  const t = (key) => textForLang(lang, key);
+  return <LangContext.Provider value={{ lang, t }}>{children}</LangContext.Provider>;
 }
 
 export const useLang = () => useContext(LangContext);
