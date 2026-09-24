@@ -1,27 +1,33 @@
 import { useEffect, useRef, useState } from "react";
 
-// Keeps the sticky rail's height equal to the space between its current top
-// and the bottom of the viewport, so its own scrollbar always reaches the end
-// — whether the header is still in view (rail sits lower) or scrolled away
-// (rail pinned to the top). Disabled on mobile, where the rail flows inline.
+// Keeps the sticky rail inside the visible part of the catalog: from its
+// pinned top (or lower, while the header is in view) down to the viewport
+// bottom or the end of the results column, whichever comes first. Otherwise
+// the footer pushes the rail up at the page end and its first filters become
+// unreachable. Disabled on mobile, where the rail flows inline.
 function useRailHeight(ref) {
   useEffect(() => {
     const rail = ref.current;
-    if (!rail) return;
+    const results = rail?.nextElementSibling;
+    if (!rail || !results) return;
 
     const update = () => {
       if (window.innerWidth <= 760) {
         rail.style.maxHeight = "";
         return;
       }
-      const top = rail.getBoundingClientRect().top;
-      rail.style.maxHeight = `${window.innerHeight - top - 16}px`;
+      const top = Math.max(rail.getBoundingClientRect().top, 16);
+      const bottom = Math.min(window.innerHeight - 16, results.getBoundingClientRect().bottom);
+      rail.style.maxHeight = `${bottom - top}px`;
     };
 
     update();
+    const resizeObserver = new ResizeObserver(update);
+    resizeObserver.observe(results);
     window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
     return () => {
+      resizeObserver.disconnect();
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
     };

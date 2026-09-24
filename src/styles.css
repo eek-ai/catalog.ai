@@ -183,6 +183,8 @@ body {
 .results {
   flex: 1;
   min-width: 0;
+  /* keeps the sticky rail full height when few results match */
+  min-height: calc(100vh - 32px);
 }
 
 /* Facets */
@@ -879,6 +881,9 @@ body {
   .catalog {
     flex-direction: column;
     gap: 16px;
+  }
+  .results {
+    min-height: 0;
   }
   .rail {
     position: static;
