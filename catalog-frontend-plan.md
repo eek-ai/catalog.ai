@@ -1,6 +1,6 @@
 # Frontend migration: React Router framework mode
 
-Approved 2026-09-13 · Scope: this `web` repository.
+Approved 2026-09-13 · Updated 2026-09-24 for stored slugs in `ai-workflows`.
 Read repository instructions and `../ai-workflows/product/VISION.md` first.
 
 ## Goal
@@ -14,11 +14,12 @@ with pages, filters, curated guides, and eventually models.
 Use **React Router framework mode, prerendering, and `ssr: false`**. Build HTML
 and navigation data from committed `data/data.json`; React hydrates the pages.
 Keep GitHub Pages and the Supabase → JSON → git → build publishing flow.
-No runtime server or database migration is required.
+No runtime server is required. A one-off slug backfill is run by the owner.
 
-Canonical entry paths use Ukrainian national transliteration and trailing slashes.
-Existing Latin slugs stay unchanged; Cyrillic paths remain compatibility aliases.
-English UI copies and aliases canonicalize to the Ukrainian content page.
+Canonical entry paths use stored Latin slugs and trailing slashes. One shared Python
+helper generates slugs when entries are added or first published; the export includes
+`slug`, and the frontend uses it unchanged. Existing Latin slugs stay unchanged.
+Legacy aliases are deliberately omitted. English UI copies canonicalize to the Ukrainian content page.
 The sitemap includes only canonical, unfiltered URLs; add language annotations
 when the main content is actually translated.
 
@@ -34,8 +35,8 @@ an empty HTML shell and 2,593,639 bytes of JavaScript; entry URLs returned 404.
 
 React Router 7.18.3, React 19.3.0, Vite 8.3.0; npm is authoritative.
 Shared layout and build-time loaders generate browse/detail HTML and navigation
-data. Slug generation rejects empty or conflicting URLs. RR 7 avoids the RR 8
-prerender filesystem failure on long legacy Cyrillic paths.
+data. Slug generation belongs to the Python publishing scripts; the existing database
+unique constraint rejects collisions at write time.
 
 ### 3. Components and data — complete
 
@@ -56,8 +57,8 @@ Pages publishes `build/client`, including navigation data and the existing custo
 domain. A script-free 404 replaces the copied SPA fallback. PRs run checks only;
 main/manual deployments retain notifications. Concurrency is isolated by git ref.
 
-The merged data update produces **268 entries, 568 routes, and 271 sitemap URLs**.
-Ten tests and exhaustive artifact/HTTP checks pass. Isolated fixtures also pass
+The updated catalog produces **268 entries, 542 routes, and 271 sitemap URLs**.
+Automated metadata tests and exhaustive artifact/HTTP checks cover the generated site. Isolated fixtures also pass
 with missing/short research and verify real framework 404/500 error rendering.
 Final static-host browser acceptance passed on 2026-09-21: genuine 404s, new-entry
 discovery, language/history, no-JavaScript content, and mobile controls; clean consoles.
@@ -79,6 +80,11 @@ Preview serves exact static files on port 4173, with directory redirects and rea
 metadata, sitemap, every HTML/data response, and research payload boundaries.
 
 Release through the reviewed branch and pull request.
+Before merging, apply the companion `ai-workflows` changes and run
+`uv run db/backfill_slugs.py` to preview, then `uv run db/backfill_slugs.py --apply`.
+Export the backfilled catalog with `uv run db/export_catalog.py --out ../web/data/data.json`
+and include any resulting data changes before release. The PR snapshot has slug fields
+prepared locally with the same helper; the live database has not been changed.
 **Production verification remains pending until merge/deployment:** check direct
 entry URLs, unknown URLs, sitemap, navigation data, and language switching on the
 custom domain. Any cloud configuration changes are applied by the owner.

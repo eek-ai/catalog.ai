@@ -2,7 +2,6 @@ import assert from "node:assert/strict";
 import { readFile, readdir, stat } from "node:fs/promises";
 import { join } from "node:path";
 import raw from "../data/data.json" with { type: "json" };
-import { addEntrySlugs } from "../src/slug.js";
 import {
   canonicalBrowsePath,
   canonicalDetailPath,
@@ -11,7 +10,7 @@ import {
 import { createStaticServer } from "./static-server.js";
 
 const BUILD_ROOT = "build/client";
-const entries = addEntrySlugs(raw.tools);
+const entries = raw.tools.map((entry) => ({ ...entry, id: entry.slug }));
 const failures = [];
 
 function check(condition, message) {
@@ -45,12 +44,10 @@ const browseRoutes = [
 ];
 
 const detailRoutes = entries.flatMap((entry) =>
-  ["", "/en"].flatMap((prefix) =>
-    [...new Set([entry.id, entry.legacyId])].map((slug) => ({
-      route: `${prefix}/tool/${slug}/`,
-      entry,
-    }))
-  )
+  ["", "/en"].map((prefix) => ({
+    route: `${prefix}/tool/${entry.id}/`,
+    entry,
+  }))
 );
 
 const expectedRoutes = [...browseRoutes, ...detailRoutes];
@@ -80,6 +77,14 @@ function inspectHead(html, canonical, label) {
   check(canonicals.length === 1, `${label}: expected one canonical, found ${canonicals.length}`);
   check(canonicals[0] === canonical, `${label}: incorrect canonical ${canonicals[0]}`);
 }
+
+for (const entry of entries) {
+  check(
+    typeof entry.id === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(entry.id),
+    `${entry.name}: invalid canonical slug ${JSON.stringify(entry.id)}`
+  );
+}
+check(new Set(entries.map(({ id }) => id)).size === entries.length, "duplicate canonical slugs");
 
 for (const page of browseRoutes) {
   const htmlPath = routeFile(page.route);

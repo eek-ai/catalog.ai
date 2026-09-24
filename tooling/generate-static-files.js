@@ -1,6 +1,5 @@
 import { rm, writeFile } from "node:fs/promises";
 import raw from "../data/data.json" with { type: "json" };
-import { addEntrySlugs } from "../src/slug.js";
 import {
   canonicalBrowsePath,
   canonicalDetailPath,
@@ -9,7 +8,7 @@ import {
 
 const paths = [
   ...["tool", "company", "platform"].map(canonicalBrowsePath),
-  ...addEntrySlugs(raw.tools).map(({ id }) => canonicalDetailPath(id)),
+  ...raw.tools.map(({ slug }) => canonicalDetailPath(slug)),
 ];
 
 const escapeXml = (value) =>

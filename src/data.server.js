@@ -1,7 +1,6 @@
 import raw from "../data/data.json" with { type: "json" };
-import { addEntrySlugs } from "./slug.js";
 
-const entries = addEntrySlugs(raw.tools).sort(
+const entries = raw.tools.map((entry) => ({ ...entry, id: entry.slug })).sort(
   (a, b) => (b.rating ?? -1) - (a.rating ?? -1) || a.name.localeCompare(b.name, "uk")
 );
 
@@ -56,5 +55,5 @@ export function getListingData() {
 }
 
 export function getEntry(id) {
-  return entries.find((entry) => entry.id === id || entry.legacyId === id) ?? null;
+  return entries.find((entry) => entry.id === id) ?? null;
 }
