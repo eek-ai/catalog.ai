@@ -2,6 +2,7 @@
   "tools": [
     {
       "name": "a-Gnostics",
+      "slug": "a-gnostics",
       "url": "https://a-gnostics.com",
       "type": "company",
       "descr_short": "Київський deep tech стартап: Di-agnostics — AI-аналіз звуку промислового обладнання для прогнозу аварій, Pro-gnostics — ML-прогнозування споживання електроенергії з точністю понад 98%.",
@@ -31,6 +32,7 @@
     },
     {
       "name": "ABM Rinkai TMS",
+      "slug": "abm-rinkai-tms",
       "url": "https://abmcloud.com/uk/abm-soft/abm-tms",
       "type": "platform",
       "descr_short": "TMS із машинним навчанням для оптимізації маршрутів",
@@ -63,6 +65,7 @@
     },
     {
       "name": "ACRONTIS",
+      "slug": "acrontis",
       "url": "https://acrontis.com",
       "type": "tool",
       "descr_short": "Нейромережевий модуль наведення AP-FALCON для ударних дронів і стійка відеопередача UL-EAGLE з реконструкцією кадрів для умов РЕБ.",
@@ -94,6 +97,7 @@
     },
     {
       "name": "Advizor",
+      "slug": "advizor",
       "url": "https://www.advizor.energy/",
       "type": "tool",
       "descr_short": "ШІ-платформа управління енергією для будівель",
@@ -121,6 +125,7 @@
     },
     {
       "name": "Aether Biomedical (Zeus)",
+      "slug": "aether-biomedical-zeus",
       "url": "https://www.aetherbiomedical.com/",
       "type": "tool",
       "descr_short": "Біонічний протез руки Zeus з керуванням через нейром'язові сигнали (EMG) і машинним навчанням, який постачається українським ампутантам через Superhumans Center",
@@ -152,6 +157,7 @@
     },
     {
       "name": "AI PSY HELP",
+      "slug": "ai-psy-help",
       "url": "https://ai.psyhelp.info",
       "type": "tool",
       "descr_short": "ШІ-терапевт 24/7 для ветеранів і постраждалих від війни",
@@ -185,6 +191,7 @@
     },
     {
       "name": "AI Методист",
+      "slug": "ai-metodyst",
       "url": "https://ai-metodyst.in.ua",
       "type": "tool",
       "descr_short": "AI-генератор навчальних матеріалів для вчителів і репетиторів: конспекти, тести, кросворди, НМТ-підготовка за 30 секунд на основі українського навчального плану.",
@@ -212,6 +219,7 @@
     },
     {
       "name": "AI.DOC",
+      "slug": "ai-doc",
       "url": "https://doc.ua/ua/ai-doc",
       "type": "tool",
       "descr_short": "медичний AI-асистент",
@@ -243,6 +251,7 @@
     },
     {
       "name": "AiAgents",
+      "slug": "aiagents",
       "url": "https://aiagents.com.ua/",
       "type": "tool",
       "descr_short": "AI-агенти для автоматизації продажів, підтримки та контенту",
@@ -272,6 +281,7 @@
     },
     {
       "name": "Ailand Systems",
+      "slug": "ailand-systems",
       "url": "https://ailandsystems.com/",
       "type": "company",
       "descr_short": "Автономні дрони для виявлення мін із ШІ-розпізнаванням",
@@ -305,6 +315,7 @@
     },
     {
       "name": "AIMAP",
+      "slug": "aimap",
       "url": "https://aimap.aim.ua/en/",
       "type": "tool",
       "descr_short": "AI-маркетплейс і «цифровий двійник» будівельного ринку України для лід-генерації та ринкової аналітики",
@@ -337,6 +348,7 @@
     },
     {
       "name": "Airlogix",
+      "slug": "airlogix",
       "url": "https://airlogix.io/en/",
       "type": "company",
       "descr_short": "Українська компанія-виробник автономних безпілотних систем для Сил оборони України: розвідувальний БпАК GOR та AI-керовані ударні дрони Anubis і Seth-X.",
@@ -376,6 +388,7 @@
     },
     {
       "name": "Alta Ares",
+      "slug": "alta-ares",
       "url": "https://www.altaares.com/",
       "type": "company",
       "descr_short": "Франко-українська оборонна компанія: AI-стек комп'ютерного зору та автономного наведення (Pixel Lock, Gamma ISTAR) для перехоплювачів дронів і крилатих ракет, бойово застосовується в Україні з 2024 р.",
@@ -411,6 +424,7 @@
     },
     {
       "name": "Anima",
+      "slug": "anima",
       "url": "https://anima.help/",
       "type": "platform",
       "descr_short": "AI-платформа ментального добробуту з айтрекінгом",
@@ -444,6 +458,7 @@
     },
     {
       "name": "Anotherland",
+      "slug": "anotherland",
       "url": "https://vrnest.io/",
       "type": "platform",
       "descr_short": "AI-платформа цифрових двійників із архітектурних планів",
@@ -472,6 +487,7 @@
     },
     {
       "name": "Apixmed",
+      "slug": "apixmed",
       "url": "https://apixmed.com/",
       "type": "tool",
       "descr_short": "медичний AI / персоналізована медицина",
@@ -506,6 +522,7 @@
     },
     {
       "name": "AR Book AI Assistant",
+      "slug": "ar-book-ai-assistant",
       "url": "https://arbook.info/",
       "type": "platform",
       "descr_short": "Інтерактивна освітня платформа з AI-асистентом для вчителів",
@@ -538,6 +555,7 @@
     },
     {
       "name": "Ark Robotics Frontier",
+      "slug": "ark-robotics-frontier",
       "url": "https://ark-robotics.com/",
       "type": "tool",
       "descr_short": "оборонна автономна orchestration-платформа / swarm control",
@@ -573,6 +591,7 @@
     },
     {
       "name": "Artellence",
+      "slug": "artellence",
       "url": "https://artellence.com/en",
       "type": "tool",
       "descr_short": "AI-платформа для OSINT-задач: розпізнавання осіб, біометрична ідентифікація та NLP-аналіз текстів у відкритих джерелах для спецслужб і держорганів.",
@@ -605,6 +624,7 @@
     },
     {
       "name": "Aspichi",
+      "slug": "aspichi",
       "url": "https://aspichi.com/",
       "type": "company",
       "descr_short": "VR-терапія психічного здоров'я з AI",
@@ -638,6 +658,7 @@
     },
     {
       "name": "Auterion (Skynode/Nemyx для України)",
+      "slug": "auterion-skynode-nemyx-dlia-ukrainy",
       "url": "https://auterion.com",
       "type": "company",
       "descr_short": "ШІ-автономність (Skynode, Nemyx) для ударних дронів, що масово постачається ЗСУ",
@@ -672,6 +693,7 @@
     },
     {
       "name": "Avengers AI",
+      "slug": "avengers-ai",
       "url": "https://avengers.mil.gov.ua",
       "type": "tool",
       "descr_short": "AI-платформа Міноборони України для автоматичного розпізнавання ворожої бронетехніки у відео з дронів і камер; виявляє понад 12 000 цілей щотижня, інтегрована в бойову систему DELTA.",
@@ -705,6 +727,7 @@
     },
     {
       "name": "BaBayte (BabAI)",
+      "slug": "babayte-babai",
       "url": "https://babayte.org",
       "type": "tool",
       "descr_short": "AI-модуль автономного ухилення від загроз для дронів на основі мультисенсорного злиття (EO/IR/LiDAR/радар) без участі оператора",
@@ -735,6 +758,7 @@
     },
     {
       "name": "Banza AI Assistant",
+      "slug": "banza-ai-assistant",
       "url": "https://banzait.com/uk/",
       "type": "tool",
       "descr_short": "AI-агенти (Navi, Echo, Atlas) для CRM/BPM-автоматизації бізнесу",
@@ -768,6 +792,7 @@
     },
     {
       "name": "Bavovna.AI",
+      "slug": "bavovna-ai",
       "url": "https://bavovna.ai/",
       "type": "tool",
       "descr_short": "AI-навігація для безпілотних апаратів в умовах GPS-заглушення та РЕБ",
@@ -803,6 +828,7 @@
     },
     {
       "name": "Beyond.pl",
+      "slug": "beyond-pl",
       "url": "https://beyond.pl/",
       "type": "company",
       "descr_short": "Оператор державної AI Factory для України",
@@ -835,6 +861,7 @@
     },
     {
       "name": "BrainScan",
+      "slug": "brainscan",
       "url": "https://brainscan.ai/",
       "type": "tool",
       "descr_short": "AI-аналіз КТ-знімків мозку: власна CNN виявляє 30 критичних патологій за лічені хвилини. Розгорнуто в 5+ українських лікарнях (включаючи прифронтовий Краматорськ) у рамках меморандуму з МОЗ України.",
@@ -868,6 +895,7 @@
     },
     {
       "name": "BrandVox",
+      "slug": "brandvox",
       "url": "https://www.brandvox.net/",
       "type": "tool",
       "descr_short": "social media intelligence з AI",
@@ -899,6 +927,7 @@
     },
     {
       "name": "Brave1 Dataroom",
+      "slug": "brave1-dataroom",
       "url": "https://brave1.gov.ua/",
       "type": "platform",
       "descr_short": "захищена платформа для тренування бойового ШІ на фронтових даних",
@@ -930,6 +959,7 @@
     },
     {
       "name": "Buntar Copilot",
+      "slug": "buntar-copilot",
       "url": "https://buntar.com/en/",
       "type": "platform",
       "descr_short": "ШІ-помічник для планування та аналітики розвідувальних місій БпЛА",
@@ -966,6 +996,7 @@
     },
     {
       "name": "C2GRID",
+      "slug": "c2grid",
       "url": "https://www.c2grid.com/",
       "type": "tool",
       "descr_short": "AI-платформа 3D ситуаційної обізнаності поля бою, що перетворює відеопотоки з дронів на інтерактивні тривимірні оперативні карти для підтримки тактичних рішень командирів.",
@@ -1000,6 +1031,7 @@
     },
     {
       "name": "CallAIder",
+      "slug": "callaider",
       "url": "https://callaider.ai/",
       "type": "tool",
       "descr_short": "AI-платформа для автоматичного аналізу 100% телефонних дзвінків з інтеграцією в українські телефонні системи (Binotel, Ringostat, UniTalk, Phonet, Zadarma). Допомагає відділам продажів виявляти помилки, контролювати скрипти та підвищувати якість обслуговування клієнтів.",
@@ -1028,6 +1060,7 @@
     },
     {
       "name": "Calorize",
+      "slug": "calorize",
       "url": "https://calorize.com.ua",
       "type": "tool",
       "descr_short": "AI-щоденник харчування з асистентом Міра для України",
@@ -1057,6 +1090,7 @@
     },
     {
       "name": "Cardio.AI",
+      "slug": "cardio-ai",
       "url": "https://cardio.ai/",
       "type": "platform",
       "descr_short": "ШІ-аналіз ЕКГ та холтер-моніторинг",
@@ -1089,6 +1123,7 @@
     },
     {
       "name": "careeo.tech",
+      "slug": "careeo-tech",
       "url": "https://www.careeo.tech",
       "type": "tool",
       "descr_short": "Голосовий AI-агент для прескринінгу",
@@ -1118,6 +1153,7 @@
     },
     {
       "name": "Celebra Tech",
+      "slug": "celebra-tech",
       "url": "https://celebra.tech/",
       "type": "company",
       "descr_short": "Українська оборонна компанія, що розробляє AI-лазерну систему протидії дронам Тризуб із нейромережевим автономним наведенням.",
@@ -1157,6 +1193,7 @@
     },
     {
       "name": "Chatbot Nadiya",
+      "slug": "chatbot-nadiya",
       "url": "https://ai.thedigital.gov.ua/winwin",
       "type": "tool",
       "descr_short": "державний AI-асистент",
@@ -1186,6 +1223,7 @@
     },
     {
       "name": "Chatbot Natalka",
+      "slug": "chatbot-natalka",
       "url": "https://ai.thedigital.gov.ua/winwin",
       "type": "tool",
       "descr_short": "державний AI-асистент",
@@ -1216,6 +1254,7 @@
     },
     {
       "name": "CheckEye",
+      "slug": "checkeye",
       "url": "https://check-eye.com/uk/",
       "type": "tool",
       "descr_short": "медична AI-платформа скринінгу",
@@ -1251,6 +1290,7 @@
     },
     {
       "name": "Circus Defence CA-1 autonomous kitchens for Ukraine's Armed Forces",
+      "slug": "circus-defence-ca-1-autonomous-kitchens-for-ukraine-s-armed-forces",
       "url": "https://www.circus-group.com/",
       "type": "tool",
       "descr_short": "автономні AI-роботизовані кухні CA-1 для забезпечення харчуванням підрозділів ЗСУ на передовій",
@@ -1285,6 +1325,7 @@
     },
     {
       "name": "Clarity",
+      "slug": "clarity",
       "url": "https://clarity.army",
       "type": "tool",
       "descr_short": "AI-система комп'ютерного зору для автоматичного виявлення ворожих сил і техніки на дронових знімках, яка скорочує час аналізу до 90%.",
@@ -1320,6 +1361,7 @@
     },
     {
       "name": "Clearview AI",
+      "slug": "clearview-ai",
       "url": "https://www.clearview.ai",
       "type": "tool",
       "descr_short": "Американська платформа розпізнавання облич за базою мільярдів фото — використовується понад 1500 українськими посадовцями у 18 держорганах для ідентифікації окупантів, зрадників і викрадених дітей",
@@ -1351,6 +1393,7 @@
     },
     {
       "name": "Codective",
+      "slug": "codective",
       "url": "https://www.codective.one/",
       "type": "tool",
       "descr_short": "Апаратно-незалежний AI-модуль автономної навігації та наведення на ціль для БПЛА у GPS-недоступних умовах.",
@@ -1380,6 +1423,7 @@
     },
     {
       "name": "Codicta",
+      "slug": "codicta",
       "url": "https://codicta.com/",
       "type": "tool",
       "descr_short": "Українська інформаційно-правова система з AI-асистентом",
@@ -1406,6 +1450,7 @@
     },
     {
       "name": "ConnectiveOne",
+      "slug": "connectiveone",
       "url": "https://www.connectiveone.io/en",
       "type": "tool",
       "descr_short": "AI-платформа для автоматизації клієнтської підтримки та омніканальних комунікацій",
@@ -1437,6 +1482,7 @@
     },
     {
       "name": "CONSOLID.AI",
+      "slug": "consolid-ai",
       "url": "https://consolid.ai",
       "type": "tool",
       "descr_short": "AI-платформа цифрової логістики для управління вантажоперевезеннями, тендерами та документами в українських компаніях",
@@ -1469,6 +1515,7 @@
     },
     {
       "name": "Corvus Intelligence",
+      "slug": "corvus-intelligence",
       "url": "https://corvusintell.com",
       "type": "company",
       "descr_short": "Українська оборонна AI-платформа (C2, WARG, SIGINT)",
@@ -1498,6 +1545,7 @@
     },
     {
       "name": "Creora",
+      "slug": "creora",
       "url": "https://creora.io/",
       "type": "tool",
       "descr_short": "AI-генерація фото та відео товарів",
@@ -1525,6 +1573,7 @@
     },
     {
       "name": "Datapark Cloud for AI",
+      "slug": "datapark-cloud-for-ai",
       "url": "https://datapark.ua/eng/cloud-for-ai/",
       "type": "tool",
       "descr_short": "vGPU-хмара для AI-проєктів",
@@ -1556,6 +1605,7 @@
     },
     {
       "name": "Datawiz BI",
+      "slug": "datawiz-bi",
       "url": "https://datawiz.io/",
       "type": "platform",
       "descr_short": "AI-аналітика даних для рітейлу",
@@ -1585,6 +1635,7 @@
     },
     {
       "name": "De Novo AI Studio",
+      "slug": "de-novo-ai-studio",
       "url": "https://denovo.ua/en/ai-studio",
       "type": "tool",
       "descr_short": "платформа для genAI-застосунків",
@@ -1614,6 +1665,7 @@
     },
     {
       "name": "De Novo Hosted Tensor Infrastructure",
+      "slug": "de-novo-hosted-tensor-infrastructure",
       "url": "https://denovo.ua/en/hti",
       "type": "tool",
       "descr_short": "приватна AI-інфраструктура",
@@ -1645,6 +1697,7 @@
     },
     {
       "name": "De Novo LLM Cloud",
+      "slug": "de-novo-llm-cloud",
       "url": "https://denovo.ua/en/llm-cloud",
       "type": "tool",
       "descr_short": "LLM-інфраструктурна платформа",
@@ -1674,6 +1727,7 @@
     },
     {
       "name": "De Novo ML Cloud",
+      "slug": "de-novo-ml-cloud",
       "url": "https://denovo.ua/en/ml-cloud",
       "type": "tool",
       "descr_short": "AI/ML development platform",
@@ -1706,6 +1760,7 @@
     },
     {
       "name": "De Novo Tensor Cloud",
+      "slug": "de-novo-tensor-cloud",
       "url": "https://denovo.ua/en/tensor-cloud",
       "type": "tool",
       "descr_short": "GPU cloud для AI/ML",
@@ -1736,6 +1791,7 @@
     },
     {
       "name": "Defense AI Center A1",
+      "slug": "defense-ai-center-a1",
       "url": "https://a1.mod.gov.ua/",
       "type": "platform",
       "descr_short": "Перший державний центр передового досвіду з інтеграції штучного інтелекту у сфері оборони, заснований Міністерством оборони України у березні 2026 р. за підтримки Уряду Великобританії.",
@@ -1772,6 +1828,7 @@
     },
     {
       "name": "Deftak",
+      "slug": "deftak",
       "url": "https://deftak.com",
       "type": "company",
       "descr_short": "Високоточні керовані боєприпаси для дронів з оптичним наведенням",
@@ -1801,6 +1858,7 @@
     },
     {
       "name": "Delta",
+      "slug": "delta",
       "url": "https://delta.mil.gov.ua/",
       "type": "platform",
       "descr_short": "Хмарна система ситуаційної обізнаності та управління боєм",
@@ -1843,6 +1901,7 @@
     },
     {
       "name": "DevDroid",
+      "slug": "devdroid",
       "url": "https://devdroid.tech",
       "type": "company",
       "descr_short": "Українська компанія, що розробляє AI-контрольовані наземні бойові роботизовані комплекси та дистанційно керовані вогневі модулі для ЗСУ.",
@@ -1889,6 +1948,7 @@
     },
     {
       "name": "DeViro",
+      "slug": "deviro",
       "url": "https://deviro.ua",
       "type": "company",
       "descr_short": "Провідний виробник бойових БпЛА для ЗСУ: розвідувальний Лелека-100 (90% фронтових бригад, відзначений Міноборони у 2026), ударний Булава з комп'ютерним наведенням на ціль (бойове застосування з 2024, дальність до 100 км) та система ухилення від перехоплювачів «Сніч» у серійному виробництві.",
@@ -1928,6 +1988,7 @@
     },
     {
       "name": "Diia.AI",
+      "slug": "diia-ai",
       "url": "https://diia.gov.ua/diia-ai",
       "type": "tool",
       "descr_short": "державний AI-агент для держпослуг",
@@ -1961,6 +2022,7 @@
     },
     {
       "name": "Diia.Business AI Assistants",
+      "slug": "diia-business-ai-assistants",
       "url": "https://business.diia.gov.ua/",
       "type": "tool",
       "descr_short": "п'ять ШІ-асистентів для підприємців на порталі Дія.Бізнес",
@@ -1993,6 +2055,7 @@
     },
     {
       "name": "Diia.Osvita AI Guide",
+      "slug": "diia-osvita-ai-guide",
       "url": "https://osvita.diia.gov.ua/",
       "type": "tool",
       "descr_short": "ШІ-навігатор освітніх матеріалів на Дія.Освіта",
@@ -2025,6 +2088,7 @@
     },
     {
       "name": "Diia.Osvita AI Mentor",
+      "slug": "diia-osvita-ai-mentor",
       "url": "https://osvita.diia.gov.ua/en/news/diia-education-launches-ai-mentor-for-personalized-learning",
       "type": "tool",
       "descr_short": "AI-ментор для персоналізованого навчання на Дія.Освіта",
@@ -2055,6 +2119,7 @@
     },
     {
       "name": "DoD Solution",
+      "slug": "dod-solution",
       "url": "https://dodsolution.com/",
       "type": "company",
       "descr_short": "Модуль автономності AURA для дронів із власним AI-стеком",
@@ -2089,6 +2154,7 @@
     },
     {
       "name": "DronemateAI",
+      "slug": "dronemateai",
       "url": "https://dronemateai.com",
       "type": "tool",
       "descr_short": "AI-бортова плата для дронів та робототехніки",
@@ -2115,6 +2181,7 @@
     },
     {
       "name": "Dropla Blue Eyes",
+      "slug": "dropla-blue-eyes",
       "url": "https://dropla.tech/en/dropla-blue-eyes",
       "type": "tool",
       "descr_short": "оборонний AI / комп'ютерний зір для виявлення мін і засідкових дронів",
@@ -2150,6 +2217,7 @@
     },
     {
       "name": "Dropla Vision",
+      "slug": "dropla-vision",
       "url": "https://dropla.tech/en/dropla-vision",
       "type": "platform",
       "descr_short": "ШІ-платформа мультисенсорного картування для гуманітарного розмінування",
@@ -2186,6 +2254,7 @@
     },
     {
       "name": "Dwarf Engineering",
+      "slug": "dwarf-engineering",
       "url": "https://www.dwarf-engineering.com/en",
       "type": "tool",
       "descr_short": "Автономна навігаційна ОС та модуль наведення для ударних FPV-дронів в умовах РЕБ",
@@ -2218,6 +2287,7 @@
     },
     {
       "name": "ePPO (еППО)",
+      "slug": "eppo-eppo",
       "url": "https://www.technary.com.ua/en/project-eppo/",
       "type": "tool",
       "descr_short": "Мобільний застосунок цивільного спостереження за повітряними цілями з AI-прогнозуванням траєкторій: 600k+ завантажень, дані до карт ЗПО за 2–7 секунди, 80% неба за заявою МОУ",
@@ -2253,6 +2323,7 @@
     },
     {
       "name": "eSputnik AI",
+      "slug": "esputnik-ai",
       "url": "https://esputnik.com/uk",
       "type": "tool",
       "descr_short": "маркетинговий AI",
@@ -2282,6 +2353,7 @@
     },
     {
       "name": "EVE.calls",
+      "slug": "eve-calls",
       "url": "https://evecalls.com/ua",
       "type": "tool",
       "descr_short": "платформа voice AI",
@@ -2313,6 +2385,7 @@
     },
     {
       "name": "eXtra Vision",
+      "slug": "extra-vision",
       "url": "https://www.extra-vision.com/",
       "type": "company",
       "descr_short": "AI- та AR-система для хірургічної навігації",
@@ -2348,6 +2421,7 @@
     },
     {
       "name": "EYA (Enhance Your Ability)",
+      "slug": "eya-enhance-your-ability",
       "url": "https://enhance-your-ability.com",
       "type": "tool",
       "descr_short": "AI-застосунок альтернативної та допоміжної комунікації (AAC) для людей із порушеннями мовлення — дітей із ДЦП, осіб після інсульту чи травми.",
@@ -2382,6 +2456,7 @@
     },
     {
       "name": "F-Drones",
+      "slug": "f-drones",
       "url": "https://fdrones.tech/",
       "type": "tool",
       "descr_short": "Українська компанія-розробник автономного дрона-перехоплювача LITAVR з AI-системою самонаведення, здатного самостійно виявляти та знищувати повітряні цілі без участі пілота у фінальній фазі.",
@@ -2421,6 +2496,7 @@
     },
     {
       "name": "Farsight Vision",
+      "slug": "farsight-vision",
       "url": "https://fsv.global/",
       "type": "company",
       "descr_short": "ШІ для бойової розвідки / картографування",
@@ -2461,6 +2537,7 @@
     },
     {
       "name": "FENEK acoustic detection system",
+      "slug": "fenek-acoustic-detection-system",
       "url": "https://fenek.com.ua/en/",
       "type": "tool",
       "descr_short": "оборонне акустичне виявлення дронів",
@@ -2495,6 +2572,7 @@
     },
     {
       "name": "FinAP",
+      "slug": "finap",
       "url": "https://finap.com.ua/",
       "type": "tool",
       "descr_short": "RegTech-платформа для AML/KYC-комплаєнсу та фінансового моніторингу в українських банках і небанківських фінансових установах з AI-аномалії виявлення транзакцій і ризик-скорингом.",
@@ -2528,6 +2606,7 @@
     },
     {
       "name": "FlyAgData",
+      "slug": "flyagdata",
       "url": "https://www.flyagdata.io",
       "type": "company",
       "descr_short": "ШІ-аналітика агроданих із сільгосптехніки",
@@ -2558,6 +2637,7 @@
     },
     {
       "name": "FoodsPlans",
+      "slug": "foodsplans",
       "url": "https://foodsplans.com",
       "type": "tool",
       "descr_short": "ШІ-застосунок планування харчування та автогенерації списків покупок",
@@ -2588,6 +2668,7 @@
     },
     {
       "name": "FortuneGuard",
+      "slug": "fortuneguard",
       "url": "https://www.fortuneguard.ai",
       "type": "company",
       "descr_short": "AI-платформа страхування воєнних ризиків в Україні",
@@ -2618,6 +2699,7 @@
     },
     {
       "name": "Fremen",
+      "slug": "fremen",
       "url": "https://united24media.com/defense-tech/ukraines-defense-builder-demo-day-showcases-nine-combat-tested-military-tech-innovations-19996",
       "type": "tool",
       "descr_short": "Компактний бортовий модуль (~1 кг) для захисту розвідувальних БПЛА від FPV-перехоплювачів: автономне виявлення та класифікація загроз у польоті.",
@@ -2648,6 +2730,7 @@
     },
     {
       "name": "Frontline Robotics",
+      "slug": "frontline-robotics",
       "url": "https://www.frontline-robotics.tech",
       "type": "company",
       "descr_short": "Українська defence-tech компанія: бойові дрони та турелі з власною AI-навігацією та розпізнаванням цілей",
@@ -2687,6 +2770,7 @@
     },
     {
       "name": "FSV Platform",
+      "slug": "fsv-platform",
       "url": "https://fsv.global/en/fsv-platform",
       "type": "tool",
       "descr_short": "оборонна геопросторова аналітика / situational awareness платформа",
@@ -2722,6 +2806,7 @@
     },
     {
       "name": "G-Next Intelligence",
+      "slug": "g-next-intelligence",
       "url": "https://gnxti.com/",
       "type": "company",
       "descr_short": "Платформа аналітики поля бою в реальному часі",
@@ -2757,6 +2842,7 @@
     },
     {
       "name": "GetGrant",
+      "slug": "getgrant",
       "url": "https://getgrant.eu/",
       "type": "tool",
       "descr_short": "AI-платформа для підбору грантів, яка допомагає українським університетам, НКО, стартапам та бізнесу знаходити відповідне фінансування ЄС і міжнародних програм.",
@@ -2789,6 +2875,7 @@
     },
     {
       "name": "GigaCloud Cloud for AI",
+      "slug": "gigacloud-cloud-for-ai",
       "url": "https://gigacloud.ua/products/cloud-for-ai/",
       "type": "tool",
       "descr_short": "GPU cloud для AI",
@@ -2823,6 +2910,7 @@
     },
     {
       "name": "GigaCloud LLM Cloud",
+      "slug": "gigacloud-llm-cloud",
       "url": "https://gigacloud.ua/products/llm-cloud/",
       "type": "tool",
       "descr_short": "LLM-інфраструктура",
@@ -2853,6 +2941,7 @@
     },
     {
       "name": "GIOS",
+      "slug": "gios",
       "url": "https://gioschool.com",
       "type": "platform",
       "descr_short": "AI-платформа для вивчення математики школярів 5–9 кл.",
@@ -2886,6 +2975,7 @@
     },
     {
       "name": "Griselda",
+      "slug": "griselda",
       "url": "https://griselda.eu/",
       "type": "tool",
       "descr_short": "ШІ-платформа для збору й аналізу військових розвідданих",
@@ -2922,6 +3012,7 @@
     },
     {
       "name": "Ground Robotics (VATAG)",
+      "slug": "ground-robotics-vatag",
       "url": "https://www.groundrobotics.tech/",
       "type": "tool",
       "descr_short": "VATAG — важка безпілотна наземна платформа 8×8 (вантажопідйомність понад 2 т) з ШІ-автономним керуванням для логістики та бойових місій в умовах РЕБ.",
@@ -2957,6 +3048,7 @@
     },
     {
       "name": "Hala Systems",
+      "slug": "hala-systems",
       "url": "https://www.halasystems.com",
       "type": "company",
       "descr_short": "AI-платформа супутникового та OSINT-аналізу для виявлення загроз, документування воєнних злочинів і пошуку викрадених дітей в Україні.",
@@ -2988,6 +3080,7 @@
     },
     {
       "name": "HAPP AI",
+      "slug": "happ-ai",
       "url": "https://happ.tools",
       "type": "company",
       "descr_short": "AI-голосовий агент для обробки дзвінків бізнесу",
@@ -3019,6 +3112,7 @@
     },
     {
       "name": "HEFT",
+      "slug": "heft",
       "url": "https://heft.systems",
       "type": "company",
       "descr_short": "ШІ-платформа моніторингу здоров'я та фертильності корів",
@@ -3051,6 +3145,7 @@
     },
     {
       "name": "Helis (Mental Health by Zdravo)",
+      "slug": "helis-mental-health-by-zdravo",
       "url": "https://mhealthzdravo.com.ua/chatbot",
       "type": "tool",
       "descr_short": "Безкоштовний ШІ чат-бот психологічної підтримки на основі КПТ",
@@ -3082,6 +3177,7 @@
     },
     {
       "name": "Helsi Plan",
+      "slug": "helsi-plan",
       "url": "https://helsi.me/blog/helsi-plan-zdorovia-bez-stresu",
       "type": "tool",
       "descr_short": "Платна AI-підписка Helsi: розшифровка аналізів і AI-відгуки про лікарів",
@@ -3110,6 +3206,7 @@
     },
     {
       "name": "Helsi+",
+      "slug": "helsi",
       "url": "https://app.helsi.me/",
       "type": "tool",
       "descr_short": "AI-сервіс розшифрування аналізів та моніторингу здоров'я в застосунку Helsi",
@@ -3141,6 +3238,7 @@
     },
     {
       "name": "Helsing",
+      "slug": "helsing",
       "url": "https://helsing.ai",
       "type": "tool",
       "descr_short": "німецькі ударні дрони HX-2/HF-1 з бортовим ШІ, стійким до РЕБ, для ЗСУ",
@@ -3174,6 +3272,7 @@
     },
     {
       "name": "HowCow",
+      "slug": "howcow",
       "url": "https://howcow.tech",
       "type": "tool",
       "descr_short": "ШІ-нашийник і CRM-система для моніторингу здоров'я та фертильності корів",
@@ -3206,6 +3305,7 @@
     },
     {
       "name": "HURMA AI",
+      "slug": "hurma-ai",
       "url": "https://hurma.work/capabilities/hurma-ai/",
       "type": "tool",
       "descr_short": "HR / рекрутинг / ATS",
@@ -3236,6 +3336,7 @@
     },
     {
       "name": "I-SEE",
+      "slug": "i-see",
       "url": "https://i-see.com.ua/",
       "type": "tool",
       "descr_short": "Пасивне виявлення дронів на основі комп'ютерного зору й Edge AI",
@@ -3265,6 +3366,7 @@
     },
     {
       "name": "Iron Belly",
+      "slug": "iron-belly",
       "url": "https://militarnyi.com/en/news/shield-ai-together-with-ukrainian-iron-belly-created-attack-drone-with-optical-navigation/",
       "type": "tool",
       "descr_short": "Украïнський стартап, що розробляє та серійно виробляє ударний дрон D4 з AI-оптичною навігацією дальністю до 100 км.",
@@ -3296,6 +3398,7 @@
     },
     {
       "name": "JDOC",
+      "slug": "jdoc",
       "url": "https://jdoc.net.ua",
       "type": "tool",
       "descr_short": "AI-розпізнавання первинних документів для 1С/BAS",
@@ -3325,6 +3428,7 @@
     },
     {
       "name": "JediDesk AI Ready Assistants",
+      "slug": "jedidesk-ai-ready-assistants",
       "url": "https://jedidesk.com/ua/lp-ai/",
       "type": "tool",
       "descr_short": "AI-асистенти для клієнтської підтримки",
@@ -3355,6 +3459,7 @@
     },
     {
       "name": "JobAtlas",
+      "slug": "jobatlas",
       "url": "https://jobatlas.tech/",
       "type": "platform",
       "descr_short": "AI-агент для профорієнтації молоді",
@@ -3389,6 +3494,7 @@
     },
     {
       "name": "Jobico",
+      "slug": "jobico",
       "url": "https://jobico.io",
       "type": "platform",
       "descr_short": "AI-платформа підбору IT-вакансій в Україні",
@@ -3418,6 +3524,7 @@
     },
     {
       "name": "Katran",
+      "slug": "katran",
       "url": "https://vpk-mac.com/en",
       "type": "tool",
       "descr_short": "Бойові безпілотні надводні апарати з AI-виявленням цілей та автономним управлінням при повній втраті зв'язку.",
@@ -3456,6 +3563,7 @@
     },
     {
       "name": "Keycall",
+      "slug": "keycall",
       "url": "https://k-call.com/ua",
       "type": "tool",
       "descr_short": "Київська платформа ШІ-голосових ботів для автоматизації дзвінків",
@@ -3486,6 +3594,7 @@
     },
     {
       "name": "Khvylka AI Assistant",
+      "slug": "khvylka-ai-assistant",
       "url": "https://hello.mkv.net.ua/",
       "type": "tool",
       "descr_short": "регіональний AI-асистент публічного сектору",
@@ -3521,6 +3630,7 @@
     },
     {
       "name": "Krytsia",
+      "slug": "krytsia",
       "url": "https://krytsia.com/",
       "type": "tool",
       "descr_short": "ML-системи для критичної енергетичної інфраструктури: прогнозування споживання і генерації, виявлення аномалій, оптимізація диспетчеризації — поверх SCADA/Historian без заміни існуючих систем.",
@@ -3548,6 +3658,7 @@
     },
     {
       "name": "lang-uk",
+      "slug": "lang-uk",
       "url": "https://lang.org.ua/en/",
       "type": "platform",
       "descr_short": "Спільнота та інфраструктура NLP для української мови",
@@ -3580,6 +3691,7 @@
     },
     {
       "name": "Lanka Robotics",
+      "slug": "lanka-robotics",
       "url": "https://lanka-robotics.com/",
       "type": "tool",
       "descr_short": "Платформо-незалежний AI-модуль автономності для безпілотних наземних машин (UGV) — забезпечує рух до 200 м без зв'язку та GPS за допомогою комп'ютерного зору.",
@@ -3608,6 +3720,7 @@
     },
     {
       "name": "Lapa LLM",
+      "slug": "lapa-llm",
       "url": "https://huggingface.co/spaces/lapa-llm/lapa",
       "type": "tool",
       "descr_short": "Відкрита українська велика мовна модель",
@@ -3640,6 +3753,7 @@
     },
     {
       "name": "Lapathoniia",
+      "slug": "lapathoniia",
       "url": "https://lapathoniia.top/",
       "type": "tool",
       "descr_short": "хостинг LLM / API для інференсу",
@@ -3673,6 +3787,7 @@
     },
     {
       "name": "Legal Mind",
+      "slug": "legal-mind",
       "url": "https://ai-legalmind.com/",
       "type": "tool",
       "descr_short": "AI-застосунок для миттєвих юридичних консультацій, складання документів та прогнозування результатів судових справ за українським законодавством.",
@@ -3706,6 +3821,7 @@
     },
     {
       "name": "Legal Positions Database of the Supreme Court of Ukraine (База правових позицій ВС)",
+      "slug": "legal-positions-database-of-the-supreme-court-of-ukraine-baza-pravovykh-pozytsii-vs",
       "url": "https://lpd.court.gov.ua/",
       "type": "tool",
       "descr_short": "Офіційна база правових позицій Верховного Суду з генеративним AI для узагальнення практики",
@@ -3737,6 +3853,7 @@
     },
     {
       "name": "LetsData Vantage",
+      "slug": "letsdata-vantage",
       "url": "https://letsdata.net/",
       "type": "tool",
       "descr_short": "AI для narrative intelligence та інформаційних операцій",
@@ -3773,6 +3890,7 @@
     },
     {
       "name": "LEX AI Legal Platform",
+      "slug": "lex-ai-legal-platform",
       "url": "https://legal.org.ua/product",
       "type": "tool",
       "descr_short": "юридична AI-платформа",
@@ -3802,6 +3920,7 @@
     },
     {
       "name": "LEZO",
+      "slug": "lezo",
       "url": "https://lezo.io/ua",
       "type": "platform",
       "descr_short": "AI-метчинг кандидатів і вакансій",
@@ -3833,6 +3952,7 @@
     },
     {
       "name": "LIGA360 AI",
+      "slug": "liga360-ai",
       "url": "https://ligazakon.net/ai",
       "type": "platform",
       "descr_short": "юридична та compliance AI-платформа",
@@ -3864,6 +3984,7 @@
     },
     {
       "name": "LIGA360 AI Legislative Analysis Agent",
+      "slug": "liga360-ai-legislative-analysis-agent",
       "url": "https://ligazakon.net/ai",
       "type": "tool",
       "descr_short": "AI для аналізу змін у законодавстві",
@@ -3893,6 +4014,7 @@
     },
     {
       "name": "LIGA360 AI Q&A Assistant",
+      "slug": "liga360-ai-q-a-assistant",
       "url": "https://ligazakon.net/ai",
       "type": "tool",
       "descr_short": "юридичний AI-асистент",
@@ -3921,6 +4043,7 @@
     },
     {
       "name": "LIGA360 AI Summary",
+      "slug": "liga360-ai-summary",
       "url": "https://ligazakon.net/ai",
       "type": "tool",
       "descr_short": "AI для стислого викладу документів",
@@ -3948,6 +4071,7 @@
     },
     {
       "name": "LIGA360 Court Outcome Prediction",
+      "slug": "liga360-court-outcome-prediction",
       "url": "https://ligazakon.net/ai",
       "type": "tool",
       "descr_short": "AI-модуль прогнозування результату судової справи в LIGA360",
@@ -3976,6 +4100,7 @@
     },
     {
       "name": "LOOQME AI media monitoring",
+      "slug": "looqme-ai-media-monitoring",
       "url": "https://looqme.io/",
       "type": "tool",
       "descr_short": "медіамоніторинг / ШІ-аналітика",
@@ -4004,6 +4129,7 @@
     },
     {
       "name": "Lupynis-10-TFL-1",
+      "slug": "lupynis-10-tfl-1",
       "url": "https://thefourthlaw.ai/blog/the-lupynis-10-tfl-1-autonomous-drone-is-available-on-dotchain-and-brave1-market/",
       "type": "tool",
       "descr_short": "бойовий 10-дюймовий FPV-дрон з вбудованим ШІ-наведенням останньої милі від The Fourth Law",
@@ -4040,6 +4166,7 @@
     },
     {
       "name": "M-FLY",
+      "slug": "m-fly",
       "url": "https://m-fly.org/",
       "type": "company",
       "descr_short": "AI-наведення та лазерна підсвітка для дронових боєприпасів",
@@ -4074,6 +4201,7 @@
     },
     {
       "name": "MamayLM",
+      "slug": "mamaylm",
       "url": "https://huggingface.co/blog/INSAIT-Institute/mamaylm",
       "type": "tool",
       "descr_short": "Відкрита мультимодальна українська LLM + публічний чат Mamay AI",
@@ -4104,6 +4232,7 @@
     },
     {
       "name": "Mami Fit",
+      "slug": "mami-fit",
       "url": "https://mamifit.app/",
       "type": "tool",
       "descr_short": "AI-сканер калорій за фото",
@@ -4131,6 +4260,7 @@
     },
     {
       "name": "Mark App",
+      "slug": "mark-app",
       "url": "https://www.mark.health/",
       "type": "tool",
       "descr_short": "медичний AI-застосунок",
@@ -4163,6 +4293,7 @@
     },
     {
       "name": "Mark Assistant",
+      "slug": "mark-assistant",
       "url": "https://www.mark.health/",
       "type": "tool",
       "descr_short": "AI-асистент для медичних операцій",
@@ -4194,6 +4325,7 @@
     },
     {
       "name": "Mark Symptom Checker",
+      "slug": "mark-symptom-checker",
       "url": "https://www.mark.health/",
       "type": "tool",
       "descr_short": "AI symptom checker",
@@ -4226,6 +4358,7 @@
     },
     {
       "name": "MaXon Systems",
+      "slug": "maxon-systems",
       "url": "https://thedefender.media/en/2026/06/maxon-systems-first-autonomous-shahed-interception/",
       "type": "tool",
       "descr_short": "Автономна система ППО проти дронів-камікадзе",
@@ -4262,6 +4395,7 @@
     },
     {
       "name": "Mental Help Global",
+      "slug": "mental-help-global",
       "url": "https://mental-help-global.com/",
       "type": "platform",
       "descr_short": "ШІ-платформа підтримки ментального здоров'я для українців",
@@ -4293,6 +4427,7 @@
     },
     {
       "name": "Metinvest Digital ForgeCheck",
+      "slug": "metinvest-digital-forgecheck",
       "url": "https://metinvest.digital",
       "type": "tool",
       "descr_short": "ШІ-контроль якості металу на виробництві",
@@ -4326,6 +4461,7 @@
     },
     {
       "name": "Metinvest Digital MyOCR",
+      "slug": "metinvest-digital-myocr",
       "url": "https://metinvest.digital/en/page/my-ocr",
       "type": "tool",
       "descr_short": "ШІ-платформа розпізнавання та обробки фінансових документів",
@@ -4355,6 +4491,7 @@
     },
     {
       "name": "Metinvest Digital SPAIS",
+      "slug": "metinvest-digital-spais",
       "url": "https://metinvest.digital/en/page/computer-vision-spais",
       "type": "platform",
       "descr_short": "ШІ-відеоаналітика охорони праці на заводах",
@@ -4385,6 +4522,7 @@
     },
     {
       "name": "Mezha AI",
+      "slug": "mezha-ai",
       "url": "https://mezha-ai.com/",
       "type": "platform",
       "descr_short": "AI-автоматизація контенту для медіа",
@@ -4414,6 +4552,7 @@
     },
     {
       "name": "MicroF1",
+      "slug": "microf1",
       "url": "https://microf1.ua/",
       "type": "platform",
       "descr_short": "ПЗ для кредитування зі скорингом",
@@ -4442,6 +4581,7 @@
     },
     {
       "name": "MinesEye",
+      "slug": "mineseye",
       "url": "https://postup.com.pl/en/demining",
       "type": "tool",
       "descr_short": "Дистанційна платформа гуманітарного розмінування з ШІ та сенсорами",
@@ -4475,6 +4615,7 @@
     },
     {
       "name": "Mitralex",
+      "slug": "mitralex",
       "url": "https://mitralex.com",
       "type": "tool",
       "descr_short": "AI-платформа для юристів і бухгалтерів: пошук по законодавству, судовій практиці та ЗІР з AI-консультантом на базі RAG.",
@@ -4502,6 +4643,7 @@
     },
     {
       "name": "Modern-LiBERTa",
+      "slug": "modern-liberta",
       "url": "https://huggingface.co/Goader/modern-liberta-large",
       "type": "tool",
       "descr_short": "Перший україномовний енкодер із довгим контекстом",
@@ -4529,6 +4671,7 @@
     },
     {
       "name": "Mriia",
+      "slug": "mriia",
       "url": "https://mriia.gov.ua/en/app",
       "type": "tool",
       "descr_short": "освітня платформа з AI",
@@ -4564,6 +4707,7 @@
     },
     {
       "name": "MyChatBot (CommerceOS)",
+      "slug": "mychatbot-commerceos",
       "url": "https://mychatbot.app",
       "type": "platform",
       "descr_short": "Омніканальна платформа ШІ-агентів для продажів",
@@ -4598,6 +4742,7 @@
     },
     {
       "name": "Na Urok AI tools",
+      "slug": "na-urok-ai-tools",
       "url": "https://naurok.com.ua/",
       "type": "tool",
       "descr_short": "AI-помічник вчителя: генерація тестів, презентацій, зображень і матеріалів НУШ",
@@ -4627,6 +4772,7 @@
     },
     {
       "name": "NEBOSTRAZH",
+      "slug": "nebostrazh",
       "url": "https://nebostrazh.com",
       "type": "tool",
       "descr_short": "Автономна AI-система кінетичного знищення FPV-дронів: мультисенсорна турель SM-1 та FPV-перехоплювач під управлінням єдиного штучного інтелекту.",
@@ -4657,6 +4803,7 @@
     },
     {
       "name": "NeoLens",
+      "slug": "neolens",
       "url": "https://www.neolens.ai/",
       "type": "tool",
       "descr_short": "AI-асистент для польового обслуговування та ремонту військової техніки на базі RAG. Працює офлайн на передовій, підтримує 10+ типів платформ (Humvee, MaxxPro, M113, БПЛА тощо) та 1 700+ військовослужбовців ЗСУ.",
@@ -4691,6 +4838,7 @@
     },
     {
       "name": "Neomi",
+      "slug": "neomi",
       "url": "https://neomi.app/",
       "type": "tool",
       "descr_short": "AI-агент, який сам збирає продуктовий кошик за рецептом",
@@ -4722,6 +4870,7 @@
     },
     {
       "name": "NEPTUN",
+      "slug": "neptun",
       "url": "https://neptun.in.ua",
       "type": "tool",
       "descr_short": "Безкоштовна карта повітряних тривог і загроз для цивільних: ШІ аналізує Telegram-канали ОВА і ЗСУ, класифікує шахеди, ракети та БПЛА, будує траєкторії і надсилає push-сповіщення.",
@@ -4753,6 +4902,7 @@
     },
     {
       "name": "NLPForUA",
+      "slug": "nlpforua",
       "url": "https://huggingface.co/NLPForUA",
       "type": "company",
       "descr_short": "Некомерційна дослідницька спільнота, що розробляє відкриті LLM, датасети та бенчмарки для української мови",
@@ -4785,6 +4935,7 @@
     },
     {
       "name": "Nomi",
+      "slug": "nomi",
       "url": "https://www.hellonomi.com/",
       "type": "tool",
       "descr_short": "FinTech / фіноблік / бізнес-аналітика",
@@ -4814,6 +4965,7 @@
     },
     {
       "name": "Obriy AI SURE",
+      "slug": "obriy-ai-sure",
       "url": "https://obriy.ai/",
       "type": "tool",
       "descr_short": "платформа бізнесових AI-агентів",
@@ -4844,6 +4996,7 @@
     },
     {
       "name": "Occam Industries (OccamX)",
+      "slug": "occam-industries-occamx",
       "url": "https://www.occam.industries/",
       "type": "company",
       "descr_short": "Комп'ютерний зір автопілот для FPV",
@@ -4872,6 +5025,7 @@
     },
     {
       "name": "OpenMinds",
+      "slug": "openminds",
       "url": "https://www.openminds.ltd/",
       "type": "company",
       "descr_short": "AI-платформа когнітивної оборони та аналізу впливу",
@@ -4905,6 +5059,7 @@
     },
     {
       "name": "Osavul",
+      "slug": "osavul",
       "url": "https://osavul.cloud/",
       "type": "company",
       "descr_short": "ШІ-виявлення інформаційних загроз",
@@ -4935,6 +5090,7 @@
     },
     {
       "name": "Osavul Janus",
+      "slug": "osavul-janus",
       "url": "https://www.osavul.cloud/solutions/Janus",
       "type": "tool",
       "descr_short": "AI для preemptive кіберзагроз та геополітичної розвідки",
@@ -4965,6 +5121,7 @@
     },
     {
       "name": "Osavul Nebula",
+      "slug": "osavul-nebula",
       "url": "https://www.osavul.cloud/solutions/nebula/narrative-intelligence-solution",
       "type": "tool",
       "descr_short": "AI для narrative intelligence",
@@ -5000,6 +5157,7 @@
     },
     {
       "name": "OSIRIS (Delian Alliance Industries)",
+      "slug": "osiris-delian-alliance-industries",
       "url": "https://www.delian.ai/osiris",
       "type": "tool",
       "descr_short": "GPS-незалежний навігаційний модуль для БПЛА на базі візуального зіставлення карт",
@@ -5035,6 +5193,7 @@
     },
     {
       "name": "OSIRIS AI",
+      "slug": "osiris-ai",
       "url": "https://osirisai.com",
       "type": "company",
       "descr_short": "Компанія-розробник OSIRIS DroneOS — модульної AI-ОС для БпЛА — та дрона-перехоплювача UEB-1 (315 км/год); учасник Brave1 і IRON Cluster ",
@@ -5071,6 +5230,7 @@
     },
     {
       "name": "OSIRIS DroneOS",
+      "slug": "osiris-droneos",
       "url": "https://osirisai.com",
       "type": "tool",
       "descr_short": "програмне забезпечення для автономності дронів",
@@ -5104,6 +5264,7 @@
     },
     {
       "name": "OSIRIS UEB-1",
+      "slug": "osiris-ueb-1",
       "url": "https://osirisai.com/interceptor/",
       "type": "tool",
       "descr_short": "автономний БпЛА-перехоплювач",
@@ -5140,6 +5301,7 @@
     },
     {
       "name": "Otodim",
+      "slug": "otodim",
       "url": "https://otodim.com.ua",
       "type": "platform",
       "descr_short": "AI-платформа пошуку нерухомості від OLX Group для українського ринку",
@@ -5169,6 +5331,7 @@
     },
     {
       "name": "Palantir Technologies (Ukraine reconstruction/defence partnership)",
+      "slug": "palantir-technologies-ukraine-reconstruction-defence-partnership",
       "url": "https://www.palantir.com/",
       "type": "company",
       "descr_short": "ШІ-платформи Gotham/Foundry/AIP компанії Palantir — розвідка та цілевказання, розмінування, відбудова й цифрові послуги для держорганів і ЗСУ",
@@ -5201,6 +5364,7 @@
     },
     {
       "name": "PanoptesAI",
+      "slug": "panoptesai",
       "url": "https://panopteseye.com",
       "type": "tool",
       "descr_short": "Багатосенсорна платформа захисту повітряного простору з AI-ядром для протидрон-оборони",
@@ -5229,6 +5393,7 @@
     },
     {
       "name": "Perennial Autonomy",
+      "slug": "perennial-autonomy",
       "url": "https://www.perennialautonomy.com/",
       "type": "tool",
       "descr_short": "AI-система протидії дронам, бойово перевірена в Україні",
@@ -5264,6 +5429,7 @@
     },
     {
       "name": "PetRadar",
+      "slug": "petradar",
       "url": "https://petradar.ai",
       "type": "platform",
       "descr_short": "ШІ-сервіс пошуку загублених тварин за фото",
@@ -5295,6 +5461,7 @@
     },
     {
       "name": "Phage.Energy",
+      "slug": "phage-energy",
       "url": "https://phage.energy/",
       "type": "platform",
       "descr_short": "ШІ-платформа віртуальної електростанції для України",
@@ -5331,6 +5498,7 @@
     },
     {
       "name": "Phantom Defense",
+      "slug": "phantom-defense",
       "url": "https://phantomdefense.tech/",
       "type": "company",
       "descr_short": "Київська компанія (~600 осіб) розробляє інтегровану контрдронову екосистему «Виявити–Знищити»: AI-керована C2-платформа, радар Skydarix з AI-детекцією, засоби РЕБ та перехоплювачі. За 12 місяців бойового застосування — 10 821 виявлення та 7 397 нейтралізацій БПЛА.",
@@ -5364,6 +5532,7 @@
     },
     {
       "name": "PlanoHero",
+      "slug": "planohero",
       "url": "https://planohero.com/",
       "type": "platform",
       "descr_short": "AI-платформа для планограм і мерчандайзингу в рітейлі",
@@ -5396,6 +5565,7 @@
     },
     {
       "name": "Postie AI",
+      "slug": "postie-ai",
       "url": "https://joinposter.com/en/tour/addons/postie",
       "type": "tool",
       "descr_short": "AI-аналітик для ресторанів та ритейлу від Poster",
@@ -5426,6 +5596,7 @@
     },
     {
       "name": "Pravo Helper",
+      "slug": "pravo-helper",
       "url": "https://pravohelper.com/",
       "type": "tool",
       "descr_short": "AI-платформа для юридичної практики в Україні",
@@ -5454,6 +5625,7 @@
     },
     {
       "name": "Pravohub AI Lawyer",
+      "slug": "pravohub-ai-lawyer",
       "url": "https://pravohub.com.ua/about",
       "type": "tool",
       "descr_short": "AI-юрист для анонімних консультацій з українського права",
@@ -5484,6 +5656,7 @@
     },
     {
       "name": "Pravoman",
+      "slug": "pravoman",
       "url": "https://pravoman.com/en/",
       "type": "tool",
       "descr_short": "юридичний AI-чатбот для консультацій і документів",
@@ -5512,6 +5685,7 @@
     },
     {
       "name": "Pricer24",
+      "slug": "pricer24",
       "url": "https://pricer24.com",
       "type": "platform",
       "descr_short": "Платформа цінової аналітики та repricing для e-commerce з AI-компонентом зіставлення товарів",
@@ -5541,6 +5715,7 @@
     },
     {
       "name": "PrivatBank AI Counterparty Reputation Express Analysis",
+      "slug": "privatbank-ai-counterparty-reputation-express-analysis",
       "url": "https://privatbank.ua/business/dossier-of-business-reputation",
       "type": "tool",
       "descr_short": "AI-експрес-аналіз ділової репутації контрагентів",
@@ -5567,6 +5742,7 @@
     },
     {
       "name": "Prom AI Optimizer",
+      "slug": "prom-ai-optimizer",
       "url": "https://prom.uplify.agency/",
       "type": "tool",
       "descr_short": "AI-описи, SEO-заголовки та ключі для товарів на Prom.ua",
@@ -5595,6 +5771,7 @@
     },
     {
       "name": "Prosvita Fox Assistant",
+      "slug": "prosvita-fox-assistant",
       "url": "https://prosvita.net/",
       "type": "tool",
       "descr_short": "освітній асистент / автоматизація LMS",
@@ -5624,6 +5801,7 @@
     },
     {
       "name": "Quantum Systems (Vector AI reconnaissance drones)",
+      "slug": "quantum-systems-vector-ai-reconnaissance-drones",
       "url": "https://quantum-systems.com",
       "type": "company",
       "descr_short": "німецький БпЛА-виробник з розвинутим виробництвом в Україні: розвідувальний Vector AI з бортовим ШІ (NVIDIA Jetson Orin) та дрон-перехоплювач STRILA для Нацгвардії",
@@ -5659,6 +5837,7 @@
     },
     {
       "name": "Raging Birds",
+      "slug": "raging-birds",
       "url": "https://ragingbirds.com",
       "type": "tool",
       "descr_short": "Ударний дрон Backfire та AI-платформа QQRUDZA для управління підрозділами БпЛА ЗСУ.",
@@ -5691,6 +5870,7 @@
     },
     {
       "name": "RCAM",
+      "slug": "rcam",
       "url": "https://rcam-tech.com",
       "type": "tool",
       "descr_short": "Компактна тактична камера спостереження з нейромережевою детекцією об'єктів для бойового застосування підрозділів ЗСУ",
@@ -5722,6 +5902,7 @@
     },
     {
       "name": "Reactive Drones",
+      "slug": "reactive-drones",
       "url": "https://reactivedrone.ua/",
       "type": "company",
       "descr_short": "Дніпровський виробник безпілотних авіаційних систем (200+ фахівців) зі щорічною потужністю до 15 000 одиниць. Розробляє розвідувальні (Shmavik) та ударні (Kazhan/BAT) БпЛА з AI-аналітикою зображень, сертифіковані МО України та широко застосовувані ЗСУ.",
@@ -5753,6 +5934,7 @@
     },
     {
       "name": "Recovery.Sex.life",
+      "slug": "recovery-sex-life",
       "url": "https://olenapinchuk.foundation/projects/sexual-education/military-veterans/сhatbot.html",
       "type": "tool",
       "descr_short": "Чат-бот на основі ШІ для сексуальної реабілітації військових, ветеранів та їхніх партнерів",
@@ -5784,6 +5966,7 @@
     },
     {
       "name": "Respeecher Ukrainian Text-to-Speech",
+      "slug": "respeecher-ukrainian-text-to-speech",
       "url": "https://www.respeecher.com/",
       "type": "tool",
       "descr_short": "мовленнєвий AI / TTS",
@@ -5819,6 +6002,7 @@
     },
     {
       "name": "Ringostat AI",
+      "slug": "ringostat-ai",
       "url": "https://ringostat.com/uk/",
       "type": "company",
       "descr_short": "AI-аналітика дзвінків / sales intelligence",
@@ -5851,6 +6035,7 @@
     },
     {
       "name": "Ringostat AI Recommendations",
+      "slug": "ringostat-ai-recommendations",
       "url": "https://ringostat.com/uk/ai-recommendations/",
       "type": "tool",
       "descr_short": "AI-асистент для продажів",
@@ -5881,6 +6066,7 @@
     },
     {
       "name": "Ringostat AI Supervisor",
+      "slug": "ringostat-ai-supervisor",
       "url": "https://ringostat.com/uk/ai-supervisor/",
       "type": "tool",
       "descr_short": "AI для контролю якості дзвінків",
@@ -5911,6 +6097,7 @@
     },
     {
       "name": "Ringostat AI Transcription",
+      "slug": "ringostat-ai-transcription",
       "url": "https://ringostat.com/uk/ai-transcription/",
       "type": "tool",
       "descr_short": "AI-транскрибація дзвінків",
@@ -5940,6 +6127,7 @@
     },
     {
       "name": "Ringostat AI VoiceBot",
+      "slug": "ringostat-ai-voicebot",
       "url": "https://ringostat.com/uk/ai-voicebot/",
       "type": "tool",
       "descr_short": "AI-агент, що самостійно веде телефонні дзвінки",
@@ -5969,6 +6157,7 @@
     },
     {
       "name": "RiskTools",
+      "slug": "risktools",
       "url": "https://risktools.pro",
       "type": "tool",
       "descr_short": "ML-скоринг і управління кредитними ризиками для українського ринку онлайн-кредитування: автоматичні рішення за <1 с, ~50% охоплення МФО.",
@@ -5998,6 +6187,7 @@
     },
     {
       "name": "Rozmova",
+      "slug": "rozmova",
       "url": "https://rozmova.me",
       "type": "tool",
       "descr_short": "Платформа підбору психотерапевтів з AI-алгоритмом та AI-транскрипцією сесій — №1 в Україні.",
@@ -6032,6 +6222,7 @@
     },
     {
       "name": "Saker Scout",
+      "slug": "saker-scout",
       "url": "https://twistrobotics.com",
       "type": "tool",
       "descr_short": "розвідувальний дрон із ШІ для розпізнавання цілей",
@@ -6064,6 +6255,7 @@
     },
     {
       "name": "Sandbox for AI and Blockchain Solutions",
+      "slug": "sandbox-for-ai-and-blockchain-solutions",
       "url": "https://ai.thedigital.gov.ua/sandbox",
       "type": "platform",
       "descr_short": "державний регуляторний sandbox",
@@ -6095,6 +6287,7 @@
     },
     {
       "name": "Scriptum",
+      "slug": "scriptum",
       "url": "https://scriptum.ua/",
       "type": "platform",
       "descr_short": "Low-code платформа автоматизації бізнес-процесів із вбудованим AI",
@@ -6124,6 +6317,7 @@
     },
     {
       "name": "SeekLab",
+      "slug": "seeklab",
       "url": "https://seeklab.ai",
       "type": "tool",
       "descr_short": "ШІ-пошук товарів для онлайн-магазинів",
@@ -6154,6 +6348,7 @@
     },
     {
       "name": "Semantrum",
+      "slug": "semantrum",
       "url": "https://promo.semantrum.net/",
       "type": "tool",
       "descr_short": "AI-платформа медіамоніторингу та репутаційної аналітики",
@@ -6184,6 +6379,7 @@
     },
     {
       "name": "Shield AI V-BAT support in Ukraine",
+      "slug": "shield-ai-v-bat-support-in-ukraine",
       "url": "https://shield.ai/",
       "type": "tool",
       "descr_short": "автономний БпЛА V-BAT з ШІ-пілотом Hivemind для ЗСУ",
@@ -6222,6 +6418,7 @@
     },
     {
       "name": "SkillLab",
+      "slug": "skilllab",
       "url": "https://skilllab.io",
       "type": "tool",
       "descr_short": "AI-платформа профілювання навичок і працевлаштування, розгорнута в Державній службі зайнятості України",
@@ -6254,6 +6451,7 @@
     },
     {
       "name": "Sky Fortress",
+      "slug": "sky-fortress",
       "url": "https://www.army.mil/article/292099/listening_to_the_sky_acoustic_drone_detection_systems_ukraine_emerging_technologies",
       "type": "tool",
       "descr_short": "Акустична мережа виявлення дронів із ML-класифікацією та C2-платформа Sky Map",
@@ -6289,6 +6487,7 @@
     },
     {
       "name": "Sky Hunter",
+      "slug": "sky-hunter",
       "url": "https://skyhuntertech.com",
       "type": "tool",
       "descr_short": "Застосунок для автоматичного перехоплення ворожих БпЛА (Shahed, розвідники) за допомогою FPV-дронів-перехоплювачів: AI аналізує радарні дані в реальному часі й самостійно веде перехоплювач до цілі після натискання однієї кнопки.",
@@ -6319,6 +6518,7 @@
     },
     {
       "name": "Sky Sentinel",
+      "slug": "sky-sentinel",
       "url": "https://carminesky.com",
       "type": "tool",
       "descr_short": "Автономна AI-турель Carmine Sky для перехоплення дронів Shahed та повітряних загроз із машинним зором і CDaaS-моделлю.",
@@ -6357,6 +6557,7 @@
     },
     {
       "name": "Sky Spy",
+      "slug": "sky-spy",
       "url": "https://www.skyspy.ai/",
       "type": "tool",
       "descr_short": "Автономна AI-система радіотехнічної розвідки для дронів",
@@ -6390,6 +6591,7 @@
     },
     {
       "name": "SkyFall P1-SUN Long",
+      "slug": "skyfall-p1-sun-long",
       "url": "https://skyfall.ua/",
       "type": "tool",
       "descr_short": "Дрон-перехоплювач Shahed з ШІ-модулем наведення",
@@ -6426,6 +6628,7 @@
     },
     {
       "name": "SMART-ЦНАП Lviv AI chatbot",
+      "slug": "smart-tsnap-lviv-ai-chatbot",
       "url": "https://cnap.city-adm.lviv.ua/",
       "type": "tool",
       "descr_short": "ШІ-чат-бот ЦНАП Львова для адміністративних послуг",
@@ -6453,6 +6656,7 @@
     },
     {
       "name": "SmartCheck AI",
+      "slug": "smartcheck-ai",
       "url": "https://www.smarttender-ai.biz/",
       "type": "tool",
       "descr_short": "ШІ-аналіз тендерної документації Prozorro для учасників",
@@ -6487,6 +6691,7 @@
     },
     {
       "name": "speech-uk",
+      "slug": "speech-uk",
       "url": "https://huggingface.co/speech-uk",
       "type": "platform",
       "descr_short": "Некомерційна ініціатива відкритих моделей і датасетів для української мовленнєвої AI (STT/TTS)",
@@ -6519,6 +6724,7 @@
     },
     {
       "name": "Strategy Force Solutions",
+      "slug": "strategy-force-solutions",
       "url": "https://stratforcesolution.com/",
       "type": "tool",
       "descr_short": "Автономна система дронів-«матінок» GOGOL-M із AI-навігатором SmartPilot для ударів без GPS та без оператора на дальності до 300 км",
@@ -6552,6 +6758,7 @@
     },
     {
       "name": "StudyWithAI",
+      "slug": "studywithai",
       "url": "https://studywithai.net/",
       "type": "tool",
       "descr_short": "AI-асистент для освіти",
@@ -6581,6 +6788,7 @@
     },
     {
       "name": "Sunray",
+      "slug": "sunray",
       "url": "https://www.nationaldefensemagazine.org/articles/2026/5/13/battletested-ukraine-laser-used-to-zap-drones",
       "type": "tool",
       "descr_short": "Автономна лазерна система протидрональної оборони від LAZR: вузли самостійно виявляють, відстежують і спалюють дрони за 50 центів на перехоплення.",
@@ -6614,6 +6822,7 @@
     },
     {
       "name": "Swarmer Platform",
+      "slug": "swarmer-platform",
       "url": "https://www.getswarmer.com/",
       "type": "tool",
       "descr_short": "оборонна платформа автономності та роїння дронів",
@@ -6654,6 +6863,7 @@
     },
     {
       "name": "SYLA",
+      "slug": "syla",
       "url": "https://syla.pro/",
       "type": "company",
       "descr_short": "ШІ-керований біонічний протез коліна (пілотна стадія)",
@@ -6685,6 +6895,7 @@
     },
     {
       "name": "TAF Industries",
+      "slug": "taf-industries",
       "url": "https://taf-ua.com/en/",
       "type": "company",
       "descr_short": "Найбільший виробник БПЛА в Україні: бойові FPV-дрони, системи РЕБ, перехоплювачі та AI-рішення — автономний модуль наведення Last Mile і розвідувальний БПЛА Babka — для ЗСУ.",
@@ -6729,6 +6940,7 @@
     },
     {
       "name": "Tayra.ai",
+      "slug": "tayra-ai",
       "url": "https://tayra.ai",
       "type": "tool",
       "descr_short": "Голосовий ШІ-асистент для лікарів",
@@ -6762,6 +6974,7 @@
     },
     {
       "name": "Technary",
+      "slug": "technary",
       "url": "https://technary.com.ua",
       "type": "company",
       "descr_short": "Одеська оборонна компанія: застосунок ePPO з AI-прогнозуванням траєкторій повітряних цілей (700k+ користувачів, 80% неба за даними МОУ) та автономний реактивний перехоплювач Mongoose для знищення Shahed-дронів",
@@ -6805,6 +7018,7 @@
     },
     {
       "name": "Texty.org.ua Propaganda Monitoring",
+      "slug": "texty-org-ua-propaganda-monitoring",
       "url": "https://texty.org.ua/",
       "type": "platform",
       "descr_short": "AI-моніторинг російської пропаганди та маніпулятивних новин",
@@ -6837,6 +7051,7 @@
     },
     {
       "name": "TFL-1 Autonomy Module",
+      "slug": "tfl-1-autonomy-module",
       "url": "https://thefourthlaw.ai/#section3",
       "type": "tool",
       "descr_short": "AI-модуль автономного наведення \"останньої милі\" для FPV-дронів",
@@ -6876,6 +7091,7 @@
     },
     {
       "name": "The Fourth Law",
+      "slug": "the-fourth-law",
       "url": "https://thefourthlaw.ai/",
       "type": "company",
       "descr_short": "AI-автономія для оборонних дронів",
@@ -6911,6 +7127,7 @@
     },
     {
       "name": "Tigo Energy Predict+",
+      "slug": "tigo-energy-predict",
       "url": "https://www.tigopredict.com/",
       "type": "tool",
       "descr_short": "AI-платформа прогнозування попиту та генерації електроенергії, розгорнута YASNO для стабілізації мережі під час війни",
@@ -6940,6 +7157,7 @@
     },
     {
       "name": "Trident Group",
+      "slug": "trident-group",
       "url": "https://thedefender.media/en/2026/04/trident-group-ai/",
       "type": "tool",
       "descr_short": "ШІ-модулі термінального наведення та автономного польоту для ударних і перехоплюючих дронів ЗСУ на основі комп'ютерного зору та нейромереж.",
@@ -6970,6 +7188,7 @@
     },
     {
       "name": "TWIIN",
+      "slug": "twiin",
       "url": "https://twiin.aph.org.ua/en/",
       "type": "tool",
       "descr_short": "24/7 AI-чат-бот із «цифровими людьми» від Альянсу громадського здоров'я України: анонімні консультації з ВІЛ, ПрЕП, ментального здоров'я та зменшення шкоди для ключових спільнот.",
@@ -7000,6 +7219,7 @@
     },
     {
       "name": "UADamage",
+      "slug": "uadamage",
       "url": "https://uadamage.com/",
       "type": "company",
       "descr_short": "AI-розмінування та оцінка пошкоджень за знімками з дронів",
@@ -7032,6 +7252,7 @@
     },
     {
       "name": "UADefTech OSINT Platform",
+      "slug": "uadeftech-osint-platform",
       "url": "https://uadeftech.com/",
       "type": "tool",
       "descr_short": "AI-платформа стратегічної розвідки українського defense-tech ринку",
@@ -7063,6 +7284,7 @@
     },
     {
       "name": "UBKI AI Scoring",
+      "slug": "ubki-ai-scoring",
       "url": "https://ubki.ua",
       "type": "company",
       "descr_short": "Набір ML-скорингових моделей і антифрод-системи від УБКІ — найбільшого кредитного бюро України: бюро-скоринг на 100 млн кредитних угод, SME-скоринг на gradient boosting (ROC-AUC 0.85), індивідуальний скоринг під замовлення та виявлення шахрайства для 180+ банків під наглядом НБУ.",
@@ -7095,6 +7317,7 @@
     },
     {
       "name": "UDream AI",
+      "slug": "udream-ai",
       "url": "https://udream.pp.ua/",
       "type": "tool",
       "descr_short": "платформа генеративних медіа",
@@ -7125,6 +7348,7 @@
     },
     {
       "name": "UFORCE Lyut ground combat system",
+      "slug": "uforce-lyut-ground-combat-system",
       "url": "https://uforce.com/land-platforms",
       "type": "tool",
       "descr_short": "автономна/роботизована оборонна система",
@@ -7159,6 +7383,7 @@
     },
     {
       "name": "UFORCE Magura USV",
+      "slug": "uforce-magura-usv",
       "url": "https://www.uforce.com/sea-platform",
       "type": "tool",
       "descr_short": "Бойовий безпілотний надводний корабель MAGURA з ШІ-автономністю — найбільш бойово перевірена USV-платформа у світі, розроблена та серійно виробляється UFORCE для ЗСУ.",
@@ -7195,6 +7420,7 @@
     },
     {
       "name": "UFORCE Nemesis strike UAV",
+      "slug": "uforce-nemesis-strike-uav",
       "url": "https://www.uforce.com/air-platforms",
       "type": "tool",
       "descr_short": "Бойовий ударний БпЛА UFORCE Nemesis — багатороторний бомбардувальник середнього та важкого класу для ЗСУ з автономною навігацією та операцією в умовах РЕБ.",
@@ -7227,6 +7453,7 @@
     },
     {
       "name": "UFORCE SICH/C2",
+      "slug": "uforce-sich-c2",
       "url": "https://www.uforce.com/c2",
       "type": "tool",
       "descr_short": "бойова платформа командування й управління (C2) зі ШІ-навігацією та автономним супроводом цілей",
@@ -7260,6 +7487,7 @@
     },
     {
       "name": "Ukrainian TTS (robinhad)",
+      "slug": "ukrainian-tts-robinhad",
       "url": "https://github.com/robinhad/ukrainian-tts",
       "type": "tool",
       "descr_short": "Відкритий рушій синтезу українського мовлення",
@@ -7290,6 +7518,7 @@
     },
     {
       "name": "ULA Audio",
+      "slug": "ula-audio",
       "url": "https://ula.software/ula-audio",
       "type": "tool",
       "descr_short": "Розпізнавання української мови",
@@ -7319,6 +7548,7 @@
     },
     {
       "name": "Uspacy AI",
+      "slug": "uspacy-ai",
       "url": "https://uspacy.ua/",
       "type": "tool",
       "descr_short": "AI-асистент для CRM/робочого простору",
@@ -7351,6 +7581,7 @@
     },
     {
       "name": "Uwell",
+      "slug": "uwell",
       "url": "https://www.uwell.care/",
       "type": "tool",
       "descr_short": "Мобільний медичний сервіс 24/7 з AI-асистентом Vella для аналізу симптомів та особистим лікарем для перевірки і консультацій.",
@@ -7387,6 +7618,7 @@
     },
     {
       "name": "VARTA Dozor AI",
+      "slug": "varta-dozor-ai",
       "url": "https://vartadrone.com/en/",
       "type": "company",
       "descr_short": "Модуль DOZOR AI — автономне ШІ-виявлення та автосупровід цілей для кінетичних антидронових перехоплювачів VARTA",
@@ -7420,6 +7652,7 @@
     },
     {
       "name": "Verdictum PRO AI functions",
+      "slug": "verdictum-pro-ai-functions",
       "url": "https://verdictum.ligazakon.net/",
       "type": "tool",
       "descr_short": "юридичний AI / аналіз судової практики",
@@ -7451,6 +7684,7 @@
     },
     {
       "name": "Veridia Voice Bot",
+      "slug": "veridia-voice-bot",
       "url": "https://veridia.com.ua/",
       "type": "tool",
       "descr_short": "голосовий AI-бот",
@@ -7481,6 +7715,7 @@
     },
     {
       "name": "Vermeer",
+      "slug": "vermeer",
       "url": "https://www.getvermeer.com/",
       "type": "tool",
       "descr_short": "AI-навігація без GPS для дронів",
@@ -7512,6 +7747,7 @@
     },
     {
       "name": "VetAI Diagnostics",
+      "slug": "vetai-diagnostics",
       "url": "https://www.vetaidiagnostics.pro",
       "type": "tool",
       "descr_short": "AI-інтерпретація лабораторних аналізів (ЗАК, біохімія, сеча) для ветеринарних клінік України за стандартами ACVIM, IRIS, WSAVA",
@@ -7540,6 +7776,7 @@
     },
     {
       "name": "VeteranPro.AI",
+      "slug": "veteranpro-ai",
       "url": "https://veteranpro.gov.ua/",
       "type": "tool",
       "descr_short": "ШІ-асистент платформи Ветеран PRO для ветеранів",
@@ -7571,6 +7808,7 @@
     },
     {
       "name": "Vexta",
+      "slug": "vexta",
       "url": "https://vexta.pp.ua/",
       "type": "tool",
       "descr_short": "AI-генератор тестів і домашніх завдань для українських вчителів",
@@ -7604,6 +7842,7 @@
     },
     {
       "name": "Vezha (Incoresoft)",
+      "slug": "vezha-incoresoft",
       "url": "https://incoresoft.com/products/smart-video-analytics/",
       "type": "platform",
       "descr_short": "ШІ-відеоаналітика для поліції",
@@ -7638,6 +7877,7 @@
     },
     {
       "name": "Vidar Systems",
+      "slug": "vidar-systems",
       "url": "https://itkey.media/vidar-systems-portable-acoustic-locators-among-presto-tech-horizons-first-investments/",
       "type": "tool",
       "descr_short": "Портативні акустичні комплекси для виявлення та тріангуляції позицій артилерії й мінометів противника в реальному часі.",
@@ -7670,6 +7910,7 @@
     },
     {
       "name": "Vigilant Works",
+      "slug": "vigilant-works",
       "url": "https://vigilant.works",
       "type": "tool",
       "descr_short": "Київський оборонний стартап, що будує автономні екосистеми перехоплення БпЛА: бойовий перехоплювач Algiz-1 та Algiz-2 (600+ км/год) поєднані з власним стеком AI-автономності та радарними рішеннями.",
@@ -7698,6 +7939,7 @@
     },
     {
       "name": "Vita325",
+      "slug": "vita325",
       "url": "https://vita325.com",
       "type": "tool",
       "descr_short": "AI-аналіз ходи для реабілітації ампутованих: iPhone перетворюється на клінічний інструмент без лабораторного обладнання",
@@ -7730,6 +7972,7 @@
     },
     {
       "name": "Vuzoll",
+      "slug": "vuzoll",
       "url": "https://vuzollvirtualassistant.com/en",
       "type": "company",
       "descr_short": "Роботи-асистенти та AI-агенти для сервісного бізнесу",
@@ -7761,6 +8004,7 @@
     },
     {
       "name": "Vyriy Drone",
+      "slug": "vyriy-drone",
       "url": "https://www.vyriy.com/en/",
       "type": "company",
       "descr_short": "Провідний український виробник ударних FPV-дронів для ЗСУ з опціональною системою автономного термінального донаведення (TFL-1) — близько 25% дронового постачання армії.",
@@ -7799,6 +8043,7 @@
     },
     {
       "name": "w2v-bert-uk-v2.1",
+      "slug": "w2v-bert-uk-v2-1",
       "url": "https://huggingface.co/Yehor/w2v-bert-uk-v2.1",
       "type": "tool",
       "descr_short": "Відкрита модель автоматичного розпізнавання українського мовлення (ASR) на базі wav2vec2-BERT 2.0 (600 млн параметрів), WER 17,3% на Common Voice 10.",
@@ -7831,6 +8076,7 @@
     },
     {
       "name": "War of Words",
+      "slug": "war-of-words",
       "url": "https://warofwords.info/",
       "type": "tool",
       "descr_short": "ШІ-архів 100 000+ годин російської пропаганди з пошуком і наративною аналітикою",
@@ -7860,6 +8106,7 @@
     },
     {
       "name": "Wareflow",
+      "slug": "wareflow",
       "url": "https://wareflow.ai",
       "type": "tool",
       "descr_short": "AI-платформа управління складом (WMS) для українських підприємств: автоматизує логістику, оптимізує розміщення товарів та безперервно моніторить ефективність за допомогою штучного інтелекту.",
@@ -7891,6 +8138,7 @@
     },
     {
       "name": "Weblium AI",
+      "slug": "weblium-ai",
       "url": "https://ua.weblium.com/ai-website-builder",
       "type": "tool",
       "descr_short": "No-code / створення сайтів / маркетинг",
@@ -7923,6 +8171,7 @@
     },
     {
       "name": "WhoAreYou.io",
+      "slug": "whoareyou-io",
       "url": "https://whoareyou.io",
       "type": "tool",
       "descr_short": "AI-скринінг кандидатів за 79+ українськими реєстрами",
@@ -7951,6 +8200,7 @@
     },
     {
       "name": "WINWIN AI Center of Excellence",
+      "slug": "winwin-ai-center-of-excellence",
       "url": "https://winwin.gov.ua/en",
       "type": "platform",
       "descr_short": "державна AI-платформа",
@@ -7983,6 +8233,7 @@
     },
     {
       "name": "YA TUT",
+      "slug": "ya-tut",
       "url": "https://www.uamentalhelp.org/",
       "type": "tool",
       "descr_short": "Перший в Україні мобільний застосунок з AI-асистентом на основі КПТ для підтримки ментального здоров'я у воєнний час.",
@@ -8013,6 +8264,7 @@
     },
     {
       "name": "YARTURA",
+      "slug": "yartura",
       "url": "https://yartura.ua",
       "type": "company",
       "descr_short": "Українська компанія — розробник безпілотних перехоплювачів з бортовим Edge AI для автономного захоплення та повторного наведення на ціль; серійно виробляє комплекс DANCER 4.5.0 для ЗСУ та Сил ТрО.",
@@ -8045,6 +8297,7 @@
     },
     {
       "name": "YouControl AI-Powered Assistant",
+      "slug": "youcontrol-ai-powered-assistant",
       "url": "https://youcontrol.com.ua/en/about_us/",
       "type": "tool",
       "descr_short": "regtech AI-асистент",
@@ -8074,6 +8327,7 @@
     },
     {
       "name": "YouControl ESG Profile AI module",
+      "slug": "youcontrol-esg-profile-ai-module",
       "url": "https://youcontrol.com.ua/esg-for-business/",
       "type": "tool",
       "descr_short": "AI-модуль формування ESG-профілю компаній із автоматичним AI-висновком про red flags",
@@ -8104,6 +8358,7 @@
     },
     {
       "name": "YouScan",
+      "slug": "youscan",
       "url": "https://youscan.io/",
       "type": "company",
       "descr_short": "ШІ-моніторинг соціальних медіа",
@@ -8140,6 +8395,7 @@
     },
     {
       "name": "YouScan Insights Copilot",
+      "slug": "youscan-insights-copilot",
       "url": "https://youscan.io/insights-copilot/",
       "type": "tool",
       "descr_short": "ШІ-агент для аналізу соціального моніторингу",
@@ -8172,6 +8428,7 @@
     },
     {
       "name": "YouScan Tiger Finder",
+      "slug": "youscan-tiger-finder",
       "url": "https://tigerfinder.com/",
       "type": "tool",
       "descr_short": "ШІ-пошук TikTok-інфлюенсерів природною мовою",
@@ -8202,6 +8459,7 @@
     },
     {
       "name": "ZIR System",
+      "slug": "zir-system",
       "url": "https://zir-system.com",
       "type": "tool",
       "descr_short": "ШІ-модуль автоматичного наведення для FPV-дронів: розпізнає 7 класів цілей і автономно уражає їх на відстані до 1 000 м.",
@@ -8235,6 +8493,7 @@
     },
     {
       "name": "Zvook",
+      "slug": "zvook",
       "url": "https://www.zvook.tech/en",
       "type": "company",
       "descr_short": "оборонний акустичний ШІ",
@@ -8265,6 +8524,7 @@
     },
     {
       "name": "ZVOOK NW0",
+      "slug": "zvook-nw0",
       "url": "https://www.zvook.tech/en",
       "type": "tool",
       "descr_short": "оборонний акустичний ШІ-сенсор для виявлення дронів",
@@ -8299,6 +8559,7 @@
     },
     {
       "name": "АСУР 2.0 (Система управління ризиками Держмитслужби)",
+      "slug": "asur-2-0-systema-upravlinnia-ryzykamy-derzhmytsluzhby",
       "url": "https://customs.gov.ua/it-transformatsiia-mitnitsi",
       "type": "platform",
       "descr_short": "ШІ-аналіз митних ризиків",
@@ -8331,6 +8592,7 @@
     },
     {
       "name": "Вільний Відеоперекладач",
+      "slug": "vilnyi-videoperekladach",
       "url": "https://free-video-translator.com.ua/uk/",
       "type": "tool",
       "descr_short": "Безкоштовне AI-дублювання відео українською та кримськотатарською",
@@ -8363,6 +8625,7 @@
     },
     {
       "name": "Ощадбанк «Софія» (голосовий AI-асистент)",
+      "slug": "oshchadbank-sofiia-holosovyi-ai-asystent",
       "url": "https://www.oschadbank.ua/",
       "type": "tool",
       "descr_short": "голосовий AI-асистент контакт-центру Ощадбанку",
@@ -8392,6 +8655,7 @@
     },
     {
       "name": "Помічник ветерана (Львів)",
+      "slug": "pomichnyk-veterana-lviv",
       "url": "https://veterany.city-adm.lviv.ua/",
       "type": "tool",
       "descr_short": "ШІ-чатбот про пільги та послуги для ветеранів",
@@ -8421,6 +8685,7 @@
     },
     {
       "name": "Програмне забезпечення комп'ютерного зору NORDA Dynamics",
+      "slug": "prohramne-zabezpechennia-kompiuternoho-zoru-norda-dynamics",
       "url": "https://www.norda.tech/",
       "type": "tool",
       "descr_short": "оборонний AI / computer vision для автоматизованого наведення дронів",
@@ -8455,6 +8720,7 @@
     },
     {
       "name": "Хижак",
+      "slug": "khyzhak",
       "url": "https://ugv-robotics.com.ua/",
       "type": "tool",
       "descr_short": "AI-бойовий модуль UGV Robotics із нейромережевим розпізнаванням і супроводом дронів та інших низьколітальних цілей.",
@@ -8490,6 +8756,7 @@
     },
     {
       "name": "ШІ-Агрохімік (SAS Agro)",
+      "slug": "shi-ahrokhimik-sas-agro",
       "url": "https://sasagro.com/shi-agrohimik/",
       "type": "tool",
       "descr_short": "Чат-інструмент на базі ШІ для керування живленням полів і економікою агрохімії",
@@ -8519,6 +8786,7 @@
     },
     {
       "name": "єДозвіл AI",
+      "slug": "yedozvil-ai",
       "url": "https://e-license.gov.ua",
       "type": "platform",
       "descr_short": "ШІ-перевірка ліцензійних документів у держпослугах",
