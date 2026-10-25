@@ -1,6 +1,6 @@
 // Type tabs (the primary axis), in order. `tool` is the default tab.
 // Labels are translated in the UI (see i18n.jsx).
-export const types = ["tool", "company", "platform"];
+export const types = ["tool", "model", "company"];
 
 export const origins = ["Українська", "Ukraine-linked", "Іноземна, орієнтована на Україну"];
 

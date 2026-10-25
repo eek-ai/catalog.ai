@@ -12,7 +12,7 @@ export function loader() {
 function typeFromPath(pathname) {
   const normalized = pathname.replace(/\/+$/, "") || "/";
   if (normalized.endsWith("/company")) return "company";
-  if (normalized.endsWith("/platform")) return "platform";
+  if (normalized.endsWith("/model")) return "model";
   return "tool";
 }
 
