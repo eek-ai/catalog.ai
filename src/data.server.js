@@ -44,7 +44,7 @@ const sectors = [...new Set(entries.map((entry) => entry.sector))].sort(
 );
 
 const typeCounts = Object.fromEntries(
-  ["tool", "company", "platform"].map((type) => [
+  ["tool", "model", "company"].map((type) => [
     type,
     entries.filter((entry) => entry.type === type).length,
   ])

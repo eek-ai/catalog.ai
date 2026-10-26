@@ -21,7 +21,7 @@ export function errorMetadata({ title, description }) {
 
 export function canonicalBrowsePath(type) {
   if (type === "company") return "/company/";
-  if (type === "platform") return "/platform/";
+  if (type === "model") return "/model/";
   return "/";
 }
 

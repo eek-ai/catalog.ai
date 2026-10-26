@@ -7,7 +7,7 @@ import {
 } from "../src/seo.js";
 
 const paths = [
-  ...["tool", "company", "platform"].map(canonicalBrowsePath),
+  ...["tool", "model", "company"].map(canonicalBrowsePath),
   ...raw.tools.map(({ slug }) => canonicalDetailPath(slug)),
 ];
 

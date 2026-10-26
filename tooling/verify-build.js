@@ -37,10 +37,10 @@ const dataFile = (route) => join(BUILD_ROOT, dataPath(route).slice(1));
 const browseRoutes = [
   { route: "/", type: "tool", heading: "Українські AI-інструменти" },
   { route: "/company/", type: "company", heading: "Українські AI-компанії" },
-  { route: "/platform/", type: "platform", heading: "Українські AI-платформи" },
+  { route: "/model/", type: "model", heading: "Українські AI-моделі" },
   { route: "/en/", type: "tool", heading: "Ukrainian AI Tools" },
   { route: "/en/company/", type: "company", heading: "Ukrainian AI Companies" },
-  { route: "/en/platform/", type: "platform", heading: "Ukrainian AI Platforms" },
+  { route: "/en/model/", type: "model", heading: "Ukrainian AI Models" },
 ];
 
 const detailRoutes = entries.flatMap((entry) =>
@@ -96,7 +96,7 @@ for (const page of browseRoutes) {
   check(rendered.includes(`<h1 class="browse-title">${page.heading}</h1>`), `${page.route}: missing h1`);
 
   const prefix = page.route.startsWith("/en/") ? "/en" : "";
-  for (const type of ["tool", "company", "platform"]) {
+  for (const type of ["tool", "model", "company"]) {
     check(
       rendered.includes(`href="${prefix}${canonicalBrowsePath(type)}"`),
       `${page.route}: missing ${type} discovery link`
@@ -140,7 +140,7 @@ check(!rootHtml.includes("/__manifest"), "HTML references a runtime route manife
 
 const internalHrefs = [...renderedRoot.matchAll(/href="(\/[^"]+)"/g)].map((match) => match[1]);
 check(
-  internalHrefs.every((href) => !/^\/(?:en\/)?(?:company|platform|tool\/[^/?#]+)$/.test(href)),
+  internalHrefs.every((href) => !/^\/(?:en\/)?(?:company|model|tool\/[^/?#]+)$/.test(href)),
   "root page contains a slashless route link"
 );
 
@@ -165,7 +165,7 @@ for (const entry of entries.filter(({ deep_research }) => deep_research?.long_de
 const sitemap = await readFile(join(BUILD_ROOT, "sitemap.xml"), "utf8");
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 const expectedSitemapUrls = [
-  ...["tool", "company", "platform"].map((type) => canonicalUrl(canonicalBrowsePath(type))),
+  ...["tool", "model", "company"].map((type) => canonicalUrl(canonicalBrowsePath(type))),
   ...entries.map(({ id }) => canonicalUrl(canonicalDetailPath(id))),
 ];
 check(
