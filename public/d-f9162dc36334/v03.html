@@ -208,6 +208,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 <a class="badge" href="./">Варіант 03 · Directory</a>
 
+<script src="data.js"></script>
 <script>
 const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
 const SECTOR_CODES = {
@@ -389,7 +390,7 @@ document.addEventListener("keydown", ev => {
 window.addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
 window.addEventListener("resize", syncHeaderHeight);
 
-fetch("data.json")
+Promise.resolve({ json: () => window.CATALOG })
   .then(r => r.json())
   .then(json => {
     data = json;

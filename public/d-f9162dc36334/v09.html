@@ -268,6 +268,7 @@
 
 <a class="badge" href="./">Варіант 09 · Swiss minimal</a>
 
+<script src="data.js"></script>
 <script>
 const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
 const PAGE = 24;
@@ -398,7 +399,7 @@ function bind() {
   window.addEventListener("hashchange", route);
 }
 
-fetch("data.json").then((r) => r.json()).then((data) => {
+Promise.resolve({ json: () => window.CATALOG }).then((r) => r.json()).then((data) => {
   DATA = data;
   const bySlug = Object.fromEntries(data.entries.map((e) => [e.slug, e]));
   renderTypes(); renderStats(); renderFeatured(bySlug); renderNewest(bySlug); renderSectors(); renderCatalog();

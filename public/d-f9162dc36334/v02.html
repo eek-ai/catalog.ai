@@ -297,6 +297,7 @@ footer a { color: var(--text); } footer a:hover { color: var(--accent); }
 
 <a class="badge" href="./">Варіант 02 · Bento</a>
 
+<script src="data.js"></script>
 <script>
 const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
 const TYPE_COLORS = { tool: "var(--accent)", model: "#8b93ff", company: "#5a5f6a" };
@@ -437,7 +438,7 @@ function bindEvents() {
   window.addEventListener("hashchange", route);
 }
 
-fetch("data.json").then((r) => r.json()).then((d) => {
+Promise.resolve({ json: () => window.CATALOG }).then((r) => r.json()).then((d) => {
   data = d;
   bySlug = Object.fromEntries(d.entries.map((e) => [e.slug, e]));
   renderStats(); renderNew(); renderFeatured();

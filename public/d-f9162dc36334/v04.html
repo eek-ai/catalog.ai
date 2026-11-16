@@ -297,6 +297,7 @@ h1, h2, h3, p { margin: 0; }
 
 <a class="vbadge" href="./">Варіант 04 · Marketplace</a>
 
+<script src="data.js"></script>
 <script>
 const TYPES = [["tool", "Інструменти", "⚙"], ["model", "Моделі", "◈"], ["company", "Компанії", "▦"]];
 const STATUSES = ["Працює", "Пілот"];
@@ -460,7 +461,7 @@ $("open-filters").addEventListener("click", () => toggleDrawer(true));
 window.addEventListener("hashchange", route);
 
 /* Boot */
-fetch("data.json").then((r) => r.json()).then((data) => {
+Promise.resolve({ json: () => window.CATALOG }).then((r) => r.json()).then((data) => {
   entries = data.entries;
   entries.forEach((e) => (bySlug[e.slug] = e));
   const sectorCount = {};

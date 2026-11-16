@@ -301,6 +301,7 @@ footer .contacts a:hover { color: var(--wheat); }
 
 <a class="badge" href="./">Варіант 10 · Warm &amp; ornament</a>
 
+<script src="data.js"></script>
 <script>
 // Cross-stitch motifs drawn as tiny "X" stitches on a grid (T = terracotta, I = ink, W = wheat).
 const STITCH_COLORS = { T: "#c8553d", I: "#1f2a4d", W: "#e2a93b" };
@@ -444,7 +445,7 @@ function bindEvents() {
   window.addEventListener("hashchange", route);
 }
 
-fetch("data.json")
+Promise.resolve({ json: () => window.CATALOG })
   .then((r) => r.json())
   .then((data) => {
     DATA = data;

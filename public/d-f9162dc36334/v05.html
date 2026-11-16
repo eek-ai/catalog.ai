@@ -276,6 +276,7 @@
 
 <a class="variant" href="./">Варіант 05 · Feed</a>
 
+<script src="data.js"></script>
 <script>
 const TYPES = [
   { id: "tool", label: "Інструменти", forms: ["інструмент", "інструменти", "інструментів"] },
@@ -463,7 +464,7 @@ function bindEvents() {
   window.addEventListener("hashchange", route);
 }
 
-fetch("data.json")
+Promise.resolve({ json: () => window.CATALOG })
   .then((r) => r.json())
   .then((json) => {
     data = json;

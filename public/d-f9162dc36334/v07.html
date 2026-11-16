@@ -272,6 +272,7 @@ footer a { color: var(--text-2); } footer a:hover { color: var(--green); }
 
 <a class="badge" href="./">Варіант 07 · Terminal</a>
 
+<script src="data.js"></script>
 <script>
 const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
 const PAGE = 24;
@@ -400,7 +401,7 @@ function bindEvents() {
 }
 
 placeCursor();
-fetch("data.json").then((r) => r.json()).then((data) => {
+Promise.resolve({ json: () => window.CATALOG }).then((r) => r.json()).then((data) => {
   DATA = data;
   data.entries.forEach((e) => (bySlug[e.slug] = e));
   renderHeader(); renderFeatured(); renderNewest(); renderAll();

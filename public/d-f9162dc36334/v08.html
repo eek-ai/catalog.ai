@@ -235,6 +235,7 @@ footer a{color:var(--muted)}footer a:hover{color:var(--text)}
 
 <a class="badge" href="./">Варіант 08 · Aurora glass</a>
 
+<script src="data.js"></script>
 <script>
 const PAGE = 24;
 const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
@@ -340,7 +341,7 @@ $("q").addEventListener("input", (ev) => {
 });
 window.addEventListener("hashchange", route);
 
-fetch("data.json").then((r) => r.json()).then((data) => {
+Promise.resolve({ json: () => window.CATALOG }).then((r) => r.json()).then((data) => {
   entries = data.entries;
   entries.forEach((e) => (bySlug[e.slug] = e));
   renderHeader(); renderFeatured(data.featured); renderNewest(data.newest); renderSectors(); renderCatalog(); route();

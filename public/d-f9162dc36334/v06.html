@@ -281,6 +281,7 @@
 
 <a class="badge" href="./">Варіант 06 · Neo-brutalist</a>
 
+<script src="data.js"></script>
 <script>
 const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
 const PAGE = 24;
@@ -401,7 +402,7 @@ $("q").addEventListener("input", (ev) => {
 
 window.addEventListener("hashchange", route);
 
-fetch("data.json")
+Promise.resolve({ json: () => window.CATALOG })
   .then((r) => r.json())
   .then((json) => {
     data = json;
