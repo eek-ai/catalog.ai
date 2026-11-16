@@ -148,22 +148,17 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
 .badge{position:fixed;right:16px;bottom:16px;z-index:10;background:var(--ink);color:var(--paper);font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:10px 14px;border-radius:2px;box-shadow:0 6px 20px rgba(22,19,15,.18);transition:background .2s}
 .badge:hover{background:var(--accent)}
 
-.hero{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:52px;padding:28px 0 26px;align-items:start}
-.hero>*{min-width:0}
-.hero .wordmark{font-size:clamp(2.2rem,5vw,3.6rem)}
-.hero .tagline{margin-top:6px}
-.hero .searchbox{margin-top:22px;padding:15px 18px;border-width:2px}
-.hero .searchbox input{font-size:19px}
-.hero .sections{justify-content:flex-start;border:0;padding:16px 0 0;gap:4px 28px}
-.hero-new{background:var(--paper-2);padding:4px 16px 8px}
-.hero-new .mini-head{border-top:0;border-bottom:2px solid var(--ink)}
-.hero-new .newlist li:first-child{border-top:0}
-.shelf{padding:22px 0 30px}
-.shelf .picklist{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:20px}
-.shelf .picklist li{grid-template-columns:minmax(0,1fr);border-top:1px solid var(--ink)}
-.shelf .picklist li::before{grid-row:auto}
-@media (max-width:1020px){.hero{grid-template-columns:minmax(0,1fr);gap:20px}.shelf .picklist{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:720px){.shelf .picklist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.index{padding:10px 0 12px;margin-bottom:22px;border-bottom:1px solid var(--rule)}
+.idx{display:flex;align-items:baseline;gap:14px;padding:5px 0;font:400 15px/1.5 var(--text);min-width:0}
+.idx h2{flex:none;width:136px;font:600 11px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.idx .line{flex:1;min-width:0;white-space:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.idx .line::-webkit-scrollbar{display:none}
+.idx .line a{font-weight:500;color:var(--ink)}
+.idx .line a:hover{color:var(--accent)}
+.idx .line i{color:var(--rule);font-style:normal;margin:0 10px}
+.idx time{font:600 11px/1 var(--sans);color:var(--muted);margin-right:5px}
+.idx>a{flex:none;font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+@media (max-width:720px){.idx{flex-wrap:wrap;gap:2px 12px}.idx h2{width:auto}.idx .line{flex-basis:100%;order:3}}
 
 [hidden]{display:none!important}
 
@@ -208,29 +203,18 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
 </div></div>
 
 <header class="wrap">
-  <div class="hero">
-    <div class="hero-main">
-      <a href="#" class="wordmark">catalog<i>.ai.ua</i></a>
-      <p class="tagline">Живий каталог українських AI-продуктів</p>
-      <label class="searchbox">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-          <input id="q" type="search" placeholder="Пошук за назвою, описом, користувачами…" aria-label="Пошук">
-          <kbd>/</kbd>
-        </label>
-      <nav class="sections" id="types" aria-label="Тип"></nav>
-    </div>
-    <aside class="hero-new tools-only">
-      <div class="mini-head"><h2>Нові інструменти</h2><a href="#new">Усі нові →</a></div>
-      <ul class="newlist" id="newlist"></ul>
-    </aside>
+  <div class="masthead">
+    <a href="#" class="wordmark">catalog<i>.ai.ua</i></a>
+    <p class="tagline">Живий каталог українських AI-продуктів</p>
   </div>
   <div class="rules"></div>
+  <nav class="sections" id="types" aria-label="Тип"></nav>
 </header>
 
 <main id="main" class="wrap">
-  <section class="shelf tools-only">
-    <div class="mini-head"><h2>Вибір редакції</h2></div>
-    <ol class="picklist" id="picks"></ol>
+  <section class="index tools-only">
+    <div class="idx"><h2>Вибір редакції</h2><div class="line" id="picks"></div></div>
+    <div class="idx"><h2>Нові інструменти</h2><div class="line" id="newlist"></div><a href="#new">усі →</a></div>
   </section>
   <section class="catalog" id="catalog">
     <div class="sec-head"><h2 id="cat-title"></h2><span id="cat-note"></span></div>
@@ -240,6 +224,11 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
         <div id="facets"></div>
       </details>
       <div class="results">
+        <label class="searchbox">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input id="q" type="search" placeholder="Пошук за назвою, описом, користувачами…" aria-label="Пошук">
+          <kbd>/</kbd>
+        </label>
         <div class="chips" id="chips"></div>
         <div class="toolbar">
           <span class="count" id="count"></span>
@@ -266,7 +255,7 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
   <small>Контакти: email і Telegram — незабаром</small>
 </div></footer>
 
-<a class="badge" href="v01-drafts.html">Варіант 01E · Пошук у шапці</a>
+<a class="badge" href="v01-drafts.html">Варіант 01I · Рядки-індекси</a>
 
 <script src="data.js"></script>
 <script>
@@ -341,8 +330,8 @@ function renderNewPage() {
 }
 
 function renderFront() {
-  $("picks").innerHTML = picks().map(e => pickItem(e, false)).join("");
-  $("newlist").innerHTML = newest(5).map(newItem).join("");
+  $("picks").innerHTML = picks().map(e => `<a href="#">${esc(e.name)}</a>`).join("<i>/</i>");
+  $("newlist").innerHTML = newest(10).map(e => `<a href="#"><time>${shortDate(e.added)}</time>${esc(e.name)}</a>`).join("<i>/</i>");
 }
 
 // Same faceted logic// Same faceted logic as the live site: each group's counts ignore its own selection.

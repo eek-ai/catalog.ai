@@ -148,20 +148,22 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
 .badge{position:fixed;right:16px;bottom:16px;z-index:10;background:var(--ink);color:var(--paper);font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:10px 14px;border-radius:2px;box-shadow:0 6px 20px rgba(22,19,15,.18);transition:background .2s}
 .badge:hover{background:var(--accent)}
 
-.catalog{padding-top:28px}
-.layout{grid-template-columns:230px minmax(0,1fr) 270px;gap:36px}
-.grid{grid-template-columns:minmax(0,1fr)}
-.card{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
-.extras{display:flex;flex-direction:column;gap:30px;min-width:0}
-.extras .box{background:var(--card);border:1px solid var(--rule);padding:4px 16px 8px}
-.extras .mini-head{border-top:0;border-bottom:2px solid var(--ink);margin:0 -2px 2px}
-.extras .picklist li:first-child,.extras .newlist li:first-child{border-top:0}
-@media (max-width:1180px){
-  .layout{grid-template-columns:220px minmax(0,1fr)}
-  .extras{grid-column:1/-1;grid-row:1;flex-direction:row}
-  .extras .box{flex:1}
+.rows{padding:16px 0 26px}
+.row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;border-top:2px solid var(--ink);padding:10px 0;align-items:start}
+.row+.row{border-top:1px solid var(--rule)}
+.row-lbl{font:700 1.05rem/1.2 var(--serif)}
+.row-lbl a{display:block;font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+.row-items{list-style:none;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:18px}
+.row-items li{min-width:0}
+.row-items .sub{display:block;font:500 11px/1.3 var(--sans);color:var(--muted);margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-items .sub b{color:var(--accent);font-weight:600}
+.row-items h3{font-size:1rem;line-height:1.2;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+@media (max-width:720px){
+  .row{grid-template-columns:minmax(0,1fr);gap:6px}
+  .row-lbl a{display:inline;margin-left:10px}
+  .row-items{display:flex;overflow-x:auto;scrollbar-width:none}
+  .row-items li{flex:0 0 150px}
 }
-@media (max-width:760px){.extras{flex-direction:column;gap:14px}.extras .picklist p{display:none}}
 
 [hidden]{display:none!important}
 
@@ -215,6 +217,10 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
 </header>
 
 <main id="main" class="wrap">
+  <section class="rows tools-only">
+    <div class="row"><h2 class="row-lbl">Вибір редакції</h2><ol class="row-items" id="picks"></ol></div>
+    <div class="row"><h2 class="row-lbl">Нові інструменти<a href="#new">усі нові →</a></h2><ul class="row-items" id="newlist"></ul></div>
+  </section>
   <section class="catalog" id="catalog">
     <div class="sec-head"><h2 id="cat-title"></h2><span id="cat-note"></span></div>
     <div class="layout">
@@ -235,10 +241,6 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
         </div>
         <div class="grid" id="grid"></div>
       </div>
-      <aside class="extras tools-only">
-        <div class="box"><div class="mini-head"><h2>Вибір редакції</h2></div><ol class="picklist" id="picks"></ol></div>
-        <div class="box"><div class="mini-head"><h2>Нові інструменти</h2><a href="#new">Усі →</a></div><ul class="newlist" id="newlist"></ul></div>
-      </aside>
     </div>
   </section>
 </main>
@@ -258,7 +260,7 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
   <small>Контакти: email і Telegram — незабаром</small>
 </div></footer>
 
-<a class="badge" href="v01-drafts.html">Варіант 01B · Права колонка</a>
+<a class="badge" href="v01-drafts.html">Варіант 01F · Два рядки</a>
 
 <script src="data.js"></script>
 <script>
@@ -333,8 +335,10 @@ function renderNewPage() {
 }
 
 function renderFront() {
-  $("picks").innerHTML = picks().map(e => pickItem(e)).join("");
-  $("newlist").innerHTML = newest(6).map(newItem).join("");
+  $("picks").innerHTML = picks().map((e, i) =>
+    `<li><span class="sub"><b>${String(i + 1).padStart(2, "0")}</b> · ${esc(e.sector)}</span>${title(e)}</li>`).join("");
+  $("newlist").innerHTML = newest(6).map(e =>
+    `<li><span class="sub"><b>${shortDate(e.added)}</b> · ${esc(e.sector)}</span>${title(e)}</li>`).join("");
 }
 
 // Same faceted logic// Same faceted logic as the live site: each group's counts ignore its own selection.

@@ -148,22 +148,16 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
 .badge{position:fixed;right:16px;bottom:16px;z-index:10;background:var(--ink);color:var(--paper);font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:10px 14px;border-radius:2px;box-shadow:0 6px 20px rgba(22,19,15,.18);transition:background .2s}
 .badge:hover{background:var(--accent)}
 
-.catalog{padding-top:28px}
-.ticker{display:flex;align-items:center;gap:14px;margin-top:14px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);padding:9px 0;min-width:0}
-.ticker .lbl{font:600 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--paper);background:var(--new);padding:5px 7px 4px;flex:none}
-.ticker .items{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;white-space:nowrap;font:500 14px/1.3 var(--sans)}
-.ticker .items::-webkit-scrollbar{display:none}
-.ticker .items a:hover{color:var(--accent)}
-.ticker .items time{color:var(--muted);font-size:12px;margin-right:6px}
-.ticker>a{font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);flex:none}
-.shelf{margin-top:22px}
-.shelf .mini-head{border-top:0;padding-top:0}
-.scroller{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
-.scroller article{flex:0 0 250px;scroll-snap-align:start;background:var(--card);border:1px solid var(--rule);border-top:3px solid var(--accent);padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
-.scroller .num{font:italic 600 1.1rem/1 var(--serif);color:var(--accent)}
-.scroller h3{font-size:1.12rem}
-.scroller p{font:400 13.5px/1.45 var(--text);color:var(--ink-2)}
-.toolbar{margin-top:6px}
+.chiprails{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;padding:16px 0 26px}
+.rail-row{display:flex;align-items:center;gap:12px;min-width:0;border-top:2px solid var(--ink);padding-top:10px}
+.rail-row .rl{font:700 1rem/1.2 var(--serif);flex:none}
+.chipline{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+.chipline::-webkit-scrollbar{display:none}
+.chipline a{flex:none;border:1px solid var(--rule);background:var(--card);padding:6px 12px;font:500 13.5px/1.2 var(--sans);border-radius:999px;white-space:nowrap;transition:border-color .2s,color .2s}
+.chipline a:hover{border-color:var(--accent);color:var(--accent)}
+.chipline small{color:var(--accent);font:600 11px/1 var(--sans);margin-right:6px}
+.rail-row .all{font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);flex:none}
+@media (max-width:1020px){.chiprails{grid-template-columns:minmax(0,1fr);gap:10px}}
 
 [hidden]{display:none!important}
 
@@ -217,6 +211,10 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
 </header>
 
 <main id="main" class="wrap">
+  <section class="chiprails tools-only">
+    <div class="rail-row"><h2 class="rl">Вибір редакції</h2><div class="chipline" id="picks"></div></div>
+    <div class="rail-row"><h2 class="rl">Нові</h2><div class="chipline" id="newlist"></div><a class="all" href="#new">Усі →</a></div>
+  </section>
   <section class="catalog" id="catalog">
     <div class="sec-head"><h2 id="cat-title"></h2><span id="cat-note"></span></div>
     <div class="layout">
@@ -231,8 +229,6 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
           <kbd>/</kbd>
         </label>
         <div class="chips" id="chips"></div>
-        <div class="ticker idle-only"><span class="lbl">Нові</span><div class="items" id="ticker"></div><a href="#new">Усі →</a></div>
-        <div class="shelf idle-only"><div class="mini-head"><h2>Вибір редакції</h2><span class="kicker" style="color:var(--muted)">гортайте →</span></div><div class="scroller" id="picks"></div></div>
         <div class="toolbar">
           <span class="count" id="count"></span>
           <div class="sort" id="sort"><span>Сортувати:</span><button data-sort="az" class="on">А–Я</button><button data-sort="new">Нові спочатку</button></div>
@@ -258,7 +254,7 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
   <small>Контакти: email і Telegram — незабаром</small>
 </div></footer>
 
-<a class="badge" href="v01-drafts.html">Варіант 01C · Всередині списку</a>
+<a class="badge" href="v01-drafts.html">Варіант 01G · Чіпи</a>
 
 <script src="data.js"></script>
 <script>
@@ -333,11 +329,8 @@ function renderNewPage() {
 }
 
 function renderFront() {
-  $("ticker").innerHTML = newest(10).map(e => `<a href="#"><time>${shortDate(e.added)}</time>${esc(e.name)}</a>`).join("");
-  $("picks").innerHTML = picks().map((e, i) => `<article>
-    <span class="num">${String(i + 1).padStart(2, "0")}</span>
-    <span class="kicker">${esc(e.sector)}</span>${title(e)}
-    <p class="cap clamp3">${esc(e.descr_short)}</p></article>`).join("");
+  $("picks").innerHTML = picks().map((e, i) => `<a href="#"><small>${String(i + 1).padStart(2, "0")}</small>${esc(e.name)}</a>`).join("");
+  $("newlist").innerHTML = newest(10).map(e => `<a href="#"><small>${shortDate(e.added)}</small>${esc(e.name)}</a>`).join("");
 }
 
 // Same faceted logic// Same faceted logic as the live site: each group's counts ignore its own selection.
