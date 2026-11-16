@@ -634,16 +634,7 @@ body {
   padding-top: 10px;
 }
 
-.flag-review {
-  font-size: 11px;
-  color: #ffb35e;
-  white-space: nowrap;
-}
 
-.src-count {
-  font-size: 11px;
-  color: var(--muted);
-}
 
 .tool-link {
   margin-left: auto;
@@ -718,15 +709,6 @@ body {
   margin: 6px 0 12px;
 }
 
-.review-banner {
-  background: #2a1d10;
-  border: 1px solid #6b4a1f;
-  color: #ffb35e;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 13px;
-  margin: 0 0 16px;
-}
 
 .detail-desc {
   font-size: 15px;
@@ -735,27 +717,9 @@ body {
   margin: 14px 0 20px;
 }
 
-.detail-research {
-  margin: 24px 0;
-}
 
-.detail-research h2 {
-  margin: 0 0 12px;
-  font-size: 18px;
-}
 
-.detail-research p {
-  color: #c7cdd9;
-  font-size: 15px;
-  line-height: 1.65;
-  margin: 0 0 14px;
-}
 
-.detail-research .research-date {
-  color: var(--muted);
-  font-size: 12px;
-  margin-bottom: 0;
-}
 
 .detail-meta {
   display: grid;
@@ -805,15 +769,7 @@ body {
   color: var(--accent);
 }
 
-.detail-source-list {
-  margin: 0;
-  padding-left: 18px;
-}
 
-.detail-source-list li {
-  margin: 0 0 6px;
-  word-break: break-all;
-}
 
 .detail-visit {
   display: inline-block;

@@ -11,6 +11,7 @@ import { createStaticServer } from "./static-server.js";
 
 const BUILD_ROOT = "build/client";
 const entries = raw.tools.map((entry) => ({ ...entry, id: entry.slug }));
+const INTERNAL_FIELDS = ["sources", "notes", "why_included", "needs_review", "rating", "rating_reason", "deep_research"];
 const failures = [];
 
 function check(condition, message) {
@@ -123,13 +124,12 @@ for (const page of detailRoutes) {
     rendered.includes(`name="description" content="${escapeAttribute(entry.descr_short)}"`),
     `${page.route}: incorrect description`
   );
-  if (entry.deep_research?.date) {
-    check(rendered.includes(escapeText(entry.deep_research.date)), `${page.route}: missing research date`);
+  const payload = await readFile(dataFile(page.route), "utf8");
+  for (const field of INTERNAL_FIELDS) {
+    check(!payload.includes(`"${field}"`), `${page.route}: data contains ${field}`);
   }
-  if (entry.deep_research?.long_description) {
-    for (const paragraph of entry.deep_research.long_description.split(/\n\s*\n/)) {
-      check(rendered.includes(escapeText(paragraph)), `${page.route}: missing research paragraph`);
-    }
+  for (const source of (entry.sources ?? []).filter((source) => !source.startsWith(entry.url) && !entry.url.startsWith(source))) {
+    check(!html.includes(source), `${page.route}: page contains a source URL`);
   }
 }
 
@@ -146,9 +146,9 @@ check(
 
 for (const route of browseRoutes) {
   const payload = await readFile(dataFile(route.route), "utf8");
-  check(!payload.includes("long_description"), `${route.route}: listing contains research`);
-  check(!payload.includes('"sources"'), `${route.route}: listing contains source arrays`);
-  check(!payload.includes('"rating"'), `${route.route}: listing contains ratings`);
+  for (const field of INTERNAL_FIELDS) {
+    check(!payload.includes(`"${field}"`), `${route.route}: listing contains ${field}`);
+  }
 }
 
 const assetNames = (await readdir(join(BUILD_ROOT, "assets"))).filter((name) => name.endsWith(".js"));
