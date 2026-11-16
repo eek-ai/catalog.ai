@@ -270,7 +270,6 @@ footer a { color: var(--text-2); } footer a:hover { color: var(--green); }
   </div>
 </footer>
 
-<a class="badge" href="./">Варіант 07 · Terminal</a>
 
 <script src="data.js"></script>
 <script>
@@ -408,5 +407,6 @@ Promise.resolve({ json: () => window.CATALOG }).then((r) => r.json()).then((data
   bindEvents(); route(); placeCursor();
 }).catch(() => { $("rows").innerHTML = `<div class="empty">error: не вдалося завантажити data.json</div>`; });
 </script>
+<script src="switcher.js"></script>
 </body>
 </html>
