@@ -187,7 +187,8 @@ check(notFoundHtml.includes('name="robots" content="noindex"'), "404.html is not
 check(!notFoundHtml.includes("<script"), "404.html contains scripts");
 check((notFoundHtml.match(/<title>/g) || []).length === 1, "404.html must contain one title");
 
-const htmlFiles = await filesWithExtension(BUILD_ROOT, ".html");
+// Design previews (temporary, unlisted) are not catalog routes.
+const htmlFiles = (await filesWithExtension(BUILD_ROOT, ".html")).filter((path) => !path.includes("/d-f9162dc36334/"));
 const dataFiles = await filesWithExtension(BUILD_ROOT, ".data");
 check(htmlFiles.length === expectedRoutes.length + 1, `unexpected HTML count: ${htmlFiles.length}`);
 check(dataFiles.length === expectedRoutes.length, `unexpected data count: ${dataFiles.length}`);

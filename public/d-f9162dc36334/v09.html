@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>catalog.ai.ua — Живий каталог українських AI-продуктів</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ffffff;
+    --ink: #0a0a0a;
+    --ink-2: #4a4a4a;
+    --ink-3: #8a8a8a;
+    --rule: #0a0a0a;
+    --hair: #e2e2e2;
+    --accent: #e3001b;
+    --gutter: 24px;
+    --side: 48px;
+    --max: 1360px;
+    --font: "Inter", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--font); font-size: 15px; line-height: 1.5; font-feature-settings: "ss01", "cv11"; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  button, input { font: inherit; color: inherit; background: none; border: 0; border-radius: 0; }
+  button { cursor: pointer; }
+  ::selection { background: var(--accent); color: #fff; }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--side); }
+  .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+  .label { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+
+  /* Header */
+  .top { border-bottom: 1px solid var(--rule); }
+  .top .grid { align-items: center; min-height: 72px; }
+  .brand { grid-column: 1 / 4; font-weight: 800; font-size: 19px; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; }
+  .brand i { width: 14px; height: 14px; background: var(--accent); display: inline-block; }
+  .types { grid-column: 4 / 9; display: flex; gap: 28px; }
+  .types button { font-size: 14px; font-weight: 500; padding: 24px 0 22px; border-bottom: 2px solid transparent; color: var(--ink-2); }
+  .types button sup { font-size: 10px; color: var(--ink-3); margin-left: 3px; font-weight: 500; }
+  .types button:hover { color: var(--ink); }
+  .types button.on { color: var(--ink); border-bottom-color: var(--accent); }
+  .tools-r { grid-column: 9 / 13; display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
+  .search { flex: 1; max-width: 240px; display: flex; align-items: center; border-bottom: 1px solid var(--ink); }
+  .search input { width: 100%; padding: 8px 0; font-size: 14px; outline: none; }
+  .search input::placeholder { color: var(--ink-3); }
+  .search svg { flex: none; }
+  .lang { display: flex; font-size: 12px; font-weight: 600; letter-spacing: .04em; }
+  .lang button { padding: 4px 6px; color: var(--ink-3); }
+  .lang button.on { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+
+  /* Hero */
+  .hero { padding: 96px 0 56px; }
+  .hero h1 { grid-column: 1 / 11; font-size: clamp(44px, 7.4vw, 112px); line-height: .95; font-weight: 700; letter-spacing: -.045em; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero .lead { grid-column: 1 / 6; margin-top: 40px; font-size: 18px; line-height: 1.45; color: var(--ink-2); max-width: 46ch; }
+  .stats { grid-column: 7 / 13; margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--rule); }
+  .stats div { padding-top: 14px; }
+  .stats b { display: block; font-size: 40px; font-weight: 700; letter-spacing: -.03em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+
+  /* Sections */
+  section.block { padding: 72px 0 24px; }
+  .sec-head { border-top: 1px solid var(--rule); padding-top: 18px; margin-bottom: 40px; align-items: baseline; }
+  .sec-num { grid-column: 1 / 3; font-size: clamp(56px, 7vw, 104px); font-weight: 700; line-height: .85; letter-spacing: -.05em; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .sec-title { grid-column: 3 / 10; font-size: clamp(28px, 3.4vw, 48px); font-weight: 700; letter-spacing: -.035em; line-height: 1; }
+  .sec-aside { grid-column: 10 / 13; text-align: right; font-size: 14px; }
+  .more-link { font-weight: 600; border-bottom: 1px solid var(--ink); padding-bottom: 2px; transition: color .15s, border-color .15s; }
+  .more-link:hover { color: var(--accent); border-color: var(--accent); }
+
+  .clamp2, .clamp3 { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+  .clamp2 { -webkit-line-clamp: 2; }
+  .clamp3 { -webkit-line-clamp: 3; }
+  .pilot { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 1px 6px 0; line-height: 16px; vertical-align: middle; }
+  .ext { font-size: 13px; font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--hair); transition: border-color .15s, color .15s; }
+  .ext:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Featured */
+  .feat { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
+  .fcard { display: flex; flex-direction: column; border-top: 1px solid var(--hair); padding: 20px 0 40px; min-height: 300px; position: relative; }
+  .fcard::before { content: ""; position: absolute; top: -1px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width .3s ease; }
+  .fcard:hover::before { width: 100%; }
+  .fcard .idx { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; display: flex; justify-content: space-between; }
+  .fcard .idx span:last-child { color: var(--ink-3); font-weight: 500; }
+  .fcard h3 { margin-top: 48px; font-size: 30px; line-height: 1.05; font-weight: 700; letter-spacing: -.03em; overflow-wrap: anywhere; }
+  .fcard h3 a:hover { color: var(--accent); }
+  .fcard p { margin-top: 14px; color: var(--ink-2); font-size: 15px; }
+  .fcard .meta { margin-top: auto; padding-top: 24px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 13px; }
+  .fcard .meta .sector { color: var(--ink-3); }
+
+  /* Newest rows */
+  .rows { border-top: 1px solid var(--hair); }
+  .row { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); padding: 18px 0; border-bottom: 1px solid var(--hair); align-items: baseline; transition: background .15s; }
+  .row:hover { background: #fafafa; }
+  .row:hover .r-name { color: var(--accent); }
+  .r-date { grid-column: 1 / 3; font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink-3); }
+  .r-name { grid-column: 3 / 6; font-size: 18px; font-weight: 600; letter-spacing: -.015em; line-height: 1.25; transition: color .15s; overflow-wrap: anywhere; }
+  .r-desc { grid-column: 6 / 10; color: var(--ink-2); font-size: 14px; }
+  .r-sec { grid-column: 10 / 12; font-size: 13px; color: var(--ink-3); }
+  .r-act { grid-column: 12 / 13; text-align: right; }
+
+  /* Sectors */
+  .sectors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--gutter); }
+  .sector-btn { text-align: left; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 16px 0; border-top: 1px solid var(--hair); font-size: 16px; font-weight: 500; letter-spacing: -.01em; transition: color .15s; }
+  .sector-btn b { font-size: 13px; font-weight: 600; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .sector-btn:hover, .sector-btn.on { color: var(--accent); }
+  .sector-btn.on { border-top: 2px solid var(--accent); padding-top: 15px; }
+  .sector-btn.on b { color: var(--accent); }
+
+  /* Catalog */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; margin-bottom: 20px; font-size: 13px; color: var(--ink-2); min-height: 20px; }
+  .filters button { font-weight: 600; color: var(--accent); }
+  .cat { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--gutter); }
+  .item { display: flex; flex-direction: column; border-top: 1px solid var(--hair); padding: 18px 0 32px; min-height: 220px; transition: border-color .15s; }
+  .item:hover { border-top-color: var(--ink); }
+  .item:hover h4 { color: var(--accent); }
+  .item .top-l { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 18px; }
+  .item .top-l .sector { font-size: 12px; color: var(--ink-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .item h4 { margin-top: 20px; font-size: 20px; font-weight: 700; line-height: 1.15; letter-spacing: -.02em; transition: color .15s; overflow-wrap: anywhere; }
+  .item p { margin-top: 10px; font-size: 14px; color: var(--ink-2); }
+  .item .foot { margin-top: auto; padding-top: 18px; }
+  .empty { padding: 48px 0; color: var(--ink-3); font-size: 18px; border-top: 1px solid var(--hair); }
+  .show-more { margin-top: 32px; width: 100%; border: 1px solid var(--ink); padding: 18px; font-size: 15px; font-weight: 600; display: flex; justify-content: space-between; transition: background .15s, color .15s; }
+  .show-more:hover { background: var(--ink); color: var(--paper); }
+
+  /* New view */
+  .back { display: inline-block; margin: 40px 0 0; font-size: 14px; font-weight: 600; }
+  .back:hover { color: var(--accent); }
+  .newview h1 { font-size: clamp(44px, 7.4vw, 112px); font-weight: 700; letter-spacing: -.045em; line-height: .95; margin: 40px 0 64px; }
+  .newview h1 span { color: var(--accent); }
+
+  /* Footer */
+  footer { margin-top: 96px; border-top: 1px solid var(--rule); padding: 32px 0 96px; }
+  footer .grid > div { font-size: 14px; color: var(--ink-2); }
+  .f-brand { grid-column: 1 / 4; font-weight: 800; color: var(--ink) !important; font-size: 17px; }
+  .f-about { grid-column: 4 / 9; max-width: 52ch; }
+  .f-contact { grid-column: 9 / 13; text-align: right; }
+  .f-contact a { color: var(--ink); border-bottom: 1px solid var(--hair); }
+  .f-contact a:hover { border-color: var(--accent); color: var(--accent); }
+
+  .badge { position: fixed; right: 16px; bottom: 16px; z-index: 10; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 600; letter-spacing: .02em; padding: 9px 12px; border-left: 4px solid var(--accent); }
+  .badge:hover { background: var(--accent); }
+
+  [hidden] { display: none !important; }
+
+  /* Tablet */
+  @media (max-width: 1080px) {
+    :root { --side: 32px; }
+    .types { grid-column: 4 / 13; justify-content: flex-end; }
+    .tools-r { grid-column: 1 / 13; padding: 0 0 14px; justify-content: space-between; }
+    .search { max-width: none; }
+    .feat { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cat { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .sectors { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .hero .lead { grid-column: 1 / 13; }
+    .stats { grid-column: 1 / 13; }
+    .r-name { grid-column: 3 / 7; }
+    .r-desc { grid-column: 7 / 13; }
+    .r-sec, .r-act { display: none; }
+  }
+  /* Phone */
+  @media (max-width: 720px) {
+    :root { --side: 16px; --gutter: 16px; }
+    .top .grid { min-height: 0; }
+    .brand { grid-column: 1 / 13; padding: 18px 0 4px; }
+    .types { grid-column: 1 / 13; justify-content: flex-start; gap: 20px; overflow-x: auto; }
+    .types button { padding: 14px 0 12px; white-space: nowrap; }
+    .hero { padding: 56px 0 24px; }
+    .hero h1 { grid-column: 1 / 13; font-size: 44px; }
+    .hero .lead { font-size: 16px; margin-top: 24px; }
+    .stats b { font-size: 28px; }
+    section.block { padding: 56px 0 8px; }
+    .sec-head { margin-bottom: 24px; }
+    .sec-num { grid-column: 1 / 13; font-size: 64px; }
+    .sec-title { grid-column: 1 / 13; margin-top: 10px; font-size: 30px; }
+    .sec-aside { grid-column: 1 / 13; text-align: left; margin-top: 14px; }
+    .feat, .cat { grid-template-columns: minmax(0, 1fr); }
+    .fcard { min-height: 0; padding-bottom: 32px; }
+    .fcard h3 { margin-top: 28px; font-size: 26px; }
+    .item { min-height: 0; padding-bottom: 24px; }
+    .sectors { grid-template-columns: minmax(0, 1fr); }
+    .row { grid-template-columns: minmax(0, 1fr); row-gap: 4px; }
+    .r-date, .r-name, .r-desc { grid-column: 1 / -1; }
+    .newview h1 { font-size: 44px; margin-bottom: 40px; }
+    footer .grid > div { grid-column: 1 / 13 !important; text-align: left; margin-bottom: 14px; }
+    .badge { right: 12px; bottom: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap grid">
+    <a class="brand" href="#"><i></i>catalog.ai.ua</a>
+    <nav class="types" id="types" aria-label="Тип"></nav>
+    <div class="tools-r">
+      <label class="search">
+        <input id="q" type="search" placeholder="Пошук продуктів" aria-label="Пошук">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.25"/><path d="M11 11l3.5 3.5"/></svg>
+      </label>
+      <div class="lang"><button class="on">UA</button><button>EN</button></div>
+    </div>
+  </div>
+</header>
+
+<main id="home" class="wrap">
+  <div class="hero grid">
+    <h1>Живий каталог українських <em>AI</em>-продуктів</h1>
+    <p class="lead">Інструменти, моделі та компанії, де штучний інтелект — серцевина продукту. Каталог щодня підтримують AI-агенти, а перевіряють люди.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <section class="block">
+    <div class="sec-head grid">
+      <div class="sec-num">01</div>
+      <h2 class="sec-title">Вибір редакції</h2>
+      <div class="sec-aside label">Шість продуктів, на які варто подивитися</div>
+    </div>
+    <div class="feat" id="featured"></div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head grid">
+      <div class="sec-num">02</div>
+      <h2 class="sec-title">Нові інструменти</h2>
+      <div class="sec-aside"><a class="more-link" href="#new">Усі нові →</a></div>
+    </div>
+    <div class="rows" id="newest-teaser"></div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head grid">
+      <div class="sec-num">03</div>
+      <h2 class="sec-title">Сектори</h2>
+      <div class="sec-aside label">Оберіть, щоб відфільтрувати каталог</div>
+    </div>
+    <div class="sectors" id="sectors"></div>
+  </section>
+
+  <section class="block" id="catalog">
+    <div class="sec-head grid">
+      <div class="sec-num">04</div>
+      <h2 class="sec-title" id="cat-title">Інструменти</h2>
+      <div class="sec-aside label" id="cat-count"></div>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="cat" id="cat"></div>
+    <button class="show-more" id="more"><span>Показати ще</span><span id="more-n"></span></button>
+  </section>
+</main>
+
+<main id="new-view" class="wrap newview" hidden>
+  <a class="back" href="#">← На головну</a>
+  <h1>Нові<br>інструменти<span>.</span></h1>
+  <div class="rows" id="newest-all"></div>
+</main>
+
+<footer>
+  <div class="wrap grid">
+    <div class="f-brand">catalog.ai.ua</div>
+    <div class="f-about">Каталог підтримують автономні AI-агенти: знаходять нові продукти й регулярно перевіряють старі. Люди наглядають за кожною зміною.</div>
+    <div class="f-contact">Контакти: <a href="mailto:hello@catalog.ai.ua">hello@catalog.ai.ua</a></div>
+  </div>
+</footer>
+
+<a class="badge" href="./">Варіант 09 · Swiss minimal</a>
+
+<script>
+const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
+const PAGE = 24;
+const state = { type: "tool", sector: null, query: "", shown: PAGE };
+let DATA = null;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtDate = (iso) => iso.split("-").reverse().join(".");
+const pilot = (e) => e.status === "Пілот" ? '<span class="pilot">Пілот</span>' : "";
+const site = (e) => e.url ? `<a class="ext" href="${esc(e.url)}" target="_blank" rel="noopener">Сайт ↗</a>` : "";
+const countBy = (list, key) => list.reduce((m, e) => (m[e[key]] = (m[e[key]] || 0) + 1, m), {});
+
+function renderTypes() {
+  const counts = countBy(DATA.entries, "type");
+  $("types").innerHTML = TYPES.map(([t, label]) =>
+    `<button data-type="${t}" class="${t === state.type ? "on" : ""}">${label}<sup>${counts[t] || 0}</sup></button>`).join("");
+}
+
+function renderStats() {
+  const sectors = new Set(DATA.entries.map((e) => e.sector)).size;
+  const latest = DATA.entries.map((e) => e.added).sort().pop();
+  $("stats").innerHTML = `
+    <div><b>${DATA.entries.length}</b><span class="label">продуктів</span></div>
+    <div><b>${sectors}</b><span class="label">секторів</span></div>
+    <div><b>${fmtDate(latest).slice(0, 5)}</b><span class="label">оновлено ${latest.slice(0, 4)}</span></div>`;
+}
+
+function renderFeatured(bySlug) {
+  $("featured").innerHTML = DATA.featured.map((slug, i) => {
+    const e = bySlug[slug];
+    return `<article class="fcard">
+      <div class="idx"><span>${String(i + 1).padStart(2, "0")}</span><span>${pilot(e)}</span></div>
+      <h3><a href="#">${esc(e.name)}</a></h3>
+      <p class="clamp3">${esc(e.descr_short)}</p>
+      <div class="meta"><span class="sector">${esc(e.sector)}</span>${site(e)}</div>
+    </article>`;
+  }).join("");
+}
+
+function newestRow(e) {
+  return `<a class="row" href="#">
+    <span class="r-date">${fmtDate(e.added)}</span>
+    <span class="r-name">${esc(e.name)} ${pilot(e)}</span>
+    <span class="r-desc clamp2">${esc(e.descr_short)}</span>
+    <span class="r-sec">${esc(e.sector)}</span>
+    <span class="r-act label">→</span>
+  </a>`;
+}
+
+function renderNewest(bySlug) {
+  const list = DATA.newest.map((s) => bySlug[s]).filter(Boolean);
+  $("newest-teaser").innerHTML = list.slice(0, 4).map(newestRow).join("");
+  $("newest-all").innerHTML = list.map(newestRow).join("");
+}
+
+function renderSectors() {
+  const counts = countBy(DATA.entries, "sector");
+  const sectors = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+  $("sectors").innerHTML = sectors.map((s) =>
+    `<button class="sector-btn ${s === state.sector ? "on" : ""}" data-sector="${esc(s)}"><span>${esc(s)}</span><b>${counts[s]}</b></button>`).join("");
+}
+
+function filteredEntries() {
+  const q = state.query.trim().toLowerCase();
+  return DATA.entries.filter((e) =>
+    e.type === state.type &&
+    (!state.sector || e.sector === state.sector) &&
+    (!q || (e.name + " " + e.descr_short).toLowerCase().includes(q)));
+}
+
+function renderCatalog() {
+  const list = filteredEntries();
+  const label = TYPES.find(([t]) => t === state.type)[1];
+  $("cat-title").textContent = label;
+  $("cat-count").textContent = `${list.length} у переліку`;
+
+  const active = [];
+  if (state.sector) active.push(`Сектор: <strong>${esc(state.sector)}</strong>`);
+  if (state.query) active.push(`Пошук: <strong>«${esc(state.query)}»</strong>`);
+  $("filters").innerHTML = active.length ? active.join("") + ' <button id="reset">Скинути ×</button>' : "";
+
+  $("cat").innerHTML = list.length ? list.slice(0, state.shown).map((e) => `
+    <article class="item">
+      <div class="top-l"><span class="sector">${esc(e.sector)}</span>${pilot(e)}</div>
+      <h4 class="clamp2"><a href="#">${esc(e.name)}</a></h4>
+      <p class="clamp3">${esc(e.descr_short)}</p>
+      <div class="foot">${site(e)}</div>
+    </article>`).join("") : '<div class="empty" style="grid-column:1/-1">Нічого не знайдено.</div>';
+
+  const rest = list.length - state.shown;
+  $("more").hidden = rest <= 0;
+  $("more-n").textContent = rest > 0 ? `+${rest}` : "";
+}
+
+function route() {
+  const isNew = location.hash === "#new";
+  $("home").hidden = isNew;
+  $("new-view").hidden = !isNew;
+  window.scrollTo(0, 0);
+}
+
+function bind() {
+  $("types").addEventListener("click", (ev) => {
+    const b = ev.target.closest("button"); if (!b) return;
+    state.type = b.dataset.type; state.shown = PAGE;
+    renderTypes(); renderCatalog();
+    if (location.hash === "#new") location.hash = "";
+    $("catalog").scrollIntoView({ behavior: "smooth" });
+  });
+  $("sectors").addEventListener("click", (ev) => {
+    const b = ev.target.closest("button"); if (!b) return;
+    state.sector = state.sector === b.dataset.sector ? null : b.dataset.sector; state.shown = PAGE;
+    renderSectors(); renderCatalog();
+    $("catalog").scrollIntoView({ behavior: "smooth" });
+  });
+  $("q").addEventListener("input", (ev) => {
+    state.query = ev.target.value; state.shown = PAGE;
+    if (location.hash === "#new") location.hash = "";
+    renderCatalog();
+  });
+  $("filters").addEventListener("click", (ev) => {
+    if (ev.target.id !== "reset") return;
+    state.sector = null; state.query = ""; $("q").value = "";
+    renderSectors(); renderCatalog();
+  });
+  $("more").addEventListener("click", () => { state.shown += PAGE; renderCatalog(); });
+  window.addEventListener("hashchange", route);
+}
+
+fetch("data.json").then((r) => r.json()).then((data) => {
+  DATA = data;
+  const bySlug = Object.fromEntries(data.entries.map((e) => [e.slug, e]));
+  renderTypes(); renderStats(); renderFeatured(bySlug); renderNewest(bySlug); renderSectors(); renderCatalog();
+  bind(); route();
+});
+</script>
+</body>
+</html>

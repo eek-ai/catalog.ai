@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>catalog.ai.ua — Живий каталог українських AI-продуктів</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f3ec; --paper-2:#efe8dc; --ink:#16130f; --ink-2:#3d372f; --muted:#7a7165;
+  --rule:#d9cfbf; --accent:#a8231b; --accent-soft:#f1dcd6; --pilot:#8a5a00; --pilot-soft:#f3e6c8;
+  --serif:"Playfair Display",Georgia,serif; --text:"Lora",Georgia,serif; --sans:"Golos Text",system-ui,sans-serif;
+  --wrap:1240px; --gut:clamp(16px,4vw,40px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 15px/1.55 var(--sans);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.cap::first-letter{text-transform:uppercase}
+.clamp2,.clamp3,.clamp4{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+.clamp2{-webkit-line-clamp:2}.clamp3{-webkit-line-clamp:3}.clamp4{-webkit-line-clamp:4}
+.kicker{font:600 11px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.meta{font:500 12px/1.4 var(--sans);color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.site{color:var(--ink);border-bottom:1px solid var(--rule);transition:border-color .2s,color .2s}
+.site:hover{color:var(--accent);border-color:var(--accent)}
+.pilot{font:600 10px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--pilot);background:var(--pilot-soft);padding:4px 7px 3px;border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.08;overflow-wrap:anywhere}
+.t{background-image:linear-gradient(var(--accent),var(--accent));background-size:0 1px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s}
+article:hover .t{background-size:100% 1px}
+
+/* top bar + masthead */
+.topbar{border-bottom:1px solid var(--rule)}
+.topbar .wrap{display:flex;align-items:center;gap:20px;min-height:48px;font-size:12px;color:var(--muted)}
+.dateline{flex:1;min-width:0;letter-spacing:.04em}
+.lang{display:flex;border:1px solid var(--rule);border-radius:2px}
+.lang button{background:none;border:0;padding:4px 9px;font:600 11px/1 var(--sans);letter-spacing:.1em;cursor:pointer;color:var(--muted)}
+.lang button.on{background:var(--ink);color:var(--paper)}
+.search{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--ink-2);padding:4px 0;width:240px}
+.search input{border:0;background:none;outline:none;width:100%;font-size:14px;color:var(--ink)}
+.search input::placeholder{color:var(--muted);font-family:var(--text);font-style:italic}
+.masthead{text-align:center;padding:clamp(22px,5vw,46px) 0 18px}
+.wordmark{font:900 clamp(2.5rem,11.5vw,7.6rem)/.9 var(--serif);letter-spacing:-.025em;display:inline-block}
+.wordmark i{font-style:italic;font-weight:700;color:var(--accent)}
+.tagline{font:italic 400 clamp(1rem,2.2vw,1.3rem)/1.4 var(--text);color:var(--ink-2);margin-top:14px}
+.rules{border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);height:7px}
+.sections{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 34px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.sections button{background:none;border:0;cursor:pointer;font:500 14px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);padding:4px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.sections button sup{font-size:10px;color:var(--muted);margin-left:3px;letter-spacing:0}
+.sections button:hover{color:var(--accent)}
+.sections button.on{color:var(--ink);border-color:var(--accent)}
+
+/* section headings */
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-top:2px solid var(--ink);padding:10px 0 22px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(1.5rem,3vw,2rem)}
+.sec-head span,.sec-head a{font:italic 400 15px/1.4 var(--text);color:var(--muted)}
+.sec-head a{color:var(--accent);font:600 13px/1.4 var(--sans);letter-spacing:.04em}
+.sec-head a:hover{text-decoration:underline}
+
+/* front page: picks + news column */
+.front{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,3.4fr);gap:44px;padding:40px 0 56px}
+.front>*{min-width:0}
+.picks-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,3fr);gap:32px}
+.lead .art{aspect-ratio:16/9;background:var(--paper-2);position:relative;overflow:hidden;margin-bottom:20px;display:flex;align-items:flex-end;padding:16px 18px}
+.lead .art b{position:absolute;right:-.06em;top:-.22em;font:italic 700 clamp(9rem,20vw,17rem)/1 var(--serif);color:var(--accent);opacity:.9}
+.lead .art em{position:relative;font:italic 400 13px/1.3 var(--text);color:var(--ink-2);max-width:60%}
+.lead h3{font-size:clamp(2rem,4.2vw,3.3rem);font-weight:900;letter-spacing:-.015em;margin:8px 0 12px}
+.lead .dek{font:italic 400 clamp(1.08rem,1.7vw,1.3rem)/1.45 var(--text);color:var(--ink-2);margin-bottom:14px}
+.lead .body{font:400 15px/1.65 var(--text);color:var(--ink-2);margin-bottom:16px}
+.lead .body::first-letter{float:left;font:900 3.4em/.8 var(--serif);color:var(--accent);margin:.08em .1em 0 0;text-transform:uppercase}
+.side{display:flex;flex-direction:column;border-left:1px solid var(--rule);padding-left:32px}
+.story{padding:0 0 22px;min-width:0}
+.story+.story{border-top:1px solid var(--rule);padding-top:20px}
+.story .num{font:italic 600 1.5rem/1 var(--serif);color:var(--accent);display:block;margin-bottom:8px}
+.story h3{font-size:1.45rem;margin:6px 0 8px}
+.story p{font:400 15px/1.55 var(--text);color:var(--ink-2);margin-bottom:10px}
+.picks-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink);margin-top:10px;padding-top:22px}
+.picks-row .story{padding:0 22px;border-top:0}
+.picks-row .story+.story{border-left:1px solid var(--rule);padding-top:0}
+.picks-row .story:first-child{padding-left:0}.picks-row .story:last-child{padding-right:0}
+.news{border-left:1px solid var(--rule);padding-left:30px}
+.news .sec-head{border-top-width:2px;padding-bottom:8px}
+.news .sec-head h2{font-size:1.5rem}
+.news-item{padding:16px 0;border-bottom:1px solid var(--rule);min-width:0}
+.news-item time{font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.news-item h3{font-size:1.15rem;margin:7px 0 5px}
+.news-item p{font:400 14px/1.5 var(--text);color:var(--ink-2);margin-bottom:6px}
+.more-link{display:inline-block;margin-top:18px;font:600 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid var(--accent);padding-bottom:4px}
+.more-link:hover{color:var(--accent)}
+
+/* sectors index */
+.sectors{padding-bottom:56px}
+.toc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:44px}
+.toc button{display:flex;align-items:baseline;gap:8px;width:100%;background:none;border:0;border-bottom:1px solid var(--rule);padding:11px 0;cursor:pointer;text-align:left;min-width:0}
+.toc .n{font:600 1.08rem/1.25 var(--serif);transition:color .2s;min-width:0;overflow-wrap:anywhere}
+.toc .dots{flex:1;min-width:16px;border-bottom:1px dotted var(--muted);transform:translateY(-4px)}
+.toc .c{font:500 13px/1 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums}
+.toc button:hover .n,.toc button.on .n{color:var(--accent)}
+.toc button.on .c{color:var(--accent)}
+.toc button.zero{opacity:.4}
+
+/* catalog listing */
+.catalog{padding-bottom:64px}
+.filters{font:italic 400 15px/1.4 var(--text);color:var(--muted);margin:-8px 0 20px}
+.filters button{background:none;border:0;color:var(--accent);cursor:pointer;font:600 12px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px}
+.card{border-top:1px solid var(--rule);padding:18px 0 22px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.card h3{font-size:1.3rem}
+.card p{font:400 15px/1.55 var(--text);color:var(--ink-2);flex:1}
+.empty{font:italic 400 1.1rem/1.5 var(--text);color:var(--muted);padding:24px 0}
+.show-more{display:block;margin:30px auto 0;background:none;border:1px solid var(--ink);padding:13px 30px;cursor:pointer;font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;transition:background .2s,color .2s}
+.show-more:hover{background:var(--ink);color:var(--paper)}
+
+/* #new view */
+.newpage{padding:36px 0 72px;max-width:980px}
+.back{font:600 12px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.back:hover{color:var(--accent)}
+.newpage h1{font-size:clamp(2.6rem,7vw,5rem);font-weight:900;letter-spacing:-.02em;margin:18px 0 12px}
+.newpage .intro{font:italic 400 clamp(1.05rem,2vw,1.3rem)/1.5 var(--text);color:var(--ink-2);max-width:640px;padding-bottom:28px;border-bottom:3px double var(--ink)}
+.day{display:grid;grid-template-columns:150px minmax(0,1fr);gap:32px;border-bottom:1px solid var(--rule);padding:26px 0}
+.day .d b{display:block;font:900 3.4rem/.9 var(--serif);color:var(--accent)}
+.day .d span{font:600 11px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.entry{min-width:0}
+.entry+.entry{border-top:1px solid var(--rule);margin-top:20px;padding-top:20px}
+.entry h3{font-size:clamp(1.4rem,2.6vw,1.8rem);margin:6px 0 8px}
+.entry p{font:400 16px/1.6 var(--text);color:var(--ink-2);margin-bottom:10px}
+
+/* footer + badge */
+footer{border-top:3px solid var(--ink);padding:26px 0 80px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline}
+footer .wm{font:900 1.6rem/1 var(--serif)}
+footer .wm i{color:var(--accent);font-weight:700}
+footer p{font:italic 400 15px/1.5 var(--text);color:var(--ink-2);max-width:560px}
+footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04em}
+.badge{position:fixed;right:16px;bottom:16px;z-index:10;background:var(--ink);color:var(--paper);font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:10px 14px;border-radius:2px;box-shadow:0 6px 20px rgba(22,19,15,.18);transition:background .2s}
+.badge:hover{background:var(--accent)}
+[hidden]{display:none!important}
+
+@media (max-width:1020px){
+  .front{grid-template-columns:minmax(0,1fr)}
+  .news{border-left:0;padding-left:0}
+  .grid,.toc{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:720px){
+  .topbar .wrap{flex-wrap:wrap;padding-top:8px;padding-bottom:8px;gap:10px 14px}
+  .dateline{flex-basis:100%;order:-1}
+  .search{flex:1;width:auto}
+  .picks-top,.picks-row{grid-template-columns:minmax(0,1fr)}
+  .side{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:20px;margin-top:4px}
+  .picks-row .story,.picks-row .story:first-child,.picks-row .story:last-child{padding:0 0 20px}
+  .picks-row .story+.story{border-left:0;border-top:1px solid var(--rule);padding-top:20px}
+  .grid,.toc{grid-template-columns:minmax(0,1fr)}
+  .sections{gap:2px 20px}
+  .sections button{font-size:13px}
+  .day{grid-template-columns:minmax(0,1fr);gap:12px}
+  .day .d{display:flex;align-items:baseline;gap:10px}
+  .day .d b{display:inline;font-size:2.4rem}
+  .lead .art{aspect-ratio:16/7}
+  .lead .art b{font-size:8.5rem}
+  .badge{right:12px;bottom:12px;padding:8px 11px;font-size:10px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span class="dateline" id="dateline">Завантаження…</span>
+  <div class="lang" role="group" aria-label="Мова"><button class="on">UA</button><button>EN</button></div>
+  <label class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <input id="q" type="search" placeholder="Пошук у каталозі" aria-label="Пошук"></label>
+</div></div>
+
+<header class="wrap">
+  <div class="masthead">
+    <a href="#" class="wordmark">catalog<i>.ai.ua</i></a>
+    <p class="tagline">Живий каталог українських AI-продуктів</p>
+  </div>
+  <div class="rules"></div>
+  <nav class="sections" id="types" aria-label="Тип"></nav>
+</header>
+
+<main id="main" class="wrap">
+  <section class="front">
+    <div class="picks">
+      <div class="sec-head"><h2>Вибір редакції</h2><span>Шість продуктів, які варто знати</span></div>
+      <div class="picks-top"><div id="lead"></div><div class="side" id="side"></div></div>
+      <div class="picks-row" id="row"></div>
+    </div>
+    <aside class="news">
+      <div class="sec-head"><h2>Нові інструменти</h2></div>
+      <div id="news"></div>
+      <a class="more-link" href="#new">Усі нові →</a>
+    </aside>
+  </section>
+
+  <section class="sectors">
+    <div class="sec-head"><h2>Рубрики</h2><span id="toc-note"></span></div>
+    <div class="toc" id="toc"></div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="sec-head"><h2 id="cat-title">Каталог</h2><span id="cat-count"></span></div>
+    <p class="filters" id="filters" hidden></p>
+    <div class="grid" id="grid"></div>
+    <button class="show-more" id="more">Показати ще</button>
+  </section>
+</main>
+
+<main id="newpage" class="wrap" hidden>
+  <div class="newpage">
+    <a class="back" href="#">← На головну</a>
+    <h1>Нові інструменти</h1>
+    <p class="intro">Хроніка каталогу: десять інструментів, що з’явилися в нас останніми, — від найсвіжіших до давніших.</p>
+    <div id="days"></div>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span class="wm">catalog<i>.ai.ua</i></span>
+  <p>Каталог щодня оновлюють AI-агенти, а люди перевіряють і редагують. Знайшли помилку чи хочете додати продукт — напишіть нам.</p>
+  <small>Контакти: email і Telegram — незабаром</small>
+</div></footer>
+
+<a class="badge" href="./">Варіант 01 · Editorial</a>
+
+<script>
+const TYPES = { tool: "Інструменти", model: "Моделі", company: "Компанії" };
+const MONTHS = ["січня","лютого","березня","квітня","травня","червня","липня","серпня","вересня","жовтня","листопада","грудня"];
+const PAGE = 24;
+const state = { type: "tool", sector: null, q: "", limit: PAGE };
+let data, bySlug;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const dateParts = iso => { const [y, m, d] = iso.split("-"); return { y, m: MONTHS[m - 1], d: +d }; };
+const fmtDate = iso => { const p = dateParts(iso); return `${p.d} ${p.m} ${p.y}`; };
+const countBy = (list, key) => list.reduce((acc, e) => (acc[e[key]] = (acc[e[key]] || 0) + 1, acc), {});
+const plural = (n, one, few, many) => {
+  const m10 = n % 10, m100 = n % 100;
+  return m10 === 1 && m100 !== 11 ? one : m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20) ? few : many;
+};
+
+const siteLink = e => e.url ? `<a class="site" href="${esc(e.url)}" target="_blank" rel="noopener">Сайт ↗</a>` : "";
+const pilot = e => e.status === "Пілот" ? `<span class="pilot">Пілот</span>` : "";
+const title = (e, tag = "h3") => `<${tag}><a class="t" href="#" data-card>${esc(e.name)}</a></${tag}>`;
+
+function renderDateline() {
+  const latest = data.entries.map(e => e.added).sort().pop();
+  const sectors = new Set(data.entries.map(e => e.sector)).size;
+  $("dateline").textContent = `${data.entries.length} продуктів · ${sectors} секторів · оновлено ${fmtDate(latest)}`;
+}
+
+function renderTypes() {
+  const counts = countBy(data.entries, "type");
+  $("types").innerHTML = Object.entries(TYPES).map(([k, label]) =>
+    `<button data-type="${k}" class="${k === state.type ? "on" : ""}">${label}<sup>${counts[k] || 0}</sup></button>`).join("");
+}
+
+function renderFeatured() {
+  const [lead, ...rest] = data.featured.map(s => bySlug[s]).filter(Boolean);
+  $("lead").innerHTML = `<article class="lead">
+      <div class="art" aria-hidden="true"><b>${esc(lead.name.charAt(0))}</b><em>Головне цього випуску</em></div>
+      <span class="kicker">${esc(lead.sector)}</span>
+      ${title(lead)}
+      <p class="dek cap">${esc(lead.descr_short)}</p>
+      ${lead.target_users ? `<p class="body clamp4">${esc(lead.target_users)}</p>` : ""}
+      <div class="meta"><span>${esc(lead.origin)}</span>${pilot(lead)}${siteLink(lead)}</div>
+    </article>`;
+  const story = (e, i) => `<article class="story">
+      <span class="num">${String(i + 2).padStart(2, "0")}</span>
+      <span class="kicker">${esc(e.sector)}</span>
+      ${title(e)}
+      <p class="cap clamp3">${esc(e.descr_short)}</p>
+      <div class="meta">${pilot(e)}${siteLink(e)}</div>
+    </article>`;
+  $("side").innerHTML = rest.slice(0, 2).map(story).join("");
+  $("row").innerHTML = rest.slice(2).map((e, i) => story(e, i + 2)).join("");
+}
+
+function renderNews() {
+  $("news").innerHTML = data.newest.slice(0, 5).map(s => bySlug[s]).filter(Boolean).map(e => {
+    const p = dateParts(e.added);
+    return `<article class="news-item">
+      <time datetime="${esc(e.added)}">${p.d} ${p.m}</time>
+      ${title(e)}
+      <p class="cap clamp2">${esc(e.descr_short)}</p>
+      <div class="meta"><span>${esc(e.sector)}</span>${pilot(e)}</div>
+    </article>`;
+  }).join("");
+}
+
+function renderNewPage() {
+  const days = {};
+  data.newest.map(s => bySlug[s]).filter(Boolean).forEach(e => (days[e.added] ||= []).push(e));
+  $("days").innerHTML = Object.entries(days).map(([iso, list]) => {
+    const p = dateParts(iso);
+    return `<section class="day">
+      <div class="d"><b>${p.d}</b><span>${p.m} ${p.y}</span></div>
+      <div>${list.map(e => `<article class="entry">
+        <span class="kicker">${esc(e.sector)}</span>
+        ${title(e)}
+        <p class="cap">${esc(e.descr_short)}</p>
+        <div class="meta"><span>Додано ${fmtDate(e.added)}</span><span>${esc(e.origin)}</span>${pilot(e)}${siteLink(e)}</div>
+      </article>`).join("")}</div>
+    </section>`;
+  }).join("");
+}
+
+const ofType = () => data.entries.filter(e => e.type === state.type);
+
+function renderToc() {
+  const counts = countBy(ofType(), "sector");
+  const all = countBy(data.entries, "sector");
+  const sectors = Object.keys(all).sort((a, b) => all[b] - all[a]);
+  $("toc-note").textContent = `${TYPES[state.type].toLowerCase()} за галузями`;
+  $("toc").innerHTML = sectors.map(s => {
+    const n = counts[s] || 0;
+    return `<button data-sector="${esc(s)}" class="${s === state.sector ? "on" : ""} ${n ? "" : "zero"}">
+      <span class="n">${esc(s)}</span><span class="dots"></span><span class="c">${n}</span></button>`;
+  }).join("");
+}
+
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  return ofType()
+    .filter(e => !state.sector || e.sector === state.sector)
+    .filter(e => !q || `${e.name} ${e.descr_short}`.toLowerCase().includes(q))
+    .sort((a, b) => a.name.localeCompare(b.name, "uk"));
+}
+
+function renderList() {
+  const list = filtered();
+  $("cat-title").textContent = `Каталог · ${TYPES[state.type]}`;
+  $("cat-count").textContent = `${list.length} ${plural(list.length, "запис", "записи", "записів")}, за абеткою`;
+  const parts = [state.sector && `рубрика «${esc(state.sector)}»`, state.q.trim() && `пошук «${esc(state.q.trim())}»`].filter(Boolean);
+  $("filters").hidden = !parts.length;
+  $("filters").innerHTML = parts.length ? `Фільтр: ${parts.join(", ")}<button id="reset">Скинути</button>` : "";
+  $("grid").innerHTML = list.length ? list.slice(0, state.limit).map(e => `<article class="card">
+      <span class="kicker">${esc(e.sector)}</span>
+      ${title(e)}
+      <p class="cap clamp3">${esc(e.descr_short)}</p>
+      <div class="meta">${pilot(e)}${siteLink(e)}</div>
+    </article>`).join("") : `<p class="empty">Нічого не знайдено. Спробуйте інший запит або рубрику.</p>`;
+  $("more").hidden = list.length <= state.limit;
+}
+
+function route() {
+  const isNew = location.hash === "#new";
+  $("main").hidden = isNew;
+  $("newpage").hidden = !isNew;
+  window.scrollTo(0, 0);
+}
+
+function leaveNewPage() {
+  if (location.hash !== "#new") return;
+  history.pushState(null, "", location.pathname);
+  route();
+}
+
+function bindEvents() {
+  document.addEventListener("click", ev => {
+    const card = ev.target.closest("[data-card]");
+    if (card) return ev.preventDefault();
+    const typeBtn = ev.target.closest("[data-type]");
+    if (typeBtn) {
+      Object.assign(state, { type: typeBtn.dataset.type, sector: null, limit: PAGE });
+      leaveNewPage();
+      renderTypes(); renderToc(); renderList();
+      $("catalog").scrollIntoView({ behavior: "smooth" });
+    }
+    const secBtn = ev.target.closest("[data-sector]");
+    if (secBtn) {
+      state.sector = state.sector === secBtn.dataset.sector ? null : secBtn.dataset.sector;
+      state.limit = PAGE;
+      renderToc(); renderList();
+      $("catalog").scrollIntoView({ behavior: "smooth" });
+    }
+    if (ev.target.id === "reset") {
+      Object.assign(state, { sector: null, q: "", limit: PAGE });
+      $("q").value = "";
+      renderToc(); renderList();
+    }
+  });
+  $("more").addEventListener("click", () => { state.limit += PAGE; renderList(); });
+  $("q").addEventListener("input", ev => { state.q = ev.target.value; state.limit = PAGE; renderList(); });
+  $("q").addEventListener("keydown", ev => {
+    if (ev.key !== "Enter") return;
+    leaveNewPage();
+    $("catalog").scrollIntoView({ behavior: "smooth" });
+  });
+  window.addEventListener("hashchange", route);
+}
+
+fetch("data.json").then(r => r.json()).then(json => {
+  data = json;
+  bySlug = Object.fromEntries(data.entries.map(e => [e.slug, e]));
+  renderDateline(); renderTypes(); renderFeatured(); renderNews(); renderNewPage(); renderToc(); renderList();
+  bindEvents(); route();
+}).catch(() => { $("dateline").textContent = "Не вдалося завантажити дані"; });
+</script>
+</body>
+</html>

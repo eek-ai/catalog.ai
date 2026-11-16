@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>catalog.ai.ua — Варіант 06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0057B7;
+    --blue-deep: #00418a;
+    --yellow: #FFD700;
+    --ink: #0d0d0d;
+    --paper: #FFF9E6;
+    --white: #ffffff;
+    --muted: #4a4a4a;
+    --line: 3px solid var(--ink);
+    --line-thin: 2px solid var(--ink);
+    --shadow: 6px 6px 0 var(--ink);
+    --shadow-sm: 4px 4px 0 var(--ink);
+    --shadow-lg: 9px 9px 0 var(--ink);
+    --radius: 0;
+    --display: "Unbounded", system-ui, sans-serif;
+    --body: "Onest", system-ui, sans-serif;
+    --wrap: 1200px;
+    --gutter: 24px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 16px/1.5 var(--body); overflow-x: hidden;
+    background-image: radial-gradient(rgba(13,13,13,.09) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  a { color: inherit; }
+  button, input { font: inherit; color: inherit; }
+  .wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
+  .clamp-2, .clamp-3 { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+  .clamp-2 { -webkit-line-clamp: 2; }
+  .clamp-3 { -webkit-line-clamp: 3; }
+
+  /* ---------- header ---------- */
+  .top { background: var(--white); border-bottom: var(--line); position: sticky; top: 0; z-index: 20; }
+  .top-row { display: flex; align-items: center; gap: 16px; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap; }
+  .brand { display: inline-flex; text-decoration: none; border: var(--line); box-shadow: var(--shadow-sm);
+    font: 800 18px/1 var(--display); letter-spacing: -.02em; transition: transform .12s, box-shadow .12s; }
+  .brand:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); }
+  .brand span { padding: 9px 10px; }
+  .brand .b1 { background: var(--yellow); }
+  .brand .b2 { background: var(--blue); color: var(--white); border-left: var(--line); }
+  .tagline { font-weight: 600; font-size: 14px; color: var(--muted); max-width: 220px; line-height: 1.3; }
+  .search { flex: 1 1 260px; display: flex; align-items: center; border: var(--line); background: var(--white);
+    box-shadow: var(--shadow-sm); min-width: 0; }
+  .search:focus-within { background: #fffbe0; }
+  .search svg { flex: none; margin: 0 4px 0 12px; }
+  .search input { border: 0; outline: 0; background: transparent; padding: 10px 12px 10px 6px; width: 100%; min-width: 0; font-weight: 500; }
+  .lang { display: flex; border: var(--line); box-shadow: var(--shadow-sm); }
+  .lang button { border: 0; background: var(--white); padding: 8px 11px; font: 700 13px/1 var(--display); cursor: pointer; }
+  .lang button + button { border-left: var(--line); }
+  .lang button.on { background: var(--ink); color: var(--yellow); }
+  .types { display: flex; gap: 10px; padding-bottom: 14px; flex-wrap: wrap; }
+  .type-btn { border: var(--line); background: var(--white); padding: 8px 14px; cursor: pointer;
+    font: 700 14px/1 var(--display); display: inline-flex; align-items: center; gap: 8px;
+    box-shadow: var(--shadow-sm); transition: transform .12s, box-shadow .12s, background .12s; }
+  .type-btn:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); }
+  .type-btn .n { background: var(--ink); color: var(--white); padding: 3px 6px; font-size: 11px; }
+  .type-btn.on { background: var(--yellow); transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--ink); }
+  .type-btn.on .n { background: var(--blue); }
+
+  /* ---------- hero ---------- */
+  .hero { padding-top: 48px; }
+  .hero-box { background: var(--blue); color: var(--white); border: var(--line); box-shadow: var(--shadow-lg);
+    padding: 44px 40px; position: relative; overflow: hidden; }
+  .hero-box::after { content: ""; position: absolute; right: -60px; bottom: -60px; width: 260px; height: 260px;
+    background: var(--yellow); border: var(--line); border-radius: 50%; }
+  .hero h1 { font: 900 clamp(30px, 5.4vw, 64px)/1.02 var(--display); letter-spacing: -.035em; margin: 0 0 18px;
+    max-width: 880px; position: relative; z-index: 1; }
+  .hero h1 mark { background: var(--yellow); color: var(--ink); padding: 0 .12em; box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; }
+  .hero p { font-size: 18px; max-width: 560px; margin: 0; position: relative; z-index: 1; color: #e6eeff; }
+  .stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; position: relative; z-index: 1; }
+  .stat { background: var(--white); color: var(--ink); border: var(--line); box-shadow: var(--shadow-sm);
+    padding: 10px 14px; font-weight: 600; font-size: 14px; }
+  .stat b { font: 800 20px/1 var(--display); margin-right: 6px; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 56px; scroll-margin-top: 130px; }
+  .sec-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+  .sec-head h2 { font: 800 clamp(22px, 3.2vw, 34px)/1.05 var(--display); letter-spacing: -.03em; margin: 0;
+    display: inline-flex; align-items: center; gap: 12px; }
+  .sec-head h2 .tag { font: 700 12px/1 var(--display); background: var(--ink); color: var(--yellow);
+    padding: 6px 8px; letter-spacing: 0; transform: rotate(-3deg); }
+  .btn { display: inline-flex; align-items: center; gap: 8px; border: var(--line); background: var(--yellow);
+    padding: 10px 16px; font: 700 14px/1 var(--display); text-decoration: none; cursor: pointer;
+    box-shadow: var(--shadow-sm); transition: transform .12s, box-shadow .12s; }
+  .btn:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); }
+  .btn:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--ink); }
+  .btn.white { background: var(--white); }
+
+  /* ---------- cards ---------- */
+  .card { background: var(--white); border: var(--line); box-shadow: var(--shadow); padding: 20px;
+    display: flex; flex-direction: column; gap: 10px; text-decoration: none; min-width: 0;
+    transition: transform .12s, box-shadow .12s; position: relative; }
+  .card:hover { transform: translate(-3px,-3px); box-shadow: var(--shadow-lg); }
+  .card h3 { font: 700 18px/1.2 var(--display); letter-spacing: -.02em; margin: 0; overflow-wrap: anywhere; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .card .foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 6px; }
+  .chip { display: inline-block; border: var(--line-thin); padding: 3px 8px; font-size: 12px; font-weight: 700;
+    background: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+  .pilot { background: var(--yellow); font: 700 11px/1 var(--display); text-transform: uppercase; letter-spacing: .04em;
+    border: var(--line-thin); padding: 5px 7px; transform: rotate(3deg); flex: none; }
+  .site { font-weight: 700; font-size: 13px; text-decoration: none; border-bottom: 2px solid currentColor; flex: none; }
+  .site:hover { background: var(--yellow); }
+
+  .featured { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .featured .card { padding: 24px; min-height: 230px; }
+  .featured .card h3 { font-size: 22px; }
+  .featured .card:nth-child(3n+1) { background: var(--yellow); }
+  .featured .card:nth-child(3n+2) { background: var(--blue); color: var(--white); }
+  .featured .card:nth-child(3n+2) p { color: #e6eeff; }
+  .featured .card:nth-child(3n+2) .chip { background: var(--blue-deep); color: var(--white); border-color: var(--white); }
+  .featured .card:nth-child(3n+1) p { color: #3a3200; }
+  .num { font: 900 13px/1 var(--display); background: var(--ink); color: var(--white); padding: 6px 8px; align-self: flex-start; }
+  .featured .card:nth-child(3n+2) .num { background: var(--yellow); color: var(--ink); }
+
+  /* new list */
+  .newlist { border: var(--line); box-shadow: var(--shadow); background: var(--white); }
+  .new-row { display: grid; grid-template-columns: 110px minmax(0, 1fr) auto; gap: 18px; align-items: center;
+    padding: 16px 20px; text-decoration: none; transition: background .12s; }
+  .new-row + .new-row { border-top: var(--line-thin); }
+  .new-row:hover { background: var(--yellow); }
+  .new-row .date { font: 700 13px/1 var(--display); background: var(--blue); color: var(--white); padding: 7px 8px; text-align: center; }
+  .new-row h3 { font: 700 17px/1.2 var(--display); margin: 0 0 4px; letter-spacing: -.02em; overflow-wrap: anywhere; }
+  .new-row p { margin: 0; color: var(--muted); font-size: 14px; }
+  .new-row .meta { display: flex; gap: 8px; align-items: center; }
+
+  /* sectors */
+  .sectors { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .sector { border: var(--line); background: var(--white); padding: 14px 16px; cursor: pointer; text-align: left;
+    display: flex; justify-content: space-between; align-items: center; gap: 10px; box-shadow: var(--shadow-sm);
+    font-weight: 700; font-size: 15px; line-height: 1.25; transition: transform .12s, box-shadow .12s, background .12s; }
+  .sector:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow); background: #fffbe0; }
+  .sector b { font: 800 16px/1 var(--display); background: var(--ink); color: var(--white); padding: 6px 8px; flex: none; }
+  .sector.on { background: var(--blue); color: var(--white); }
+  .sector.on b { background: var(--yellow); color: var(--ink); }
+  .sector:disabled { opacity: .45; cursor: default; transform: none; box-shadow: var(--shadow-sm); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 22px; }
+  .grid .card h3 { font-size: 17px; }
+  .empty { border: var(--line); background: var(--white); padding: 28px; font: 700 18px var(--display); text-align: center; }
+  .more { display: flex; justify-content: center; margin-top: 34px; }
+  .filter-note { font-weight: 600; color: var(--muted); }
+  .filter-note button { border: 0; background: none; font-weight: 700; text-decoration: underline; cursor: pointer; padding: 0; }
+
+  /* new view */
+  .back { margin-top: 36px; }
+  .new-view h1 { font: 900 clamp(30px, 5vw, 56px)/1.02 var(--display); letter-spacing: -.035em; margin: 24px 0 8px; }
+  .new-view .lead { color: var(--muted); font-size: 17px; margin: 0 0 26px; }
+  [hidden] { display: none !important; }
+
+  /* footer */
+  footer { margin-top: 64px; background: var(--ink); color: var(--white); border-top: var(--line); padding: 40px 0 90px; }
+  .foot-row { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+  .foot-brand { font: 800 26px/1 var(--display); letter-spacing: -.03em; color: var(--yellow); margin-bottom: 12px; }
+  footer p { margin: 0; max-width: 520px; color: #cfcfcf; }
+  footer a { color: var(--yellow); }
+  .flag { display: flex; width: 72px; height: 48px; flex-direction: column; border: 3px solid var(--white); }
+  .flag i { flex: 1; background: var(--blue); } .flag i + i { background: var(--yellow); }
+
+  .badge { position: fixed; right: 16px; bottom: 16px; z-index: 50; background: var(--yellow); border: var(--line);
+    box-shadow: var(--shadow-sm); padding: 8px 12px; font: 700 12px/1 var(--display); text-decoration: none; }
+  .badge:hover { background: var(--white); }
+
+  @media (max-width: 1000px) {
+    .hero-box::after { display: none; }
+  }
+  @media (max-width: 900px) {
+    .featured { grid-template-columns: repeat(2, 1fr); }
+    .tagline { display: none; }
+  }
+  @media (max-width: 640px) {
+    :root { --gutter: 16px; --shadow: 4px 4px 0 var(--ink); --shadow-lg: 6px 6px 0 var(--ink); }
+    .top { position: static; }
+    .top-row { gap: 12px; }
+    .search { order: 3; flex-basis: 100%; }
+    .brand { font-size: 16px; }
+    .lang { margin-left: auto; }
+    .types { gap: 8px; }
+    .type-btn { padding: 8px 10px; font-size: 12px; gap: 6px; }
+    .hero { padding-top: 24px; }
+    section { margin-top: 44px; }
+    .hero-box { padding: 28px 20px; }
+    .hero p { font-size: 16px; }
+    .stat { font-size: 13px; padding: 8px 10px; } .stat b { font-size: 16px; }
+    .featured { grid-template-columns: 1fr; gap: 20px; }
+    .featured .card { min-height: 0; }
+    .new-row { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 14px 16px; }
+    .new-row .date { justify-self: start; }
+    .sectors { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .sector { font-size: 13px; padding: 10px; }
+    .sector b { font-size: 13px; padding: 5px 6px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#" aria-label="catalog.ai.ua"><span class="b1">catalog</span><span class="b2">.ai.ua</span></a>
+    <div class="tagline">Живий каталог українських AI-продуктів</div>
+    <label class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></svg>
+      <input id="q" type="search" placeholder="Пошук: голос, медицина, дрони…" autocomplete="off">
+    </label>
+    <div class="lang" role="group" aria-label="Мова">
+      <button class="on" type="button">UA</button><button type="button">EN</button>
+    </div>
+  </div>
+  <nav class="wrap types" id="types"></nav>
+</header>
+
+<main id="main-view">
+  <div class="wrap hero">
+    <div class="hero-box">
+      <h1>Живий каталог <mark>українських</mark> AI-продуктів</h1>
+      <p>Інструменти, моделі та компанії, що будують штучний інтелект для України. Каталог постійно оновлюють AI-агенти, а перевіряють люди.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+
+  <section class="wrap">
+    <div class="sec-head"><h2>Вибір редакції <span class="tag">TOP 6</span></h2></div>
+    <div class="featured" id="featured"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head">
+      <h2>Нові інструменти <span class="tag">NEW</span></h2>
+      <a class="btn white" href="#new">Усі нові →</a>
+    </div>
+    <div class="newlist" id="new-teaser"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head"><h2>Сектори</h2></div>
+    <div class="sectors" id="sectors"></div>
+  </section>
+
+  <section class="wrap" id="catalog">
+    <div class="sec-head">
+      <h2 id="list-title">Інструменти</h2>
+      <div class="filter-note" id="filter-note"></div>
+    </div>
+    <div class="grid" id="list"></div>
+    <div class="more"><button class="btn" id="more" type="button">Показати ще</button></div>
+  </section>
+</main>
+
+<main id="new-view" class="wrap new-view" hidden>
+  <a class="btn white back" href="#">← На головну</a>
+  <h1>Нові інструменти</h1>
+  <p class="lead">10 інструментів, які агенти додали до каталогу останніми.</p>
+  <div class="newlist" id="new-all"></div>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div>
+      <div class="foot-brand">catalog.ai.ua</div>
+      <p>Каталог підтримують автономні AI-агенти: знаходять нові продукти, перевіряють старі. Люди наглядають і виправляють.</p>
+      <p style="margin-top:12px">Контакти: <a href="mailto:hello@catalog.ai.ua">hello@catalog.ai.ua</a> · Telegram: <a href="#">@catalog_ai_ua</a></p>
+    </div>
+    <div class="flag" aria-hidden="true"><i></i><i></i></div>
+  </div>
+</footer>
+
+<a class="badge" href="./">Варіант 06 · Neo-brutalist</a>
+
+<script>
+const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
+const PAGE = 24;
+const state = { type: "tool", sector: null, query: "", shown: PAGE };
+let data = null, bySlug = {};
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtDate = (iso) => iso.split("-").reverse().join(".");
+const countBy = (list, key) => list.reduce((acc, e) => ((acc[e[key]] = (acc[e[key]] || 0) + 1), acc), {});
+
+const pilotBadge = (e) => (e.status === "Пілот" ? `<span class="pilot">Пілот</span>` : "");
+const siteLink = (e) => (e.url ? `<a class="site" href="${esc(e.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Сайт ↗</a>` : "");
+
+function cardHtml(e, index) {
+  const num = index != null ? `<span class="num">${String(index + 1).padStart(2, "0")}</span>` : "";
+  return `<article class="card">
+      ${num}
+      <h3 class="clamp-2">${esc(e.name)}</h3>
+      <p class="clamp-3">${esc(e.descr_short)}</p>
+      <div class="foot"><span class="chip">${esc(e.sector)}</span>${pilotBadge(e)}${siteLink(e)}</div>
+    </article>`;
+}
+
+function newRowHtml(e) {
+  return `<a class="new-row" href="#">
+      <span class="date">${fmtDate(e.added)}</span>
+      <div><h3 class="clamp-2">${esc(e.name)}</h3><p class="clamp-2">${esc(e.descr_short)}</p></div>
+      <div class="meta"><span class="chip">${esc(e.sector)}</span>${pilotBadge(e)}</div>
+    </a>`;
+}
+
+function renderStatic() {
+  const entries = data.entries;
+  const latest = entries.map((e) => e.added).sort().pop();
+  $("stats").innerHTML = `
+    <span class="stat"><b>${entries.length}</b>продуктів</span>
+    <span class="stat"><b>${new Set(entries.map((e) => e.sector)).size}</b>секторів</span>
+    <span class="stat">оновлено <b style="margin:0 0 0 6px">${fmtDate(latest)}</b></span>`;
+  $("featured").innerHTML = data.featured.map((s, i) => bySlug[s] && cardHtml(bySlug[s], i)).join("");
+  const newest = data.newest.map((s) => bySlug[s]).filter(Boolean);
+  $("new-teaser").innerHTML = newest.slice(0, 4).map(newRowHtml).join("");
+  $("new-all").innerHTML = newest.map(newRowHtml).join("");
+}
+
+function renderTypes() {
+  const counts = countBy(data.entries, "type");
+  $("types").innerHTML = TYPES.map(([key, label]) =>
+    `<button type="button" class="type-btn ${state.type === key ? "on" : ""}" data-type="${key}">${label}<span class="n">${counts[key] || 0}</span></button>`
+  ).join("");
+}
+
+function renderSectors() {
+  const ofType = data.entries.filter((e) => e.type === state.type);
+  const counts = countBy(ofType, "sector");
+  const all = Object.entries(countBy(data.entries, "sector")).sort((a, b) => b[1] - a[1]).map(([s]) => s);
+  $("sectors").innerHTML = all.map((s) =>
+    `<button type="button" class="sector ${state.sector === s ? "on" : ""}" data-sector="${esc(s)}" ${counts[s] ? "" : "disabled"}>
+      <span>${esc(s)}</span><b>${counts[s] || 0}</b></button>`
+  ).join("");
+}
+
+function renderList() {
+  const q = state.query.trim().toLowerCase();
+  const items = data.entries.filter((e) =>
+    e.type === state.type &&
+    (!state.sector || e.sector === state.sector) &&
+    (!q || (e.name + " " + e.descr_short + " " + e.sector).toLowerCase().includes(q))
+  );
+  $("list-title").textContent = TYPES.find(([k]) => k === state.type)[1];
+  const notes = [state.sector && `сектор «${esc(state.sector)}»`, q && `пошук «${esc(q)}»`].filter(Boolean);
+  $("filter-note").innerHTML = `${items.length} шт.` +
+    (notes.length ? ` · ${notes.join(", ")} · <button type="button" id="reset">скинути</button>` : "");
+  $("list").innerHTML = items.length
+    ? items.slice(0, state.shown).map((e) => cardHtml(e)).join("")
+    : `<div class="empty">Нічого не знайдено ¯\\_(ツ)_/¯</div>`;
+  $("more").hidden = items.length <= state.shown;
+}
+
+function rerender() { renderTypes(); renderSectors(); renderList(); }
+
+function route() {
+  const isNew = location.hash === "#new";
+  $("main-view").hidden = isNew;
+  $("new-view").hidden = !isNew;
+  if (location.hash !== "#catalog") window.scrollTo(0, 0);
+}
+
+document.addEventListener("click", (ev) => {
+  const typeBtn = ev.target.closest("[data-type]");
+  const sectorBtn = ev.target.closest("[data-sector]");
+  if (typeBtn) {
+    Object.assign(state, { type: typeBtn.dataset.type, sector: null, shown: PAGE });
+    if (location.hash === "#new") location.hash = "";
+    rerender();
+  } else if (sectorBtn) {
+    const s = sectorBtn.dataset.sector;
+    Object.assign(state, { sector: state.sector === s ? null : s, shown: PAGE });
+    rerender();
+    $("catalog").scrollIntoView({ behavior: "smooth" });
+  } else if (ev.target.id === "reset") {
+    Object.assign(state, { sector: null, query: "", shown: PAGE });
+    $("q").value = "";
+    rerender();
+  } else if (ev.target.id === "more") {
+    state.shown += PAGE;
+    renderList();
+  } else if (ev.target.closest(".lang button")) {
+    document.querySelectorAll(".lang button").forEach((b) => b.classList.toggle("on", b === ev.target));
+  }
+});
+
+$("q").addEventListener("input", (ev) => {
+  Object.assign(state, { query: ev.target.value, shown: PAGE });
+  if (location.hash === "#new") location.hash = "";
+  renderList();
+});
+
+window.addEventListener("hashchange", route);
+
+fetch("data.json")
+  .then((r) => r.json())
+  .then((json) => {
+    data = json;
+    bySlug = Object.fromEntries(data.entries.map((e) => [e.slug, e]));
+    renderStatic();
+    rerender();
+    route();
+  })
+  .catch(() => { $("list").innerHTML = `<div class="empty">Не вдалося завантажити дані</div>`; });
+</script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>catalog.ai.ua — Живий каталог українських AI-продуктів</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #f8f0e2;
+  --sand: #efe1c8;
+  --paper: #fffaf2;
+  --ink: #1f2a4d;
+  --ink-soft: #57607f;
+  --ink-faint: #8a8fa6;
+  --terra: #c8553d;
+  --terra-deep: #a8432e;
+  --wheat: #e2a93b;
+  --wheat-soft: #f6e3b4;
+  --line: #e6d6bb;
+  --radius: 22px;
+  --shadow: 0 1px 0 rgba(31,42,77,.04), 0 10px 30px -18px rgba(31,42,77,.35);
+  --font-head: "Unbounded", system-ui, sans-serif;
+  --font-body: "Rubik", system-ui, sans-serif;
+  --page: 1180px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--cream); color: var(--ink);
+  font: 400 16px/1.55 var(--font-body); -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; color: inherit; }
+.wrap { max-width: var(--page); margin: 0 auto; padding: 0 24px; }
+.stitch-band { height: 20px; background: var(--stitch-band) repeat-x center / 48px 20px; }
+.stitch-band.thin { height: 12px; background-size: 28.8px 12px; opacity: .85; }
+h1, h2 { font-family: var(--font-head); font-weight: 600; letter-spacing: -.01em; margin: 0; }
+
+/* ---------- header ---------- */
+header.top { padding: 18px 0 8px; }
+.top .wrap { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font: 600 19px var(--font-head); }
+.brand-mark { width: 34px; height: 34px; border-radius: 11px; background: var(--paper) var(--stitch-mini) center / 22px no-repeat; box-shadow: inset 0 0 0 1.5px var(--line); }
+.brand b { color: var(--terra); font-weight: 600; }
+.types { display: flex; gap: 6px; padding: 5px; background: var(--sand); border-radius: 999px; margin-left: auto; }
+.types button {
+  border: 0; background: transparent; padding: 8px 14px; border-radius: 999px; cursor: pointer;
+  font-weight: 500; font-size: 14.5px; color: var(--ink-soft); white-space: nowrap; transition: .2s;
+}
+.types button span { font-size: 12px; color: var(--ink-faint); margin-left: 4px; }
+.types button:hover { color: var(--ink); }
+.types button.on { background: var(--paper); color: var(--ink); box-shadow: 0 2px 8px -3px rgba(31,42,77,.3); }
+.types button.on span { color: var(--terra); }
+.lang { display: flex; border: 1.5px solid var(--line); border-radius: 999px; overflow: hidden; font-size: 13px; font-weight: 600; }
+.lang span { padding: 6px 11px; color: var(--ink-faint); cursor: pointer; }
+.lang span.on { background: var(--ink); color: var(--paper); }
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative; margin: 18px 0 8px; background: var(--paper); border-radius: 32px;
+  box-shadow: var(--shadow); overflow: hidden; text-align: center;
+}
+.hero-in { position: relative; z-index: 0; padding: 54px 24px 46px; }
+.hero .eyebrow {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px;
+  background: var(--wheat-soft); color: #7a5512; font-size: 13.5px; font-weight: 500;
+}
+.hero .eyebrow i { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--terra); animation: pulse 2s infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+.hero h1 { font-size: clamp(30px, 5.2vw, 58px); line-height: 1.08; margin: 20px auto 14px; max-width: 900px; }
+.hero h1 em { font-style: normal; color: var(--terra); position: relative; white-space: nowrap; }
+.hero h1 .nb { white-space: nowrap; }
+.hero h1 em::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 8px;
+  background: var(--wheat); opacity: .55; border-radius: 8px; z-index: -1;
+}
+.hero p.lead { max-width: 620px; margin: 0 auto 28px; color: var(--ink-soft); font-size: 17.5px; }
+.search { display: block; max-width: 620px; margin: 0 auto; position: relative; }
+.search input {
+  width: 100%; padding: 17px 22px 17px 54px; border-radius: 999px; border: 2px solid var(--line);
+  background: var(--cream); font-size: 16.5px; outline: none; transition: .2s;
+}
+.search input:focus { border-color: var(--terra); background: #fff; box-shadow: 0 0 0 5px rgba(200,85,61,.12); }
+.search svg { position: absolute; left: 21px; top: 50%; transform: translateY(-50%); color: var(--terra); }
+.stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 22px; margin-top: 26px; color: var(--ink-soft); font-size: 14.5px; }
+.stats b { font: 600 17px var(--font-head); color: var(--ink); margin-right: 5px; }
+
+/* ---------- sections ---------- */
+section { padding: 46px 0 8px; }
+.sec-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+.sec-head h2 { font-size: clamp(22px, 3vw, 30px); display: flex; align-items: center; gap: 12px; }
+.sec-head h2::before { content: ""; width: 22px; height: 22px; background: var(--stitch-mini) center / contain no-repeat; flex: none; }
+.sec-head p { margin: 6px 0 0; color: var(--ink-soft); }
+.more-link { font-weight: 600; color: var(--terra); white-space: nowrap; border-bottom: 2px solid transparent; transition: .2s; }
+.more-link:hover { border-color: var(--terra); }
+.divider { margin-top: 40px; }
+
+/* sector colours: soft pastel bg + deep fg */
+[data-s] { --sbg: #ece4d6; --sfg: #5c5446; }
+[data-s="Оборона та безпека"] { --sbg: #e2e8d2; --sfg: #4b5a2a; }
+[data-s="Інфраструктура та платформи"] { --sbg: #e1e5ea; --sfg: #3c4a5a; }
+[data-s="Бізнес та продажі"] { --sbg: #f6e2c2; --sfg: #8a5a12; }
+[data-s="Голос і мовлення"] { --sbg: #ecdff0; --sfg: #6a3d73; }
+[data-s="Медицина та здоров'я"] { --sbg: #f6dbd5; --sfg: #9a3a2a; }
+[data-s="Право"] { --sbg: #dfdff2; --sfg: #3e4080; }
+[data-s="Медіа та інформаційна безпека"] { --sbg: #d7ebe5; --sfg: #2a6357; }
+[data-s="Освіта"] { --sbg: #f3ebc0; --sfg: #75620c; }
+[data-s="Державний сектор"] { --sbg: #d8e6f4; --sfg: #23507c; }
+[data-s="Маркетинг та реклама"] { --sbg: #f8ddca; --sfg: #a14a1e; }
+[data-s="Генеративний контент"] { --sbg: #f4d8e4; --sfg: #8d2f5a; }
+.pill {
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px;
+  background: var(--sbg); color: var(--sfg); font-size: 12.5px; font-weight: 500; line-height: 1.35; max-width: 100%;
+}
+.pill.pilot { background: var(--terra); color: #fff; }
+.clamp { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+
+/* featured */
+.feat { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.fcard {
+  position: relative; display: flex; flex-direction: column; gap: 12px; padding: 24px 24px 20px;
+  background: var(--paper); border-radius: var(--radius); box-shadow: var(--shadow);
+  border-top: 6px solid var(--sbg); transition: transform .25s, box-shadow .25s;
+}
+.fcard:hover { transform: translateY(-4px) rotate(-.3deg); box-shadow: 0 18px 40px -22px rgba(31,42,77,.5); }
+.fcard .num { font: 700 15px var(--font-head); color: var(--terra); letter-spacing: .04em; }
+.fcard .corner { position: absolute; top: 18px; right: 20px; width: 26px; height: 26px; background: var(--stitch-mini) center / contain no-repeat; opacity: .9; }
+.fcard h3 { margin: 0; font: 600 21px/1.25 var(--font-body); -webkit-line-clamp: 2; }
+.fcard p { margin: 0; color: var(--ink-soft); -webkit-line-clamp: 3; flex: 1; }
+.fcard .foot, .card .foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 4px; }
+.site { font-size: 14px; font-weight: 600; color: var(--ink); white-space: nowrap; padding: 6px 12px; border-radius: 999px; background: var(--cream); transition: .2s; }
+.site:hover { background: var(--terra); color: #fff; }
+
+/* new tools teaser */
+.newrow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.ncard {
+  display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: var(--radius);
+  background: var(--sand); transition: background .2s, transform .2s;
+}
+.ncard:hover { background: var(--wheat-soft); transform: translateY(-3px); }
+.ncard time { font-size: 12.5px; font-weight: 600; color: var(--terra); text-transform: uppercase; letter-spacing: .06em; }
+.ncard h3 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; -webkit-line-clamp: 2; }
+.ncard p { margin: 0; font-size: 14.5px; color: var(--ink-soft); -webkit-line-clamp: 3; }
+
+/* sectors */
+.sectors { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 10px; padding: 10px 10px 10px 18px; border: 0; cursor: pointer;
+  border-radius: 999px; background: var(--sbg); color: var(--sfg); font-weight: 500; font-size: 15px; transition: .2s;
+}
+.chip b { min-width: 30px; padding: 2px 9px; border-radius: 999px; background: rgba(255,255,255,.65); font-size: 13px; font-weight: 600; }
+.chip:hover { transform: translateY(-2px); box-shadow: 0 6px 16px -10px var(--sfg); }
+.chip.on { background: var(--sfg); color: #fff; }
+.chip.on b { background: rgba(255,255,255,.22); }
+.chip.empty { opacity: .45; }
+
+/* catalog */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 16px; }
+.card {
+  display: flex; flex-direction: column; gap: 10px; padding: 20px; background: var(--paper);
+  border-radius: var(--radius); border: 1.5px solid var(--line); transition: border-color .2s, transform .2s, box-shadow .2s;
+}
+.card:hover { border-color: var(--terra); transform: translateY(-2px); box-shadow: var(--shadow); }
+.card h3 { margin: 0; font-size: 17.5px; font-weight: 600; line-height: 1.3; -webkit-line-clamp: 2; }
+.card p { margin: 0; font-size: 14.5px; color: var(--ink-soft); -webkit-line-clamp: 3; flex: 1; }
+.card .foot { flex-wrap: wrap; justify-content: flex-start; gap: 6px; }
+.empty-note { padding: 40px; text-align: center; color: var(--ink-soft); background: var(--paper); border-radius: var(--radius); }
+.btn {
+  display: block; margin: 28px auto 0; padding: 14px 30px; border-radius: 999px; border: 2px solid var(--ink);
+  background: transparent; font-weight: 600; cursor: pointer; transition: .2s;
+}
+.btn:hover { background: var(--ink); color: var(--paper); }
+
+/* #new view */
+.back { display: inline-flex; gap: 8px; margin: 28px 0 0; font-weight: 600; color: var(--terra); }
+.newlist { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.newlist li a {
+  display: grid; grid-template-columns: 110px 1fr auto; gap: 20px; align-items: center; padding: 18px 22px;
+  background: var(--paper); border-radius: var(--radius); border: 1.5px solid var(--line); transition: .2s;
+}
+.newlist li a:hover { border-color: var(--terra); }
+.newlist time { font: 600 14px/1.25 var(--font-head); color: var(--terra); }
+.newlist h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; -webkit-line-clamp: 2; }
+.newlist p { margin: 0; color: var(--ink-soft); font-size: 15px; -webkit-line-clamp: 2; }
+
+/* footer */
+footer { margin-top: 72px; background: var(--ink); color: #d9dcea; }
+footer .stitch-band { background-color: var(--cream); }
+footer .wrap { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-top: 40px; padding-bottom: 76px; }
+footer .brand { color: #fff; }
+footer .brand b { color: var(--wheat); }
+footer p { margin: 10px 0 0; max-width: 520px; font-size: 15px; }
+footer .contacts { display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+footer .contacts a:hover { color: var(--wheat); }
+
+.badge {
+  position: fixed; left: 16px; bottom: 16px; z-index: 50; padding: 8px 14px; border-radius: 999px;
+  background: var(--terra); color: #fff; font-size: 13px; font-weight: 600; box-shadow: 0 8px 20px -8px rgba(168,67,46,.7);
+}
+.badge:hover { background: var(--terra-deep); }
+[hidden] { display: none !important; }
+
+@media (max-width: 960px) {
+  .feat { grid-template-columns: repeat(2, 1fr); }
+  .newrow { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .wrap { padding: 0 16px; }
+  .top .wrap { gap: 12px; }
+  .lang { margin-left: auto; }
+  .types { order: 3; margin: 0; width: 100%; justify-content: space-between; }
+  .types button { padding: 8px 10px; font-size: 13.5px; flex: 1; }
+  .hero { border-radius: 24px; }
+  .hero-in { padding: 36px 18px 32px; }
+  .hero p.lead { font-size: 16px; }
+  .search input { padding: 15px 18px 15px 48px; font-size: 15.5px; }
+  .search svg { left: 18px; }
+  .feat, .newrow, .grid { grid-template-columns: 1fr; }
+  section { padding-top: 36px; }
+  .chip { font-size: 14px; padding: 8px 8px 8px 14px; }
+  .newlist li a { grid-template-columns: 1fr; gap: 6px; padding: 16px 18px; }
+  .newlist .pill { justify-self: start; }
+}
+</style>
+</head>
+<body>
+<div class="stitch-band"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><span class="brand-mark"></span><span>catalog<b>.ai.ua</b></span></a>
+    <nav class="types" id="types"></nav>
+    <div class="lang"><span class="on">UA</span><span>EN</span></div>
+  </div>
+</header>
+
+<main id="home" class="wrap">
+  <div class="hero">
+    <div class="stitch-band"></div>
+    <div class="hero-in">
+      <span class="eyebrow"><i></i>Каталог оновлюють AI-агенти, перевіряють люди</span>
+      <h1>Живий каталог <em>українських</em> <span class="nb">AI-продуктів</span></h1>
+      <p class="lead">Інструменти, моделі та компанії, створені в Україні або для України — від оборони до освіти.</p>
+      <label class="search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Знайти інструмент, модель чи компанію…" autocomplete="off">
+      </label>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="stitch-band"></div>
+  </div>
+
+  <section>
+    <div class="sec-head"><div><h2>Вибір редакції</h2><p>Шість продуктів, які варто знати насамперед</p></div></div>
+    <div class="feat" id="featured"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><div><h2>Нові інструменти</h2><p>Щойно додані до каталогу</p></div><a class="more-link" href="#new">Усі нові →</a></div>
+    <div class="newrow" id="newest"></div>
+  </section>
+
+  <div class="stitch-band thin divider"></div>
+
+  <section id="catalog">
+    <div class="sec-head"><div><h2 id="cat-title">Усі інструменти</h2><p id="cat-sub"></p></div></div>
+    <div class="sectors" id="sectors"></div>
+    <div style="height:22px"></div>
+    <div class="grid" id="grid"></div>
+    <button class="btn" id="more" hidden>Показати ще</button>
+  </section>
+</main>
+
+<main id="new-view" class="wrap" hidden>
+  <a class="back" href="#">← На головну</a>
+  <section>
+    <div class="sec-head"><div><h2>Нові інструменти</h2><p>Десять останніх інструментів, доданих до каталогу</p></div></div>
+    <ol class="newlist" id="newlist"></ol>
+  </section>
+</main>
+
+<footer>
+  <div class="stitch-band"></div>
+  <div class="wrap">
+    <div>
+      <div class="brand"><span class="brand-mark"></span><span>catalog<b>.ai.ua</b></span></div>
+      <p>Живий каталог українських AI-продуктів. Його щодня доглядають AI-агенти, а люди перевіряють і відповідають за якість.</p>
+    </div>
+    <div class="contacts">
+      <a href="#">hello@ai.ua</a>
+      <a href="#">Telegram</a>
+      <a href="#">Запропонувати продукт</a>
+    </div>
+  </div>
+</footer>
+
+<a class="badge" href="./">Варіант 10 · Warm &amp; ornament</a>
+
+<script>
+// Cross-stitch motifs drawn as tiny "X" stitches on a grid (T = terracotta, I = ink, W = wheat).
+const STITCH_COLORS = { T: "#c8553d", I: "#1f2a4d", W: "#e2a93b" };
+function stitchSvg(rows, cell = 4) {
+  const w = rows[0].length * cell, h = rows.length * cell, d = cell - 1.2;
+  let paths = "";
+  rows.forEach((row, y) => [...row].forEach((ch, x) => {
+    if (!STITCH_COLORS[ch]) return;
+    const X = x * cell + .6, Y = y * cell + .6;
+    paths += `<path d='M${X} ${Y}l${d} ${d}M${X + d} ${Y}l-${d} ${d}' stroke='${STITCH_COLORS[ch]}' stroke-width='1.3' stroke-linecap='round'/>`;
+  }));
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'>${paths}</svg>`;
+  return `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
+}
+const band = ["......T.....", "W....TIT....", "WW..TI.IT..W", "W....TIT....", "......T....."];
+const mini = ["...T...", "..TIT..", ".TW.WT.", "TI.T.IT", ".TW.WT.", "..TIT..", "...T..."];
+document.documentElement.style.setProperty("--stitch-band", stitchSvg(band));
+document.documentElement.style.setProperty("--stitch-mini", stitchSvg(mini));
+
+const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
+const TYPE_TITLES = { tool: "Усі інструменти", model: "Усі моделі", company: "Усі компанії" };
+const PAGE = 24;
+const state = { type: "tool", sector: null, query: "", shown: PAGE };
+let DATA, BY_SLUG;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s = "") => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtDate = (iso, opts = { day: "numeric", month: "long" }) => new Date(iso + "T00:00:00").toLocaleDateString("uk-UA", opts);
+const siteLink = (e) => e.url ? `<a class="site" href="${esc(e.url)}" target="_blank" rel="noopener">Сайт ↗</a>` : "";
+const pilot = (e) => e.status === "Пілот" ? `<span class="pill pilot">Пілот</span>` : "";
+
+function featuredCard(e, i) {
+  return `<article class="fcard" data-s="${esc(e.sector)}">
+    <span class="corner"></span>
+    <span class="num">№ ${String(i + 1).padStart(2, "0")}</span>
+    <h3 class="clamp"><a href="#">${esc(e.name)}</a></h3>
+    <p class="clamp">${esc(e.descr_short)}</p>
+    <div class="foot"><span class="pill" data-s="${esc(e.sector)}">${esc(e.sector)}</span>${siteLink(e)}</div>
+  </article>`;
+}
+
+function newCard(e) {
+  return `<a class="ncard" href="#">
+    <time>${fmtDate(e.added)}</time>
+    <h3 class="clamp">${esc(e.name)}</h3>
+    <p class="clamp">${esc(e.descr_short)}</p>
+  </a>`;
+}
+
+function catalogCard(e) {
+  return `<article class="card">
+    <h3 class="clamp"><a href="#">${esc(e.name)}</a></h3>
+    <p class="clamp">${esc(e.descr_short)}</p>
+    <div class="foot"><span class="pill" data-s="${esc(e.sector)}">${esc(e.sector)}</span>${pilot(e)}</div>
+  </article>`;
+}
+
+function newListItem(e) {
+  return `<li><a href="#">
+    <time>${fmtDate(e.added, { day: "numeric", month: "long", year: "numeric" })}</time>
+    <div><h3 class="clamp">${esc(e.name)}</h3><p class="clamp">${esc(e.descr_short)}</p></div>
+    <span class="pill" data-s="${esc(e.sector)}">${esc(e.sector)}</span>
+  </a></li>`;
+}
+
+function renderTypes() {
+  $("types").innerHTML = TYPES.map(([t, label]) => {
+    const count = DATA.entries.filter((e) => e.type === t).length;
+    return `<button data-type="${t}" class="${t === state.type ? "on" : ""}">${label}<span>${count}</span></button>`;
+  }).join("");
+}
+
+function renderSectors() {
+  const ofType = DATA.entries.filter((e) => e.type === state.type);
+  const sectors = [...new Set(DATA.entries.map((e) => e.sector))];
+  const count = (s) => ofType.filter((e) => e.sector === s).length;
+  sectors.sort((a, b) => count(b) - count(a));
+  $("sectors").innerHTML = sectors.map((s) => {
+    const n = count(s);
+    const cls = ["chip", s === state.sector ? "on" : "", n ? "" : "empty"].join(" ");
+    return `<button class="${cls}" data-s="${esc(s)}" data-sector="${esc(s)}">${esc(s)}<b>${n}</b></button>`;
+  }).join("");
+}
+
+function renderCatalog() {
+  const q = state.query.trim().toLowerCase();
+  const list = DATA.entries
+    .filter((e) => e.type === state.type)
+    .filter((e) => !state.sector || e.sector === state.sector)
+    .filter((e) => !q || (e.name + " " + e.descr_short).toLowerCase().includes(q))
+    .sort((a, b) => a.name.localeCompare(b.name, "uk"));
+  $("cat-title").textContent = state.sector || TYPE_TITLES[state.type];
+  $("cat-sub").textContent = `${list.length} у каталозі` + (state.sector ? " · натисніть на сектор ще раз, щоб скинути" : "");
+  $("grid").innerHTML = list.length
+    ? list.slice(0, state.shown).map(catalogCard).join("")
+    : `<div class="empty-note">Нічого не знайдено. Спробуйте інший запит чи сектор.</div>`;
+  $("more").hidden = list.length <= state.shown;
+  $("more").textContent = `Показати ще · ${list.length - state.shown}`;
+}
+
+function renderStatic() {
+  const latest = DATA.entries.map((e) => e.added).sort().at(-1);
+  const sectorCount = new Set(DATA.entries.map((e) => e.sector)).size;
+  $("stats").innerHTML = `<span><b>${DATA.entries.length}</b>продуктів</span><span><b>${sectorCount}</b>секторів</span>` +
+    `<span><b>${fmtDate(latest, { day: "2-digit", month: "2-digit", year: "numeric" })}</b>останнє оновлення</span>`;
+  $("featured").innerHTML = DATA.featured.map((s) => BY_SLUG[s]).filter(Boolean).map(featuredCard).join("");
+  const newest = DATA.newest.map((s) => BY_SLUG[s]).filter(Boolean);
+  $("newest").innerHTML = newest.slice(0, 4).map(newCard).join("");
+  $("newlist").innerHTML = newest.map(newListItem).join("");
+}
+
+function route() {
+  const isNew = location.hash === "#new";
+  $("home").hidden = isNew;
+  $("new-view").hidden = !isNew;
+  if (isNew) window.scrollTo(0, 0);
+}
+
+function bindEvents() {
+  $("types").addEventListener("click", (ev) => {
+    const btn = ev.target.closest("button");
+    if (!btn) return;
+    Object.assign(state, { type: btn.dataset.type, sector: null, shown: PAGE });
+    renderTypes(); renderSectors(); renderCatalog();
+    if (location.hash === "#new") location.hash = "";
+    $("catalog").scrollIntoView();
+  });
+  $("sectors").addEventListener("click", (ev) => {
+    const chip = ev.target.closest(".chip");
+    if (!chip) return;
+    state.sector = state.sector === chip.dataset.sector ? null : chip.dataset.sector;
+    state.shown = PAGE;
+    renderSectors(); renderCatalog();
+  });
+  $("q").addEventListener("input", (ev) => {
+    state.query = ev.target.value; state.shown = PAGE;
+    renderCatalog();
+  });
+  $("q").addEventListener("keydown", (ev) => { if (ev.key === "Enter") $("catalog").scrollIntoView(); });
+  $("more").addEventListener("click", () => { state.shown += PAGE; renderCatalog(); });
+  window.addEventListener("hashchange", route);
+}
+
+fetch("data.json")
+  .then((r) => r.json())
+  .then((data) => {
+    DATA = data;
+    BY_SLUG = Object.fromEntries(data.entries.map((e) => [e.slug, e]));
+    renderTypes(); renderStatic(); renderSectors(); renderCatalog();
+    bindEvents(); route();
+  })
+  .catch(() => { $("grid").innerHTML = `<div class="empty-note">Не вдалося завантажити дані.</div>`; });
+</script>
+</body>
+</html>

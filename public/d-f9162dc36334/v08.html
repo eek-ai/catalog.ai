@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>catalog.ai.ua — Aurora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Onest:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --bg:#060a1c; --bg-2:#0b1131;
+  --text:#f1f3ff; --muted:#b2b9dc; --faint:#7f88b5;
+  --blue:#4d8dff; --violet:#9b6bff; --yellow:#ffd84a; --cyan:#4fd6ff;
+  --glass:rgba(255,255,255,.055); --glass-hi:rgba(255,255,255,.09);
+  --line:rgba(255,255,255,.12); --line-hi:rgba(255,255,255,.26);
+  --grad:linear-gradient(100deg,#7fb2ff 0%,#a98bff 45%,#ffe27a 100%);
+  --radius:22px; --radius-sm:14px;
+  --head:"Manrope",system-ui,sans-serif; --body:"Onest",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:400 16px/1.55 var(--body);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+
+/* aurora background */
+.aurora{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(1200px 800px at 50% -10%,#141c4d 0%,var(--bg) 60%)}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;animation:drift 26s ease-in-out infinite alternate}
+.b1{width:620px;height:620px;left:-160px;top:-120px;background:#2f63ff}
+.b2{width:560px;height:560px;right:-140px;top:60px;background:#7a3cff;animation-delay:-8s}
+.b3{width:380px;height:380px;left:42%;top:380px;background:#ffcf3a;opacity:.18;animation-delay:-14s}
+.b4{width:520px;height:520px;left:10%;bottom:-260px;background:#1fb6ff;opacity:.28;animation-delay:-4s}
+@keyframes drift{to{transform:translate(60px,40px) scale(1.12)}}
+.aurora::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,rgba(6,10,28,.55) 70%,var(--bg) 100%)}
+
+.glass{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-radius:var(--radius)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;padding:14px 0;background:rgba(6,10,28,.45);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+.bar{display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font:800 19px var(--head);letter-spacing:-.02em;white-space:nowrap}
+.mark{width:34px;height:34px;border-radius:11px;background:var(--grad);display:grid;place-items:center;color:#0a0f2c;font-size:13px;font-weight:800;box-shadow:0 6px 24px rgba(125,140,255,.45)}
+.brand small{color:var(--faint);font-weight:600}
+.types{display:flex;gap:4px;padding:4px;border-radius:999px}
+.types button{border:0;background:none;padding:7px 14px;border-radius:999px;font:600 14px var(--head);color:var(--muted);cursor:pointer;white-space:nowrap;transition:.2s}
+.types button span{color:var(--faint);font-weight:500;margin-left:4px}
+.types button:hover{color:var(--text)}
+.types button.on{background:rgba(255,255,255,.14);color:var(--text);box-shadow:inset 0 0 0 1px var(--line-hi)}
+.search{flex:1;min-width:0;position:relative}
+.search input{width:100%;padding:10px 16px 10px 40px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.06);outline:none;transition:.2s}
+.search input::placeholder{color:var(--faint)}
+.search input:focus{border-color:rgba(155,107,255,.7);background:rgba(255,255,255,.1);box-shadow:0 0 0 4px rgba(155,107,255,.18)}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.6}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px;font:700 12px var(--head)}
+.lang b{padding:5px 9px;border-radius:999px;color:var(--faint);cursor:pointer}
+.lang b.on{background:var(--text);color:var(--bg)}
+
+/* hero */
+.hero{padding:88px 0 56px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;font:600 13px var(--head);color:var(--muted)}
+.dot{width:7px;height:7px;border-radius:50%;background:#5dffa8;box-shadow:0 0 10px #5dffa8}
+h1{font:800 clamp(38px,6.6vw,84px)/1.02 var(--head);letter-spacing:-.045em;margin:22px auto 20px;max-width:14ch;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:600px;margin:0 auto;color:var(--muted);font-size:18px}
+.stats{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;margin-top:34px;padding:14px 26px;border-radius:999px;font:600 15px var(--head)}
+.stats b{font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* sections */
+section{padding:44px 0}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:24px}
+h2{font:800 clamp(26px,3.2vw,36px)/1.1 var(--head);letter-spacing:-.03em}
+.sub{color:var(--faint);font-size:15px;margin-top:6px}
+.more-link{font:700 15px var(--head);color:var(--cyan);white-space:nowrap}
+.more-link:hover{color:var(--text)}
+
+.pill{display:inline-block;padding:4px 10px;border-radius:999px;font:600 12px var(--head);background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.pilot{background:rgba(255,216,74,.14);border-color:rgba(255,216,74,.45);color:var(--yellow)}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.clamp3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* featured */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fcard{position:relative;padding:28px;min-height:270px;display:flex;flex-direction:column;gap:14px;overflow:hidden;transition:transform .3s,border-color .3s,background .3s}
+.fcard::before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-80px;top:-90px;background:var(--glow,#4d8dff);filter:blur(60px);opacity:.35;transition:opacity .3s}
+.fcard:nth-child(3n+2){--glow:#9b6bff}.fcard:nth-child(3n){--glow:#ffd84a}
+.fcard:hover{transform:translateY(-4px);border-color:var(--line-hi);background:var(--glass-hi)}
+.fcard:hover::before{opacity:.6}
+.fcard .num{font:800 13px var(--head);color:var(--faint);letter-spacing:.1em}
+.fcard h3{font:800 28px/1.1 var(--head);letter-spacing:-.03em;word-break:break-word}
+.fcard p{color:var(--muted)}
+.fcard .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ext{font:700 14px var(--head);color:var(--text);opacity:.8;white-space:nowrap;position:relative;z-index:1}
+.ext:hover{opacity:1;color:var(--yellow)}
+
+/* newest teaser */
+.newrow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.ncard{padding:18px;border-radius:var(--radius-sm);display:flex;flex-direction:column;gap:8px;transition:.25s}
+.ncard:hover{background:var(--glass-hi);border-color:var(--line-hi)}
+.date{font:700 12px var(--head);color:var(--cyan);letter-spacing:.04em;text-transform:uppercase}
+.ncard h4{font:700 16px/1.25 var(--head)}
+.ncard p{font-size:14px;color:var(--muted)}
+
+/* sectors */
+.sectors{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.sector{padding:16px 18px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;text-align:left;transition:.2s}
+.sector:hover{background:var(--glass-hi);border-color:var(--line-hi)}
+.sector.on{border-color:rgba(155,107,255,.8);background:rgba(155,107,255,.16)}
+.sector span{font:600 15px/1.3 var(--head)}
+.sector b{font:800 20px var(--head);color:var(--faint)}
+.sector.on b{color:var(--text)}
+
+/* catalog */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:22px;border-radius:18px;display:flex;flex-direction:column;gap:10px;transition:.25s;min-height:190px}
+.card:hover{background:var(--glass-hi);border-color:var(--line-hi);transform:translateY(-2px)}
+.card h3{font:700 19px/1.25 var(--head);letter-spacing:-.01em}
+.card p{font-size:15px;color:var(--muted)}
+.card .tags{margin-top:auto;display:flex;gap:6px;flex-wrap:wrap;min-width:0}
+.filter-note{color:var(--muted);font-size:15px}
+.filter-note button{background:none;border:0;color:var(--cyan);cursor:pointer;font-weight:600}
+.btn{display:block;margin:28px auto 0;padding:14px 30px;border-radius:999px;border:1px solid var(--line-hi);background:rgba(255,255,255,.08);font:700 15px var(--head);cursor:pointer;transition:.2s}
+.btn:hover{background:var(--text);color:var(--bg)}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+
+/* #new view */
+.newlist{display:flex;flex-direction:column;gap:12px}
+.nrow{display:grid;grid-template-columns:120px 1fr auto;gap:22px;align-items:center;padding:20px 24px;border-radius:18px;transition:.2s}
+.nrow:hover{background:var(--glass-hi);border-color:var(--line-hi)}
+.nrow h3{font:700 19px/1.25 var(--head);margin-bottom:4px}
+.nrow p{color:var(--muted);font-size:15px}
+.nrow .side{display:flex;flex-direction:column;align-items:end;gap:8px}
+.back{display:inline-block;margin:44px 0 18px;font:700 15px var(--head);color:var(--cyan)}
+
+footer{margin-top:60px;padding:40px 0 90px;border-top:1px solid rgba(255,255,255,.08);color:var(--faint);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:var(--muted)}footer a:hover{color:var(--text)}
+
+.badge{position:fixed;left:16px;bottom:16px;z-index:30;padding:9px 15px;border-radius:999px;font:700 13px var(--head);background:rgba(20,26,70,.7);border:1px solid var(--line-hi);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.badge:hover{background:var(--text);color:var(--bg)}
+
+[hidden]{display:none!important}
+.nw{white-space:nowrap}
+/* lighter glass for the many small cards: the blobs behind are already blurred */
+.card,.ncard,.sector,.nrow{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(255,255,255,.065)}
+
+@media (max-width:1020px){
+  .bar{flex-wrap:wrap}.search{order:5;flex-basis:100%}.lang{margin-left:auto}
+  .feat,.grid{grid-template-columns:repeat(2,1fr)}
+  .newrow{grid-template-columns:repeat(3,1fr)}.newrow>:nth-child(n+4){display:none}
+  .sectors{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  header{position:relative;padding:10px 0}.bar{gap:10px}
+  .brand small{display:none}.lang{margin-left:auto}
+  .types{order:4;flex-basis:100%;justify-content:space-between}
+  .types button{padding:7px 10px;font-size:13px;flex:1}
+  .hero{padding:52px 0 28px}.lead{font-size:16px}
+  .stats{border-radius:var(--radius-sm);padding:12px 18px;font-size:14px}
+  section{padding:30px 0}
+  .feat,.grid,.newrow,.sectors{grid-template-columns:1fr}
+  .newrow>:nth-child(n+4){display:none}
+  .fcard{min-height:0;padding:22px}.fcard h3{font-size:24px}
+  .sectors{grid-template-columns:1fr 1fr}.sector{padding:12px 14px}.sector span{font-size:13px}.sector b{font-size:16px}
+  .nrow{grid-template-columns:1fr;gap:10px;padding:18px}.nrow .side{flex-direction:row;align-items:center;justify-content:space-between}
+  .blob{filter:blur(70px)}.b1{width:380px;height:380px}.b2{width:340px;height:340px}.b3{left:20%;top:420px}
+  .sec-head{align-items:start;flex-direction:column;gap:8px}
+}
+@media (prefers-reduced-motion:reduce){.blob{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="blob b4"></i></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#"><span class="mark">ai</span>catalog<small>.ai.ua</small></a>
+    <nav class="types glass" id="types"></nav>
+    <label class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Пошук: голос, оборона, LLM…" aria-label="Пошук">
+    </label>
+    <div class="lang" aria-label="Мова"><b class="on">UA</b><b>EN</b></div>
+  </div>
+</header>
+
+<main id="home">
+  <div class="wrap">
+    <div class="hero">
+      <span class="eyebrow glass"><i class="dot"></i>Оновлюється агентами щотижня</span>
+      <h1>Живий каталог українських <span class="nw">AI-продуктів</span></h1>
+      <p class="lead">Інструменти, моделі й компанії, які будують штучний інтелект для України — зібрані, перевірені й описані в одному місці.</p>
+      <div class="stats glass" id="stats"></div>
+    </div>
+
+    <section>
+      <div class="sec-head"><div><h2>Вибір редакції</h2><p class="sub">Шість продуктів, з яких варто почати знайомство</p></div></div>
+      <div class="feat" id="featured"></div>
+    </section>
+
+    <section>
+      <div class="sec-head"><div><h2>Нові інструменти</h2><p class="sub">Щойно додані до каталогу</p></div><a class="more-link" href="#new">Усі нові →</a></div>
+      <div class="newrow" id="newest"></div>
+    </section>
+
+    <section>
+      <div class="sec-head"><div><h2>Сектори</h2><p class="sub">Оберіть сферу, щоб відфільтрувати каталог</p></div></div>
+      <div class="sectors" id="sectors"></div>
+    </section>
+
+    <section id="catalog">
+      <div class="sec-head"><div><h2 id="cat-title">Усі інструменти</h2><p class="filter-note" id="cat-note"></p></div></div>
+      <div class="grid" id="grid"></div>
+      <button class="btn" id="more">Показати ще</button>
+    </section>
+  </div>
+</main>
+
+<main id="new-view" hidden>
+  <div class="wrap">
+    <a class="back" href="#">← На головну</a>
+    <div class="sec-head"><div><h2>Нові інструменти</h2><p class="sub">10 останніх доданих інструментів, від найновіших</p></div></div>
+    <div class="newlist" id="newlist"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>catalog.ai.ua — каталог підтримують AI-агенти, а перевіряють люди.</p>
+    <p>Контакти: <a href="mailto:hello@ai.ua">hello@ai.ua</a> · <a href="#">Telegram</a></p>
+  </div>
+</footer>
+
+<a class="badge" href="./">Варіант 08 · Aurora glass</a>
+
+<script>
+const PAGE = 24;
+const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
+const TYPE_TITLE = { tool: "Усі інструменти", model: "Усі моделі", company: "Усі компанії" };
+const state = { type: "tool", sector: null, query: "", shown: PAGE };
+let entries = [], bySlug = {};
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtDate = (iso) => new Date(iso).toLocaleDateString("uk-UA", { day: "numeric", month: "short", year: "numeric" }).replace(" р.", "");
+const pilot = (e) => e.status === "Пілот" ? '<span class="pill pilot">Пілот</span>' : "";
+const site = (e) => e.url ? `<a class="ext" href="${esc(e.url)}" target="_blank" rel="noopener">Сайт ↗</a>` : "";
+
+function renderHeader() {
+  $("types").innerHTML = TYPES.map(([key, label]) => {
+    const n = entries.filter((e) => e.type === key).length;
+    return `<button data-type="${key}" class="${key === state.type ? "on" : ""}">${label}<span>${n}</span></button>`;
+  }).join("");
+  const sectorCount = new Set(entries.map((e) => e.sector)).size;
+  const lastAdded = entries.map((e) => e.added).sort().pop();
+  $("stats").innerHTML = `<span><b>${entries.length}</b> продуктів</span><span><b>${sectorCount}</b> секторів</span><span>оновлено <b>${new Date(lastAdded).toLocaleDateString("uk-UA")}</b></span>`;
+}
+
+function renderFeatured(slugs) {
+  $("featured").innerHTML = slugs.map((s, i) => bySlug[s]).filter(Boolean).map((e, i) => `
+    <article class="fcard glass">
+      <span class="num">0${i + 1}</span>
+      <h3 class="clamp2">${esc(e.name)}</h3>
+      <p class="clamp3">${esc(e.descr_short)}</p>
+      <div class="foot"><span class="pill">${esc(e.sector)}</span>${site(e)}</div>
+    </article>`).join("");
+}
+
+function renderNewest(slugs) {
+  const list = slugs.map((s) => bySlug[s]).filter(Boolean);
+  $("newest").innerHTML = list.slice(0, 5).map((e) => `
+    <a class="ncard glass" href="#">
+      <span class="date">${fmtDate(e.added)}</span>
+      <h4 class="clamp2">${esc(e.name)}</h4>
+      <p class="clamp3">${esc(e.descr_short)}</p>
+    </a>`).join("");
+  $("newlist").innerHTML = list.map((e) => `
+    <article class="nrow glass">
+      <span class="date">${fmtDate(e.added)}</span>
+      <div><h3 class="clamp2">${esc(e.name)}</h3><p class="clamp2">${esc(e.descr_short)}</p></div>
+      <div class="side"><span class="pill">${esc(e.sector)}</span>${site(e)}</div>
+    </article>`).join("");
+}
+
+function renderSectors() {
+  const counts = {};
+  entries.forEach((e) => (counts[e.sector] = (counts[e.sector] || 0) + 1));
+  $("sectors").innerHTML = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([name, n]) => `
+    <button class="sector glass ${state.sector === name ? "on" : ""}" data-sector="${esc(name)}"><span>${esc(name)}</span><b>${n}</b></button>`).join("");
+}
+
+function filtered() {
+  const q = state.query.trim().toLowerCase();
+  return entries.filter((e) =>
+    e.type === state.type &&
+    (!state.sector || e.sector === state.sector) &&
+    (!q || (e.name + " " + e.descr_short + " " + e.sector).toLowerCase().includes(q)));
+}
+
+function renderCatalog() {
+  const list = filtered();
+  $("cat-title").textContent = state.sector ? `${TYPE_TITLE[state.type]} · ${state.sector}` : TYPE_TITLE[state.type];
+  $("cat-note").innerHTML = `${list.length} результатів` + (state.sector || state.query ? ` · <button id="reset">Скинути фільтри</button>` : "");
+  $("grid").innerHTML = list.length ? list.slice(0, state.shown).map((e) => `
+    <a class="card glass" href="#">
+      <h3 class="clamp2">${esc(e.name)}</h3>
+      <p class="clamp3">${esc(e.descr_short)}</p>
+      <div class="tags"><span class="pill">${esc(e.sector)}</span>${pilot(e)}</div>
+    </a>`).join("") : `<div class="empty glass">Нічого не знайдено. Спробуйте інший запит.</div>`;
+  $("more").hidden = list.length <= state.shown;
+}
+
+function route() {
+  const isNew = location.hash === "#new";
+  $("home").hidden = isNew;
+  $("new-view").hidden = !isNew;
+  if (isNew) window.scrollTo(0, 0);
+}
+
+function update(patch) {
+  Object.assign(state, patch, { shown: PAGE });
+  renderHeader(); renderSectors(); renderCatalog();
+}
+
+document.addEventListener("click", (ev) => {
+  const t = ev.target.closest("[data-type],[data-sector],#more,#reset");
+  if (!t) return;
+  if (t.dataset.type) update({ type: t.dataset.type });
+  else if (t.dataset.sector) update({ sector: state.sector === t.dataset.sector ? null : t.dataset.sector });
+  else if (t.id === "more") { state.shown += PAGE; renderCatalog(); return; }
+  else if (t.id === "reset") { $("q").value = ""; update({ sector: null, query: "" }); }
+  if (location.hash === "#new") location.hash = "";
+  $("catalog").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+$("q").addEventListener("input", (ev) => {
+  if (location.hash === "#new") location.hash = "";
+  update({ query: ev.target.value });
+});
+window.addEventListener("hashchange", route);
+
+fetch("data.json").then((r) => r.json()).then((data) => {
+  entries = data.entries;
+  entries.forEach((e) => (bySlug[e.slug] = e));
+  renderHeader(); renderFeatured(data.featured); renderNewest(data.newest); renderSectors(); renderCatalog(); route();
+});
+</script>
+</body>
+</html>
