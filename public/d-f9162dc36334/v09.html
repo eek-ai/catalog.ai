@@ -4,407 +4,424 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>catalog.ai.ua — Живий каталог українських AI-продуктів</title>
+<title>catalog.ai.ua — Каталог українських AI-продуктів</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --paper: #ffffff;
-    --ink: #0a0a0a;
-    --ink-2: #4a4a4a;
-    --ink-3: #8a8a8a;
-    --rule: #0a0a0a;
-    --hair: #e2e2e2;
-    --accent: #e3001b;
-    --gutter: 24px;
-    --side: 48px;
-    --max: 1360px;
-    --font: "Inter", "Helvetica Neue", Arial, sans-serif;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { -webkit-text-size-adjust: 100%; }
-  body { background: var(--paper); color: var(--ink); font-family: var(--font); font-size: 15px; line-height: 1.5; font-feature-settings: "ss01", "cv11"; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-  a { color: inherit; text-decoration: none; }
-  button, input { font: inherit; color: inherit; background: none; border: 0; border-radius: 0; }
-  button { cursor: pointer; }
-  ::selection { background: var(--accent); color: #fff; }
+:root{
+  --bg:#ffffff; --bg-soft:#f4f5f6; --ink:#0b0c0c; --ink-2:#2b2f33; --muted:#555d63;
+  --line:#c9cdd1; --line-soft:#e3e5e8; --blue:#0057b7; --blue-dark:#003e85; --blue-soft:#e8f0fa;
+  --focus:#ffd500; --font:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1200px; --gut:clamp(16px,3.5vw,32px); --tap:44px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--font);overflow-x:hidden}
+::selection{background:var(--blue);color:#fff}
+a{color:var(--blue);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--blue-dark);text-decoration-thickness:3px}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:4px solid var(--focus);outline-offset:2px;box-shadow:0 0 0 2px var(--ink);border-radius:2px}
+a:focus-visible{background:var(--focus);color:var(--ink);text-decoration:none;box-shadow:0 4px 0 var(--ink);outline:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.cap::first-letter{text-transform:uppercase}
+.clamp2,.clamp3{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+.clamp2{-webkit-line-clamp:2}.clamp3{-webkit-line-clamp:3}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--focus);color:var(--ink);padding:10px 14px;font-weight:600;z-index:20}
+.skip:focus{left:16px}
+[hidden]{display:none!important}
 
-  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--side); }
-  .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
-  .label { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+/* header */
+.head{border-bottom:1px solid var(--line)}
+.head .wrap{display:flex;align-items:center;gap:12px 24px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;flex:1;min-width:0}
+.wm{font:800 22px/1.1 var(--font);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.wm:hover{color:var(--ink)}
+.tagline{font-size:16px;color:var(--muted)}
+.stats{font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
+.lang{display:flex;border:2px solid var(--ink);border-radius:4px;overflow:hidden}
+.lang button{background:var(--bg);border:0;min-width:48px;min-height:40px;font-weight:600;font-size:15px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--ink);color:#fff}
+.lang button:not([aria-pressed=true]):hover{background:var(--bg-soft)}
+.substats{background:var(--bg-soft);border-bottom:1px solid var(--line-soft)}
+.substats .wrap{padding-top:8px;padding-bottom:8px}
 
-  /* Header */
-  .top { border-bottom: 1px solid var(--rule); }
-  .top .grid { align-items: center; min-height: 72px; }
-  .brand { grid-column: 1 / 4; font-weight: 800; font-size: 19px; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; }
-  .brand i { width: 14px; height: 14px; background: var(--accent); display: inline-block; }
-  .types { grid-column: 4 / 9; display: flex; gap: 28px; }
-  .types button { font-size: 14px; font-weight: 500; padding: 24px 0 22px; border-bottom: 2px solid transparent; color: var(--ink-2); }
-  .types button sup { font-size: 10px; color: var(--ink-3); margin-left: 3px; font-weight: 500; }
-  .types button:hover { color: var(--ink); }
-  .types button.on { color: var(--ink); border-bottom-color: var(--accent); }
-  .tools-r { grid-column: 9 / 13; display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
-  .search { flex: 1; max-width: 240px; display: flex; align-items: center; border-bottom: 1px solid var(--ink); }
-  .search input { width: 100%; padding: 8px 0; font-size: 14px; outline: none; }
-  .search input::placeholder { color: var(--ink-3); }
-  .search svg { flex: none; }
-  .lang { display: flex; font-size: 12px; font-weight: 600; letter-spacing: .04em; }
-  .lang button { padding: 4px 6px; color: var(--ink-3); }
-  .lang button.on { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+/* type tabs */
+.types{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-top:18px;overflow-x:auto;scrollbar-width:none}
+.types button{background:none;border:0;border-bottom:4px solid transparent;margin-bottom:-1px;min-height:52px;padding:8px 18px 6px;cursor:pointer;font-size:18px;font-weight:600;color:var(--ink-2);white-space:nowrap}
+.types button span{font-weight:500;color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums}
+.types button:hover{color:var(--blue);background:var(--bg-soft)}
+.types button[aria-selected=true]{color:var(--ink);border-color:var(--blue)}
+.types button[aria-selected=true] span{color:var(--ink)}
 
-  /* Hero */
-  .hero { padding: 96px 0 56px; }
-  .hero h1 { grid-column: 1 / 11; font-size: clamp(44px, 7.4vw, 112px); line-height: .95; font-weight: 700; letter-spacing: -.045em; }
-  .hero h1 em { font-style: normal; color: var(--accent); }
-  .hero .lead { grid-column: 1 / 6; margin-top: 40px; font-size: 18px; line-height: 1.45; color: var(--ink-2); max-width: 46ch; }
-  .stats { grid-column: 7 / 13; margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--rule); }
-  .stats div { padding-top: 14px; }
-  .stats b { display: block; font-size: 40px; font-weight: 700; letter-spacing: -.03em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+/* secondary band */
+.band{margin-top:16px;border:1px solid var(--line);border-radius:4px;background:var(--bg-soft)}
+.band-head{display:flex;align-items:center;gap:4px;padding:0 14px 0 6px;border-bottom:1px solid var(--line-soft)}
+.band-head button{background:none;border:0;border-bottom:3px solid transparent;min-height:42px;padding:4px 10px 1px;font-size:16px;font-weight:600;color:var(--muted);cursor:pointer}
+.band-head button[aria-selected=true]{color:var(--ink);border-color:var(--blue)}
+.band-head button:hover{color:var(--blue)}
+.band-head a{margin-left:auto;font-size:15px;font-weight:600;white-space:nowrap;padding:10px 0}
+.band-items{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+.band-items li{min-width:0;padding:10px 14px 12px;border-left:1px solid var(--line-soft)}
+.band-items li:first-child{border-left:0}
+.band-items a{display:block;font-weight:600;font-size:16px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.band-items small{display:block;font-size:14px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.band-items small b{color:var(--ink);font-weight:600}
 
-  /* Sections */
-  section.block { padding: 72px 0 24px; }
-  .sec-head { border-top: 1px solid var(--rule); padding-top: 18px; margin-bottom: 40px; align-items: baseline; }
-  .sec-num { grid-column: 1 / 3; font-size: clamp(56px, 7vw, 104px); font-weight: 700; line-height: .85; letter-spacing: -.05em; color: var(--accent); font-variant-numeric: tabular-nums; }
-  .sec-title { grid-column: 3 / 10; font-size: clamp(28px, 3.4vw, 48px); font-weight: 700; letter-spacing: -.035em; line-height: 1; }
-  .sec-aside { grid-column: 10 / 13; text-align: right; font-size: 14px; }
-  .more-link { font-weight: 600; border-bottom: 1px solid var(--ink); padding-bottom: 2px; transition: color .15s, border-color .15s; }
-  .more-link:hover { color: var(--accent); border-color: var(--accent); }
+/* catalog */
+.catalog{padding:28px 0 64px}
+.catalog h1{font-size:clamp(26px,3.4vw,34px);line-height:1.15;font-weight:700;letter-spacing:-.015em}
+.catalog .lead{color:var(--muted);margin-top:4px;font-size:17px}
+.layout{display:grid;grid-template-columns:272px minmax(0,1fr);gap:40px;align-items:start;margin-top:22px}
+.filters>summary{display:none}
+fieldset{border:0;border-top:2px solid var(--ink);padding:12px 0 20px}
+legend{float:left;width:100%;font-size:17px;font-weight:700;margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline}
+legend em{font-style:normal;font-size:14px;font-weight:600;color:#fff;background:var(--blue);border-radius:10px;padding:1px 8px}
+fieldset>label:first-of-type{clear:both}
+.opt{display:flex;align-items:center;gap:12px;min-height:var(--tap);padding:4px 0;cursor:pointer;font-size:16px;line-height:1.3}
+.opt:hover .lbl{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.opt input{appearance:none;flex:none;width:24px;height:24px;border:2px solid var(--ink);border-radius:2px;background:#fff;display:grid;place-content:center;cursor:pointer;margin:0}
+.opt input:checked{background:var(--blue);border-color:var(--blue)}
+.opt input:checked::after{content:"";width:11px;height:6px;border:solid #fff;border-width:0 0 3px 3px;transform:rotate(-45deg) translate(1px,-1px)}
+.opt .lbl{flex:1;min-width:0}
+.opt .c{font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
+.opt.zero{color:var(--muted)}
+.opt.zero input{border-color:var(--line)}
+.opt.on{font-weight:600}
+.search label{display:block;font-weight:700;margin-bottom:6px}
+.search-row{display:flex;align-items:center;border:2px solid var(--ink);border-radius:4px;background:#fff}
+.search-row:focus-within{outline:4px solid var(--focus);outline-offset:2px}
+.search-row svg{flex:none;margin-left:14px;color:var(--ink-2)}
+.search-row input{flex:1;min-width:0;border:0;outline:none;background:none;min-height:52px;padding:0 14px;font-size:18px;box-shadow:none}
+.search-row input::placeholder{color:#6b7378}
+.search-row kbd{font:600 13px/1 var(--font);color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:4px 7px;margin-right:14px}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px}
+.chips:empty{display:none}
+.chip{display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:4px 8px 4px 14px;background:var(--blue-soft);border:1px solid var(--blue);border-radius:4px;color:var(--ink);font-size:15px;font-weight:500;cursor:pointer}
+.chip b{display:grid;place-content:center;width:24px;height:24px;font-size:18px;line-height:1;color:var(--blue);border-radius:2px}
+.chip:hover{background:var(--blue);color:#fff}
+.chip:hover b{color:#fff}
+.clear{background:none;border:0;color:var(--blue);text-decoration:underline;text-underline-offset:3px;font-size:15px;font-weight:600;min-height:40px;padding:0 6px;cursor:pointer}
+.clear:hover{text-decoration-thickness:3px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px 16px;flex-wrap:wrap;padding:18px 0 12px;border-bottom:2px solid var(--ink)}
+.count{font-size:18px;color:var(--ink-2)}
+.count b{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.sort{display:flex;align-items:center;gap:10px;font-size:16px}
+.sort select{appearance:none;min-height:var(--tap);padding:0 40px 0 12px;border:2px solid var(--ink);border-radius:4px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%230b0c0c' stroke-width='2.5'/%3E%3C/svg%3E") no-repeat right 12px center;font-size:16px;cursor:pointer}
 
-  .clamp2, .clamp3 { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
-  .clamp2 { -webkit-line-clamp: 2; }
-  .clamp3 { -webkit-line-clamp: 3; }
-  .pilot { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 1px 6px 0; line-height: 16px; vertical-align: middle; }
-  .ext { font-size: 13px; font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--hair); transition: border-color .15s, color .15s; }
-  .ext:hover { color: var(--accent); border-color: var(--accent); }
+/* result list */
+.results-list{list-style:none}
+.item{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:6px 32px;padding:20px 0 22px;border-bottom:1px solid var(--line)}
+.item h2{font-size:21px;line-height:1.25;font-weight:700;overflow-wrap:anywhere}
+.item h2 a{color:var(--blue)}
+.item .descr{margin-top:6px;color:var(--ink-2)}
+.item .who{margin-top:8px;font-size:16px;color:var(--muted)}
+.item .who b{color:var(--ink-2);font-weight:600}
+.side{display:flex;flex-direction:column;align-items:flex-start;gap:8px;font-size:15px;min-width:0}
+.sector{font-weight:600;color:var(--ink-2)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;font-size:13px;font-weight:600;line-height:1;padding:5px 8px;border-radius:3px;border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+.tag.pilot{background:var(--ink);color:#fff}
+.tag.new{border-color:var(--blue);color:var(--blue)}
+.links{display:flex;flex-wrap:wrap;gap:0 18px;margin-top:auto}
+.links a{display:inline-flex;align-items:center;min-height:var(--tap);font-size:16px;font-weight:600}
+.empty{padding:32px 0;font-size:18px;color:var(--ink-2)}
 
-  /* Featured */
-  .feat { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gutter); }
-  .fcard { display: flex; flex-direction: column; border-top: 1px solid var(--hair); padding: 20px 0 40px; min-height: 300px; position: relative; }
-  .fcard::before { content: ""; position: absolute; top: -1px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width .3s ease; }
-  .fcard:hover::before { width: 100%; }
-  .fcard .idx { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; display: flex; justify-content: space-between; }
-  .fcard .idx span:last-child { color: var(--ink-3); font-weight: 500; }
-  .fcard h3 { margin-top: 48px; font-size: 30px; line-height: 1.05; font-weight: 700; letter-spacing: -.03em; overflow-wrap: anywhere; }
-  .fcard h3 a:hover { color: var(--accent); }
-  .fcard p { margin-top: 14px; color: var(--ink-2); font-size: 15px; }
-  .fcard .meta { margin-top: auto; padding-top: 24px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 13px; }
-  .fcard .meta .sector { color: var(--ink-3); }
+/* #new view */
+.newpage{padding:28px 0 64px;max-width:860px}
+.newpage h1{font-size:clamp(28px,4vw,38px);font-weight:700;margin:14px 0 6px}
+.newpage .lead{color:var(--muted);margin-bottom:12px}
+.day{display:grid;grid-template-columns:170px minmax(0,1fr);gap:8px 28px;border-top:2px solid var(--ink);padding:16px 0 8px}
+.day h2{font-size:18px;font-weight:700}
+.day .item{grid-template-columns:minmax(0,1fr);padding-top:0}
+.day .item+.item{padding-top:18px}
 
-  /* Newest rows */
-  .rows { border-top: 1px solid var(--hair); }
-  .row { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); padding: 18px 0; border-bottom: 1px solid var(--hair); align-items: baseline; transition: background .15s; }
-  .row:hover { background: #fafafa; }
-  .row:hover .r-name { color: var(--accent); }
-  .r-date { grid-column: 1 / 3; font-size: 13px; font-variant-numeric: tabular-nums; color: var(--ink-3); }
-  .r-name { grid-column: 3 / 6; font-size: 18px; font-weight: 600; letter-spacing: -.015em; line-height: 1.25; transition: color .15s; overflow-wrap: anywhere; }
-  .r-desc { grid-column: 6 / 10; color: var(--ink-2); font-size: 14px; }
-  .r-sec { grid-column: 10 / 12; font-size: 13px; color: var(--ink-3); }
-  .r-act { grid-column: 12 / 13; text-align: right; }
+footer{border-top:1px solid var(--line);background:var(--bg-soft);padding:26px 0 84px;font-size:16px;color:var(--ink-2)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px 32px;flex-wrap:wrap}
+footer p{max-width:620px}
+footer strong{display:block;font-size:18px;color:var(--ink);margin-bottom:4px}
+.badge{position:fixed;right:16px;bottom:16px;z-index:10;background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:600;padding:10px 14px;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.badge:hover{background:var(--blue);color:#fff}
 
-  /* Sectors */
-  .sectors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--gutter); }
-  .sector-btn { text-align: left; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 16px 0; border-top: 1px solid var(--hair); font-size: 16px; font-weight: 500; letter-spacing: -.01em; transition: color .15s; }
-  .sector-btn b { font-size: 13px; font-weight: 600; color: var(--ink-3); font-variant-numeric: tabular-nums; }
-  .sector-btn:hover, .sector-btn.on { color: var(--accent); }
-  .sector-btn.on { border-top: 2px solid var(--accent); padding-top: 15px; }
-  .sector-btn.on b { color: var(--accent); }
-
-  /* Catalog */
-  .filters { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; margin-bottom: 20px; font-size: 13px; color: var(--ink-2); min-height: 20px; }
-  .filters button { font-weight: 600; color: var(--accent); }
-  .cat { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--gutter); }
-  .item { display: flex; flex-direction: column; border-top: 1px solid var(--hair); padding: 18px 0 32px; min-height: 220px; transition: border-color .15s; }
-  .item:hover { border-top-color: var(--ink); }
-  .item:hover h4 { color: var(--accent); }
-  .item .top-l { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 18px; }
-  .item .top-l .sector { font-size: 12px; color: var(--ink-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .item h4 { margin-top: 20px; font-size: 20px; font-weight: 700; line-height: 1.15; letter-spacing: -.02em; transition: color .15s; overflow-wrap: anywhere; }
-  .item p { margin-top: 10px; font-size: 14px; color: var(--ink-2); }
-  .item .foot { margin-top: auto; padding-top: 18px; }
-  .empty { padding: 48px 0; color: var(--ink-3); font-size: 18px; border-top: 1px solid var(--hair); }
-  .show-more { margin-top: 32px; width: 100%; border: 1px solid var(--ink); padding: 18px; font-size: 15px; font-weight: 600; display: flex; justify-content: space-between; transition: background .15s, color .15s; }
-  .show-more:hover { background: var(--ink); color: var(--paper); }
-
-  /* New view */
-  .back { display: inline-block; margin: 40px 0 0; font-size: 14px; font-weight: 600; }
-  .back:hover { color: var(--accent); }
-  .newview h1 { font-size: clamp(44px, 7.4vw, 112px); font-weight: 700; letter-spacing: -.045em; line-height: .95; margin: 40px 0 64px; }
-  .newview h1 span { color: var(--accent); }
-
-  /* Footer */
-  footer { margin-top: 96px; border-top: 1px solid var(--rule); padding: 32px 0 96px; }
-  footer .grid > div { font-size: 14px; color: var(--ink-2); }
-  .f-brand { grid-column: 1 / 4; font-weight: 800; color: var(--ink) !important; font-size: 17px; }
-  .f-about { grid-column: 4 / 9; max-width: 52ch; }
-  .f-contact { grid-column: 9 / 13; text-align: right; }
-  .f-contact a { color: var(--ink); border-bottom: 1px solid var(--hair); }
-  .f-contact a:hover { border-color: var(--accent); color: var(--accent); }
-
-  .badge { position: fixed; right: 16px; bottom: 16px; z-index: 10; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 600; letter-spacing: .02em; padding: 9px 12px; border-left: 4px solid var(--accent); }
-  .badge:hover { background: var(--accent); }
-
-  [hidden] { display: none !important; }
-
-  /* Tablet */
-  @media (max-width: 1080px) {
-    :root { --side: 32px; }
-    .types { grid-column: 4 / 13; justify-content: flex-end; }
-    .tools-r { grid-column: 1 / 13; padding: 0 0 14px; justify-content: space-between; }
-    .search { max-width: none; }
-    .feat { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .cat { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .sectors { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .hero .lead { grid-column: 1 / 13; }
-    .stats { grid-column: 1 / 13; }
-    .r-name { grid-column: 3 / 7; }
-    .r-desc { grid-column: 7 / 13; }
-    .r-sec, .r-act { display: none; }
-  }
-  /* Phone */
-  @media (max-width: 720px) {
-    :root { --side: 16px; --gutter: 16px; }
-    .top .grid { min-height: 0; }
-    .brand { grid-column: 1 / 13; padding: 18px 0 4px; }
-    .types { grid-column: 1 / 13; justify-content: flex-start; gap: 20px; overflow-x: auto; }
-    .types button { padding: 14px 0 12px; white-space: nowrap; }
-    .hero { padding: 56px 0 24px; }
-    .hero h1 { grid-column: 1 / 13; font-size: 44px; }
-    .hero .lead { font-size: 16px; margin-top: 24px; }
-    .stats b { font-size: 28px; }
-    section.block { padding: 56px 0 8px; }
-    .sec-head { margin-bottom: 24px; }
-    .sec-num { grid-column: 1 / 13; font-size: 64px; }
-    .sec-title { grid-column: 1 / 13; margin-top: 10px; font-size: 30px; }
-    .sec-aside { grid-column: 1 / 13; text-align: left; margin-top: 14px; }
-    .feat, .cat { grid-template-columns: minmax(0, 1fr); }
-    .fcard { min-height: 0; padding-bottom: 32px; }
-    .fcard h3 { margin-top: 28px; font-size: 26px; }
-    .item { min-height: 0; padding-bottom: 24px; }
-    .sectors { grid-template-columns: minmax(0, 1fr); }
-    .row { grid-template-columns: minmax(0, 1fr); row-gap: 4px; }
-    .r-date, .r-name, .r-desc { grid-column: 1 / -1; }
-    .newview h1 { font-size: 44px; margin-bottom: 40px; }
-    footer .grid > div { grid-column: 1 / 13 !important; text-align: left; margin-bottom: 14px; }
-    .badge { right: 12px; bottom: 12px; }
-  }
+@media (max-width:1100px){
+  .band-items{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .band-items li:nth-child(4){border-left:0}
+  .band-items li:nth-child(n+4){border-top:1px solid var(--line-soft)}
+  .item{grid-template-columns:minmax(0,1fr) 190px;gap:6px 24px}
+}
+@media (max-width:820px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:16px}
+  .filters{border:2px solid var(--ink);border-radius:4px}
+  .filters>summary{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:0 16px;font-weight:700;font-size:17px;cursor:pointer;list-style:none}
+  .filters>summary::-webkit-details-marker{display:none}
+  .filters>summary::after{content:"+";font-size:26px;font-weight:400;line-height:1}
+  .filters[open]>summary::after{content:"−"}
+  .filters>summary em{font-style:normal;font-size:14px;color:#fff;background:var(--blue);border-radius:10px;padding:1px 8px;margin:0 14px 0 8px}
+  .filters>summary span{flex:1}
+  #facets{padding:0 16px}
+  .search-row kbd{display:none}
+  .item{grid-template-columns:minmax(0,1fr);gap:0}
+  .side{flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:10px}
+  .links{width:100%;margin-top:2px}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .stats{width:100%}
+  .types button{flex:1;font-size:16px;padding:6px 6px 4px;line-height:1.2}
+  .types button span{display:block;margin:2px 0 0;font-size:14px}
+  .band-head .long{display:none}
+  .band-head button{padding:4px 8px 1px}
+  .band-items{display:flex;overflow-x:auto;scrollbar-width:none}
+  .band-items li{flex:0 0 190px;border-top:0!important;border-left:1px solid var(--line-soft)!important}
+  .band-items li:first-child{border-left:0!important}
+  .item h2{font-size:20px}
+  .day{grid-template-columns:minmax(0,1fr)}
+  .badge{right:12px;bottom:12px;font-size:13px;padding:8px 11px}
+}
 </style>
 </head>
 <body>
+<a class="skip" href="#catalog">Перейти до каталогу</a>
 
-<header class="top">
-  <div class="wrap grid">
-    <a class="brand" href="#"><i></i>catalog.ai.ua</a>
-    <nav class="types" id="types" aria-label="Тип"></nav>
-    <div class="tools-r">
-      <label class="search">
-        <input id="q" type="search" placeholder="Пошук продуктів" aria-label="Пошук">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5.25"/><path d="M11 11l3.5 3.5"/></svg>
-      </label>
-      <div class="lang"><button class="on">UA</button><button>EN</button></div>
-    </div>
+<header class="head"><div class="wrap">
+  <div class="brand">
+    <a href="#" class="wm">catalog.ai.ua</a>
+    <span class="tagline">Каталог українських AI-продуктів</span>
   </div>
-</header>
+  <div class="lang" role="group" aria-label="Мова сайту"><button aria-pressed="true">UA</button><button aria-pressed="false">EN</button></div>
+</div></header>
+<div class="substats"><div class="wrap"><span class="stats" id="stats"></span></div></div>
 
-<main id="home" class="wrap">
-  <div class="hero grid">
-    <h1>Живий каталог українських <em>AI</em>-продуктів</h1>
-    <p class="lead">Інструменти, моделі та компанії, де штучний інтелект — серцевина продукту. Каталог щодня підтримують AI-агенти, а перевіряють люди.</p>
-    <div class="stats" id="stats"></div>
-  </div>
+<main id="main" class="wrap">
+  <div class="types" id="types" role="tablist" aria-label="Тип записів"></div>
 
-  <section class="block">
-    <div class="sec-head grid">
-      <div class="sec-num">01</div>
-      <h2 class="sec-title">Вибір редакції</h2>
-      <div class="sec-aside label">Шість продуктів, на які варто подивитися</div>
+  <section class="band tools-only" aria-label="Добірки">
+    <div class="band-head" role="tablist">
+      <button role="tab" data-band="picks" aria-selected="true">Вибір редакції</button>
+      <button role="tab" data-band="new" aria-selected="false">Нові<span class="long"> інструменти</span></button>
+      <a href="#new">Усі нові →</a>
     </div>
-    <div class="feat" id="featured"></div>
+    <ol class="band-items" id="band"></ol>
   </section>
 
-  <section class="block">
-    <div class="sec-head grid">
-      <div class="sec-num">02</div>
-      <h2 class="sec-title">Нові інструменти</h2>
-      <div class="sec-aside"><a class="more-link" href="#new">Усі нові →</a></div>
+  <section class="catalog" id="catalog">
+    <h1 id="cat-title"></h1>
+    <p class="lead">Перевірені AI-продукти, створені в Україні або для України.</p>
+    <div class="layout">
+      <details class="filters" id="filters" open>
+        <summary><span>Фільтри</span><em id="fcount" hidden></em></summary>
+        <div id="facets"></div>
+      </details>
+      <div>
+        <div class="search">
+          <label for="q">Пошук</label>
+          <div class="search-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            <input id="q" type="search" placeholder="Пошук за назвою, описом, користувачами…" autocomplete="off">
+            <kbd>/</kbd>
+          </div>
+        </div>
+        <div class="chips" id="chips" aria-label="Обрані фільтри"></div>
+        <div class="toolbar">
+          <p class="count" id="count" aria-live="polite"></p>
+          <label class="sort">Сортувати
+            <select id="sort"><option value="az">А–Я</option><option value="new">Нові спочатку</option></select>
+          </label>
+        </div>
+        <ol class="results-list" id="list"></ol>
+      </div>
     </div>
-    <div class="rows" id="newest-teaser"></div>
-  </section>
-
-  <section class="block">
-    <div class="sec-head grid">
-      <div class="sec-num">03</div>
-      <h2 class="sec-title">Сектори</h2>
-      <div class="sec-aside label">Оберіть, щоб відфільтрувати каталог</div>
-    </div>
-    <div class="sectors" id="sectors"></div>
-  </section>
-
-  <section class="block" id="catalog">
-    <div class="sec-head grid">
-      <div class="sec-num">04</div>
-      <h2 class="sec-title" id="cat-title">Інструменти</h2>
-      <div class="sec-aside label" id="cat-count"></div>
-    </div>
-    <div class="filters" id="filters"></div>
-    <div class="cat" id="cat"></div>
-    <button class="show-more" id="more"><span>Показати ще</span><span id="more-n"></span></button>
   </section>
 </main>
 
-<main id="new-view" class="wrap newview" hidden>
-  <a class="back" href="#">← На головну</a>
-  <h1>Нові<br>інструменти<span>.</span></h1>
-  <div class="rows" id="newest-all"></div>
+<main id="newpage" class="wrap" hidden>
+  <div class="newpage">
+    <a href="#">← До каталогу</a>
+    <h1>Нові інструменти</h1>
+    <p class="lead">Десять інструментів, які додали до каталогу останніми. Найновіші — зверху.</p>
+    <div id="days"></div>
+  </div>
 </main>
 
-<footer>
-  <div class="wrap grid">
-    <div class="f-brand">catalog.ai.ua</div>
-    <div class="f-about">Каталог підтримують автономні AI-агенти: знаходять нові продукти й регулярно перевіряють старі. Люди наглядають за кожною зміною.</div>
-    <div class="f-contact">Контакти: <a href="mailto:hello@catalog.ai.ua">hello@catalog.ai.ua</a></div>
-  </div>
-</footer>
+<footer><div class="wrap">
+  <p><strong>catalog.ai.ua</strong>Каталог постійно оновлюють AI-агенти, а люди перевіряють і редагують записи. Знайшли помилку або хочете додати продукт — напишіть нам.</p>
+  <p>Контакти: email і Telegram — незабаром</p>
+</div></footer>
 
-<a class="badge" href="./">Варіант 09 · Swiss minimal</a>
+<a class="badge" href="./">Варіант 09 · Civic clarity</a>
 
 <script src="data.js"></script>
 <script>
-const TYPES = [["tool", "Інструменти"], ["model", "Моделі"], ["company", "Компанії"]];
-const PAGE = 24;
-const state = { type: "tool", sector: null, query: "", shown: PAGE };
-let DATA = null;
+const TYPES = { tool: "Інструменти", model: "Моделі", company: "Компанії" };
+const HEADINGS = { tool: "Українські AI-інструменти", model: "Українські AI-моделі", company: "Українські AI-компанії" };
+const STATUSES = ["Працює", "Пілот"];
+const ORIGINS = { "Українська": "Українська", "Іноземна, орієнтована на Україну": "Орієнтована на Україну" };
+const MONTHS = ["січня","лютого","березня","квітня","травня","червня","липня","серпня","вересня","жовтня","листопада","грудня"];
+const FRESH_DAYS = 14;
+const state = { type: "tool", q: "", sort: "az", sector: [], status: [], origin: [] };
 
-const $ = (id) => document.getElementById(id);
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const fmtDate = (iso) => iso.split("-").reverse().join(".");
-const pilot = (e) => e.status === "Пілот" ? '<span class="pilot">Пілот</span>' : "";
-const site = (e) => e.url ? `<a class="ext" href="${esc(e.url)}" target="_blank" rel="noopener">Сайт ↗</a>` : "";
-const countBy = (list, key) => list.reduce((m, e) => (m[e[key]] = (m[e[key]] || 0) + 1, m), {});
+const data = window.CATALOG;
+const bySlug = Object.fromEntries(data.entries.map(e => [e.slug, e]));
+const latest = data.entries.map(e => e.added).sort().pop();
+const allSectors = Object.entries(countBy(data.entries, "sector")).sort((a, b) => b[1] - a[1]).map(([s]) => s);
 
-function renderTypes() {
-  const counts = countBy(DATA.entries, "type");
-  $("types").innerHTML = TYPES.map(([t, label]) =>
-    `<button data-type="${t}" class="${t === state.type ? "on" : ""}">${label}<sup>${counts[t] || 0}</sup></button>`).join("");
+function $(id) { return document.getElementById(id); }
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function countBy(list, key) { return list.reduce((acc, e) => (acc[e[key]] = (acc[e[key]] || 0) + 1, acc), {}); }
+function fmtDate(iso) { const [y, m, d] = iso.split("-"); return `${+d} ${MONTHS[m - 1]} ${y}`; }
+function shortDate(iso) { const [, m, d] = iso.split("-"); return `${+d} ${MONTHS[m - 1]}`; }
+function daysSince(iso) { return (Date.parse(latest) - Date.parse(iso)) / 864e5; }
+function plural(n, one, few, many) {
+  const m10 = n % 10, m100 = n % 100;
+  return m10 === 1 && m100 !== 11 ? one : m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20) ? few : many;
+}
+const activeFilters = () => state.sector.length + state.status.length + state.origin.length;
+
+const tags = e => [
+  e.status === "Пілот" ? `<span class="tag pilot">Пілот</span>` : "",
+  daysSince(e.added) <= FRESH_DAYS ? `<span class="tag new">Нове</span>` : "",
+  e.origin !== "Українська" ? `<span class="tag">Орієнтована на Україну</span>` : "",
+].join("");
+const item = e => `<li class="item">
+  <div>
+    <h2><a href="#">${esc(e.name)}</a></h2>
+    <p class="descr cap clamp3">${esc(e.descr_short)}</p>
+    ${e.target_users ? `<p class="who clamp2"><b>Для кого:</b> ${esc(e.target_users)}</p>` : ""}
+  </div>
+  <div class="side">
+    <span class="sector">${esc(e.sector)}</span>
+    ${tags(e) ? `<span class="tags">${tags(e)}</span>` : ""}
+    <span class="links"><a href="#">Детальніше →</a>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">Сайт ↗</a>` : ""}</span>
+  </div>
+</li>`;
+
+function renderHeader() {
+  const types = countBy(data.entries, "type");
+  $("stats").textContent = `${data.entries.length} продуктів · ${allSectors.length} секторів · оновлено ${fmtDate(latest)}`;
+  $("types").innerHTML = Object.entries(TYPES).map(([k, label]) =>
+    `<button role="tab" data-type="${k}" aria-selected="${k === state.type}">${label}<span>${types[k] || 0}</span></button>`).join("");
 }
 
-function renderStats() {
-  const sectors = new Set(DATA.entries.map((e) => e.sector)).size;
-  const latest = DATA.entries.map((e) => e.added).sort().pop();
-  $("stats").innerHTML = `
-    <div><b>${DATA.entries.length}</b><span class="label">продуктів</span></div>
-    <div><b>${sectors}</b><span class="label">секторів</span></div>
-    <div><b>${fmtDate(latest).slice(0, 5)}</b><span class="label">оновлено ${latest.slice(0, 4)}</span></div>`;
+let band = "picks";
+function renderBand() {
+  const list = band === "picks" ? data.featured.map(s => bySlug[s]) : data.newest.slice(0, 6).map(s => bySlug[s]);
+  $("band").innerHTML = list.map(e => `<li><a href="#" title="${esc(e.name)}">${esc(e.name)}</a>
+    <small>${band === "new" ? `<b>${shortDate(e.added)}</b> · ` : ""}${esc(e.sector)}</small></li>`).join("");
+  document.querySelectorAll("[data-band]").forEach(b => b.setAttribute("aria-selected", b.dataset.band === band));
 }
 
-function renderFeatured(bySlug) {
-  $("featured").innerHTML = DATA.featured.map((slug, i) => {
-    const e = bySlug[slug];
-    return `<article class="fcard">
-      <div class="idx"><span>${String(i + 1).padStart(2, "0")}</span><span>${pilot(e)}</span></div>
-      <h3><a href="#">${esc(e.name)}</a></h3>
-      <p class="clamp3">${esc(e.descr_short)}</p>
-      <div class="meta"><span class="sector">${esc(e.sector)}</span>${site(e)}</div>
-    </article>`;
-  }).join("");
+function renderNewPage() {
+  const days = {};
+  data.newest.map(s => bySlug[s]).forEach(e => (days[e.added] ||= []).push(e));
+  $("days").innerHTML = Object.entries(days).map(([iso, list]) => `<section class="day">
+    <h2>${fmtDate(iso)}</h2><ol class="results-list">${list.map(item).join("")}</ol></section>`).join("");
 }
 
-function newestRow(e) {
-  return `<a class="row" href="#">
-    <span class="r-date">${fmtDate(e.added)}</span>
-    <span class="r-name">${esc(e.name)} ${pilot(e)}</span>
-    <span class="r-desc clamp2">${esc(e.descr_short)}</span>
-    <span class="r-sec">${esc(e.sector)}</span>
-    <span class="r-act label">→</span>
-  </a>`;
+// Same faceted logic as the live site: each group's counts ignore its own selection.
+function matches(e, except) {
+  const q = state.q.trim().toLowerCase();
+  return e.type === state.type
+    && (!q || `${e.name} ${e.descr_short} ${e.target_users || ""}`.toLowerCase().includes(q))
+    && (except === "sector" || !state.sector.length || state.sector.includes(e.sector))
+    && (except === "status" || !state.status.length || state.status.includes(e.status))
+    && (except === "origin" || !state.origin.length || state.origin.includes(e.origin));
 }
 
-function renderNewest(bySlug) {
-  const list = DATA.newest.map((s) => bySlug[s]).filter(Boolean);
-  $("newest-teaser").innerHTML = list.slice(0, 4).map(newestRow).join("");
-  $("newest-all").innerHTML = list.map(newestRow).join("");
+function renderFacets() {
+  const group = (key, title, options, label = v => v) => {
+    const counts = countBy(data.entries.filter(e => matches(e, key)), key);
+    const picked = state[key];
+    return `<fieldset><legend>${title}${picked.length ? `<em>${picked.length}</em>` : ""}</legend>
+      ${options.map(v => {
+        const n = counts[v] || 0, on = picked.includes(v);
+        return `<label class="opt ${on ? "on" : ""} ${n || on ? "" : "zero"}">
+          <input type="checkbox" data-facet="${key}" value="${esc(v)}" ${on ? "checked" : ""}>
+          <span class="lbl">${esc(label(v))}</span><span class="c">${n}</span></label>`;
+      }).join("")}</fieldset>`;
+  };
+  $("facets").innerHTML = group("sector", "Сектор", allSectors)
+    + group("status", "Статус", STATUSES)
+    + group("origin", "Походження", Object.keys(ORIGINS), v => ORIGINS[v]);
+  const n = activeFilters();
+  $("fcount").hidden = !n;
+  $("fcount").textContent = n;
 }
 
-function renderSectors() {
-  const counts = countBy(DATA.entries, "sector");
-  const sectors = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
-  $("sectors").innerHTML = sectors.map((s) =>
-    `<button class="sector-btn ${s === state.sector ? "on" : ""}" data-sector="${esc(s)}"><span>${esc(s)}</span><b>${counts[s]}</b></button>`).join("");
+function renderChips() {
+  const chips = [];
+  if (state.q.trim()) chips.push(["q", state.q.trim(), `Пошук: «${state.q.trim()}»`]);
+  for (const key of ["sector", "status", "origin"])
+    state[key].forEach(v => chips.push([key, v, ORIGINS[v] || v]));
+  $("chips").innerHTML = chips.map(([k, v, label]) =>
+    `<button class="chip" data-remove="${k}" data-value="${esc(v)}" aria-label="Прибрати фільтр ${esc(label)}">${esc(label)}<b aria-hidden="true">×</b></button>`).join("")
+    + (chips.length ? `<button class="clear" data-clear>Очистити все</button>` : "");
 }
 
-function filteredEntries() {
-  const q = state.query.trim().toLowerCase();
-  return DATA.entries.filter((e) =>
-    e.type === state.type &&
-    (!state.sector || e.sector === state.sector) &&
-    (!q || (e.name + " " + e.descr_short).toLowerCase().includes(q)));
+function renderList() {
+  const list = data.entries.filter(e => matches(e, null)).sort(state.sort === "new"
+    ? (a, b) => b.added.localeCompare(a.added) || a.name.localeCompare(b.name, "uk")
+    : (a, b) => a.name.localeCompare(b.name, "uk"));
+  $("cat-title").textContent = HEADINGS[state.type];
+  $("count").innerHTML = `<b>${list.length}</b> ${plural(list.length, "запис", "записи", "записів")}`;
+  $("list").innerHTML = list.length ? list.map(item).join("")
+    : `<li class="empty">Нічого не знайдено. Змініть запит або приберіть частину фільтрів.</li>`;
 }
 
 function renderCatalog() {
-  const list = filteredEntries();
-  const label = TYPES.find(([t]) => t === state.type)[1];
-  $("cat-title").textContent = label;
-  $("cat-count").textContent = `${list.length} у переліку`;
-
-  const active = [];
-  if (state.sector) active.push(`Сектор: <strong>${esc(state.sector)}</strong>`);
-  if (state.query) active.push(`Пошук: <strong>«${esc(state.query)}»</strong>`);
-  $("filters").innerHTML = active.length ? active.join("") + ' <button id="reset">Скинути ×</button>' : "";
-
-  $("cat").innerHTML = list.length ? list.slice(0, state.shown).map((e) => `
-    <article class="item">
-      <div class="top-l"><span class="sector">${esc(e.sector)}</span>${pilot(e)}</div>
-      <h4 class="clamp2"><a href="#">${esc(e.name)}</a></h4>
-      <p class="clamp3">${esc(e.descr_short)}</p>
-      <div class="foot">${site(e)}</div>
-    </article>`).join("") : '<div class="empty" style="grid-column:1/-1">Нічого не знайдено.</div>';
-
-  const rest = list.length - state.shown;
-  $("more").hidden = rest <= 0;
-  $("more-n").textContent = rest > 0 ? `+${rest}` : "";
+  renderFacets(); renderChips(); renderList();
+  document.querySelectorAll(".tools-only").forEach(el => el.hidden = state.type !== "tool");
 }
 
 function route() {
   const isNew = location.hash === "#new";
-  $("home").hidden = isNew;
-  $("new-view").hidden = !isNew;
+  $("main").hidden = isNew;
+  $("newpage").hidden = !isNew;
   window.scrollTo(0, 0);
 }
 
-function bind() {
-  $("types").addEventListener("click", (ev) => {
-    const b = ev.target.closest("button"); if (!b) return;
-    state.type = b.dataset.type; state.shown = PAGE;
-    renderTypes(); renderCatalog();
-    if (location.hash === "#new") location.hash = "";
-    $("catalog").scrollIntoView({ behavior: "smooth" });
-  });
-  $("sectors").addEventListener("click", (ev) => {
-    const b = ev.target.closest("button"); if (!b) return;
-    state.sector = state.sector === b.dataset.sector ? null : b.dataset.sector; state.shown = PAGE;
-    renderSectors(); renderCatalog();
-    $("catalog").scrollIntoView({ behavior: "smooth" });
-  });
-  $("q").addEventListener("input", (ev) => {
-    state.query = ev.target.value; state.shown = PAGE;
-    if (location.hash === "#new") location.hash = "";
+document.addEventListener("click", ev => {
+  const link = ev.target.closest('a[href="#"]');
+  if (link && !$("newpage").contains(link)) ev.preventDefault();
+  const bandBtn = ev.target.closest("[data-band]");
+  if (bandBtn) { band = bandBtn.dataset.band; renderBand(); }
+  const typeBtn = ev.target.closest("[data-type]");
+  if (typeBtn) {
+    Object.assign(state, { type: typeBtn.dataset.type, sector: [], status: [], origin: [] });
+    renderHeader(); renderCatalog();
+  }
+  const chip = ev.target.closest("[data-remove]");
+  if (chip) {
+    const { remove: key, value } = chip.dataset;
+    if (key === "q") { state.q = ""; $("q").value = ""; }
+    else state[key] = state[key].filter(v => v !== value);
     renderCatalog();
-  });
-  $("filters").addEventListener("click", (ev) => {
-    if (ev.target.id !== "reset") return;
-    state.sector = null; state.query = ""; $("q").value = "";
-    renderSectors(); renderCatalog();
-  });
-  $("more").addEventListener("click", () => { state.shown += PAGE; renderCatalog(); });
-  window.addEventListener("hashchange", route);
-}
-
-Promise.resolve({ json: () => window.CATALOG }).then((r) => r.json()).then((data) => {
-  DATA = data;
-  const bySlug = Object.fromEntries(data.entries.map((e) => [e.slug, e]));
-  renderTypes(); renderStats(); renderFeatured(bySlug); renderNewest(bySlug); renderSectors(); renderCatalog();
-  bind(); route();
+  }
+  if (ev.target.closest("[data-clear]")) {
+    Object.assign(state, { q: "", sector: [], status: [], origin: [] });
+    $("q").value = "";
+    renderCatalog();
+  }
+  const langBtn = ev.target.closest(".lang button");
+  if (langBtn) document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b === langBtn));
 });
+document.addEventListener("change", ev => {
+  const box = ev.target.closest("[data-facet]");
+  if (!box) return;
+  const key = box.dataset.facet;
+  state[key] = box.checked ? [...state[key], box.value] : state[key].filter(v => v !== box.value);
+  renderCatalog();
+  document.querySelector(`[data-facet="${key}"][value="${CSS.escape(box.value)}"]`)?.focus();
+});
+$("sort").addEventListener("change", ev => { state.sort = ev.target.value; renderList(); });
+$("q").addEventListener("input", ev => { state.q = ev.target.value; renderCatalog(); });
+document.addEventListener("keydown", ev => {
+  if (ev.key === "/" && !["INPUT", "SELECT"].includes(document.activeElement.tagName)) { ev.preventDefault(); $("q").focus(); }
+});
+window.addEventListener("hashchange", route);
+
+if (window.innerWidth <= 820) $("filters").open = false;
+renderHeader(); renderBand(); renderNewPage(); renderCatalog(); route();
 </script>
 </body>
 </html>

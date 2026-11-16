@@ -45,10 +45,11 @@ article:hover .t{background-size:100% 1px}
 .lang{display:flex;border:1px solid var(--rule);border-radius:2px}
 .lang button{background:none;border:0;padding:4px 9px;font:600 11px/1 var(--sans);letter-spacing:.1em;cursor:pointer;color:var(--muted)}
 .lang button.on{background:var(--ink);color:var(--paper)}
-.masthead{text-align:center;padding:clamp(18px,3.5vw,32px) 0 14px}
+.masthead{text-align:center;padding:clamp(14px,2.5vw,22px) 0 10px}
 .wordmark{font:900 clamp(2.3rem,7.5vw,4.8rem)/.95 var(--serif);letter-spacing:-.025em;display:inline-block}
+.masthead .wordmark{font-size:clamp(2.1rem,5.5vw,3.6rem)}
 .wordmark i{font-style:italic;font-weight:700;color:var(--accent)}
-.tagline{font:italic 400 clamp(1rem,2vw,1.2rem)/1.4 var(--text);color:var(--ink-2);margin-top:10px}
+.tagline{font:italic 400 clamp(1rem,2vw,1.15rem)/1.4 var(--text);color:var(--ink-2);margin-top:6px}
 .rules{border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);height:7px}
 .sections{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 34px;padding:12px 0;border-bottom:1px solid var(--rule)}
 .sections button{background:none;border:0;cursor:pointer;font:500 14px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);padding:4px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
@@ -61,37 +62,24 @@ article:hover .t{background-size:100% 1px}
 .sec-head h2{font-size:clamp(1.5rem,3vw,2rem)}
 .sec-head span{font:italic 400 15px/1.4 var(--text);color:var(--muted)}
 
-/* front page: picks + news column */
-.front{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,3.4fr);gap:44px;padding:36px 0 48px}
-.front>*{min-width:0}
-.picks-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,3fr);gap:32px}
-.lead .art{aspect-ratio:16/8;background:var(--paper-2);position:relative;overflow:hidden;margin-bottom:18px;display:flex;align-items:flex-end;padding:16px 18px}
-.lead .art b{position:absolute;right:-.06em;top:-.22em;font:italic 700 clamp(8rem,17vw,15rem)/1 var(--serif);color:var(--accent);opacity:.9}
-.lead .art em{position:relative;font:italic 400 13px/1.3 var(--text);color:var(--ink-2);max-width:60%}
-.lead h3{font-size:clamp(2rem,4vw,3.1rem);font-weight:900;letter-spacing:-.015em;margin:8px 0 12px}
-.lead .dek{font:italic 400 clamp(1.05rem,1.6vw,1.25rem)/1.45 var(--text);color:var(--ink-2);margin-bottom:12px}
-.lead .body{font:400 15px/1.65 var(--text);color:var(--ink-2);margin-bottom:14px}
-.side{display:flex;flex-direction:column;border-left:1px solid var(--rule);padding-left:32px}
-.story{padding:0 0 22px;min-width:0}
-.story+.story{border-top:1px solid var(--rule);padding-top:20px}
-.story .num{font:italic 600 1.5rem/1 var(--serif);color:var(--accent);display:block;margin-bottom:8px}
-.story h3{font-size:1.4rem;margin:6px 0 8px}
-.story p{font:400 15px/1.55 var(--text);color:var(--ink-2);margin-bottom:10px}
-.picks-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink);margin-top:10px;padding-top:22px}
-.picks-row .story{padding:0 22px;border-top:0}
-.picks-row .story+.story{border-left:1px solid var(--rule);padding-top:0}
-.picks-row .story:first-child{padding-left:0}.picks-row .story:last-child{padding-right:0}
-.news{border-left:1px solid var(--rule);padding-left:30px}
-.news .sec-head{padding-bottom:8px}
-.news .sec-head h2{font-size:1.5rem}
-.news-item{padding:15px 0;border-bottom:1px solid var(--rule);min-width:0}
-.news-item time{font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.news-item h3{font-size:1.12rem;margin:7px 0 5px}
-.news-item p{font:400 14px/1.5 var(--text);color:var(--ink-2);margin-bottom:6px}
-.more-link{display:inline-block;margin-top:18px;font:600 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid var(--accent);padding-bottom:4px}
-.more-link:hover{color:var(--accent)}
 
-/* catalog: rail + results */
+/* secondary blocks: shared bits */
+.mini-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:2px solid var(--ink);padding:8px 0 10px}
+.mini-head h2{font-size:1.2rem}
+.mini-head a{font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.mini-head a:hover{text-decoration:underline}
+.picklist{list-style:none;counter-reset:p}
+.picklist li{counter-increment:p;display:grid;grid-template-columns:30px minmax(0,1fr);gap:2px 10px;border-top:1px solid var(--rule);padding:11px 0;min-width:0}
+.picklist li::before{content:counter(p,decimal-leading-zero);font:italic 600 1.2rem/1.1 var(--serif);color:var(--accent);grid-row:span 3}
+.picklist h3{font-size:1.05rem}
+.picklist p{font:400 13.5px/1.45 var(--text);color:var(--ink-2)}
+.newlist{list-style:none}
+.newlist li{display:grid;grid-template-columns:54px minmax(0,1fr);gap:2px 10px;border-top:1px solid var(--rule);padding:9px 0;align-items:baseline;min-width:0}
+.newlist time{font:600 10.5px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);grid-row:span 2}
+.newlist h3{font-size:1rem}
+.newlist p{font:400 12.5px/1.4 var(--sans);color:var(--muted)}
+.tag.pick{color:var(--paper);background:var(--accent)}
+/* catalog: rail + results *//* catalog: rail + results */
 .catalog{padding-bottom:64px}
 .catalog .sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:900}
 .layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:44px;align-items:start}
@@ -159,6 +147,24 @@ footer p{font:italic 400 15px/1.5 var(--text);color:var(--ink-2);max-width:560px
 footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04em}
 .badge{position:fixed;right:16px;bottom:16px;z-index:10;background:var(--ink);color:var(--paper);font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:10px 14px;border-radius:2px;box-shadow:0 6px 20px rgba(22,19,15,.18);transition:background .2s}
 .badge:hover{background:var(--accent)}
+
+.tabbed{margin:16px 0 26px;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.tabbed-head{display:flex;align-items:baseline;gap:4px 24px;flex-wrap:wrap;padding:8px 0 4px}
+.tabbed-head button{background:none;border:0;border-bottom:2px solid transparent;padding:2px 0 6px;cursor:pointer;font:700 1.08rem/1.2 var(--serif);color:var(--muted)}
+.tabbed-head button.on{color:var(--ink);border-color:var(--accent)}
+.tabbed-head button:hover{color:var(--accent)}
+.tabbed-head a{margin-left:auto;font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.tabbed-items{list-style:none;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:20px;padding:8px 0 14px}
+.tabbed-items li{min-width:0}
+.tabbed-items .sub{display:block;font:500 11px/1.3 var(--sans);color:var(--muted);margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tabbed-items .sub b{color:var(--accent);font-weight:600}
+.tabbed-items h3{font-size:1rem;line-height:1.2}
+.tabbed-items p{font:400 13px/1.4 var(--text);color:var(--ink-2);margin-top:3px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+@media (max-width:720px){
+  .tabbed-items{display:flex;overflow-x:auto;scrollbar-width:none}
+  .tabbed-items li{flex:0 0 170px}
+}
+
 [hidden]{display:none!important}
 
 @media (max-width:1020px){
@@ -211,19 +217,14 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
 </header>
 
 <main id="main" class="wrap">
-  <section class="front" id="front">
-    <div class="picks">
-      <div class="sec-head"><h2>Вибір редакції</h2><span>Шість продуктів, які варто знати</span></div>
-      <div class="picks-top"><div id="lead"></div><div class="side" id="side"></div></div>
-      <div class="picks-row" id="row"></div>
+  <section class="tabbed tools-only">
+    <div class="tabbed-head">
+      <button data-band="picks" class="on">Вибір редакції</button>
+      <button data-band="new">Нові інструменти</button>
+      <a href="#new">Усі нові →</a>
     </div>
-    <aside class="news">
-      <div class="sec-head"><h2>Нові інструменти</h2></div>
-      <div id="news"></div>
-      <a class="more-link" href="#new">Усі нові →</a>
-    </aside>
+    <ol class="tabbed-items" id="band"></ol>
   </section>
-
   <section class="catalog" id="catalog">
     <div class="sec-head"><h2 id="cat-title"></h2><span id="cat-note"></span></div>
     <div class="layout">
@@ -263,7 +264,7 @@ footer small{font:500 12px/1.5 var(--sans);color:var(--muted);letter-spacing:.04
   <small>Контакти: email і Telegram — незабаром</small>
 </div></footer>
 
-<a class="badge" href="./">Варіант 01 · Editorial</a>
+<a class="badge" href="./">Варіант 01 · Editorial · фіналіст</a>
 
 <script src="data.js"></script>
 <script>
@@ -274,6 +275,7 @@ const ORIGINS = { "Українська": "Українська", "Інозем�
 const MONTHS = ["січня","лютого","березня","квітня","травня","червня","липня","серпня","вересня","жовтня","листопада","грудня"];
 const FRESH_DAYS = 14;
 const state = { type: "tool", q: "", sort: "az", sector: [], status: [], origin: [] };
+let SHOW_PICK_TAG = false;
 
 const data = window.CATALOG;
 const bySlug = Object.fromEntries(data.entries.map(e => [e.slug, e]));
@@ -293,6 +295,7 @@ function plural(n, one, few, many) {
 
 const siteLink = e => e.url ? `<a class="site" href="${esc(e.url)}" target="_blank" rel="noopener">Сайт ↗</a>` : "";
 const badges = e => [
+  SHOW_PICK_TAG && data.featured.includes(e.slug) ? `<span class="tag pick">Вибір редакції</span>` : "",
   daysSince(e.added) <= FRESH_DAYS ? `<span class="tag fresh">Нове</span>` : "",
   e.status === "Пілот" ? `<span class="tag pilot">Пілот</span>` : "",
   e.origin !== "Українська" ? `<span class="tag abroad">Для України</span>` : "",
@@ -306,38 +309,21 @@ function renderHeader() {
     `<button data-type="${k}" class="${k === state.type ? "on" : ""}">${label}<sup>${types[k] || 0}</sup></button>`).join("");
 }
 
-function renderFront() {
-  const [lead, ...rest] = data.featured.map(s => bySlug[s]);
-  $("lead").innerHTML = `<article class="lead">
-      <div class="art" aria-hidden="true"><b>${esc(lead.name.charAt(0))}</b><em>Головне цього випуску</em></div>
-      <span class="kicker">${esc(lead.sector)}</span>
-      ${title(lead)}
-      <p class="dek cap">${esc(lead.descr_short)}</p>
-      ${lead.target_users ? `<p class="body clamp4">${esc(lead.target_users)}</p>` : ""}
-      <div class="meta">${badges(lead)}<a class="more" href="#">Детальніше →</a>${siteLink(lead)}</div>
-    </article>`;
-  const story = (e, i) => `<article class="story">
-      <span class="num">${String(i + 2).padStart(2, "0")}</span>
-      <span class="kicker">${esc(e.sector)}</span>
-      ${title(e)}
-      <p class="cap clamp3">${esc(e.descr_short)}</p>
-      <div class="meta">${badges(e)}${siteLink(e)}</div>
-    </article>`;
-  $("side").innerHTML = rest.slice(0, 2).map(story).join("");
-  $("row").innerHTML = rest.slice(2).map((e, i) => story(e, i + 2)).join("");
 
-  $("news").innerHTML = data.newest.slice(0, 5).map(s => bySlug[s]).map(e => {
-    const p = dateParts(e.added);
-    return `<article class="news-item">
-      <time datetime="${e.added}">${p.d} ${p.m}</time>
-      ${title(e)}
-      <p class="cap clamp2">${esc(e.descr_short)}</p>
-      <div class="meta"><span>${esc(e.sector)}</span></div>
-    </article>`;
-  }).join("");
-
+function shortDate(iso) { const p = dateParts(iso); return `${p.d} ${p.m.slice(0, 4)}.`; }
+function inView(e) { return true; }
+function toggleExtras() {
+  const filtering = state.q.trim() || state.sector.length || state.status.length || state.origin.length;
+  document.querySelectorAll(".tools-only").forEach(el => el.hidden = state.type !== "tool");
+  document.querySelectorAll(".idle-only").forEach(el => el.hidden = state.type !== "tool" || !!filtering);
+}
+const picks = () => data.featured.map(s => bySlug[s]);
+const newest = (n = 10) => data.newest.slice(0, n).map(s => bySlug[s]);
+const pickItem = (e, withText = true) => `<li><span class="kicker">${esc(e.sector)}</span>${title(e)}${withText ? `<p class="cap clamp2">${esc(e.descr_short)}</p>` : ""}</li>`;
+const newItem = e => `<li><time datetime="${e.added}">${shortDate(e.added)}</time>${title(e)}<p>${esc(e.sector)}</p></li>`;
+function renderNewPage() {
   const days = {};
-  data.newest.map(s => bySlug[s]).forEach(e => (days[e.added] ||= []).push(e));
+  newest().forEach(e => (days[e.added] ||= []).push(e));
   $("days").innerHTML = Object.entries(days).map(([iso, list]) => {
     const p = dateParts(iso);
     return `<section class="day">
@@ -352,10 +338,23 @@ function renderFront() {
   }).join("");
 }
 
-// Same faceted logic as the live site: each group's counts ignore its own selection.
+let band = "picks";
+function renderFront() {
+  const list = band === "picks" ? picks() : newest(6);
+  $("band").innerHTML = list.map((e, i) => `<li>
+    <span class="sub"><b>${band === "picks" ? String(i + 1).padStart(2, "0") : shortDate(e.added)}</b> · ${esc(e.sector)}</span>
+    ${title(e)}<p class="cap">${esc(e.descr_short)}</p></li>`).join("");
+  document.querySelectorAll("[data-band]").forEach(b => b.classList.toggle("on", b.dataset.band === band));
+}
+document.addEventListener("click", ev => {
+  const btn = ev.target.closest("[data-band]");
+  if (btn) { band = btn.dataset.band; renderFront(); }
+});
+
+// Same faceted logic// Same faceted logic as the live site: each group's counts ignore its own selection.
 function matches(e, except) {
   const q = state.q.trim().toLowerCase();
-  return e.type === state.type
+  return e.type === state.type && inView(e)
     && (!q || `${e.name} ${e.descr_short} ${e.target_users || ""}`.toLowerCase().includes(q))
     && (except === "sector" || !state.sector.length || state.sector.includes(e.sector))
     && (except === "status" || !state.status.length || state.status.includes(e.status))
@@ -405,7 +404,7 @@ function renderList() {
     </article>`).join("") : `<p class="empty">Нічого не знайдено. Спробуйте інший запит або приберіть фільтри.</p>`;
 }
 
-function renderCatalog() { renderFacets(); renderChips(); renderList(); }
+function renderCatalog() { renderFacets(); renderChips(); renderList(); toggleExtras(); }
 
 function route() {
   const isNew = location.hash === "#new";
@@ -420,7 +419,6 @@ document.addEventListener("click", ev => {
   const typeBtn = ev.target.closest("[data-type]");
   if (typeBtn) {
     Object.assign(state, { type: typeBtn.dataset.type, sector: [], status: [], origin: [] });
-    $("front").hidden = state.type !== "tool";
     renderHeader(); renderCatalog();
   }
   const sortBtn = ev.target.closest("[data-sort]");
@@ -456,7 +454,7 @@ document.addEventListener("keydown", ev => {
 window.addEventListener("hashchange", route);
 
 if (window.innerWidth <= 760) $("rail").open = false;
-renderHeader(); renderFront(); renderCatalog(); route();
+renderHeader(); renderFront(); renderNewPage(); renderCatalog(); route();
 </script>
 </body>
 </html>
