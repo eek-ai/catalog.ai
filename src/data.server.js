@@ -4,37 +4,26 @@ const entries = raw.tools.map((entry) => ({ ...entry, id: entry.slug })).sort(
   (a, b) => (b.rating ?? -1) - (a.rating ?? -1) || a.name.localeCompare(b.name, "uk")
 );
 
-const listingEntries = entries.map(
-  ({
-    id,
-    name,
-    type,
-    descr_short,
-    sector,
-    origin,
-    description,
-    target_users,
-    status,
-    needs_review,
-    sources,
-    maturity,
-    access,
-  }) => ({
-    id,
-    name,
-    type,
-    descr_short,
-    sector,
-    origin,
-    description,
-    target_users,
-    status,
-    needs_review,
-    sourceCount: sources?.length ?? 0,
-    maturity,
-    access,
-  })
-);
+// Only these fields reach page payloads; sources, notes, research and ratings stay internal.
+const PUBLIC_FIELDS = [
+  "id",
+  "name",
+  "url",
+  "type",
+  "descr_short",
+  "sector",
+  "origin",
+  "description",
+  "target_users",
+  "access",
+  "maturity",
+  "status",
+];
+
+const publicEntry = (entry) =>
+  Object.fromEntries(PUBLIC_FIELDS.filter((field) => field in entry).map((field) => [field, entry[field]]));
+
+const listingEntries = entries.map(publicEntry);
 
 const sectorTotals = {};
 for (const entry of entries) sectorTotals[entry.sector] = (sectorTotals[entry.sector] || 0) + 1;
@@ -55,5 +44,6 @@ export function getListingData() {
 }
 
 export function getEntry(id) {
-  return entries.find((entry) => entry.id === id) ?? null;
+  const entry = entries.find((candidate) => candidate.id === id);
+  return entry ? publicEntry(entry) : null;
 }

@@ -44,14 +44,6 @@ export default function ToolCard({ tool, showAll = false, search = "" }) {
       )}
 
       <div className="tool-foot">
-        {tool.needs_review && (
-          <span className="flag-review" title={t("unverified_title")}>
-            {t("unverified")}
-          </span>
-        )}
-        {tool.sourceCount > 0 && (
-          <span className="src-count" title={t("sources_title")}>🔗 {tool.sourceCount}</span>
-        )}
         <Link to={to} className="tool-link">
           {t("details")}
         </Link>

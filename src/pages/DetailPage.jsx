@@ -15,11 +15,6 @@ const DETAIL_FIELDS = [
   "target_users",
   "access",
   "maturity",
-  "status",
-  "why_included",
-  "notes",
-  "needs_review",
-  "sources",
 ];
 
 function isEmptyValue(value) {
@@ -36,22 +31,7 @@ function FieldValue({ name, value, t, lang }) {
   }
 
   if (name === "type") return t(`type_${value}`);
-  if (name === "needs_review") return value ? t("yes") : t("no");
   if (name === "sector" || name === "status" || name === "origin") return vocabLabel(value, lang);
-
-  if (name === "sources") {
-    return (
-      <ul className="detail-source-list">
-        {value.map((src) => (
-          <li key={src}>
-            <a href={src} target="_blank" rel="noreferrer">
-              {src}
-            </a>
-          </li>
-        ))}
-      </ul>
-    );
-  }
 
   return <span lang={lang === "en" ? "uk" : undefined}>{value}</span>;
 }
@@ -62,7 +42,6 @@ export default function DetailPage({ tool }) {
   const { t, lang } = useLang();
   const prefix = lang === "en" ? "/en" : "";
   const backTo = { pathname: `${prefix}${canonicalBrowsePath(tool?.type)}`, search };
-  const research = tool?.deep_research;
 
   if (!tool) {
     return (
@@ -93,24 +72,6 @@ export default function DetailPage({ tool }) {
         <span className="tag">{t(`type_${tool.type}`)}</span>
         <span className="tag origin-tag">{originShort(tool.origin, lang)}</span>
       </div>
-
-      {tool.needs_review && <p className="review-banner">{t("review_banner")}</p>}
-
-      {research?.long_description && (
-        <section className="detail-research">
-          <h2>{t("research")}</h2>
-          <div lang={lang === "en" ? "uk" : undefined}>
-            {research.long_description.split(/\n\s*\n/).map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
-          </div>
-          {research.date && (
-            <p className="research-date">
-              {t("research_updated")}: <time dateTime={research.date}>{research.date}</time>
-            </p>
-          )}
-        </section>
-      )}
 
       <dl className="detail-meta detail-meta-all">
         {DETAIL_FIELDS.filter((field) => !isEmptyValue(tool[field])).map((field) => (
