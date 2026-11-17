@@ -2,23 +2,24 @@
 // Rendered in a shadow root so the variants' own CSS can't restyle it (and vice versa).
 (() => {
   const DESIGNS = [
-    ["v01.html", "01", "Editorial", true],
-    ["v02.html", "02", "Icon gallery"],
-    ["v03.html", "03", "Directory"],
-    ["v04.html", "04", "Marketplace", true],
-    ["v05.html", "05", "Workspace"],
-    ["v06.html", "06", "Neo-brutalist"],
-    ["v07.html", "07", "Terminal"],
-    ["v08.html", "08", "Riso zine"],
-    ["v09.html", "09", "Civic clarity"],
-    ["v10.html", "10", "Soft clay"],
+    ["v04.html", "04", "Основа", true],
+    ["m01.html", "M1", "Без героя"],
+    ["m02.html", "M2", "Рядок-заголовок"],
+    ["m03.html", "M3", "Тонкий банер"],
+    ["m04.html", "M4", "Пошук-герой"],
+    ["m05.html", "M5", "Інфо в панелі"],
+    ["m06.html", "M6", "Вибір замість героя"],
+    ["m07.html", "M7", "Хлібні крихти"],
+    ["m08.html", "M8", "Липка шапка"],
+    ["m09.html", "M9", "Картка «Що це?»"],
+    ["m10.html", "M10", "Темна шапка"],
   ];
-  const file = location.pathname.split("/").pop() || "v01.html";
+  const file = location.pathname.split("/").pop() || "v04.html";
   const current = Math.max(0, DESIGNS.findIndex(([href]) => href === file));
   const hrefAt = (i) => DESIGNS[(i + DESIGNS.length) % DESIGNS.length][0];
 
   const host = document.createElement("div");
-  host.style.cssText = "all:initial;display:block;position:relative;z-index:2147483000";
+  host.style.cssText = "all:initial;display:block;position:relative;z-index:1";
   const root = host.attachShadow({ mode: "open" });
   root.innerHTML = `
     <style>
